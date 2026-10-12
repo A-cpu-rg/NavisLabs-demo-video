@@ -1,0 +1,126 @@
+{
+ "video": "out/navislabs-v7-review-1080p.mp4",
+ "frames": 3757,
+ "soft_frames": [
+  {
+   "from_s": 7.0,
+   "to_s": 7.27,
+   "frames": 9,
+   "min_ratio": 0.02
+  },
+  {
+   "from_s": 9.43,
+   "to_s": 9.43,
+   "frames": 1,
+   "min_ratio": 0.34
+  },
+  {
+   "from_s": 29.97,
+   "to_s": 30.17,
+   "frames": 7,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 37.83,
+   "to_s": 38.0,
+   "frames": 6,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 49.07,
+   "to_s": 49.07,
+   "frames": 1,
+   "min_ratio": 0.45
+  },
+  {
+   "from_s": 49.3,
+   "to_s": 49.43,
+   "frames": 5,
+   "min_ratio": 0.05
+  },
+  {
+   "from_s": 53.53,
+   "to_s": 53.53,
+   "frames": 1,
+   "min_ratio": 0.45
+  },
+  {
+   "from_s": 57.53,
+   "to_s": 57.53,
+   "frames": 1,
+   "min_ratio": 0.3
+  },
+  {
+   "from_s": 64.77,
+   "to_s": 64.77,
+   "frames": 1,
+   "min_ratio": 0.44
+  },
+  {
+   "from_s": 69.97,
+   "to_s": 70.0,
+   "frames": 2,
+   "min_ratio": 0.04
+  },
+  {
+   "from_s": 72.37,
+   "to_s": 72.43,
+   "frames": 3,
+   "min_ratio": 0.15
+  },
+  {
+   "from_s": 76.33,
+   "to_s": 76.63,
+   "frames": 10,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 78.73,
+   "to_s": 78.73,
+   "frames": 1,
+   "min_ratio": 0.11
+  },
+  {
+   "from_s": 87.77,
+   "to_s": 87.8,
+   "frames": 2,
+   "min_ratio": 0.12
+  },
+  {
+   "from_s": 89.33,
+   "to_s": 89.67,
+   "frames": 11,
+   "min_ratio": 0.15
+  },
+  {
+   "from_s": 92.73,
+   "to_s": 92.97,
+   "frames": 8,
+   "min_ratio": 0.05
+  },
+  {
+   "from_s": 105.13,
+   "to_s": 105.27,
+   "frames": 5,
+   "min_ratio": 0.12
+  },
+  {
+   "from_s": 110.03,
+   "to_s": 110.4,
+   "frames": 12,
+   "min_ratio": 0.1
+  },
+  {
+   "from_s": 118.23,
+   "to_s": 118.57,
+   "frames": 11,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 124.87,
+   "to_s": 125.03,
+   "frames": 6,
+   "min_ratio": 0.0
+  }
+ ]
+}

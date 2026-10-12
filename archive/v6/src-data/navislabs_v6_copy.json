@@ -1,0 +1,329 @@
+{
+  "about": "NavisLabs launch film — V6 copy: the single source of truth for every spoken and on-screen word. The voiceover is the founder's final performance in eight chunks (P1–P8); the words below are exactly the approved script and must not be rewritten. Timing comes from the measured audio (navislabs_v6_voice_analysis.json); entities come from src/data/navislabs_v6_launch_state.json.",
+  "version": "v6",
+  "positioning": {
+    "company": "NavisLabs",
+    "products": [
+      {
+        "name": "Navis App",
+        "for": "people inside an organization: what changed, why it matters, waiting on you; prepares actions for a person to review and approve"
+      },
+      {
+        "name": "Navis Developer",
+        "for": "developers, AI agents, teams and solo builders: company context over MCP / API / SDK / CLI, cited facts with source and freshness, permission checks, recorded runs"
+      }
+    ],
+    "thesis": "One understanding. Two ways in.",
+    "never": [
+      "Navis AI",
+      "Navis is the model",
+      "autonomous",
+      "a learning / outcome loop that is already built"
+    ]
+  },
+  "voice_direction": "Abhishek Meena's own voice (or an ElevenLabs clone of it made with the founder's permission). Calm, deep, precise, technical, confident, understated, founder-led — natural to Abhishek's own accent. Not a commercial announcer, trailer voice, AI voice, overly American, overly dramatic, or fast social-media narration.",
+  "chunks": [
+    {
+      "id": "P1",
+      "act": "Problem",
+      "final": "voiceover/final/v6/P1.wav",
+      "source": "voiceover/source/v6/P1.mp3",
+      "text": "Your people and agents see different truths. [pause] The truth is scattered across the systems where work happens. People rebuild it by hand. Agents start without it.",
+      "lines": [
+        {
+          "text": "Your people and agents see different truths.",
+          "pause_after": true
+        },
+        {
+          "text": "The truth is scattered across the systems where work happens.",
+          "pause_after": false
+        },
+        {
+          "text": "People rebuild it by hand.",
+          "pause_after": false
+        },
+        {
+          "text": "Agents start without it.",
+          "pause_after": false
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "act": "Navis + data flow",
+      "final": "voiceover/final/v6/P2.wav",
+      "source": "voiceover/source/v6/P2.mp3",
+      "text": "Navis turns those signals into one shared understanding. [pause] Every email, meeting, document and message becomes a signal — remembered, connected, and turned into what should happen next.",
+      "lines": [
+        {
+          "text": "Navis turns those signals into one shared understanding.",
+          "pause_after": true
+        },
+        {
+          "text": "Every email, meeting, document and message becomes a signal —",
+          "pause_after": false
+        },
+        {
+          "text": "remembered, connected, and turned into what should happen next.",
+          "pause_after": false
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "act": "Navis App",
+      "final": "voiceover/final/v6/P3.wav",
+      "source": "voiceover/source/v6/P3.mp3",
+      "text": "Inside a company, the Navis App is for people. It shows what changed — and why it matters. Every fact has its source, its time, and how fresh it is. When something needs a decision, Navis prepares the next step. [pause] A person decides. [pause] Then the company acts.",
+      "lines": [
+        {
+          "text": "Inside a company, the Navis App is for people.",
+          "pause_after": false
+        },
+        {
+          "text": "It shows what changed —",
+          "pause_after": false
+        },
+        {
+          "text": "and why it matters.",
+          "pause_after": false
+        },
+        {
+          "text": "Every fact has its source, its time, and how fresh it is.",
+          "pause_after": false
+        },
+        {
+          "text": "When something needs a decision, Navis prepares the next step.",
+          "pause_after": true
+        },
+        {
+          "text": "A person decides.",
+          "pause_after": true
+        },
+        {
+          "text": "Then the company acts.",
+          "pause_after": false
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "act": "Navis Developer",
+      "final": "voiceover/final/v6/P4.wav",
+      "source": "voiceover/source/v6/P4.mp3",
+      "text": "The same company's agents use Navis Developer. Invite the team. Connect once — through MCP, API, SDK or CLI. The agent asks — and gets the company's context, with sources and freshness. Navis isn't the model. [pause] It supplies the company's truth. Every request is checked against its permissions. The agent does the work, and the run is on record.",
+      "lines": [
+        {
+          "text": "The same company's agents use Navis Developer.",
+          "pause_after": false
+        },
+        {
+          "text": "Invite the team.",
+          "pause_after": false
+        },
+        {
+          "text": "Connect once — through MCP, API, SDK or CLI.",
+          "pause_after": false
+        },
+        {
+          "text": "The agent asks —",
+          "pause_after": false
+        },
+        {
+          "text": "and gets the company's context, with sources and freshness.",
+          "pause_after": false
+        },
+        {
+          "text": "Navis isn't the model.",
+          "pause_after": true
+        },
+        {
+          "text": "It supplies the company's truth.",
+          "pause_after": false
+        },
+        {
+          "text": "Every request is checked against its permissions.",
+          "pause_after": false
+        },
+        {
+          "text": "The agent does the work,",
+          "pause_after": false
+        },
+        {
+          "text": "and the run is on record.",
+          "pause_after": false
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "act": "Solo, team, one company",
+      "final": "voiceover/final/v6/P5.wav",
+      "source": "voiceover/source/v6/P5.mp3",
+      "text": "A solo builder gets a private workspace. A team can work together. And the work state carries into the next session. [pause] One company. The person and the agent acted on the same event.",
+      "lines": [
+        {
+          "text": "A solo builder gets a private workspace.",
+          "pause_after": false
+        },
+        {
+          "text": "A team can work together.",
+          "pause_after": false
+        },
+        {
+          "text": "And the work state carries into the next session.",
+          "pause_after": true
+        },
+        {
+          "text": "One company.",
+          "pause_after": false
+        },
+        {
+          "text": "The person and the agent acted on the same event.",
+          "pause_after": false
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "act": "One understanding",
+      "final": "voiceover/final/v6/P6.wav",
+      "source": "voiceover/source/v6/P6.mp3",
+      "text": "Same facts. Same sources. Same freshness. One understanding. Two ways in.",
+      "lines": [
+        {
+          "text": "Same facts.",
+          "pause_after": false
+        },
+        {
+          "text": "Same sources.",
+          "pause_after": false
+        },
+        {
+          "text": "Same freshness.",
+          "pause_after": false
+        },
+        {
+          "text": "One understanding.",
+          "pause_after": false
+        },
+        {
+          "text": "Two ways in.",
+          "pause_after": false
+        }
+      ]
+    },
+    {
+      "id": "P7",
+      "act": "What stays",
+      "final": "voiceover/final/v6/P7.wav",
+      "source": "voiceover/source/v6/P7.mp3",
+      "text": "Models change. Agents change. Tools change. [pause] What your company knows shouldn't have to start over. Company-owned. Model-neutral. Shared by people and agents.",
+      "lines": [
+        {
+          "text": "Models change.",
+          "pause_after": false
+        },
+        {
+          "text": "Agents change.",
+          "pause_after": false
+        },
+        {
+          "text": "Tools change.",
+          "pause_after": true
+        },
+        {
+          "text": "What your company knows shouldn't have to start over.",
+          "pause_after": false
+        },
+        {
+          "text": "Company-owned.",
+          "pause_after": false
+        },
+        {
+          "text": "Model-neutral.",
+          "pause_after": false
+        },
+        {
+          "text": "Shared by people and agents.",
+          "pause_after": false
+        }
+      ]
+    },
+    {
+      "id": "P8",
+      "act": "Name",
+      "final": "voiceover/final/v6/P8.wav",
+      "source": "voiceover/source/v6/P8.mp3",
+      "text": "NavisLabs. [pause] The shared understanding for your organization.",
+      "lines": [
+        {
+          "text": "NavisLabs.",
+          "pause_after": true
+        },
+        {
+          "text": "The shared understanding for your organization.",
+          "pause_after": false
+        }
+      ]
+    }
+  ],
+  "onscreen_copy": {
+    "company": "NavisLabs",
+    "tagline": "The shared understanding for your organization.",
+    "cta": "navislabs.in",
+    "url": "navislabs.in",
+    "product.application": "NAVIS APP",
+    "product.application.audience": "for people",
+    "product.application.who": "People · teams",
+    "product.developer": "NAVIS DEVELOPER",
+    "product.developer.audience": "for developers + AI agents",
+    "product.developer.who": "Developers · AI agents",
+    "product.developer.status": "Private preview",
+    "twoWays": "One understanding. Two ways in.",
+    "people": "People",
+    "agents": "AI agents",
+    "understanding": "One current understanding",
+    "sharedUnderstanding": "One shared understanding",
+    "trace": "Source · Timeline · Freshness",
+    "decides": "Navis prepares · A person decides · The company acts",
+    "decidesShort": "Navis prepares · A person decides",
+    "comingSoon": "(unused)",
+    "runRecorded": "The run is on record",
+    "sameFact": "Same fact",
+    "sameSource": "Same source",
+    "sameFreshness": "Same freshness",
+    "thesis1": "One company.",
+    "thesis2": "One understanding.",
+    "thesis3": "Two ways in.",
+    "modelsChange": "Models change.",
+    "agentsChange": "Agents change.",
+    "toolsChange": "Tools change.",
+    "pillar1": "Company-owned",
+    "pillar2": "Model-neutral",
+    "pillar3": "Shared by people + agents",
+    "noModel": "No model is called · Navis grounds · your agent reasons",
+    "checked": "Checked server-side on every request",
+    "visionNote": "(unused)",
+    "liveLabel": "Connected systems",
+    "expandingLabel": "(unused)",
+    "signals": "Signals",
+    "understandingStage": "Understanding",
+    "intelligence": "Intelligence",
+    "peopleAgents": "People + AI agents · one shared understanding",
+    "layer": "Shared organizational context",
+    "solo": "Solo developer",
+    "soloWorkspace": "Personal workspace",
+    "disclosure": "Interfaces recreated from the Navis source and shown in the launch configuration. Acme Corp and all customer data are fictional demo data; some waits shortened. Navis Developer is in private preview.",
+    "question": "(unused)",
+    "notChatbot": "(unused)",
+    "notAutomation": "(unused)",
+    "yours": "(unused)",
+    "restored": "(unused)",
+    "staysYours": "What your company knows shouldn't have to start over.",
+    "whatItKnows": "What it knows",
+    "oneCompany": "One company",
+    "acrossSystems": "The same event, across the company's systems",
+    "team": "Team"
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "about": "Every product surface the V6 film shows, its source and claim status.",
+  "claim_status_legend": {
+    "PROVEN": "verified in the product source / live site",
+    "PRIVATE_PREVIEW": "implemented, not publicly released (packages unpublished, nothing hosted publicly)",
+    "DESIGNED": "implemented or designed, not yet proven in production use",
+    "ROADMAP": "not built or not connected yet; shown only with an explicit 'Roadmap · coming soon' label, never as connected",
+    "FILM_SIMULATION": "a film graphic or demo data, not a product claim",
+    "FUTURE_STATE": "intended complete product shown in the film; not live today; labelled on screen and in the end-card disclosure; never evidence in a demonstrated workflow",
+    "LAUNCH_STATE": "shown as available in the founder-supplied launch state (film-only configuration); not yet in the local product checkout and/or shown as 'Coming soon' on the public website at the time of this build"
+  },
+  "surfaces": [
+    {
+      "id": "brand.mark",
+      "product": "NavisLabs",
+      "label": "NavisLabs mark without its tile (dark + light-ground variants) and the wordmark",
+      "source": "navis-labs-website/public/navis-logo.png (luminance-keyed); components/site/wordmark.tsx",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "website.hero",
+      "product": "NavisLabs",
+      "label": "The shared understanding for your organization.",
+      "source": "navislabs.in (live, fetched 2026-10-05)",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.today",
+      "product": "Navis App",
+      "label": "Today · Navis — Good morning, <name>.",
+      "source": "Navis-AI PageMasthead.tsx, DailyBriefHero.tsx",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.countstrip",
+      "product": "Navis App",
+      "label": "Today at a glance: Decisions · Risks · Actions today · Meetings · Waiting on you · Updates",
+      "source": "Navis-AI components/navis/dashboard/CountStrip.tsx",
+      "claim_status": "PROVEN",
+      "data": "demo counts (3/1/2/4/1); Updates is 0 \"No changes\" because the product always reports 0 — Navis has no temporal diff yet"
+    },
+    {
+      "id": "app.whatChanged",
+      "product": "Navis App",
+      "label": "What changed · Verified shifts only (learning narratives only)",
+      "source": "Navis-AI app/dashboard/page.tsx SECTION_META.changed",
+      "claim_status": "PROVEN",
+      "data": "demo"
+    },
+    {
+      "id": "app.priority",
+      "product": "Navis App",
+      "label": "NarrativeCard: kind label, Next, Review & reply / Mark decided / Ask Navis / Snooze / Why this matters",
+      "source": "NarrativeCard.tsx, lib/briefingComposer.ts",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.whyThis",
+      "product": "Navis App",
+      "label": "Why Navis surfaced this: What's happening / Who this is about / Why it matters / What supports this / What you can do",
+      "source": "WhyThisDrawer.tsx",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.waiting",
+      "product": "Navis App",
+      "label": "Waiting on you — 1 thing is waiting on you · 1 person is waiting on your reply",
+      "source": "ObligationsPanel.tsx, lib/obligations.ts, lib/signalTypes.ts",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.draft",
+      "product": "Navis App",
+      "label": "Preparing the draft… · Why this · To / Subject / Message · Approve & send · Saved / Save changes",
+      "source": "DraftReviewPanel.tsx",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.send",
+      "product": "Navis App",
+      "label": "Approved — sending · Sending… · Reply sent · Gmail accepted the message.",
+      "source": "DraftReviewPanel.tsx SendStatus",
+      "claim_status": "DESIGNED",
+      "note": "Execution path and states are implemented; per the research only one real action (a calendar cancellation) has closed the loop so far."
+    },
+    {
+      "id": "dev.console.nav",
+      "product": "Navis Developer",
+      "label": "Overview · Agents · Context · Policies · API · SDKs · API keys · MCP · Runs · Outcomes · Economics · Learning · Memory · State",
+      "source": "Devtool apps/dashboard/src/lib/navigation.ts",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.connect.mcp",
+      "product": "Navis Developer",
+      "label": "MCP — claude mcp add navis --env NAVIS_API_KEY=navis_<prefix>_<secret> -- node <repo>/services/mcp-server/dist/stdio.js",
+      "source": "features/connect (ConnectionDetails), docs/mcp/CLIENTS.md",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.connect.api",
+      "product": "Navis Developer",
+      "label": "Developer API — POST /developer/context (navis_get_relevant_context, view_memory)",
+      "source": "features/connect/data/surfaces.ts MCP_TOOLS",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.connect.sdk",
+      "product": "Navis Developer",
+      "label": "SDKs — TypeScript @navis/sdk (installToday: npm install ./navis-sdk-0.1.0.tgz), Python navis-sdk (wheel); unpublished",
+      "source": "surfaces.ts SDK_PACKAGES",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.connect.cli",
+      "product": "Navis Developer",
+      "label": "CLI — navis status · navis hook <event> · navis workstate checkpoint · navis workstate show · navis config show",
+      "source": "surfaces.ts CLI_COMMANDS",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.clients",
+      "product": "Navis Developer",
+      "label": "Claude Code (LIVE VERIFIED, real Claude.app icon) · Cursor / Codex / VS Code (CONFIG VERIFIED, text only) · Any MCP client",
+      "source": "docs/mcp/CLIENTS.md",
+      "claim_status": "PROVEN",
+      "note": "Only Claude Code is proven live; the others are configuration-verified and are labelled so."
+    },
+    {
+      "id": "dev.context",
+      "product": "Navis Developer",
+      "label": "items (kind, text, source, occurred_at) · freshness (as_of, newest_fact_at) · sources.detail (auth_state, last_success_at)",
+      "source": "services/mcp-server/src/tools/register.ts; packages/types GroundedFact",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.permissions",
+      "product": "Navis Developer",
+      "label": "Credential permissions checked server-side on every request; exact view_memory refusal",
+      "source": "authorization/authorize.ts; features/policies PoliciesPanel.tsx 'Current access model'",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.policyEngine",
+      "product": "Navis Developer",
+      "label": "Central policy enforcement — 'Not enabled yet'",
+      "source": "PoliciesPanel.tsx",
+      "claim_status": "ROADMAP",
+      "note": "Not shown as live."
+    },
+    {
+      "id": "dev.runs",
+      "product": "Navis Developer",
+      "label": "Runs: Task · Agent · Status · Started · Duration · CLI session",
+      "source": "features/runs/RunsPanel.tsx",
+      "claim_status": "DESIGNED",
+      "data": "demo rows"
+    },
+    {
+      "id": "dev.runDetail",
+      "product": "Navis Developer",
+      "label": "Run — What happened · Timeline (# · Type · What · Status · Model · Tokens · Cost · Latency; types Context/Tool/Model/Outcome) · Outcome ('Not judged')",
+      "source": "features/runs/RunDetailPanel.tsx; packages/types/src/run.ts",
+      "claim_status": "DESIGNED",
+      "note": "Economics columns shown as '—' (not recorded); no numbers invented."
+    },
+    {
+      "id": "dev.modelFree",
+      "product": "Navis Developer",
+      "label": "No model is called · Navis grounds · your agent reasons",
+      "source": "research codebase audit; register.ts ('Navis calls no generative model')",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.priorities",
+      "product": "Navis App",
+      "label": "Your attention: Revenue at risk · Delivery blocked · Commitment due",
+      "source": "NarrativeCard.tsx (eyebrow = backend kind_label)",
+      "claim_status": "PROVEN",
+      "data": "demo; every chip cites a live system (Gmail, Calendar, Slack, Docs, Meet)"
+    },
+    {
+      "id": "dev.mcpCli",
+      "product": "Navis Developer",
+      "label": "claude mcp add navis … / claude mcp list → ✓ Connected",
+      "source": "Console MCP command (surfaces.ts); Claude Code CLI",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.apiAuth",
+      "product": "Navis Developer",
+      "label": "X-API-Key: navis_… — the organization comes from the key, never a parameter",
+      "source": "Devtool packages/api-client/src/credentials.ts",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.ownScope",
+      "product": "Navis Developer",
+      "label": "A key only reads its own organization ('OWN SCOPE')",
+      "source": "credentials.ts; mcp-server authorization (org from the principal)",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "app.evidenceOpened",
+      "product": "Navis App",
+      "label": "Evidence opened out: six live systems → one customer state",
+      "source": "film graphic over WhyThisDrawer evidence (live systems only)",
+      "claim_status": "FILM_SIMULATION"
+    },
+    {
+      "id": "dev.members",
+      "product": "Navis Developer",
+      "label": "Console › Members: 'Add a member' (Email · Application role · Developer access) → 'Invited'",
+      "source": "Devtool features/settings/InviteMemberForm.tsx, MembersPanel.tsx",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.personalWorkspace",
+      "product": "Navis Developer",
+      "label": "Sign-up 'For my organization' / 'For myself' → Personal workspace (Owner; 'A personal workspace holds one member') — Navis Developer does not require an organization",
+      "source": "Devtool features/auth/SignUpForm.tsx; lib/format.ts PERSONAL_WORKSPACE_NOTE; OrganizationPanel.tsx",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.workstate",
+      "product": "Navis Developer",
+      "label": "navis workstate checkpoint → next session: NAVIS WORK CONTINUITY restored (SessionStart hook)",
+      "source": "Devtool packages/cli workstate.ts, workstate/restore.ts; CLI not yet on npm",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "flow.pipeline",
+      "product": "NavisLabs",
+      "label": "Signals → Memory → Context → Intelligence → Decision → Execution → Outcome (Building) → Learning (Next)",
+      "source": "deck p.5 (Learn: BUILDING); research (outcome ledger designed, learning roadmap)",
+      "claim_status": "FILM_SIMULATION"
+    },
+    {
+      "id": "opening.twoTruths",
+      "product": "NavisLabs",
+      "label": "PEOPLE | AI AGENTS: the person's inbox says the renewal moved to Nov 28; the agent's workflow file still says Nov 14 (the same file the agent later updates in S15)",
+      "source": "film graphic; demo data (navislabs_demo_data.json)",
+      "claim_status": "FILM_SIMULATION"
+    },
+    {
+      "id": "hero.shared",
+      "product": "NavisLabs",
+      "label": "One company · NavisLabs: the Navis App and Navis Developer around one shared organizational context; same fact / source / freshness in both",
+      "source": "film graphic; demo data; deck p.6",
+      "claim_status": "FILM_SIMULATION"
+    },
+    {
+      "id": "moat.ownership",
+      "product": "NavisLabs",
+      "label": "Agent clients change; the company's record (the same facts, with sources and freshness) stays the company's: 'What it knows stays yours' · Company-owned · Model-neutral · Shared by people + agents",
+      "source": "positioning (founder brief); CLIENTS.md for the client list; register.ts ('Navis calls no generative model'); no superiority claim",
+      "claim_status": "FILM_SIMULATION"
+    },
+    {
+      "id": "integrations.launch_state",
+      "product": "NavisLabs",
+      "label": "Connected systems (film launch state): Gmail · Google Calendar · Google Meet · Google Drive · Google Docs · Slack · Salesforce · Notion · Microsoft 365 · HubSpot · Jira · GitHub · Zoom",
+      "source": "src/data/navislabs_v7_launch_state.json FILM_LAUNCH_INTEGRATIONS (founder-supplied launch state). Local checkout: the first six live; website: the last seven 'Coming soon'.",
+      "claim_status": "LAUNCH_STATE"
+    },
+    {
+      "id": "app.crm",
+      "product": "Navis App",
+      "label": "Salesforce opportunity in the evidence: Kaveri renewal still closes Nov 14 in the CRM (FILM DEMO RECORD; no amounts)",
+      "source": "launch state crm_records",
+      "claim_status": "LAUNCH_STATE"
+    },
+    {
+      "id": "app.engineering",
+      "product": "Navis App",
+      "label": "Jira KVR-142 and the GitHub workflow file as engineering context",
+      "source": "launch state engineering_context",
+      "claim_status": "LAUNCH_STATE"
+    },
+    {
+      "id": "app.knowledge",
+      "product": "Navis App",
+      "label": "Notion renewal playbook as company knowledge (S01, S04)",
+      "source": "launch state knowledge",
+      "claim_status": "LAUNCH_STATE"
+    },
+    {
+      "id": "app.acrossSystems",
+      "product": "Navis App",
+      "label": "After the reply: the same event across Gmail, Salesforce, GitHub, Jira — who owns each next step (no system is shown updating itself)",
+      "source": "film graphic; launch state",
+      "claim_status": "FILM_SIMULATION"
+    },
+    {
+      "id": "dev.team",
+      "product": "Navis Developer",
+      "label": "Company workspace Members with roles (owner · developer) after the solo sign-up",
+      "source": "Devtool MembersPanel.tsx; DEVELOPER_ROLES",
+      "claim_status": "PRIVATE_PREVIEW"
+    }
+  ]
+}

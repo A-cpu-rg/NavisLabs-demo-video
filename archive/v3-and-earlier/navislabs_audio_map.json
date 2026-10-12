@@ -1,0 +1,333 @@
+{
+  "about": "Audio slots for the NavisLabs launch film (v2 timeline, src/config/timeline.ts). Each slot resolves FINAL first, then TEMP, then silence. Drop the founder's takes into public/voiceover/final/Lxx.wav (and a mixed score into public/music/final/score.wav) and they replace the temp files with no code change. start_s is when the line begins; end_s is the expected end of a natural read; ceiling_s is the latest the line may still be playing. Direction for the final read: calm, founder-led, confident, technical; not salesy, not hype. Temp files come from scripts/make-temp-audio.py: a neutral system voice, synthesized music and synthesized SFX.",
+  "fps": 30,
+  "resolve_order": [
+    "final",
+    "temp"
+  ],
+  "voiceover": [
+    {
+      "id": "L01",
+      "scene": "S01",
+      "start_s": 0.4,
+      "end_s": 3.3,
+      "ceiling_s": 3.9,
+      "text": "Every company already has an operating system.",
+      "final": "voiceover/final/L01.wav",
+      "temp": "voiceover/temp/L01.wav"
+    },
+    {
+      "id": "L02",
+      "scene": "S02",
+      "start_s": 4.2,
+      "end_s": 7.5,
+      "ceiling_s": 7.95,
+      "text": "It's just scattered across the systems where work happens.",
+      "final": "voiceover/final/L02.wav",
+      "temp": "voiceover/temp/L02.wav"
+    },
+    {
+      "id": "L03",
+      "scene": "S03",
+      "start_s": 8.2,
+      "end_s": 11.9,
+      "ceiling_s": 12.4,
+      "text": "Email. Meetings. Documents. Projects. Decisions.",
+      "final": "voiceover/final/L03.wav",
+      "temp": "voiceover/temp/L03.wav"
+    },
+    {
+      "id": "L04",
+      "scene": "S04",
+      "start_s": 12.6,
+      "end_s": 15.8,
+      "ceiling_s": 16.3,
+      "text": "People rebuild it by hand. Agents start without it.",
+      "final": "voiceover/final/L04.wav",
+      "temp": "voiceover/temp/L04.wav"
+    },
+    {
+      "id": "L05",
+      "scene": "S05",
+      "start_s": 17.0,
+      "end_s": 22.0,
+      "ceiling_s": 22.4,
+      "text": "NavisLabs turns it into one continuously maintained understanding of how your company operates.",
+      "final": "voiceover/final/L05.wav",
+      "temp": "voiceover/temp/L05.wav"
+    },
+    {
+      "id": "L06",
+      "scene": "S06",
+      "start_s": 22.6,
+      "end_s": 28.0,
+      "ceiling_s": 28.9,
+      "text": "It connects to the systems your company already works in — and keeps that understanding current.",
+      "final": "voiceover/final/L06.wav",
+      "temp": "voiceover/temp/L06.wav"
+    },
+    {
+      "id": "L07",
+      "scene": "S07",
+      "start_s": 29.3,
+      "end_s": 34.6,
+      "ceiling_s": 35.4,
+      "text": "For people, Navis Application shows what changed, what matters, and what needs a decision.",
+      "final": "voiceover/final/L07.wav",
+      "temp": "voiceover/temp/L07.wav"
+    },
+    {
+      "id": "L08",
+      "scene": "S08",
+      "start_s": 35.9,
+      "end_s": 39.6,
+      "ceiling_s": 43.3,
+      "text": "Every conclusion has a trail back to the signals behind it.",
+      "final": "voiceover/final/L08.wav",
+      "temp": "voiceover/temp/L08.wav"
+    },
+    {
+      "id": "L09",
+      "scene": "S09",
+      "start_s": 43.8,
+      "end_s": 47.9,
+      "ceiling_s": 50.2,
+      "text": "When action is needed, the draft is ready — and a person decides.",
+      "final": "voiceover/final/L09.wav",
+      "temp": "voiceover/temp/L09.wav"
+    },
+    {
+      "id": "L10",
+      "scene": "S10",
+      "start_s": 51.0,
+      "end_s": 55.6,
+      "ceiling_s": 56.0,
+      "text": "Nothing is sent until you approve — and it's marked sent only when Gmail confirms.",
+      "final": "voiceover/final/L10.wav",
+      "temp": "voiceover/temp/L10.wav"
+    },
+    {
+      "id": "L11",
+      "scene": "S11",
+      "start_s": 56.2,
+      "end_s": 58.8,
+      "ceiling_s": 59.3,
+      "text": "But people aren't the only ones doing the work.",
+      "final": "voiceover/final/L11.wav",
+      "temp": "voiceover/temp/L11.wav"
+    },
+    {
+      "id": "L12",
+      "scene": "S12",
+      "start_s": 59.5,
+      "end_s": 61.7,
+      "ceiling_s": 63.4,
+      "text": "AI agents need company context too.",
+      "final": "voiceover/final/L12.wav",
+      "temp": "voiceover/temp/L12.wav"
+    },
+    {
+      "id": "L13",
+      "scene": "S13",
+      "start_s": 63.7,
+      "end_s": 69.5,
+      "ceiling_s": 70.0,
+      "text": "Navis Developer gives an agent the company context it needs — with sources, and how fresh they are.",
+      "final": "voiceover/final/L13.wav",
+      "temp": "voiceover/temp/L13.wav"
+    },
+    {
+      "id": "L14",
+      "scene": "S14",
+      "start_s": 70.3,
+      "end_s": 75.1,
+      "ceiling_s": 75.9,
+      "text": "Through the interfaces agents already use — and only within the permissions they're given.",
+      "final": "voiceover/final/L14.wav",
+      "temp": "voiceover/temp/L14.wav"
+    },
+    {
+      "id": "L15",
+      "scene": "S15",
+      "start_s": 76.4,
+      "end_s": 81.2,
+      "ceiling_s": 83.8,
+      "text": "It restores the work state between sessions, so an agent doesn't start from zero.",
+      "final": "voiceover/final/L15.wav",
+      "temp": "voiceover/temp/L15.wav"
+    },
+    {
+      "id": "L16",
+      "scene": "S16",
+      "start_s": 84.4,
+      "end_s": 88.8,
+      "ceiling_s": 90.8,
+      "text": "Two products. One company. One continuously maintained understanding.",
+      "final": "voiceover/final/L16.wav",
+      "temp": "voiceover/temp/L16.wav"
+    },
+    {
+      "id": "L17",
+      "scene": "S17",
+      "start_s": 91.4,
+      "end_s": 94.2,
+      "ceiling_s": 94.7,
+      "text": "Models will change. Agents will change.",
+      "final": "voiceover/final/L17.wav",
+      "temp": "voiceover/temp/L17.wav"
+    },
+    {
+      "id": "L18",
+      "scene": "S17",
+      "start_s": 94.9,
+      "end_s": 97.5,
+      "ceiling_s": 98.4,
+      "text": "How your company works — that's what stays.",
+      "final": "voiceover/final/L18.wav",
+      "temp": "voiceover/temp/L18.wav"
+    }
+  ],
+  "music": {
+    "final": "music/final/score.wav",
+    "temp": "music/temp/score.wav",
+    "sections": [
+      {
+        "id": "M1",
+        "from_s": 0,
+        "to_s": 16.5,
+        "brief": "ambient tension"
+      },
+      {
+        "id": "M2",
+        "from_s": 16.9,
+        "to_s": 22,
+        "brief": "brand lift"
+      },
+      {
+        "id": "M3",
+        "from_s": 22,
+        "to_s": 29,
+        "brief": "connection: a pulse gathers"
+      },
+      {
+        "id": "M4",
+        "from_s": 29,
+        "to_s": 56,
+        "brief": "warmer, human (Navis Application)"
+      },
+      {
+        "id": "M5",
+        "from_s": 56,
+        "to_s": 84,
+        "brief": "technical pulse (Navis Developer)"
+      },
+      {
+        "id": "M6",
+        "from_s": 84,
+        "to_s": 91,
+        "brief": "resolution: both products"
+      },
+      {
+        "id": "M7",
+        "from_s": 91,
+        "to_s": 100,
+        "brief": "slow, sparse: what stays"
+      }
+    ],
+    "gain_db": -6,
+    "duck_under_vo_db": -8,
+    "duck_attack_s": 0.15,
+    "duck_release_s": 0.4,
+    "dips": [
+      {
+        "from_s": 16.3,
+        "to_s": 16.9,
+        "db": -96,
+        "why": "breath before NavisLabs"
+      },
+      {
+        "from_s": 50.3,
+        "to_s": 50.7,
+        "db": -96,
+        "why": "held breath on Approve & send"
+      },
+      {
+        "from_s": 73.75,
+        "to_s": 75.9,
+        "db": -18,
+        "why": "the refusal"
+      },
+      {
+        "from_s": 90.8,
+        "to_s": 91.3,
+        "db": -30,
+        "why": "before the closing thought"
+      },
+      {
+        "from_s": 98.6,
+        "to_s": 100.0,
+        "db": -96,
+        "why": "silent end"
+      }
+    ]
+  },
+  "sfx": {
+    "library": {
+      "key": {
+        "final": "sfx/final/key.wav",
+        "temp": "sfx/temp/key.wav",
+        "gain_db": -24
+      },
+      "key2": {
+        "final": "sfx/final/key2.wav",
+        "temp": "sfx/temp/key2.wav",
+        "gain_db": -24
+      },
+      "key3": {
+        "final": "sfx/final/key3.wav",
+        "temp": "sfx/temp/key3.wav",
+        "gain_db": -24
+      },
+      "enter": {
+        "final": "sfx/final/enter.wav",
+        "temp": "sfx/temp/enter.wav",
+        "gain_db": -18
+      },
+      "click": {
+        "final": "sfx/final/click.wav",
+        "temp": "sfx/temp/click.wav",
+        "gain_db": -16
+      },
+      "select": {
+        "final": "sfx/final/select.wav",
+        "temp": "sfx/temp/select.wav",
+        "gain_db": -24
+      },
+      "run": {
+        "final": "sfx/final/run.wav",
+        "temp": "sfx/temp/run.wav",
+        "gain_db": -26
+      },
+      "confirm": {
+        "final": "sfx/final/confirm.wav",
+        "temp": "sfx/temp/confirm.wav",
+        "gain_db": -20
+      },
+      "sent": {
+        "final": "sfx/final/sent.wav",
+        "temp": "sfx/temp/sent.wav",
+        "gain_db": -18
+      },
+      "deny": {
+        "final": "sfx/final/deny.wav",
+        "temp": "sfx/temp/deny.wav",
+        "gain_db": -20
+      },
+      "air": {
+        "final": "sfx/final/air.wav",
+        "temp": "sfx/temp/air.wav",
+        "gain_db": -30
+      }
+    }
+  }
+}

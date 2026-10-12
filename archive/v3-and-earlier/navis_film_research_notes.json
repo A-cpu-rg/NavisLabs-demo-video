@@ -1,0 +1,29 @@
+{
+  "about": "Web research done before the final rebuild (2026-10-05). Used only to improve filmmaking craft; it never overrides verified Navis product capabilities. Nothing from these sources (words, branding, animation) is copied into the film.",
+  "honest_limits": [
+    "Web search was available, but it returned mostly generic launch-video advice and company profiles. No retrievable source analysed the actual cuts, timing or typography of the Kanu, Cursor, Claude Code, Lovable, Manus, ElevenLabs, Firecrawl or Perplexity launch films.",
+    "So the notes below are principles plus what could be confirmed about the companies, not a shot-by-shot study of their films."
+  ],
+  "sources": [
+    { "url": "https://www.arcade.software/post/product-storytelling", "used_for": "Product storytelling as a narrative a buyer can follow and remember, rather than a feature list." },
+    { "url": "https://curleystreet.com/behind-every-great-ai-launch-is-a-great-video/", "used_for": "Simplify the technical idea, humanize it, build trust, create a memorable moment, establish the company's voice. No named examples in the article." },
+    { "url": "https://vizard.ai/blog/how-to-make-a-launch-video-people-actually-want-to-watch", "used_for": "Earn attention in the first seconds; name the specific job, not the category." },
+    { "url": "https://tessl.io/registry/skills/github/heygen-com/hyperframes/oversized-cursor", "used_for": "The cursor as a visible protagonist that walks the eye to the next point of interest and causes the next thing to happen." },
+    { "url": "https://www.flowjam.com/blog/yc-startup-launch-video-2025-watch-steal-ship-faster", "used_for": "YC-style structure: hook, problem, demo, vision; founder narration; clarity over production value." },
+    { "url": "https://speedrun.a16z.com/companies/kanu-ai", "used_for": "Kanu AI positioning only (an AI cloud engineer that ships inside AWS environments). Its launch film itself was not found." },
+    { "url": "https://echai.ventures/videos/anthropic-anthropic-code-with-claude-2025", "used_for": "Confirms Claude Code launched as a standalone developer product in 2025 and runs in the terminal and in VS Code. Supports showing Claude Code inside VS Code's integrated terminal." }
+  ],
+  "principles_applied": [
+    { "principle": "Open on the idea, then prove it with something concrete within seconds.", "in_the_film": "Line 1 states the thesis; lines 2–6 each land on a concrete signal card from one real-looking company story (decision, customer, commitment, meeting, context)." },
+    { "principle": "Name the job, not the category.", "in_the_film": "'What does this company already know?' is the question every task starts with; the products answer it for people and for agents." },
+    { "principle": "Real input, real output: show the product working before explaining it.", "in_the_film": "Navis Application: Today → why → trace → draft → human edit → approve → Gmail confirms. Navis Developer: task → context request → facts with source and freshness → work state → permission → the agent continues." },
+    { "principle": "The cursor causes things.", "in_the_film": "Every click moves the story: 'Why this matters', 'Review & reply', 'Review draft', the sentence selection, 'Approve & send'. No decorative cursor travel." },
+    { "principle": "Founder voice, calm, with pauses where the picture must do the work.", "in_the_film": "The voice track leaves silent windows during the trace, the edit and send, the context results and the refusal." },
+    { "principle": "Product is the hero; motion clarifies.", "in_the_film": "Macro crops and hard cuts within real UI instead of decorative motion graphics; one cobalt line (the logo colour) is the only accent." },
+    { "principle": "End on the name, cleanly.", "in_the_film": "The final card is the NavisLabs lockup, the two products, ONE SHARED UNDERSTANDING and navislabs.in." }
+  ],
+  "deliberately_not_adopted": [
+    "Metrics in the first 10 seconds (common YC advice): NavisLabs has no approved public metrics, so none are shown.",
+    "Traction, logo walls and investor asks: not approved; not in the film."
+  ]
+}

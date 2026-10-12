@@ -1,0 +1,373 @@
+{
+  "about": "Every interactive control in the V6 film: before → (settle) → click → feedback → after, in absolute seconds on the voice clock.",
+  "cursor_rules": {
+    "settle_s_min": 0.1,
+    "press": "pointer scale 1 → 0.92 → 1 over 0.12 s",
+    "ring": false,
+    "speed": "arc easeInOut, faster where the voice is dense",
+    "hidden": "while evidence is read, in terminal scenes; fades, never pops"
+  },
+  "interactions": [
+    {
+      "id": "why_this_matters",
+      "product": "Navis App",
+      "control": "Why this matters (link)",
+      "cursor": true,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 33.9,
+          "what": "cursor leaves the card"
+        },
+        {
+          "state": "settle",
+          "at_s": 34.438,
+          "what": "settles on the link; hover underline"
+        },
+        {
+          "state": "click",
+          "at_s": 34.558,
+          "what": "press on 'why'"
+        },
+        {
+          "state": "feedback",
+          "at_s": 34.658,
+          "what": "drawer opens"
+        },
+        {
+          "state": "after",
+          "at_s": 36.43,
+          "what": "sources arrive with time and freshness"
+        }
+      ]
+    },
+    {
+      "id": "review_and_reply",
+      "product": "Navis App",
+      "control": "Review & reply (button)",
+      "cursor": true,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 41.58,
+          "what": "back on the card; cursor travels"
+        },
+        {
+          "state": "settle",
+          "at_s": 41.727,
+          "what": "hover darkens button"
+        },
+        {
+          "state": "click",
+          "at_s": 41.847,
+          "what": "press"
+        },
+        {
+          "state": "feedback",
+          "at_s": 41.947,
+          "what": "DecisionDrawer slides in"
+        },
+        {
+          "state": "after",
+          "at_s": 42.327,
+          "what": "drawer open with 'Review draft'"
+        }
+      ]
+    },
+    {
+      "id": "review_draft",
+      "product": "Navis App",
+      "control": "Review draft (button)",
+      "cursor": true,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 42.047,
+          "what": "cursor moves to the button"
+        },
+        {
+          "state": "settle",
+          "at_s": 42.347,
+          "what": "hover"
+        },
+        {
+          "state": "click",
+          "at_s": 42.447,
+          "what": "press"
+        },
+        {
+          "state": "feedback",
+          "at_s": 42.497,
+          "what": "'Preparing draft…'"
+        },
+        {
+          "state": "after",
+          "at_s": 43.367,
+          "what": "the prepared draft"
+        }
+      ]
+    },
+    {
+      "id": "edit_sentence",
+      "product": "Navis App",
+      "control": "message body (selection + typing)",
+      "cursor": true,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 43.99,
+          "what": "cursor to the sentence"
+        },
+        {
+          "state": "settle",
+          "at_s": 44.35,
+          "what": "I-beam settles"
+        },
+        {
+          "state": "click",
+          "at_s": 44.49,
+          "what": "click-drag selection"
+        },
+        {
+          "state": "feedback",
+          "at_s": 44.94,
+          "what": "sentence selected"
+        },
+        {
+          "state": "after",
+          "at_s": 46.146,
+          "what": "the person's own sentence"
+        }
+      ]
+    },
+    {
+      "id": "approve_and_send",
+      "product": "Navis App",
+      "control": "Approve & send (button)",
+      "cursor": true,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 46.62,
+          "what": "travels during 'A person decides.'"
+        },
+        {
+          "state": "settle",
+          "at_s": 47.27,
+          "what": "rests on the button — the pause"
+        },
+        {
+          "state": "click",
+          "at_s": 48.85,
+          "what": "press; music holds its breath"
+        },
+        {
+          "state": "feedback",
+          "at_s": 49.05,
+          "what": "'Approved — sending'"
+        },
+        {
+          "state": "after",
+          "at_s": 51.0,
+          "what": "Gmail accepted → Reply sent"
+        }
+      ]
+    },
+    {
+      "id": "add_member",
+      "product": "Navis Developer",
+      "control": "Add member (Console › Members)",
+      "cursor": true,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 56.17,
+          "what": "Members + 'Add a member' form"
+        },
+        {
+          "state": "settle",
+          "at_s": 56.913,
+          "what": "hover"
+        },
+        {
+          "state": "click",
+          "at_s": 57.033,
+          "what": "press; 'Adding…'"
+        },
+        {
+          "state": "feedback",
+          "at_s": 57.233,
+          "what": "new row"
+        },
+        {
+          "state": "after",
+          "at_s": 57.533,
+          "what": "'Invited'"
+        }
+      ]
+    },
+    {
+      "id": "mcp_connect",
+      "product": "Navis Developer",
+      "control": "terminal: claude mcp add / list",
+      "cursor": false,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 57.583,
+          "what": "the Console's command, key as placeholder"
+        },
+        {
+          "state": "click",
+          "at_s": 57.633,
+          "what": "Enter"
+        },
+        {
+          "state": "feedback",
+          "at_s": 57.833,
+          "what": "'Added stdio MCP server navis…'"
+        },
+        {
+          "state": "after",
+          "at_s": 58.558,
+          "what": "✓ Connected"
+        }
+      ]
+    },
+    {
+      "id": "context_call",
+      "product": "Navis Developer",
+      "control": "MCP tool call navis_get_relevant_context",
+      "cursor": false,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 64.25,
+          "what": "tool call"
+        },
+        {
+          "state": "feedback",
+          "at_s": 64.75,
+          "what": "result header"
+        },
+        {
+          "state": "after",
+          "at_s": 65.45,
+          "what": "facts with source and freshness"
+        }
+      ]
+    },
+    {
+      "id": "permission_check",
+      "product": "Navis Developer",
+      "control": "request → authorization",
+      "cursor": false,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 76.32,
+          "what": "credential → organization → scope"
+        },
+        {
+          "state": "feedback",
+          "at_s": 76.97,
+          "what": "AUTHORIZED"
+        },
+        {
+          "state": "feedback2",
+          "at_s": 77.875,
+          "what": "OWN SCOPE"
+        },
+        {
+          "state": "after",
+          "at_s": 78.09,
+          "what": "DENIED → the exact refusal"
+        }
+      ]
+    },
+    {
+      "id": "open_run",
+      "product": "Navis Developer",
+      "control": "Runs row → Run page",
+      "cursor": false,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 81.24,
+          "what": "Runs list"
+        },
+        {
+          "state": "feedback",
+          "at_s": 81.39,
+          "what": "new run row"
+        },
+        {
+          "state": "click",
+          "at_s": 81.743,
+          "what": "cut into the run"
+        },
+        {
+          "state": "after",
+          "at_s": 81.993,
+          "what": "timeline; Outcome 'Not judged'"
+        }
+      ]
+    },
+    {
+      "id": "for_myself",
+      "product": "Navis Developer",
+      "control": "Sign up: 'For myself'",
+      "cursor": true,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 83.3,
+          "what": "For my organization / For myself"
+        },
+        {
+          "state": "settle",
+          "at_s": 83.97,
+          "what": "hover"
+        },
+        {
+          "state": "click",
+          "at_s": 84.09,
+          "what": "select"
+        },
+        {
+          "state": "feedback",
+          "at_s": 84.21,
+          "what": "selected"
+        },
+        {
+          "state": "after",
+          "at_s": 84.88,
+          "what": "Personal workspace · Owner"
+        }
+      ]
+    },
+    {
+      "id": "workstate_checkpoint",
+      "product": "Navis Developer",
+      "control": "terminal: navis workstate checkpoint",
+      "cursor": false,
+      "states": [
+        {
+          "state": "before",
+          "at_s": 87.76,
+          "what": "the agent runs the checkpoint"
+        },
+        {
+          "state": "feedback",
+          "at_s": 88.31,
+          "what": "'Checkpoint recorded'"
+        },
+        {
+          "state": "after",
+          "at_s": 89.325,
+          "what": "next session restores the work state"
+        }
+      ]
+    }
+  ]
+}

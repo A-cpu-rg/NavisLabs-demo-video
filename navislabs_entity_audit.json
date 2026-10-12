@@ -1,0 +1,982 @@
+{
+ "about": "Every entity the V6 review cut can put on screen, where it comes from, whether it is real or synthetic, and whether it is cleared for a public video. scenes = scenes whose source reads the entity (static analysis, scripts/film_analysis.py).",
+ "provenance_legend": {
+  "REAL_AUTHORIZED": "NavisLabs' own identity (company, founder), used at the founder's request",
+  "REAL_PUBLIC_PRODUCT": "a real public product named nominatively (an integration, an MCP client)",
+  "SYNTHETIC": "invented demo data; reserved example domains; no real person or company",
+  "REAL_PERSON / REAL_COMPANY": "restricted names: not shown without written authorization"
+ },
+ "summary": {
+  "entities": 56,
+  "real_authorized": 5,
+  "real_public_product": 18,
+  "synthetic": 31,
+  "restricted_not_shown": [
+   "Mulayam Kumar",
+   "Digantara"
+  ],
+  "confirm_before_public_release": [
+   "abhishek@navislabs.in",
+   "abhishekmeena@Abhisheks-MacBook-Pro-8"
+  ]
+ },
+ "entities": [
+  {
+   "entity": "organization:org_navislabs",
+   "value": "NavisLabs",
+   "source": "src/data/navislabs_v8_launch_state.json#company",
+   "real_or_synthetic": "REAL_AUTHORIZED",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "The company itself, shown using its own products. Brand name from navislabs.in."
+  },
+  {
+   "entity": "organization:website",
+   "value": "navislabs.in",
+   "source": "src/data/navislabs_v8_launch_state.json#company.website",
+   "real_or_synthetic": "REAL_AUTHORIZED",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "End-card URL."
+  },
+  {
+   "entity": "person:p_abhishek",
+   "value": "Abhishek Meena",
+   "source": "src/data/navislabs_v8_launch_state.json#people/p_abhishek",
+   "real_or_synthetic": "REAL_AUTHORIZED",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "Founder; demo user in both products at the founder's request. Email and Mac user/host shown on screen at the founder's request — confirm before public release."
+  },
+  {
+   "entity": "person:p_abhishek.email",
+   "value": "abhishek@navislabs.in",
+   "source": "src/data/navislabs_v8_launch_state.json#people/p_abhishek.email",
+   "real_or_synthetic": "REAL_AUTHORIZED",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": "remove the address from screen if not approved for public release",
+   "note": "The founder's own work address, shown at the founder's request."
+  },
+  {
+   "entity": "person:p_abhishek.mac",
+   "value": "abhishekmeena@Abhisheks-MacBook-Pro-8",
+   "source": "src/data/navislabs_v8_launch_state.json#people/p_abhishek.mac_user/mac_host",
+   "real_or_synthetic": "REAL_AUTHORIZED",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16"
+   ],
+   "replacement_if_needed": "a neutral prompt such as 'abhishek@navislabs'",
+   "note": "The real macOS user and host on the founder's machine, shown in terminal prompts at the founder's request."
+  },
+  {
+   "entity": "person:p_arjun",
+   "value": "Arjun Rao",
+   "source": "src/data/navislabs_v8_launch_state.json#people/p_arjun",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S11",
+    "S16",
+    "S17"
+   ],
+   "replacement_if_needed": "Mulayam Kumar (CTO) — only with written approval",
+   "note": "Synthetic engineer (fictional). Not a NavisLabs employee. Replace with an authorized teammate only with written approval."
+  },
+  {
+   "entity": "person:p_arjun.email",
+   "value": "arjun@example.com",
+   "source": "src/data/navislabs_v8_launch_state.json#people/p_arjun.email",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S11",
+    "S16",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "Reserved example domain (RFC 2606); routes nowhere."
+  },
+  {
+   "entity": "person:p_meera",
+   "value": "Meera Iyer",
+   "source": "src/data/navislabs_v8_launch_state.json#people/p_meera",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S02",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S14",
+    "S15",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "Synthetic customer contact (fictional); .example is a reserved domain (RFC 2606)."
+  },
+  {
+   "entity": "person:p_meera.email",
+   "value": "meera.iyer@kaveri.example",
+   "source": "src/data/navislabs_v8_launch_state.json#people/p_meera.email",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S02",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S14",
+    "S15",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "Reserved example domain (RFC 2606); routes nowhere."
+  },
+  {
+   "entity": "person:p_solo",
+   "value": "Riya",
+   "source": "src/data/navislabs_v8_launch_state.json#people/p_solo",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S16"
+   ],
+   "replacement_if_needed": null,
+   "note": "Synthetic solo developer in a personal workspace."
+  },
+  {
+   "entity": "person:p_solo.email",
+   "value": "riya@example.com",
+   "source": "src/data/navislabs_v8_launch_state.json#people/p_solo.email",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S16"
+   ],
+   "replacement_if_needed": null,
+   "note": "Reserved example domain (RFC 2606); routes nowhere."
+  },
+  {
+   "entity": "team:t_leadership",
+   "value": "Leadership",
+   "source": "src/data/navislabs_v8_launch_state.json#teams/t_leadership",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "team:t_revenue",
+   "value": "Revenue",
+   "source": "src/data/navislabs_v8_launch_state.json#teams/t_revenue",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "team:t_engineering",
+   "value": "Engineering",
+   "source": "src/data/navislabs_v8_launch_state.json#teams/t_engineering",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "customer:c_kaveri",
+   "value": "Kaveri Freightworks",
+   "source": "src/data/navislabs_v8_launch_state.json#customers/c_kaveri",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S02",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "FICTIONAL Indian-context customer for the film. Not a real company and not a NavisLabs customer; no relationship is implied. Web search 2026-10-06: no company with this exact name found."
+  },
+  {
+   "entity": "project:pr_sso",
+   "value": "SSO export",
+   "source": "src/data/navislabs_v8_launch_state.json#projects/pr_sso",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "project:pr_renewal_workflow",
+   "value": "Kaveri renewal workflow",
+   "source": "src/data/navislabs_v8_launch_state.json#projects/pr_renewal_workflow",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S10",
+    "S12",
+    "S15",
+    "S17"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "decision:d_annual_terms",
+   "value": "Annual plans keep their current terms; usage-based pricing applies to new accounts only.",
+   "source": "src/data/navislabs_v8_launch_state.json#decisions/d_annual_terms",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S14",
+    "S15",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "commitment:m_revised_terms",
+   "value": "Revised terms promised to Kaveri by Oct 7 — not yet sent.",
+   "source": "src/data/navislabs_v8_launch_state.json#commitments/m_revised_terms",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S02",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S14",
+    "S15",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "commitment:m_board_metrics",
+   "value": "Updated metrics were promised to the board Thursday",
+   "source": "src/data/navislabs_v8_launch_state.json#commitments/m_board_metrics",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "meeting:mt_renewal_call",
+   "value": "Kaveri renewal call",
+   "source": "src/data/navislabs_v8_launch_state.json#meetings/mt_renewal_call",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "Upcoming meeting (moved on Oct 5 to Thursday, Oct 8)."
+  },
+  {
+   "entity": "meeting:mt_pricing_review",
+   "value": "Pricing review",
+   "source": "src/data/navislabs_v8_launch_state.json#meetings/mt_pricing_review",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "email:e_move_renewal",
+   "value": "Moving our renewal to Nov 28",
+   "source": "src/data/navislabs_v8_launch_state.json#emails/e_move_renewal",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "document:doc_order_form",
+   "value": "Kaveri order form — annual plan, current terms",
+   "source": "src/data/navislabs_v8_launch_state.json#documents/doc_order_form",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "document:doc_account_plan",
+   "value": "Kaveri account plan",
+   "source": "src/data/navislabs_v8_launch_state.json#documents/doc_account_plan",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S14",
+    "S15",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "document:doc_sso_spec",
+   "value": "SSO export spec",
+   "source": "src/data/navislabs_v8_launch_state.json#documents/doc_sso_spec",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "repository:r_navislabs",
+   "value": "NavisLabs",
+   "source": "src/data/navislabs_v8_launch_state.json#repositories/r_navislabs",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S15",
+    "S16",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "Demo repository name shown in VS Code and the terminal."
+  },
+  {
+   "entity": "repository:r_riya",
+   "value": "thesis-tracker",
+   "source": "src/data/navislabs_v8_launch_state.json#repositories/r_riya",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S16"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "agent:a_claude_code",
+   "value": "claude-code (Claude Code)",
+   "source": "src/data/navislabs_v8_launch_state.json#agents/a_claude_code",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S11",
+    "S15",
+    "S16"
+   ],
+   "replacement_if_needed": null,
+   "note": "Claude Code is a real public product, named nominatively as the MCP client (Devtool docs/mcp/CLIENTS.md: LIVE VERIFIED)."
+  },
+  {
+   "entity": "run:7c2e91a0",
+   "value": "Update the Kaveri renewal workflow.",
+   "source": "src/data/navislabs_v8_launch_state.json#runs/7c2e91a0",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S11",
+    "S13",
+    "S15",
+    "S16",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "Demo run; economics columns show '—' (not recorded)."
+  },
+  {
+   "entity": "run:3f9a1d27",
+   "value": "Add usage-based pricing for new accounts.",
+   "source": "src/data/navislabs_v8_launch_state.json#runs/3f9a1d27",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S11",
+    "S15",
+    "S16"
+   ],
+   "replacement_if_needed": null,
+   "note": "Demo run; economics columns show '—' (not recorded)."
+  },
+  {
+   "entity": "workspace:w_riya",
+   "value": "Riya's workspace",
+   "source": "src/data/navislabs_v8_launch_state.json#developer_workspace.solo",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S16"
+   ],
+   "replacement_if_needed": null
+  },
+  {
+   "entity": "crm_record:crm_kaveri_opportunity",
+   "value": "Opportunity · Kaveri Freightworks — annual renewal · closes Nov 14",
+   "source": "src/data/navislabs_v8_launch_state.json#crm_records/crm_kaveri_opportunity",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S14",
+    "S15",
+    "S17",
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM DEMO RECORD (launch configuration). No amounts, no pipeline numbers. The close date is still the old renewal date — the CRM has not caught up with the email; a person updates it."
+  },
+  {
+   "entity": "knowledge:kn_renewal_playbook",
+   "value": "Renewal playbook — Annual plans renew on current terms; usage-based pricing is for new accounts.",
+   "source": "src/data/navislabs_v8_launch_state.json#knowledge/kn_renewal_playbook",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM DEMO RECORD in Notion (launch state)."
+  },
+  {
+   "entity": "issue:eng_kvr_142",
+   "value": "KVR-142 · SSO export blocked on review · Blocked",
+   "source": "src/data/navislabs_v8_launch_state.json#engineering_context.issues/eng_kvr_142",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM DEMO RECORD in Jira (launch state)."
+  },
+  {
+   "entity": "code:code_kaveri_renewal",
+   "value": "src/workflows/kaveri-renewal.ts (renewsOn: \"2026-11-14\" → renewsOn: \"2026-11-28\")",
+   "source": "src/data/navislabs_v8_launch_state.json#engineering_context.code/code_kaveri_renewal",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "replacement_if_needed": null,
+   "note": "The workflow file the agent updates in Navis Developer (S15). No PR numbers, no deployment."
+  },
+  {
+   "entity": "workstate:team",
+   "value": "Update the Kaveri renewal workflow. / Renewal moves to Nov 28; annual plans keep current terms. / Confirm the close date in Salesforce.",
+   "source": "src/data/navislabs_v8_launch_state.json#team_workstate",
+   "real_or_synthetic": "SYNTHETIC",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S16"
+   ],
+   "replacement_if_needed": null,
+   "note": "The company's checkpoint restored in the next session (S16)."
+  },
+  {
+   "entity": "integration:gmail",
+   "value": "Gmail",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/gmail; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S02",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S13",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: LIVE — verified in code (local Navis backend checkout). PUBLIC WEBSITE STATUS: currently shown as 'Supported'. LOCAL SOURCE: LIVE in the local checkout — Backend navis/signals/gmail; Navis-AI ConnectionId 'gmail'. In the film: evidence. Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:calendar",
+   "value": "Google Calendar",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/calendar; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: LIVE — verified in code (local Navis backend checkout). PUBLIC WEBSITE STATUS: currently shown as 'Supported'. LOCAL SOURCE: LIVE — Backend navis/signals/calendar; ConnectionId 'calendar' (covers Meet). In the film: evidence. Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:meet",
+   "value": "Google Meet",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/meet; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S02",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: LIVE — verified in code (local Navis backend checkout). PUBLIC WEBSITE STATUS: currently shown as 'Supported'. LOCAL SOURCE: LIVE — Backend navis/signals/meet; reached through the Calendar grant. In the film: evidence. Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:drive",
+   "value": "Google Drive",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/drive; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S02",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: LIVE — verified in code (local Navis backend checkout). PUBLIC WEBSITE STATUS: currently shown as 'Supported'. LOCAL SOURCE: LIVE — Backend navis/signals/drive; ConnectionId 'drive' (covers Docs). In the film: evidence. Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:docs",
+   "value": "Google Docs",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/docs; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: LIVE — verified in code (local Navis backend checkout). PUBLIC WEBSITE STATUS: currently shown as 'Supported'. LOCAL SOURCE: LIVE — Backend navis/signals/drive/docs.py; Docs arrive as Drive files. In the film: evidence. Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:slack",
+   "value": "Slack",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/slack; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S02",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S15",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: LIVE — verified in code (local Navis backend checkout). PUBLIC WEBSITE STATUS: currently shown as 'Supported'. LOCAL SOURCE: LIVE — Backend navis/signals/slack; ConnectionId 'slack'; credential resolver shipped (5.4.1). In the film: evidence. Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:salesforce",
+   "value": "Salesforce",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/salesforce; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: UPCOMING — demo configuration (not live in the local Navis backend). PUBLIC WEBSITE STATUS: currently shown as 'Coming soon'. LOCAL SOURCE: NOT IN THE LOCAL CHECKOUT — no backend or frontend reference. In the film: evidence (primary CRM). Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:notion",
+   "value": "Notion",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/notion; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: UPCOMING — demo configuration (not live in the local Navis backend). PUBLIC WEBSITE STATUS: currently shown as 'Coming soon'. LOCAL SOURCE: NOT IN THE LOCAL CHECKOUT AS A CONNECTOR — enum members only (IntegrationProvider, SignalSource); no credential resolver (tests/execution/test_integration_boundary.py); Navis-AI: 'coming soon, no backend handler'. In the film: evidence (company knowledge). Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:microsoft365",
+   "value": "Microsoft 365",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/microsoft365; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: UPCOMING — demo configuration (not live in the local Navis backend). PUBLIC WEBSITE STATUS: currently shown as 'Coming soon'. LOCAL SOURCE: NOT IN THE LOCAL CHECKOUT — no connector. In the film: connected infrastructure — no record shown. Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:hubspot",
+   "value": "HubSpot",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/hubspot; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: UPCOMING — demo configuration (not live in the local Navis backend). PUBLIC WEBSITE STATUS: currently shown as 'Coming soon'. LOCAL SOURCE: NOT IN THE LOCAL CHECKOUT AS A CONNECTOR — identity-resolution alias only (AliasProvider.HUBSPOT). In the film: connected infrastructure — no record shown (Salesforce is the primary CRM example). Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:jira",
+   "value": "Jira",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/jira; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: UPCOMING — demo configuration (not live in the local Navis backend). PUBLIC WEBSITE STATUS: currently shown as 'Coming soon'. LOCAL SOURCE: NOT IN THE LOCAL CHECKOUT — mentioned in comments only. In the film: evidence (engineering). Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:github",
+   "value": "GitHub",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/github; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: UPCOMING — demo configuration (not live in the local Navis backend). PUBLIC WEBSITE STATUS: currently shown as 'Coming soon'. LOCAL SOURCE: NOT IN THE LOCAL CHECKOUT AS A CONNECTOR — identity-resolution alias only (AliasProvider.GITHUB). In the film: evidence (code). Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "integration:zoom",
+   "value": "Zoom",
+   "source": "src/data/navislabs_v8_launch_state.json#integrations.FILM_LAUNCH_INTEGRATIONS/zoom; mark: navis-labs-website/public/logo",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S01",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "replacement_if_needed": null,
+   "note": "FILM STATUS: UPCOMING — demo configuration (not live in the local Navis backend). PUBLIC WEBSITE STATUS: currently shown as 'Coming soon'. LOCAL SOURCE: NOT IN THE LOCAL CHECKOUT — mentioned in a comment only. In the film: connected infrastructure — no record shown (Meet carries the meeting example). Vendor mark used nominatively to name a connector; no partnership implied."
+  },
+  {
+   "entity": "mcp_client:Claude Code",
+   "value": "Claude Code",
+   "source": "Devtool/docs/mcp/CLIENTS.md",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S18",
+    "S11"
+   ],
+   "replacement_if_needed": null,
+   "note": "LIVE VERIFIED. Icon from the installed Claude.app (public/images/clients/claude.png); nominative use."
+  },
+  {
+   "entity": "mcp_client:Cursor",
+   "value": "Cursor",
+   "source": "Devtool/docs/mcp/CLIENTS.md",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "CONFIG VERIFIED. Text only; no recreated mark."
+  },
+  {
+   "entity": "mcp_client:Codex",
+   "value": "Codex",
+   "source": "Devtool/docs/mcp/CLIENTS.md",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "CONFIG VERIFIED. Text only; no recreated mark."
+  },
+  {
+   "entity": "mcp_client:VS Code",
+   "value": "VS Code",
+   "source": "Devtool/docs/mcp/CLIENTS.md",
+   "real_or_synthetic": "REAL_PUBLIC_PRODUCT",
+   "authorized_for_public_video": true,
+   "scenes": [
+    "S18"
+   ],
+   "replacement_if_needed": null,
+   "note": "CONFIG VERIFIED. Text only; no recreated mark."
+  },
+  {
+   "entity": "restricted:Mulayam Kumar",
+   "value": "Mulayam Kumar",
+   "source": "founder brief",
+   "real_or_synthetic": "REAL_PERSON",
+   "authorized_for_public_video": false,
+   "scenes": [],
+   "replacement_if_needed": "Arjun Rao (SYNTHETIC) stands in until written approval",
+   "note": "Not shown anywhere in the film (validator: entity)."
+  },
+  {
+   "entity": "restricted:Digantara",
+   "value": "Digantara",
+   "source": "founder brief",
+   "real_or_synthetic": "REAL_COMPANY",
+   "authorized_for_public_video": false,
+   "scenes": [],
+   "replacement_if_needed": "Kaveri Freightworks (SYNTHETIC, fictional)",
+   "note": "Not shown anywhere in the film; no customer relationship is implied."
+  }
+ ]
+}

@@ -1,0 +1,382 @@
+{
+ "format": {
+  "width": 1080,
+  "height": 1350,
+  "fps": "30/1",
+  "codec": "h264",
+  "profile": "High",
+  "pix_fmt": "yuv420p",
+  "frames": 2098,
+  "video_s": 69.933333,
+  "audio_s": 69.952,
+  "audio_codec": "aac",
+  "audio_rate": "48000",
+  "channels": 2,
+  "video_kbps": 3871,
+  "size_mb": 36.5
+ },
+ "black_runs_s": [
+  [
+   63.87,
+   64.1,
+   0.27,
+   "thesis"
+  ]
+ ],
+ "hold_cuts": [
+  {
+   "shot": "sources_hold",
+   "cut_s": 23.65,
+   "luma_before": 196.47,
+   "luma_after": 196.47,
+   "step": 0.0
+  },
+  {
+   "shot": "dev_hold",
+   "cut_s": 35.23,
+   "luma_before": 26.75,
+   "luma_after": 26.73,
+   "step": -0.02
+  },
+  {
+   "shot": "context_hold",
+   "cut_s": 47.237,
+   "luma_before": 32.25,
+   "luma_after": 32.21,
+   "step": -0.04
+  },
+  {
+   "shot": "truth_hold",
+   "cut_s": 52.63,
+   "luma_before": 18.86,
+   "luma_after": 18.86,
+   "step": 0.0
+  },
+  {
+   "shot": "end_hold",
+   "cut_s": 66.81,
+   "luma_before": 14.98,
+   "luma_after": 15.01,
+   "step": 0.03
+  }
+ ],
+ "duplicate_runs": [
+  {
+   "from_s": 11.267,
+   "to_s": 11.3,
+   "frames": 2,
+   "kind": "single repeated frame"
+  }
+ ],
+ "duplicates_at_cuts": [],
+ "soft_frame_runs_s": [
+  [
+   0.0,
+   0.43,
+   "hook"
+  ],
+  [
+   3.9,
+   4.1,
+   "scatter"
+  ],
+  [
+   7.57,
+   7.73,
+   "by_hand"
+  ],
+  [
+   9.43,
+   9.63,
+   "by_hand"
+  ],
+  [
+   11.07,
+   11.77,
+   "reveal"
+  ],
+  [
+   15.47,
+   15.7,
+   "app_intro"
+  ],
+  [
+   16.7,
+   16.87,
+   "app_intro"
+  ],
+  [
+   18.5,
+   18.57,
+   "app_intro"
+  ],
+  [
+   20.97,
+   21.13,
+   "why"
+  ],
+  [
+   22.27,
+   22.27,
+   "why"
+  ],
+  [
+   22.4,
+   22.5,
+   "sources_a"
+  ],
+  [
+   26.3,
+   26.8,
+   "prepared"
+  ],
+  [
+   30.43,
+   30.57,
+   "acts"
+  ],
+  [
+   30.67,
+   30.77,
+   "acts"
+  ],
+  [
+   32.6,
+   33.1,
+   "acts"
+  ],
+  [
+   36.07,
+   36.2,
+   "connect_term"
+  ],
+  [
+   41.6,
+   41.7,
+   "connect"
+  ],
+  [
+   42.43,
+   42.47,
+   "context"
+  ],
+  [
+   47.57,
+   48.57,
+   "context_hold"
+  ],
+  [
+   52.73,
+   53.17,
+   "truth_hold"
+  ],
+  [
+   56.37,
+   56.9,
+   "thesis"
+  ],
+  [
+   60.97,
+   61.1,
+   "thesis"
+  ],
+  [
+   63.7,
+   64.7,
+   "thesis"
+  ],
+  [
+   64.77,
+   64.93,
+   "name"
+  ],
+  [
+   65.0,
+   66.0,
+   "name"
+  ]
+ ],
+ "loudness": {
+  "integrated_lufs": -14.0,
+  "true_peak_dbtp": -1.2,
+  "lra_lu": 2.9,
+  "clipped_samples": 0,
+  "sample_peak": 0.866
+ },
+ "silence_gaps": [
+  {
+   "from_s": 69.5,
+   "to_s": 69.95,
+   "why": "the silent end"
+  }
+ ],
+ "separation": {
+  "voice_lufs_under_speech": -16.18,
+  "music_lufs_under_speech": -28.77,
+  "voice_minus_music_lu": 12.59,
+  "voice_minus_music_key_lines_lu": 17.32,
+  "music_rise_in_pauses_lu": 5.25,
+  "voice_peak_minus_sfx_peak_db": 11.53
+ },
+ "loudness_jumps": {
+  "count": 7,
+  "unexpected": [],
+  "all": [
+   {
+    "t_s": 0.3,
+    "step_lu": 13.2,
+    "why": "the founder's voice starts/stops (music steady)"
+   },
+   {
+    "t_s": 7.6,
+    "step_lu": 10.7,
+    "why": "the founder's voice starts/stops (music steady)"
+   },
+   {
+    "t_s": 37.5,
+    "step_lu": 11.2,
+    "why": "the founder's voice starts/stops (music steady)"
+   },
+   {
+    "t_s": 39.4,
+    "step_lu": 9.8,
+    "why": "the founder's voice starts/stops (music steady)"
+   },
+   {
+    "t_s": 43.9,
+    "step_lu": 10.0,
+    "why": "the founder's voice starts/stops (music steady)"
+   },
+   {
+    "t_s": 62.6,
+    "step_lu": 10.6,
+    "why": "the founder's voice starts/stops (music steady)"
+   },
+   {
+    "t_s": 65.9,
+    "step_lu": 14.3,
+    "why": "the founder's voice starts/stops (music steady)"
+   }
+  ]
+ },
+ "voice_sync": {
+  "onsets": [
+   {
+    "line": "L01",
+    "plan_s": 0.35,
+    "measured_s": 0.354,
+    "diff_ms": 4.1
+   },
+   {
+    "line": "L02",
+    "plan_s": 4.05,
+    "measured_s": 4.057,
+    "diff_ms": 6.8
+   },
+   {
+    "line": "L03",
+    "plan_s": 7.67,
+    "measured_s": 7.686,
+    "diff_ms": 16.1
+   },
+   {
+    "line": "L04",
+    "plan_s": 9.56,
+    "measured_s": 9.549,
+    "diff_ms": -10.9
+   },
+   {
+    "line": "L05",
+    "plan_s": 11.72,
+    "measured_s": 11.765,
+    "diff_ms": 44.8
+   },
+   {
+    "line": "L06",
+    "plan_s": 15.66,
+    "measured_s": 15.665,
+    "diff_ms": 4.6
+   },
+   {
+    "line": "L07",
+    "plan_s": 18.75,
+    "measured_s": 18.763,
+    "diff_ms": 12.7
+   },
+   {
+    "line": "L08",
+    "plan_s": 22.44,
+    "measured_s": 22.458,
+    "diff_ms": 17.6
+   },
+   {
+    "line": "L09",
+    "plan_s": 27.45,
+    "measured_s": 27.443,
+    "diff_ms": -7.1
+   },
+   {
+    "line": "L10",
+    "plan_s": 30.53,
+    "measured_s": 30.524,
+    "diff_ms": -6.4
+   },
+   {
+    "line": "L11",
+    "plan_s": 33.08,
+    "measured_s": 33.058,
+    "diff_ms": -22.4
+   },
+   {
+    "line": "L12",
+    "plan_s": 36.17,
+    "measured_s": 36.179,
+    "diff_ms": 8.9
+   },
+   {
+    "line": "L13",
+    "plan_s": 41.87,
+    "measured_s": 41.872,
+    "diff_ms": 2.4
+   },
+   {
+    "line": "L14",
+    "plan_s": 47.73,
+    "measured_s": 47.713,
+    "diff_ms": -17.1
+   },
+   {
+    "line": "L15",
+    "plan_s": 50.4,
+    "measured_s": 50.397,
+    "diff_ms": -3.4
+   },
+   {
+    "line": "L16",
+    "plan_s": 53.35,
+    "measured_s": 53.346,
+    "diff_ms": -4.0
+   },
+   {
+    "line": "L17",
+    "plan_s": 56.83,
+    "measured_s": 56.801,
+    "diff_ms": -29.5
+   },
+   {
+    "line": "L18",
+    "plan_s": 64.22,
+    "measured_s": 64.264,
+    "diff_ms": 44.3
+   },
+   {
+    "line": "L19",
+    "plan_s": 66.04,
+    "measured_s": 66.057,
+    "diff_ms": 16.9
+   }
+  ],
+  "max_abs_diff_ms": 44.8,
+  "audio_minus_video_ms": 18.7
+ }
+}

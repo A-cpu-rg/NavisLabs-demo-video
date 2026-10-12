@@ -1,0 +1,3758 @@
+{
+  "plan": "navislabs_final_film_master_plan",
+  "phase": "1 — plan only (no code, recordings or audio changed)",
+  "date": "2026-10-05",
+  "brand": {
+    "company": "NavisLabs",
+    "on_screen_company": "NavisLabs lockup (logo tile + wordmark, website treatment)",
+    "people_product": "Navis AI Application",
+    "people_product_on_screen": "NAVIS AI APPLICATION",
+    "agent_product": "Navis Developer",
+    "agent_product_on_screen": "NAVIS DEVELOPER",
+    "rules": [
+      "Never 'Navis' as the company, never 'NAVIS AI' alone, no other product names.",
+      "Narration and film typography use only NavisLabs / Navis AI Application / Navis Developer.",
+      "Real product UI keeps its own text ('Today · Navis', 'NAVIS WORK CONTINUITY', navis_get_relevant_context) — it is evidence.",
+      "Repository names (Navis-AI, Devtool, Backend) never appear in the film."
+    ],
+    "supersedes": [
+      "AV master 'Navis Application'",
+      "AV master 'NAVISLABS' all-caps wordmark (the real lockup is 'NavisLabs')",
+      "master/blueprint 'NAVIS' and 'NAVIS AI'"
+    ]
+  },
+  "products": {
+    "Navis Developer": {
+      "audience": "developers and AI agents",
+      "world": "dark",
+      "proofs": [
+        "work state checkpoint → restore (F01)",
+        "company context with sources and freshness over MCP (F03/F02)",
+        "company isolation (F05)",
+        "permission refusal (F04)"
+      ],
+      "status": "private preview; client local, Core on staging; CLI/SDK unpublished"
+    },
+    "Navis AI Application": {
+      "audience": "people",
+      "world": "light (real app palette inside footage)",
+      "proofs": [
+        "Today with a waiting reply (F12)",
+        "draft → human edit → approve → real Gmail send with truthful status (F09)"
+      ],
+      "status": "frontend local, backend on staging; real sends need the worker and Google grants (U05)"
+    }
+  },
+  "story": {
+    "central_idea": "AI agents and people need to operate from the same company context. NavisLabs provides it through two product surfaces.",
+    "acts": [
+      {
+        "act": "ACT 1 — The problem",
+        "brief": "0–18 s",
+        "scenes": "S01–S03 (+ S04 0.0–1.2 s)",
+        "actual": "0.0–18.0 s"
+      },
+      {
+        "act": "ACT 2 — NavisLabs reveal",
+        "brief": "18–25 s",
+        "scenes": "S04–S05",
+        "actual": "18.0–28.0 s (two-product lockup to 27 s)"
+      },
+      {
+        "act": "ACT 3 — Navis Developer",
+        "brief": "25–60 s",
+        "scenes": "S06–S10",
+        "actual": "28.0–62.0 s"
+      },
+      {
+        "act": "ACT 4 — Navis AI Application",
+        "brief": "60–82 s",
+        "scenes": "S11–S14",
+        "actual": "62.0–83.0 s"
+      },
+      {
+        "act": "ACT 5 — The shared layer",
+        "brief": "82–92 s",
+        "scenes": "S15–S16",
+        "actual": "83.0–93.0 s"
+      },
+      {
+        "act": "ACT 6 — NavisLabs ending",
+        "brief": "92–100 s",
+        "scenes": "S17",
+        "actual": "93.0–100.0 s"
+      }
+    ],
+    "timing": "Master S01–S17 boundaries kept; every act lands within ~2 s of the brief, so no scene timing changes.",
+    "climaxes": {
+      "technical": "S10-D refusal (hard cut)",
+      "human": "S14-C 'Reply sent' after Gmail confirms",
+      "ending": "S17 NavisLabs lockup"
+    }
+  },
+  "scenes": {
+    "S01": {
+      "scene_id": "S01",
+      "start": 0.0,
+      "end": 3.2,
+      "start_frame": 0,
+      "end_frame": 96,
+      "act": "ACT 1 — The problem (0–18 s)",
+      "world": "dark",
+      "vo": [
+        "L01"
+      ],
+      "shots": [
+        "S01-A"
+      ],
+      "recordings": [],
+      "implementation": "rebuild",
+      "timing_change": "none (master timing)"
+    },
+    "S02": {
+      "scene_id": "S02",
+      "start": 3.2,
+      "end": 6.4,
+      "start_frame": 96,
+      "end_frame": 192,
+      "act": "ACT 1 — The problem (0–18 s)",
+      "world": "dark",
+      "vo": [
+        "L02"
+      ],
+      "shots": [
+        "S02-A"
+      ],
+      "recordings": [],
+      "implementation": "rebuild",
+      "timing_change": "none (master timing)"
+    },
+    "S03": {
+      "scene_id": "S03",
+      "start": 6.4,
+      "end": 16.8,
+      "start_frame": 192,
+      "end_frame": 504,
+      "act": "ACT 1 — The problem (0–18 s)",
+      "world": "dark | light",
+      "vo": [
+        "L03",
+        "L04",
+        "L05"
+      ],
+      "shots": [
+        "S03-A",
+        "S03-B",
+        "S03-C",
+        "S03-D"
+      ],
+      "recordings": [
+        "R01 (opening, before the task is typed)"
+      ],
+      "implementation": "rebuild (keep fragment system; add people-side rebuild and the real-terminal reveal)",
+      "timing_change": "none (master timing)"
+    },
+    "S04": {
+      "scene_id": "S04",
+      "start": 16.8,
+      "end": 23.0,
+      "start_frame": 504,
+      "end_frame": 690,
+      "act": "ACT 2 — NavisLabs reveal (18–25 s)",
+      "world": "dark | light",
+      "vo": [
+        "L06"
+      ],
+      "shots": [
+        "S04-A",
+        "S04-B",
+        "S04-C"
+      ],
+      "recordings": [],
+      "implementation": "rebuild (belief diagram → convergence + NavisLabs reveal)",
+      "timing_change": "none (master timing)"
+    },
+    "S05": {
+      "scene_id": "S05",
+      "start": 23.0,
+      "end": 28.0,
+      "start_frame": 690,
+      "end_frame": 840,
+      "act": "ACT 2 — NavisLabs reveal / two products",
+      "world": "dark | light",
+      "vo": [],
+      "shots": [
+        "S05-A",
+        "S05-B",
+        "S05-C"
+      ],
+      "recordings": [],
+      "implementation": "rebuild (logo lock → two-product lockup)",
+      "timing_change": "none (master timing)"
+    },
+    "S06": {
+      "scene_id": "S06",
+      "start": 28.0,
+      "end": 30.0,
+      "start_frame": 840,
+      "end_frame": 900,
+      "act": "ACT 3 — Navis Developer (25–60 s)",
+      "world": "dark",
+      "vo": [],
+      "shots": [
+        "S06-A"
+      ],
+      "recordings": [],
+      "implementation": "keep",
+      "timing_change": "none (master timing)"
+    },
+    "S07": {
+      "scene_id": "S07",
+      "start": 30.0,
+      "end": 37.0,
+      "start_frame": 900,
+      "end_frame": 1110,
+      "act": "ACT 3 — Navis Developer (25–60 s)",
+      "world": "dark",
+      "vo": [
+        "L07"
+      ],
+      "shots": [
+        "S07-A",
+        "S07-B",
+        "S07-C",
+        "S07-D",
+        "S07-E"
+      ],
+      "recordings": [
+        "R01"
+      ],
+      "implementation": "keep (shot grammar A–E)",
+      "timing_change": "none (master timing)"
+    },
+    "S08": {
+      "scene_id": "S08",
+      "start": 37.0,
+      "end": 46.0,
+      "start_frame": 1110,
+      "end_frame": 1380,
+      "act": "ACT 3 — Navis Developer (25–60 s)",
+      "world": "dark",
+      "vo": [
+        "L08",
+        "L09",
+        "L10"
+      ],
+      "shots": [
+        "S08-A",
+        "S08-B",
+        "S08-C",
+        "S08-D",
+        "S08-E"
+      ],
+      "recordings": [
+        "R03",
+        "R03 (R04 fallback)"
+      ],
+      "implementation": "change (drop caption; re-key macro to VO)",
+      "timing_change": "none (master timing)"
+    },
+    "S09": {
+      "scene_id": "S09",
+      "start": 46.0,
+      "end": 56.0,
+      "start_frame": 1380,
+      "end_frame": 1680,
+      "act": "ACT 3 — Navis Developer (25–60 s)",
+      "world": "dark",
+      "vo": [
+        "L11",
+        "L12"
+      ],
+      "shots": [
+        "S09-A",
+        "S09-B",
+        "S09-C",
+        "S09-D",
+        "S09-E",
+        "S09-F"
+      ],
+      "recordings": [
+        "R05"
+      ],
+      "implementation": "change (drop ASK YOUR COMPANY; re-key)",
+      "timing_change": "none (master timing)"
+    },
+    "S10": {
+      "scene_id": "S10",
+      "start": 56.0,
+      "end": 62.0,
+      "start_frame": 1680,
+      "end_frame": 1860,
+      "act": "ACT 3 — Navis Developer (25–60 s)",
+      "world": "dark",
+      "vo": [
+        "L13"
+      ],
+      "shots": [
+        "S10-A",
+        "S10-B",
+        "S10-C",
+        "S10-D"
+      ],
+      "recordings": [
+        "R05",
+        "R05+R06+R07",
+        "R06",
+        "R07"
+      ],
+      "implementation": "change (master panel order; hard cut to full-frame refusal; drop SCOPED caption)",
+      "timing_change": "none (master timing)"
+    },
+    "S11": {
+      "scene_id": "S11",
+      "start": 62.0,
+      "end": 64.0,
+      "start_frame": 1860,
+      "end_frame": 1920,
+      "act": "ACT 4 — Navis AI Application (60–82 s)",
+      "world": "dark → light",
+      "vo": [
+        "L14"
+      ],
+      "shots": [
+        "S11-A"
+      ],
+      "recordings": [],
+      "implementation": "change (title → NAVIS AI APPLICATION; brand colours)",
+      "timing_change": "none (master timing)"
+    },
+    "S12": {
+      "scene_id": "S12",
+      "start": 64.0,
+      "end": 70.0,
+      "start_frame": 1920,
+      "end_frame": 2100,
+      "act": "ACT 4 — Navis AI Application (60–82 s)",
+      "world": "light",
+      "vo": [
+        "L15"
+      ],
+      "shots": [
+        "S12-A",
+        "S12-B",
+        "S12-C",
+        "S12-D",
+        "S12-E"
+      ],
+      "recordings": [
+        "R08",
+        "R08→R09"
+      ],
+      "implementation": "change (blank pill; recorded cursor)",
+      "timing_change": "none (master timing)"
+    },
+    "S13": {
+      "scene_id": "S13",
+      "start": 70.0,
+      "end": 76.0,
+      "start_frame": 2100,
+      "end_frame": 2280,
+      "act": "ACT 4 — Navis AI Application (60–82 s)",
+      "world": "light",
+      "vo": [
+        "L16"
+      ],
+      "shots": [
+        "S13-A",
+        "S13-B",
+        "S13-C"
+      ],
+      "recordings": [
+        "R09"
+      ],
+      "implementation": "change (drop APPROVE caption)",
+      "timing_change": "none (master timing)"
+    },
+    "S14": {
+      "scene_id": "S14",
+      "start": 76.0,
+      "end": 83.0,
+      "start_frame": 2280,
+      "end_frame": 2490,
+      "act": "ACT 4 — Navis AI Application (60–82 s)",
+      "world": "light",
+      "vo": [
+        "L17"
+      ],
+      "shots": [
+        "S14-A",
+        "S14-B",
+        "S14-C",
+        "S14-D"
+      ],
+      "recordings": [
+        "R09",
+        "R10"
+      ],
+      "implementation": "change (drop SENT caption; held confirmation; confirmation tick)",
+      "timing_change": "none (master timing)"
+    },
+    "S15": {
+      "scene_id": "S15",
+      "start": 83.0,
+      "end": 89.0,
+      "start_frame": 2490,
+      "end_frame": 2670,
+      "act": "ACT 5 — The shared layer (82–92 s)",
+      "world": "dark | light",
+      "vo": [
+        "L18"
+      ],
+      "shots": [
+        "S15-A",
+        "S15-B",
+        "S15-C"
+      ],
+      "recordings": [
+        "STILL_R05 + STILL_R09",
+        "STILL_R09 + STILL_R05 (+R10 tail)"
+      ],
+      "implementation": "change (product labels; drop inputs; brand colours)",
+      "timing_change": "none (master timing)"
+    },
+    "S16": {
+      "scene_id": "S16",
+      "start": 89.0,
+      "end": 93.0,
+      "start_frame": 2670,
+      "end_frame": 2790,
+      "act": "ACT 5 — The shared layer: NEXT",
+      "world": "dark",
+      "vo": [
+        "L19"
+      ],
+      "shots": [
+        "S16-A",
+        "S16-B",
+        "S16-C"
+      ],
+      "recordings": [],
+      "implementation": "keep (colours from brand)",
+      "timing_change": "none (master timing)"
+    },
+    "S17": {
+      "scene_id": "S17",
+      "start": 93.0,
+      "end": 100.0,
+      "start_frame": 2790,
+      "end_frame": 3000,
+      "act": "ACT 6 — NavisLabs ending (92–100 s)",
+      "world": "dark",
+      "vo": [
+        "L20"
+      ],
+      "shots": [
+        "S17-A",
+        "S17-B",
+        "S17-C",
+        "S17-D",
+        "S17-E"
+      ],
+      "recordings": [],
+      "implementation": "rebuild (new end card)",
+      "timing_change": "none (master timing)"
+    }
+  },
+  "shots": {
+    "S01-A": {
+      "shot_id": "S01-A",
+      "scene": "S01",
+      "local": [
+        0,
+        96
+      ],
+      "kind": "concept",
+      "visual": "Near black. Two fields emerge very slowly: graphite on the left (AGENTS), warm stone on the right (PEOPLE). Tiny mono labels only.",
+      "camera": "slow push 1.00→1.03 (drift)",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "AGENTS",
+        "PEOPLE"
+      ],
+      "proof_status": "conceptual",
+      "start_frame": 0,
+      "end_frame": 96,
+      "start": 0.0,
+      "end": 3.2,
+      "vo": [
+        "L01"
+      ]
+    },
+    "S02-A": {
+      "shot_id": "S02-A",
+      "scene": "S02",
+      "local": [
+        0,
+        96
+      ],
+      "kind": "concept",
+      "visual": "The space between the two fields stays empty — a dark gap neither side crosses.",
+      "camera": "slow pull 1.02→1.00",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "conceptual",
+      "start_frame": 96,
+      "end_frame": 192,
+      "start": 3.2,
+      "end": 6.4,
+      "vo": [
+        "L01",
+        "L02"
+      ]
+    },
+    "S03-A": {
+      "shot_id": "S03-A",
+      "scene": "S03",
+      "local": [
+        0,
+        27
+      ],
+      "kind": "concept",
+      "visual": "Typographic fragments surface in the gap (fictional demo content, unbranded) while 'the same truth' is still heard.",
+      "camera": "drift begins (−240)",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "conceptual",
+      "start_frame": 192,
+      "end_frame": 219,
+      "start": 6.4,
+      "end": 7.3,
+      "vo": [
+        "L02"
+      ]
+    },
+    "S03-B": {
+      "shot_id": "S03-B",
+      "scene": "S03",
+      "local": [
+        27,
+        172
+      ],
+      "kind": "concept",
+      "visual": "Fragments brighten on their words: an email subject, a meeting slot, a chat question, a document name.",
+      "camera": "lateral drift through parallax",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "conceptual",
+      "start_frame": 219,
+      "end_frame": 364,
+      "start": 7.3,
+      "end": 12.133,
+      "vo": [
+        "L02",
+        "L03"
+      ]
+    },
+    "S03-C": {
+      "shot_id": "S03-C",
+      "scene": "S03",
+      "local": [
+        172,
+        242
+      ],
+      "kind": "concept",
+      "visual": "On the PEOPLE side, fragments are pulled in one by one and stacked by hand.",
+      "camera": "drift continues toward the right field",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "conceptual",
+      "start_frame": 364,
+      "end_frame": 434,
+      "start": 12.133,
+      "end": 14.467,
+      "vo": [
+        "L04"
+      ]
+    },
+    "S03-D": {
+      "shot_id": "S03-D",
+      "scene": "S03",
+      "local": [
+        242,
+        312
+      ],
+      "kind": "concept → real",
+      "visual": "On the AGENTS side the '$ claude' fragment opens into a REAL fresh Claude Code session (R01 opening frames) — concept becomes a real computer.",
+      "camera": "glide into the terminal",
+      "source": "recording",
+      "recording_id": "R01 (opening, before the task is typed)",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "real footage (context)",
+      "start_frame": 434,
+      "end_frame": 504,
+      "start": 14.467,
+      "end": 16.8,
+      "vo": [
+        "L04",
+        "L05"
+      ]
+    },
+    "S04-A": {
+      "shot_id": "S04-A",
+      "scene": "S04",
+      "local": [
+        0,
+        36
+      ],
+      "kind": "concept",
+      "visual": "Everything converges: fragments and the terminal compress into one thin line; 0.4 s of silence.",
+      "camera": "glide to center",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "conceptual",
+      "start_frame": 504,
+      "end_frame": 540,
+      "start": 16.8,
+      "end": 18.0,
+      "vo": [
+        "L05"
+      ]
+    },
+    "S04-B": {
+      "shot_id": "S04-B",
+      "scene": "S04",
+      "local": [
+        36,
+        60
+      ],
+      "kind": "brand",
+      "visual": "The line takes the logo's cobalt; the REAL NavisLabs lockup (website logo tile + 'NavisLabs' wordmark) resolves on 'NavisLabs'.",
+      "camera": "locked",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "NavisLabs (lockup)"
+      ],
+      "proof_status": "brand",
+      "start_frame": 540,
+      "end_frame": 564,
+      "start": 18.0,
+      "end": 18.8,
+      "vo": [
+        "L06"
+      ]
+    },
+    "S04-C": {
+      "shot_id": "S04-C",
+      "scene": "S04",
+      "local": [
+        60,
+        186
+      ],
+      "kind": "brand",
+      "visual": "Lockup holds; the line extends to both edges — the shared layer.",
+      "camera": "slow pull 1.06→1.00",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "NavisLabs (lockup)"
+      ],
+      "proof_status": "brand",
+      "start_frame": 564,
+      "end_frame": 690,
+      "start": 18.8,
+      "end": 23.0,
+      "vo": [
+        "L06"
+      ]
+    },
+    "S05-A": {
+      "shot_id": "S05-A",
+      "scene": "S05",
+      "local": [
+        0,
+        30
+      ],
+      "kind": "brand",
+      "visual": "The line's ends are named: NAVIS AI APPLICATION · FOR PEOPLE (right, as 'people' is heard), NAVIS DEVELOPER · FOR AGENTS (left, as 'agents' is heard).",
+      "camera": "locked",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "NAVIS AI APPLICATION · FOR PEOPLE",
+        "NAVIS DEVELOPER · FOR AGENTS"
+      ],
+      "proof_status": "brand",
+      "start_frame": 690,
+      "end_frame": 720,
+      "start": 23.0,
+      "end": 24.0,
+      "vo": [
+        "L06"
+      ]
+    },
+    "S05-B": {
+      "shot_id": "S05-B",
+      "scene": "S05",
+      "local": [
+        30,
+        120
+      ],
+      "kind": "brand",
+      "visual": "Three-part lockup holds: NavisLabs between its two products (poster frame 780).",
+      "camera": "locked",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "NavisLabs",
+        "NAVIS DEVELOPER",
+        "NAVIS AI APPLICATION"
+      ],
+      "proof_status": "brand",
+      "start_frame": 720,
+      "end_frame": 810,
+      "start": 24.0,
+      "end": 27.0,
+      "vo": []
+    },
+    "S05-C": {
+      "shot_id": "S05-C",
+      "scene": "S05",
+      "local": [
+        120,
+        150
+      ],
+      "kind": "transition",
+      "visual": "Camera slides to the NAVIS DEVELOPER end and zooms through it.",
+      "camera": "weighted pan to x −620, zoom-through, motion blur",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "brand",
+      "start_frame": 810,
+      "end_frame": 840,
+      "start": 27.0,
+      "end": 28.0,
+      "vo": []
+    },
+    "S06-A": {
+      "shot_id": "S06-A",
+      "scene": "S06",
+      "local": [
+        0,
+        60
+      ],
+      "kind": "title",
+      "visual": "Arrive in the dark world: NAVIS DEVELOPER · FOR AGENTS. Quiet beat, no VO.",
+      "camera": "1.15→1.00 settle, motion blur first 10 f",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "NAVIS DEVELOPER",
+        "FOR AGENTS"
+      ],
+      "proof_status": "conceptual",
+      "start_frame": 840,
+      "end_frame": 900,
+      "start": 28.0,
+      "end": 30.0,
+      "vo": []
+    },
+    "S07-A": {
+      "shot_id": "S07-A",
+      "scene": "S07",
+      "local": [
+        0,
+        18
+      ],
+      "kind": "wide",
+      "visual": "Terminal window rises; DAY 1.",
+      "camera": "0.92 settle",
+      "source": "recording",
+      "recording_id": "R01",
+      "cursor": "none",
+      "on_screen_copy": [
+        "DAY 1"
+      ],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 900,
+      "end_frame": 918,
+      "start": 30.0,
+      "end": 30.6,
+      "vo": [
+        "L07"
+      ]
+    },
+    "S07-B": {
+      "shot_id": "S07-B",
+      "scene": "S07",
+      "local": [
+        18,
+        90
+      ],
+      "kind": "medium",
+      "visual": "The developer types the goal; Claude works (real tool calls, ramp ≤4x).",
+      "camera": "glide to 1.0",
+      "source": "recording",
+      "recording_id": "R01",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 918,
+      "end_frame": 990,
+      "start": 30.6,
+      "end": 33.0,
+      "vo": [
+        "L07"
+      ]
+    },
+    "S07-C": {
+      "shot_id": "S07-C",
+      "scene": "S07",
+      "local": [
+        90,
+        150
+      ],
+      "kind": "macro",
+      "visual": "`navis workstate checkpoint --decision '…' --open '…'` and 'Checkpoint recorded for …' at 1x.",
+      "camera": "macro 1.6–1.65",
+      "source": "recording",
+      "recording_id": "R01",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 990,
+      "end_frame": 1050,
+      "start": 33.0,
+      "end": 35.0,
+      "vo": [
+        "L07"
+      ]
+    },
+    "S07-D": {
+      "shot_id": "S07-D",
+      "scene": "S07",
+      "local": [
+        150,
+        192
+      ],
+      "kind": "interaction",
+      "visual": "/exit typed.",
+      "camera": "weighted pull to 1.0",
+      "source": "recording",
+      "recording_id": "R01",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1050,
+      "end_frame": 1092,
+      "start": 35.0,
+      "end": 36.4,
+      "vo": []
+    },
+    "S07-E": {
+      "shot_id": "S07-E",
+      "scene": "S07",
+      "local": [
+        192,
+        210
+      ],
+      "kind": "result",
+      "visual": "Session closed; window dims.",
+      "camera": "drift 0.98",
+      "source": "recording",
+      "recording_id": "R01",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1092,
+      "end_frame": 1110,
+      "start": 36.4,
+      "end": 37.0,
+      "vo": []
+    },
+    "S08-A": {
+      "shot_id": "S08-A",
+      "scene": "S08",
+      "local": [
+        0,
+        18
+      ],
+      "kind": "transition",
+      "visual": "Night: ink, DAY 2 at center gliding to the corner.",
+      "camera": "locked",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "DAY 2"
+      ],
+      "proof_status": "conceptual",
+      "start_frame": 1110,
+      "end_frame": 1128,
+      "start": 37.0,
+      "end": 37.6,
+      "vo": [
+        "L08"
+      ]
+    },
+    "S08-B": {
+      "shot_id": "S08-B",
+      "scene": "S08",
+      "local": [
+        18,
+        60
+      ],
+      "kind": "wide",
+      "visual": "A brand-new Claude Code session (launch command never shown).",
+      "camera": "settle, hold",
+      "source": "recording",
+      "recording_id": "R03",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1128,
+      "end_frame": 1170,
+      "start": 37.6,
+      "end": 39.0,
+      "vo": [
+        "L08"
+      ]
+    },
+    "S08-C": {
+      "shot_id": "S08-C",
+      "scene": "S08",
+      "local": [
+        60,
+        150
+      ],
+      "kind": "macro",
+      "visual": "The restored block: 'NAVIS WORK CONTINUITY — a PREVIOUS session’s record…', CURRENT TASK, DECISIONS, OPEN — stepped as the VO speaks (R04 if U06 fails).",
+      "camera": "1.8x macro steps",
+      "source": "recording",
+      "recording_id": "R03 (R04 fallback)",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1170,
+      "end_frame": 1260,
+      "start": 39.0,
+      "end": 42.0,
+      "vo": [
+        "L08",
+        "L09"
+      ]
+    },
+    "S08-D": {
+      "shot_id": "S08-D",
+      "scene": "S08",
+      "local": [
+        150,
+        186
+      ],
+      "kind": "interaction",
+      "visual": "'continue' typed at 1x; Return at 43.0 s; music near-silent.",
+      "camera": "weighted pull to the prompt (OPEN line stays in frame)",
+      "source": "recording",
+      "recording_id": "R03",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1260,
+      "end_frame": 1296,
+      "start": 42.0,
+      "end": 43.2,
+      "vo": [
+        "L09"
+      ]
+    },
+    "S08-E": {
+      "shot_id": "S08-E",
+      "scene": "S08",
+      "local": [
+        186,
+        270
+      ],
+      "kind": "result",
+      "visual": "The submitted 'continue' stays in frame while Claude's reply names the recorded decision and the open item ('You type one word.').",
+      "camera": "drift 1.3→1.2",
+      "source": "recording",
+      "recording_id": "R03",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1296,
+      "end_frame": 1380,
+      "start": 43.2,
+      "end": 46.0,
+      "vo": [
+        "L10"
+      ]
+    },
+    "S09-A": {
+      "shot_id": "S09-A",
+      "scene": "S09",
+      "local": [
+        0,
+        30
+      ],
+      "kind": "wide",
+      "visual": "Cut on Enter: the new task in the same terminal.",
+      "camera": "wide hold",
+      "source": "recording",
+      "recording_id": "R05",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1380,
+      "end_frame": 1410,
+      "start": 46.0,
+      "end": 47.0,
+      "vo": [
+        "L11"
+      ]
+    },
+    "S09-B": {
+      "shot_id": "S09-B",
+      "scene": "S09",
+      "local": [
+        30,
+        120
+      ],
+      "kind": "medium",
+      "visual": "The MCP tool call navis_get_relevant_context (shown by Claude Code as an MCP tool).",
+      "camera": "glide to 2.0x on the tool row",
+      "source": "recording",
+      "recording_id": "R05",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1410,
+      "end_frame": 1500,
+      "start": 47.0,
+      "end": 50.0,
+      "vo": [
+        "L11"
+      ]
+    },
+    "S09-C": {
+      "shot_id": "S09-C",
+      "scene": "S09",
+      "local": [
+        120,
+        158
+      ],
+      "kind": "macro",
+      "visual": "One returned fact with its source.",
+      "camera": "2.0x on the item",
+      "source": "recording",
+      "recording_id": "R05",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1500,
+      "end_frame": 1538,
+      "start": 50.0,
+      "end": 51.267,
+      "vo": [
+        "L12"
+      ]
+    },
+    "S09-D": {
+      "shot_id": "S09-D",
+      "scene": "S09",
+      "local": [
+        158,
+        200
+      ],
+      "kind": "macro",
+      "visual": "sources.detail (auth_state, last_success_at).",
+      "camera": "weighted step",
+      "source": "recording",
+      "recording_id": "R05",
+      "cursor": "none",
+      "on_screen_copy": [
+        "WITH SOURCES (after the VO says it)"
+      ],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1538,
+      "end_frame": 1580,
+      "start": 51.267,
+      "end": 52.667,
+      "vo": [
+        "L12"
+      ]
+    },
+    "S09-E": {
+      "shot_id": "S09-E",
+      "scene": "S09",
+      "local": [
+        200,
+        260
+      ],
+      "kind": "macro",
+      "visual": "freshness (as_of, newest_fact_at).",
+      "camera": "weighted step, hold",
+      "source": "recording",
+      "recording_id": "R05",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1580,
+      "end_frame": 1640,
+      "start": 52.667,
+      "end": 54.667,
+      "vo": [
+        "L12"
+      ]
+    },
+    "S09-F": {
+      "shot_id": "S09-F",
+      "scene": "S09",
+      "local": [
+        260,
+        300
+      ],
+      "kind": "result",
+      "visual": "Claude's draft citing its sources.",
+      "camera": "glide to wide",
+      "source": "recording",
+      "recording_id": "R05",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1640,
+      "end_frame": 1680,
+      "start": 54.667,
+      "end": 56.0,
+      "vo": [
+        "L12"
+      ]
+    },
+    "S10-A": {
+      "shot_id": "S10-A",
+      "scene": "S10",
+      "local": [
+        0,
+        20
+      ],
+      "kind": "wide",
+      "visual": "One window becomes three keys (split).",
+      "camera": "settle → panel 1",
+      "source": "recording",
+      "recording_id": "R05+R06+R07",
+      "cursor": "none",
+      "on_screen_copy": [
+        "FIELDSTONE · AGENT KEY",
+        "MARLOW HEALTH · AGENT KEY",
+        "FIELDSTONE · READ-ONLY KEY"
+      ],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1680,
+      "end_frame": 1700,
+      "start": 56.0,
+      "end": 56.667,
+      "vo": [
+        "L13"
+      ]
+    },
+    "S10-B": {
+      "shot_id": "S10-B",
+      "scene": "S10",
+      "local": [
+        20,
+        62
+      ],
+      "kind": "medium",
+      "visual": "Company A key → Company A facts (real).",
+      "camera": "1.25x on panel 1",
+      "source": "recording",
+      "recording_id": "R05",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1700,
+      "end_frame": 1742,
+      "start": 56.667,
+      "end": 58.067,
+      "vo": [
+        "L13"
+      ]
+    },
+    "S10-C": {
+      "shot_id": "S10-C",
+      "scene": "S10",
+      "local": [
+        62,
+        104
+      ],
+      "kind": "medium",
+      "visual": "Company B key → only Company B (real; Marlow seeded).",
+      "camera": "weighted pan to panel 2",
+      "source": "recording",
+      "recording_id": "R06",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1742,
+      "end_frame": 1784,
+      "start": 58.067,
+      "end": 59.467,
+      "vo": [
+        "L13"
+      ]
+    },
+    "S10-D": {
+      "shot_id": "S10-D",
+      "scene": "S10",
+      "local": [
+        104,
+        180
+      ],
+      "kind": "climax",
+      "visual": "HARD CUT to the real refusal, full frame: '…requires the \"view_memory\" permission, which this credential does not hold. Do not retry…' — held ≈2.5 s, continues under the wipe.",
+      "camera": "hard cut; 1.0 then 1.04 creep",
+      "source": "recording",
+      "recording_id": "R07",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1784,
+      "end_frame": 1860,
+      "start": 59.467,
+      "end": 62.0,
+      "vo": [
+        "L13"
+      ]
+    },
+    "S11-A": {
+      "shot_id": "S11-A",
+      "scene": "S11",
+      "local": [
+        0,
+        60
+      ],
+      "kind": "transition",
+      "visual": "The cobalt line rises as the horizon: the dark world wipes away; NAVIS AI APPLICATION · FOR PEOPLE on warm stone.",
+      "camera": "locked",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "NAVIS AI APPLICATION",
+        "FOR PEOPLE"
+      ],
+      "proof_status": "conceptual",
+      "start_frame": 1860,
+      "end_frame": 1920,
+      "start": 62.0,
+      "end": 64.0,
+      "vo": [
+        "L14"
+      ]
+    },
+    "S12-A": {
+      "shot_id": "S12-A",
+      "scene": "S12",
+      "local": [
+        0,
+        18
+      ],
+      "kind": "wide",
+      "visual": "Browser window (blank address pill) rises: the real Today screen ('Today · Navis').",
+      "camera": "0.92→0.95",
+      "source": "recording",
+      "recording_id": "R08",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1920,
+      "end_frame": 1938,
+      "start": 64.0,
+      "end": 64.6,
+      "vo": [
+        "L14"
+      ]
+    },
+    "S12-B": {
+      "shot_id": "S12-B",
+      "scene": "S12",
+      "local": [
+        18,
+        84
+      ],
+      "kind": "medium",
+      "visual": "Today holds; push toward the waiting-reply card.",
+      "camera": "glide toward the card",
+      "source": "recording",
+      "recording_id": "R08",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 1938,
+      "end_frame": 2004,
+      "start": 64.6,
+      "end": 66.8,
+      "vo": [
+        "L14",
+        "L15"
+      ]
+    },
+    "S12-C": {
+      "shot_id": "S12-C",
+      "scene": "S12",
+      "local": [
+        84,
+        108
+      ],
+      "kind": "macro",
+      "visual": "The card title and its evidence.",
+      "camera": "1.5x",
+      "source": "recording",
+      "recording_id": "R08",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 2004,
+      "end_frame": 2028,
+      "start": 66.8,
+      "end": 67.6,
+      "vo": [
+        "L15"
+      ]
+    },
+    "S12-D": {
+      "shot_id": "S12-D",
+      "scene": "S12",
+      "local": [
+        108,
+        144
+      ],
+      "kind": "interaction",
+      "visual": "Cursor (recorded path) arcs to the card, pauses, clicks at 68.4 s.",
+      "camera": "hold 1.5x",
+      "source": "recording",
+      "recording_id": "R08",
+      "cursor": "recorded coordinates: enter → arc → pause → click",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 2028,
+      "end_frame": 2064,
+      "start": 67.6,
+      "end": 68.8,
+      "vo": [
+        "L15"
+      ]
+    },
+    "S12-E": {
+      "shot_id": "S12-E",
+      "scene": "S12",
+      "local": [
+        144,
+        180
+      ],
+      "kind": "result",
+      "visual": "DecisionDrawer opens; 'Preparing the draft…' then the draft.",
+      "camera": "drift 1.55",
+      "source": "recording",
+      "recording_id": "R08→R09",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "LIVE_VERIFIED target",
+      "start_frame": 2064,
+      "end_frame": 2100,
+      "start": 68.8,
+      "end": 70.0,
+      "vo": [
+        "L15"
+      ]
+    },
+    "S13-A": {
+      "shot_id": "S13-A",
+      "scene": "S13",
+      "local": [
+        0,
+        30
+      ],
+      "kind": "medium",
+      "visual": "The draft: recipient, subject, body.",
+      "camera": "glide to 1.8x",
+      "source": "recording",
+      "recording_id": "R09",
+      "cursor": "to the end of sentence two",
+      "on_screen_copy": [],
+      "proof_status": "REAL_PRODUCT_RECORDING target",
+      "start_frame": 2100,
+      "end_frame": 2130,
+      "start": 70.0,
+      "end": 71.0,
+      "vo": [
+        "L15",
+        "L16"
+      ]
+    },
+    "S13-B": {
+      "shot_id": "S13-B",
+      "scene": "S13",
+      "local": [
+        30,
+        120
+      ],
+      "kind": "interaction",
+      "visual": "The human clicks into the text and types one sentence.",
+      "camera": "drift 1.85x",
+      "source": "recording",
+      "recording_id": "R09",
+      "cursor": "caret click; pointer hidden while typing",
+      "on_screen_copy": [],
+      "proof_status": "REAL_PRODUCT_RECORDING target",
+      "start_frame": 2130,
+      "end_frame": 2220,
+      "start": 71.0,
+      "end": 74.0,
+      "vo": [
+        "L16"
+      ]
+    },
+    "S13-C": {
+      "shot_id": "S13-C",
+      "scene": "S13",
+      "local": [
+        120,
+        180
+      ],
+      "kind": "macro",
+      "visual": "Cursor travels to the black 'Approve & send' pill and hovers.",
+      "camera": "weighted to 2.2x",
+      "source": "recording",
+      "recording_id": "R09",
+      "cursor": "move → hover 12 f",
+      "on_screen_copy": [],
+      "proof_status": "REAL_PRODUCT_RECORDING target",
+      "start_frame": 2220,
+      "end_frame": 2280,
+      "start": 74.0,
+      "end": 76.0,
+      "vo": [
+        "L16"
+      ]
+    },
+    "S14-A": {
+      "shot_id": "S14-A",
+      "scene": "S14",
+      "local": [
+        0,
+        18
+      ],
+      "kind": "interaction",
+      "visual": "Click 'Approve & send' (76.2 s); 0.4 s held breath.",
+      "camera": "drift",
+      "source": "recording",
+      "recording_id": "R09",
+      "cursor": "click",
+      "on_screen_copy": [],
+      "proof_status": "REAL_PRODUCT_RECORDING target",
+      "start_frame": 2280,
+      "end_frame": 2298,
+      "start": 76.0,
+      "end": 76.6,
+      "vo": []
+    },
+    "S14-B": {
+      "shot_id": "S14-B",
+      "scene": "S14",
+      "local": [
+        18,
+        84
+      ],
+      "kind": "medium",
+      "visual": "Real 'Approved — sending' chip and 'Sending…' (real wait, compressed only by a cut).",
+      "camera": "2.0x on the status",
+      "source": "recording",
+      "recording_id": "R09",
+      "cursor": "rests, then fades",
+      "on_screen_copy": [],
+      "proof_status": "REAL_PRODUCT_RECORDING target",
+      "start_frame": 2298,
+      "end_frame": 2364,
+      "start": 76.6,
+      "end": 78.8,
+      "vo": [
+        "L17"
+      ]
+    },
+    "S14-C": {
+      "shot_id": "S14-C",
+      "scene": "S14",
+      "local": [
+        84,
+        150
+      ],
+      "kind": "confirmation",
+      "visual": "Real 'Reply sent' + 'Gmail accepted the message.' — a clean, held pause.",
+      "camera": "2.1x hold",
+      "source": "recording",
+      "recording_id": "R09",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "REAL_PRODUCT_RECORDING target",
+      "start_frame": 2364,
+      "end_frame": 2430,
+      "start": 78.8,
+      "end": 81.0,
+      "vo": [
+        "L17"
+      ]
+    },
+    "S14-D": {
+      "shot_id": "S14-D",
+      "scene": "S14",
+      "local": [
+        150,
+        210
+      ],
+      "kind": "confirmation",
+      "visual": "Match cut: the recipient's real Gmail inbox — the reply arrives at the top.",
+      "camera": "1.0→1.04",
+      "source": "recording",
+      "recording_id": "R10",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "REAL_PRODUCT_RECORDING target",
+      "start_frame": 2430,
+      "end_frame": 2490,
+      "start": 81.0,
+      "end": 83.0,
+      "vo": [
+        "L17"
+      ]
+    },
+    "S15-A": {
+      "shot_id": "S15-A",
+      "scene": "S15",
+      "local": [
+        0,
+        30
+      ],
+      "kind": "transition",
+      "visual": "Pull back: the inbox shrinks into the light half and becomes the Navis AI Application 'Reply sent' still; the dark half holds the terminal still.",
+      "camera": "2.4→1.1, motion blur f0–20",
+      "source": "stills",
+      "recording_id": "STILL_R09 + STILL_R05 (+R10 tail)",
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "ABSTRACTED_PRODUCT_CONCEPT",
+      "start_frame": 2490,
+      "end_frame": 2520,
+      "start": 83.0,
+      "end": 84.0,
+      "vo": [
+        "L18"
+      ]
+    },
+    "S15-B": {
+      "shot_id": "S15-B",
+      "scene": "S15",
+      "local": [
+        30,
+        130
+      ],
+      "kind": "concept",
+      "visual": "Dark | cobalt seam | light. NAVIS DEVELOPER · FOR AGENTS over the dark half, NAVIS AI APPLICATION · FOR PEOPLE over the light half.",
+      "camera": "drift 1.1→1.03",
+      "source": "stills",
+      "recording_id": "STILL_R05 + STILL_R09",
+      "cursor": "none",
+      "on_screen_copy": [
+        "NAVIS DEVELOPER · FOR AGENTS",
+        "NAVIS AI APPLICATION · FOR PEOPLE"
+      ],
+      "proof_status": "ABSTRACTED_PRODUCT_CONCEPT",
+      "start_frame": 2520,
+      "end_frame": 2620,
+      "start": 84.0,
+      "end": 87.333,
+      "vo": [
+        "L18"
+      ]
+    },
+    "S15-C": {
+      "shot_id": "S15-C",
+      "scene": "S15",
+      "local": [
+        130,
+        180
+      ],
+      "kind": "concept",
+      "visual": "ONE SHARED UNDERSTANDING settles on the seam (after the VO has said it).",
+      "camera": "drift to 1.0",
+      "source": "stills",
+      "recording_id": "STILL_R05 + STILL_R09",
+      "cursor": "none",
+      "on_screen_copy": [
+        "ONE SHARED UNDERSTANDING"
+      ],
+      "proof_status": "ABSTRACTED_PRODUCT_CONCEPT",
+      "start_frame": 2620,
+      "end_frame": 2670,
+      "start": 87.333,
+      "end": 89.0,
+      "vo": []
+    },
+    "S16-A": {
+      "shot_id": "S16-A",
+      "scene": "S16",
+      "local": [
+        0,
+        24
+      ],
+      "kind": "future",
+      "visual": "The seam bends into a loop; ground settles to ink.",
+      "camera": "drift",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "FUTURE",
+      "start_frame": 2670,
+      "end_frame": 2694,
+      "start": 89.0,
+      "end": 89.8,
+      "vo": [
+        "L19"
+      ]
+    },
+    "S16-B": {
+      "shot_id": "S16-B",
+      "scene": "S16",
+      "local": [
+        24,
+        54
+      ],
+      "kind": "future",
+      "visual": "Solid (exists): MEMORY → CONTEXT → DECISION → EXECUTION.",
+      "camera": "drift",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "MEMORY",
+        "CONTEXT",
+        "DECISION",
+        "EXECUTION"
+      ],
+      "proof_status": "FUTURE (solid part = exists)",
+      "start_frame": 2694,
+      "end_frame": 2724,
+      "start": 89.8,
+      "end": 90.8,
+      "vo": [
+        "L19"
+      ]
+    },
+    "S16-C": {
+      "shot_id": "S16-C",
+      "scene": "S16",
+      "local": [
+        54,
+        120
+      ],
+      "kind": "future",
+      "visual": "Dashed cobalt (next): OUTCOME → LEARNING → MEMORY; NEXT.",
+      "camera": "drift to 0.96",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "OUTCOME",
+        "LEARNING",
+        "NEXT"
+      ],
+      "proof_status": "FUTURE",
+      "start_frame": 2724,
+      "end_frame": 2790,
+      "start": 90.8,
+      "end": 93.0,
+      "vo": [
+        "L19"
+      ]
+    },
+    "S17-A": {
+      "shot_id": "S17-A",
+      "scene": "S17",
+      "local": [
+        0,
+        24
+      ],
+      "kind": "brand",
+      "visual": "The loop contracts into the logo tile; the NavisLabs lockup lands (impact).",
+      "camera": "drift",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "NavisLabs (lockup)"
+      ],
+      "proof_status": "brand",
+      "start_frame": 2790,
+      "end_frame": 2814,
+      "start": 93.0,
+      "end": 93.8,
+      "vo": [
+        "L19"
+      ]
+    },
+    "S17-B": {
+      "shot_id": "S17-B",
+      "scene": "S17",
+      "local": [
+        24,
+        84
+      ],
+      "kind": "brand",
+      "visual": "Lockup holds as 'NavisLabs' is spoken; the company tagline settles beneath it.",
+      "camera": "drift",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "<approved tagline — decision D3>"
+      ],
+      "proof_status": "brand",
+      "start_frame": 2814,
+      "end_frame": 2874,
+      "start": 93.8,
+      "end": 95.8,
+      "vo": [
+        "L20"
+      ]
+    },
+    "S17-C": {
+      "shot_id": "S17-C",
+      "scene": "S17",
+      "local": [
+        84,
+        150
+      ],
+      "kind": "brand",
+      "visual": "NAVIS AI APPLICATION · NAVIS DEVELOPER (small), legal line in.",
+      "camera": "drift",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "NAVIS AI APPLICATION",
+        "NAVIS DEVELOPER",
+        "Pre-release software. Demo organization and data. Some waits shortened."
+      ],
+      "proof_status": "brand",
+      "start_frame": 2874,
+      "end_frame": 2940,
+      "start": 95.8,
+      "end": 98.0,
+      "vo": [
+        "L20"
+      ]
+    },
+    "S17-D": {
+      "shot_id": "S17-D",
+      "scene": "S17",
+      "local": [
+        150,
+        198
+      ],
+      "kind": "brand",
+      "visual": "navislabs.in (EARLY ACCESS only if U04 is approved).",
+      "camera": "drift to 1.02",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [
+        "navislabs.in"
+      ],
+      "proof_status": "brand",
+      "start_frame": 2940,
+      "end_frame": 2988,
+      "start": 98.0,
+      "end": 99.6,
+      "vo": []
+    },
+    "S17-E": {
+      "shot_id": "S17-E",
+      "scene": "S17",
+      "local": [
+        198,
+        210
+      ],
+      "kind": "end",
+      "visual": "Fade to black; silence.",
+      "camera": "locked",
+      "source": "film",
+      "recording_id": null,
+      "cursor": "none",
+      "on_screen_copy": [],
+      "proof_status": "brand",
+      "start_frame": 2988,
+      "end_frame": 3000,
+      "start": 99.6,
+      "end": 100.0,
+      "vo": []
+    }
+  },
+  "voiceover": {
+    "total_words": 169,
+    "lines": [
+      {
+        "id": "L01",
+        "scene": "S01",
+        "start": 0.3,
+        "end": 4.05,
+        "start_frame": 9,
+        "end_frame": 122,
+        "duration": 3.75,
+        "text": "Every company now runs on people and AI agents.",
+        "words": 9,
+        "words_per_second": 2.4,
+        "natural_read_model_s": 3.75,
+        "founder_original": null,
+        "flag": "Sweeping framing ('every company'). Founder line kept; acceptable as belief, not a statistic.",
+        "claim": "framing",
+        "evidence": [
+          "founder thesis (opinion)"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "people and AI agents",
+            "shot": "S01-A"
+          }
+        ],
+        "file": "public/voiceover/L01.wav",
+        "delivery": "calm, low, unhurried — a statement of fact"
+      },
+      {
+        "id": "L02",
+        "scene": "S02",
+        "start": 4.4,
+        "end": 7.73,
+        "start_frame": 132,
+        "end_frame": 232,
+        "duration": 3.33,
+        "text": "But they don’t work from the same truth.",
+        "words": 8,
+        "words_per_second": 2.4,
+        "natural_read_model_s": 3.33,
+        "founder_original": null,
+        "flag": null,
+        "claim": "framing",
+        "evidence": [
+          "founder thesis"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "the same truth",
+            "shot": "S03-A"
+          }
+        ],
+        "file": "public/voiceover/L02.wav",
+        "delivery": "quiet turn; land 'same truth'"
+      },
+      {
+        "id": "L03",
+        "scene": "S03",
+        "start": 8.0,
+        "end": 12.05,
+        "start_frame": 240,
+        "end_frame": 362,
+        "duration": 4.05,
+        "text": "What’s true lives across email, meetings, chat and docs.",
+        "words": 9,
+        "words_per_second": 2.22,
+        "natural_read_model_s": 4.05,
+        "founder_original": null,
+        "flag": "Framing only: 'chat and docs' describe where company truth lives — NOT what NavisLabs reads (Gmail, Calendar, Drive metadata). No visual may imply a chat or document integration.",
+        "claim": "framing",
+        "evidence": [
+          "C02-style framing (where truth lives, not what NavisLabs ingests)"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "email",
+            "shot": "S03-B"
+          },
+          {
+            "phrase": "meetings",
+            "shot": "S03-B"
+          },
+          {
+            "phrase": "chat",
+            "shot": "S03-B"
+          },
+          {
+            "phrase": "docs",
+            "shot": "S03-B"
+          }
+        ],
+        "file": "public/voiceover/L03.wav",
+        "delivery": "observational list; small pause at each comma"
+      },
+      {
+        "id": "L04",
+        "scene": "S03",
+        "start": 12.5,
+        "end": 14.58,
+        "start_frame": 375,
+        "end_frame": 437,
+        "duration": 2.08,
+        "text": "People rebuild it by hand.",
+        "words": 5,
+        "words_per_second": 2.4,
+        "natural_read_model_s": 2.08,
+        "founder_original": null,
+        "flag": null,
+        "claim": "framing",
+        "evidence": [
+          "founder thesis"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "rebuild it by hand",
+            "shot": "S03-C"
+          }
+        ],
+        "file": "public/voiceover/L04.wav",
+        "delivery": "flat, a little tired"
+      },
+      {
+        "id": "L05",
+        "scene": "S03",
+        "start": 14.9,
+        "end": 17.4,
+        "start_frame": 447,
+        "end_frame": 522,
+        "duration": 2.5,
+        "text": "Agents start every session without it.",
+        "words": 6,
+        "words_per_second": 2.4,
+        "natural_read_model_s": 2.5,
+        "founder_original": "Agents start from zero, every session.",
+        "flag": "CHANGED from the founder draft 'Agents start from zero, every session.' — that contradicts the master's claims_to_avoid (agents do get CLAUDE.md and their own memory). The new line says they start without the company truth. Founder approval needed.",
+        "claim": "framing",
+        "evidence": [
+          "C02 must-not: do not say agents remember nothing (Claude Code re-injects CLAUDE.md and its own memory)"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "every session",
+            "shot": "S03-D"
+          }
+        ],
+        "file": "public/voiceover/L05.wav",
+        "delivery": "dry; let 'without it' fall"
+      },
+      {
+        "id": "L06",
+        "scene": "S04",
+        "start": 18.0,
+        "end": 23.72,
+        "start_frame": 540,
+        "end_frame": 712,
+        "duration": 5.72,
+        "text": "NavisLabs gives your company one shared understanding — for your people and your agents.",
+        "words": 13,
+        "words_per_second": 2.27,
+        "natural_read_model_s": 5.72,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C10 + N01",
+        "evidence": [
+          "F18 (staging): one implementation of each organizational read, shared by agents and people",
+          "navislabs.in: 'One core · Two products'"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "NavisLabs",
+            "shot": "S04-B"
+          },
+          {
+            "phrase": "one shared understanding",
+            "shot": "S04-C"
+          },
+          {
+            "phrase": "your people and your agents",
+            "shot": "S05-A"
+          }
+        ],
+        "file": "public/voiceover/L06.wav",
+        "delivery": "the reveal — slower; breath before 'NavisLabs'; warm on 'your people and your agents'"
+      },
+      {
+        "id": "L07",
+        "scene": "S07",
+        "start": 30.3,
+        "end": 34.65,
+        "start_frame": 909,
+        "end_frame": 1040,
+        "duration": 4.35,
+        "text": "Here’s Claude Code yesterday: a goal, decisions, open items.",
+        "words": 9,
+        "words_per_second": 2.07,
+        "natural_read_model_s": 4.35,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C03",
+        "evidence": [
+          "F01",
+          "X02: decisions are recorded with `navis workstate checkpoint`"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "a goal",
+            "shot": "S07-B"
+          },
+          {
+            "phrase": "decisions, open items",
+            "shot": "S07-C"
+          }
+        ],
+        "file": "public/voiceover/L07.wav",
+        "delivery": "show-and-tell: 'Here’s…' like turning a laptop around"
+      },
+      {
+        "id": "L08",
+        "scene": "S08",
+        "start": 37.5,
+        "end": 39.73,
+        "start_frame": 1125,
+        "end_frame": 1192,
+        "duration": 2.23,
+        "text": "Today, a brand-new session.",
+        "words": 5,
+        "words_per_second": 2.24,
+        "natural_read_model_s": 2.23,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C04",
+        "evidence": [
+          "F01"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "a brand-new session",
+            "shot": "S08-B"
+          }
+        ],
+        "file": "public/voiceover/L08.wav",
+        "delivery": "light, matter-of-fact"
+      },
+      {
+        "id": "L09",
+        "scene": "S08",
+        "start": 40.0,
+        "end": 42.92,
+        "start_frame": 1200,
+        "end_frame": 1288,
+        "duration": 2.92,
+        "text": "Navis Developer restores where it left off.",
+        "words": 7,
+        "words_per_second": 2.4,
+        "natural_read_model_s": 2.92,
+        "founder_original": "It already knows where it left off.",
+        "flag": "CHANGED from the founder draft 'It already knows where it left off.' — a model-memory claim the brief itself forbids. 'Restores' is what the product does (SessionStart). Founder approval needed.",
+        "claim": "C04",
+        "evidence": [
+          "F01: SessionStart restores the recorded checkpoint (objective, decisions, open)",
+          "brief rule: never claim model memory"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "restores where it left off",
+            "shot": "S08-C"
+          }
+        ],
+        "file": "public/voiceover/L09.wav",
+        "delivery": "quiet confidence on 'restores'"
+      },
+      {
+        "id": "L10",
+        "scene": "S08",
+        "start": 43.4,
+        "end": 45.07,
+        "start_frame": 1302,
+        "end_frame": 1352,
+        "duration": 1.67,
+        "text": "You type one word.",
+        "words": 4,
+        "words_per_second": 2.4,
+        "natural_read_model_s": 1.67,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C05",
+        "evidence": [
+          "F01 (only 'continue' typed on camera)"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "one word",
+            "shot": "S08-E"
+          }
+        ],
+        "file": "public/voiceover/L10.wav",
+        "delivery": "very short; a half-smile allowed, no laugh"
+      },
+      {
+        "id": "L11",
+        "scene": "S09",
+        "start": 46.4,
+        "end": 49.73,
+        "start_frame": 1392,
+        "end_frame": 1492,
+        "duration": 3.33,
+        "text": "The agent asks Navis Developer for company context.",
+        "words": 8,
+        "words_per_second": 2.4,
+        "natural_read_model_s": 3.33,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C06",
+        "evidence": [
+          "F03",
+          "F02 (MCP)"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "asks Navis Developer",
+            "shot": "S09-B"
+          }
+        ],
+        "file": "public/voiceover/L11.wav",
+        "delivery": "precise"
+      },
+      {
+        "id": "L12",
+        "scene": "S09",
+        "start": 50.2,
+        "end": 54.82,
+        "start_frame": 1506,
+        "end_frame": 1645,
+        "duration": 4.62,
+        "text": "It gets facts — with sources, and how fresh they are.",
+        "words": 10,
+        "words_per_second": 2.16,
+        "natural_read_model_s": 4.62,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C06",
+        "evidence": [
+          "F03: items with kind/source/lineage, freshness.as_of/newest_fact_at, sources.detail"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "facts",
+            "shot": "S09-C"
+          },
+          {
+            "phrase": "with sources",
+            "shot": "S09-D"
+          },
+          {
+            "phrase": "how fresh they are",
+            "shot": "S09-E"
+          }
+        ],
+        "file": "public/voiceover/L12.wav",
+        "delivery": "clipped fragments after the dash"
+      },
+      {
+        "id": "L13",
+        "scene": "S10",
+        "start": 56.4,
+        "end": 61.7,
+        "start_frame": 1692,
+        "end_frame": 1851,
+        "duration": 5.3,
+        "text": "Each key sees its own company — and only what it’s allowed to.",
+        "words": 12,
+        "words_per_second": 2.26,
+        "natural_read_model_s": 5.3,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C07",
+        "evidence": [
+          "F05 (org from the credential)",
+          "F04 (exact refusal text)"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "its own company",
+            "shot": "S10-C"
+          },
+          {
+            "phrase": "only what it’s allowed to",
+            "shot": "S10-D"
+          }
+        ],
+        "file": "public/voiceover/L13.wav",
+        "delivery": "calm, firm; end on 'allowed to' as the refusal lands"
+      },
+      {
+        "id": "L14",
+        "scene": "S11",
+        "start": 62.4,
+        "end": 65.47,
+        "start_frame": 1872,
+        "end_frame": 1964,
+        "duration": 3.07,
+        "text": "For people, the same understanding becomes Today.",
+        "words": 7,
+        "words_per_second": 2.28,
+        "natural_read_model_s": 3.07,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C08",
+        "evidence": [
+          "F12",
+          "F18"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "Today",
+            "shot": "S12-B"
+          }
+        ],
+        "file": "public/voiceover/L14.wav",
+        "delivery": "warmer — the world changes"
+      },
+      {
+        "id": "L15",
+        "scene": "S12",
+        "start": 65.7,
+        "end": 70.52,
+        "start_frame": 1971,
+        "end_frame": 2116,
+        "duration": 4.82,
+        "text": "Who’s waiting on you? Open it — the reply is drafted.",
+        "words": 10,
+        "words_per_second": 2.07,
+        "natural_read_model_s": 4.82,
+        "founder_original": null,
+        "flag": "Honest about drafting: the panel prepares the draft when opened, so the VO never says 'already drafted'.",
+        "claim": "C08",
+        "evidence": [
+          "F12 (waiting-reply obligations)",
+          "DraftReviewPanel loads the draft on open ('Preparing the draft…')"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "Who’s waiting on you",
+            "shot": "S12-B"
+          },
+          {
+            "phrase": "Open it",
+            "shot": "S12-D"
+          },
+          {
+            "phrase": "the reply is drafted",
+            "shot": "S12-E"
+          }
+        ],
+        "file": "public/voiceover/L15.wav",
+        "delivery": "human; the question is real"
+      },
+      {
+        "id": "L16",
+        "scene": "S13",
+        "start": 70.7,
+        "end": 75.57,
+        "start_frame": 2121,
+        "end_frame": 2267,
+        "duration": 4.87,
+        "text": "You read it. You change a line. You approve it.",
+        "words": 10,
+        "words_per_second": 2.05,
+        "natural_read_model_s": 4.87,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C09 + B01",
+        "evidence": [
+          "F09",
+          "DraftReviewPanel edit/save"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "You read it",
+            "shot": "S13-A"
+          },
+          {
+            "phrase": "You change a line",
+            "shot": "S13-B"
+          },
+          {
+            "phrase": "You approve it",
+            "shot": "S13-C"
+          }
+        ],
+        "file": "public/voiceover/L16.wav",
+        "delivery": "three even beats"
+      },
+      {
+        "id": "L17",
+        "scene": "S14",
+        "start": 76.75,
+        "end": 82.05,
+        "start_frame": 2302,
+        "end_frame": 2462,
+        "duration": 5.3,
+        "text": "Navis AI Application sends it — and only says sent when Gmail confirms.",
+        "words": 12,
+        "words_per_second": 2.26,
+        "natural_read_model_s": 5.3,
+        "founder_original": null,
+        "flag": "Names the product explicitly instead of the old bare 'Navis sends it'.",
+        "claim": "C09",
+        "evidence": [
+          "F09: 'Reply sent' only with a real provider id; 'Gmail accepted the message.'"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "sends it",
+            "shot": "S14-B"
+          },
+          {
+            "phrase": "only says sent when Gmail confirms",
+            "shot": "S14-C"
+          }
+        ],
+        "file": "public/voiceover/L17.wav",
+        "delivery": "after the held breath; precise, quietly proud"
+      },
+      {
+        "id": "L18",
+        "scene": "S15",
+        "start": 83.6,
+        "end": 87.28,
+        "start_frame": 2508,
+        "end_frame": 2618,
+        "duration": 3.68,
+        "text": "Two products. One shared understanding of your company.",
+        "words": 8,
+        "words_per_second": 2.17,
+        "natural_read_model_s": 3.68,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C10",
+        "evidence": [
+          "F18 (staging)",
+          "navislabs.in 'One core · Two products'"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "Two products",
+            "shot": "S15-B"
+          },
+          {
+            "phrase": "One shared understanding",
+            "shot": "S15-B"
+          }
+        ],
+        "file": "public/voiceover/L18.wav",
+        "delivery": "open, settled"
+      },
+      {
+        "id": "L19",
+        "scene": "S16",
+        "start": 89.1,
+        "end": 93.15,
+        "start_frame": 2673,
+        "end_frame": 2794,
+        "duration": 4.05,
+        "text": "Next: every outcome feeds back into what it knows.",
+        "words": 9,
+        "words_per_second": 2.22,
+        "natural_read_model_s": 4.05,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C11 (FUTURE)",
+        "evidence": [
+          "future_features.items[0]; record_outcome emits no learning event"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "feeds back into what it knows",
+            "shot": "S16-C"
+          }
+        ],
+        "file": "public/voiceover/L19.wav",
+        "delivery": "forward-looking; 'Next:' with a real pause"
+      },
+      {
+        "id": "L20",
+        "scene": "S17",
+        "start": 93.8,
+        "end": 97.78,
+        "start_frame": 2814,
+        "end_frame": 2933,
+        "duration": 3.98,
+        "text": "NavisLabs. Built for your people — and your agents.",
+        "words": 8,
+        "words_per_second": 2.01,
+        "natural_read_model_s": 3.98,
+        "founder_original": null,
+        "flag": null,
+        "claim": "C12 + N01",
+        "evidence": [
+          "navislabs.in 'Built for people. Built for agents.'"
+        ],
+        "sync_anchors": [
+          {
+            "phrase": "NavisLabs",
+            "shot": "S17-B"
+          }
+        ],
+        "file": "public/voiceover/L20.wav",
+        "delivery": "slow, final; silence after"
+      }
+    ],
+    "pace_model": "~2.4 words/s + natural pauses (master talent direction)",
+    "scene_vo_extent": [
+      {
+        "scene": "S01",
+        "lines": [
+          "L01"
+        ],
+        "vo_ends": 4.05,
+        "scene_end": 3.2,
+        "carries_over_cut": true
+      },
+      {
+        "scene": "S02",
+        "lines": [
+          "L02"
+        ],
+        "vo_ends": 7.73,
+        "scene_end": 6.4,
+        "carries_over_cut": true
+      },
+      {
+        "scene": "S03",
+        "lines": [
+          "L03",
+          "L04",
+          "L05"
+        ],
+        "vo_ends": 17.4,
+        "scene_end": 16.8,
+        "carries_over_cut": true
+      },
+      {
+        "scene": "S04",
+        "lines": [
+          "L06"
+        ],
+        "vo_ends": 23.72,
+        "scene_end": 23.0,
+        "carries_over_cut": true
+      },
+      {
+        "scene": "S07",
+        "lines": [
+          "L07"
+        ],
+        "vo_ends": 34.65,
+        "scene_end": 37.0,
+        "carries_over_cut": false
+      },
+      {
+        "scene": "S08",
+        "lines": [
+          "L08",
+          "L09",
+          "L10"
+        ],
+        "vo_ends": 45.07,
+        "scene_end": 46.0,
+        "carries_over_cut": false
+      },
+      {
+        "scene": "S09",
+        "lines": [
+          "L11",
+          "L12"
+        ],
+        "vo_ends": 54.82,
+        "scene_end": 56.0,
+        "carries_over_cut": false
+      },
+      {
+        "scene": "S10",
+        "lines": [
+          "L13"
+        ],
+        "vo_ends": 61.7,
+        "scene_end": 62.0,
+        "carries_over_cut": false
+      },
+      {
+        "scene": "S11",
+        "lines": [
+          "L14"
+        ],
+        "vo_ends": 65.47,
+        "scene_end": 64.0,
+        "carries_over_cut": true
+      },
+      {
+        "scene": "S12",
+        "lines": [
+          "L15"
+        ],
+        "vo_ends": 70.52,
+        "scene_end": 70.0,
+        "carries_over_cut": true
+      },
+      {
+        "scene": "S13",
+        "lines": [
+          "L16"
+        ],
+        "vo_ends": 75.57,
+        "scene_end": 76.0,
+        "carries_over_cut": false
+      },
+      {
+        "scene": "S14",
+        "lines": [
+          "L17"
+        ],
+        "vo_ends": 82.05,
+        "scene_end": 83.0,
+        "carries_over_cut": false
+      },
+      {
+        "scene": "S15",
+        "lines": [
+          "L18"
+        ],
+        "vo_ends": 87.28,
+        "scene_end": 89.0,
+        "carries_over_cut": false
+      },
+      {
+        "scene": "S16",
+        "lines": [
+          "L19"
+        ],
+        "vo_ends": 93.15,
+        "scene_end": 93.0,
+        "carries_over_cut": true
+      },
+      {
+        "scene": "S17",
+        "lines": [
+          "L20"
+        ],
+        "vo_ends": 97.78,
+        "scene_end": 100.0,
+        "carries_over_cut": false
+      }
+    ],
+    "workflow": [
+      "Founder records each line naturally (3 takes, close-mic, dry room, 48 kHz/24-bit).",
+      "ElevenLabs Voice Changer with the founder's own voice (or his own clone with consent) — preserves cadence and emotion.",
+      "Adobe Podcast Enhance as an external step at moderate strength.",
+      "Final WAVs to public/voiceover/; forced-align words and re-key camera stops, captions and SFX to the real performance.",
+      "ELEVENLABS_API_KEY only from the environment if any script is added; never in JSON or the repo; .env stays ignored."
+    ],
+    "target_sound": "calm, confident, understated, technical; Silicon Valley presentation style in the founder's own voice — not a narrator, trailer or ad"
+  },
+  "recordings": {
+    "R01": {
+      "product": "Navis Developer (CLI + hooks) in Claude Code",
+      "use": [
+        "S03-D opening frames",
+        "S07"
+      ],
+      "capture": "Evening (Day 1). New branch in fieldstone-api; hooks configured in the demo repo (never Devtool). START RECORDING ≥3 s BEFORE typing — the empty fresh session is the Act 1 'real computer' shot. Type the goal; let Claude work; Claude runs `navis workstate checkpoint --decision … --open …` on its own; type /exit.",
+      "must_show": [
+        "fresh session (3 s)",
+        "typed goal",
+        "real tool calls",
+        "checkpoint command",
+        "'Checkpoint recorded for …'",
+        "/exit"
+      ],
+      "required": true,
+      "file": "public/recordings/R01.mp4 (or .mov)",
+      "status": "missing"
+    },
+    "R03": {
+      "product": "Navis Developer restore in Claude Code",
+      "use": [
+        "S08"
+      ],
+      "capture": "Next morning (≥12 h). In-point after `claude` launched. Restore block on screen (U06) ≥4 s; type 'continue'; reply names the decision and open item.",
+      "must_show": [
+        "restore header + CURRENT TASK / DECISIONS / OPEN",
+        "'continue'",
+        "reply"
+      ],
+      "required": true,
+      "file": "public/recordings/R03.mp4 (or .mov)",
+      "status": "missing"
+    },
+    "R04": {
+      "product": "Navis Developer CLI",
+      "use": [
+        "S08-C fallback"
+      ],
+      "capture": "Only if U06 fails: `navis workstate show` in a separate tab.",
+      "required": false,
+      "file": "public/recordings/R04.mp4 (or .mov)",
+      "status": "missing"
+    },
+    "R05": {
+      "product": "Navis Developer MCP (Fieldstone agent key)",
+      "use": [
+        "S09",
+        "S10-B",
+        "STILL_R05"
+      ],
+      "capture": "Prompt 'Draft the notice to our existing annual customers about the new pricing.'; MCP call; EXPAND the result; Claude's cited draft. The annual-terms fact must come from a seeded human email/meeting, never the agent's checkpoint.",
+      "must_show": [
+        "MCP tool row",
+        "item + source",
+        "sources.detail",
+        "freshness",
+        "cited draft"
+      ],
+      "required": true,
+      "file": "public/recordings/R05.mp4 (or .mov)",
+      "status": "missing"
+    },
+    "R06": {
+      "product": "Navis Developer MCP (Marlow Health key)",
+      "use": [
+        "S10-C"
+      ],
+      "capture": "Same prompt in marlow-api with Marlow's key; Marlow seeded with its OWN demo mail first (D8).",
+      "must_show": [
+        "Marlow-only facts, nothing about Fieldstone"
+      ],
+      "required": true,
+      "file": "public/recordings/R06.mp4 (or .mov)",
+      "status": "missing"
+    },
+    "R07": {
+      "product": "Navis Developer MCP (Fieldstone read-only key)",
+      "use": [
+        "S10-D climax"
+      ],
+      "capture": "Same prompt; expand the refusal; hold ≥5 s.",
+      "must_show": [
+        "navis_get_relevant_context requires the \"view_memory\" permission, which this credential does not hold. Do not retry — the answer will not change. Ask an organization admin to issue a key carrying it."
+      ],
+      "required": true,
+      "file": "public/recordings/R07.mp4 (or .mov)",
+      "status": "missing"
+    },
+    "R08": {
+      "product": "Navis AI Application — /dashboard (Today)",
+      "use": [
+        "S12"
+      ],
+      "capture": "Morning; REAL mode (NEXT_PUBLIC_USE_MOCK off); signed in as Maya (demo); /dashboard — NEVER the landing page (it has a static mock with the same labels). Hold 3 s; move to the waiting-reply card; click; continue into R09 (one take). Record the cursor (or log its coordinates) — the film's cursor follows the recorded path.",
+      "must_show": [
+        "'Today · Navis'",
+        "waiting-reply card",
+        "drawer opening"
+      ],
+      "required": true,
+      "file": "public/recordings/R08.mp4 (or .mov)",
+      "status": "missing"
+    },
+    "R09": {
+      "product": "Navis AI Application — DecisionDrawer > DraftReviewPanel",
+      "use": [
+        "S12-E",
+        "S13",
+        "S14-A..C",
+        "STILL_R09"
+      ],
+      "capture": "Same take: 'Preparing the draft…' → draft; read 2 s; click end of sentence two; type one sentence; hover 'Approve & send' 0.5 s; click; do not move during 'Approved — sending' / 'Sending…'; hold 'Reply sent' 3 s. Reject any 'Prepared — not sent' take.",
+      "must_show": [
+        "draft",
+        "the typed sentence",
+        "'Approve & send'",
+        "'Approved — sending'",
+        "'Sending…'",
+        "'Reply sent' + 'Gmail accepted the message.'"
+      ],
+      "required": true,
+      "file": "public/recordings/R09.mp4 (or .mov)",
+      "status": "missing"
+    },
+    "R10": {
+      "product": "Gmail — recipient demo inbox",
+      "use": [
+        "S14-D",
+        "S15-A"
+      ],
+      "capture": "Second machine, Daniel's demo inbox open before the click; record until the reply arrives; crop to the inbox rows (no Gmail logo/avatar).",
+      "must_show": [
+        "the arriving reply with the same subject"
+      ],
+      "required": true,
+      "file": "public/recordings/R10.mp4 (or .mov)",
+      "status": "missing"
+    },
+    "STILL_R05": {
+      "product": "frame from R05",
+      "use": [
+        "S15"
+      ],
+      "required": true,
+      "file": "public/images/still-r05.png",
+      "status": "missing"
+    },
+    "STILL_R09": {
+      "product": "frame from R09 ('Reply sent')",
+      "use": [
+        "S15-A/B"
+      ],
+      "required": true,
+      "file": "public/images/still-r09.png",
+      "status": "missing"
+    },
+    "R11": {
+      "product": "Navis Developer console /runs/[runId] ('Coding session')",
+      "use": [
+        "optional ALT_C — not in the cut"
+      ],
+      "capture": "Only if decision D9 adds a runs beat: the R01/R03 session as a run with its checkpoint as the outcome; no cost figures unless real.",
+      "required": false,
+      "file": "public/recordings/R11.mp4 (or .mov)",
+      "status": "missing"
+    }
+  },
+  "ui_sources": {
+    "website (navis-labs-website)": {
+      "files": [
+        "app/globals.css",
+        "app/layout.tsx",
+        "components/site/wordmark.tsx",
+        "components/site/home.tsx",
+        "public/navis-logo.png"
+      ],
+      "facts": [
+        "lockup = rounded logo tile + 'NavisLabs' (Geist Sans semibold, tracking ≈0.01 em)",
+        "'NO BRAND COLOUR' — ink, stone, graphite",
+        "published copy: 'One core · Two products', 'Built for people. Built for agents.', 'For your team · Use Navis', 'For your agents · Build on Navis', Developer badge 'Private preview'",
+        "site title tagline: 'NavisLabs — Enterprise Intelligence Infrastructure'",
+        "names the people product 'Navis Application' (mismatch with the new lock — D1)"
+      ]
+    },
+    "Navis AI Application (Navis-AI repo)": {
+      "files": [
+        "src/app/globals.css",
+        "src/app/layout.tsx",
+        "src/components/navis/dashboard/DailyBriefHero.tsx",
+        "src/components/navis/_shared/PageMasthead.tsx",
+        "src/components/navis/DecisionDrawer.tsx",
+        "src/components/navis/actions/DraftReviewPanel.tsx"
+      ],
+      "facts": [
+        "bg #FBFAF7, cards #FFFFFF, borders #E5E7EB, text #111827, muted #6B7280, accent indigo #6366F1, emerald success",
+        "Inter UI; Charter editorial serif",
+        "masthead 'Today · Navis'",
+        "'Preparing the draft…' while loading",
+        "black pill 'Approve & send'",
+        "'Approved — sending' chip",
+        "'Sending…' → 'Reply sent' / 'Gmail accepted the message.'",
+        "landing page src/app/page.tsx is a static mock — never film"
+      ]
+    },
+    "Navis Developer (Devtool repo)": {
+      "files": [
+        "apps/dashboard/src/app/globals.css",
+        "apps/dashboard/src/app/layout.tsx",
+        "packages/cli/src/commands/workstate.ts",
+        "packages/cli/src/workstate/restore.ts",
+        "services/mcp-server/src/authorization/authorize.ts"
+      ],
+      "facts": [
+        "dashboard: canvas #F7F6F3, ink #14130F, graphite #2E2A24, Inter/Geist Sans + Geist Mono, title 'Navis Developer'",
+        "film surface = Claude Code terminal, not the dashboard",
+        "'Checkpoint recorded for <where>.'",
+        "'NAVIS WORK CONTINUITY — a PREVIOUS session’s record of this work, not a transcript.'",
+        "exact refusal text (authorize.ts)",
+        "API/SDK unpublished; console local"
+      ]
+    }
+  },
+  "camera": {
+    "grammar": "every real UI scene: A wide → B medium → C macro → D interaction → E confirmation",
+    "rules": [
+      "hard cuts for proof, slower moves for concept",
+      "motion blur only on the S05→S06 zoom-through and the S15 pull-back",
+      "no transition on every scene",
+      "macro targets re-keyed to the real footage and the recorded VO"
+    ]
+  },
+  "cursor": {
+    "rules": [
+      "only when a person acts (S12–S14)",
+      "follows the RECORDED pointer path/coordinates — no estimates in final",
+      "enter → move → pause → click → UI responds → exit",
+      "no cursor in terminal scenes"
+    ],
+    "events": [
+      {
+        "t": 68.4,
+        "action": "click waiting-reply card",
+        "vo": "L15 'Open it'"
+      },
+      {
+        "t": 71.0,
+        "action": "caret into the draft",
+        "vo": "L16 'You read it.' → 'You change a line.'"
+      },
+      {
+        "t": null,
+        "action": "travel to and hover 'Approve & send'",
+        "vo": "L16 'You approve it.'"
+      },
+      {
+        "t": 76.2,
+        "action": "click 'Approve & send'",
+        "vo": "then L17"
+      }
+    ]
+  },
+  "music": {
+    "layers": [
+      "ATMOS",
+      "TEXTURE",
+      "PULSE",
+      "PERC",
+      "BASS",
+      "HARMONY",
+      "PIANO"
+    ],
+    "sections": [
+      {
+        "id": "M1",
+        "from": 0.0,
+        "to": 18.0,
+        "brief": "minimal tension",
+        "layers_db": {
+          "ATMOS": -30,
+          "TEXTURE": -30
+        },
+        "notes": "room tone; texture grows under the fragments; 0.4 s silence 17.6–18.0 before 'NavisLabs'"
+      },
+      {
+        "id": "M2",
+        "from": 18.0,
+        "to": 25.5,
+        "brief": "brand reveal",
+        "layers_db": {
+          "HARMONY": -24,
+          "BASS": -24,
+          "ATMOS": -28
+        },
+        "notes": "low harmonic swell from the lockup (LF impact 18.4 s); opens wider on 'your people and your agents'"
+      },
+      {
+        "id": "M3",
+        "from": 25.5,
+        "to": 62.0,
+        "brief": "technical pulse",
+        "layers_db": {
+          "PULSE": -24,
+          "PERC": -28,
+          "BASS": -26
+        },
+        "notes": "near-silence 42.8–44.0 s around 'continue'; −18 dB from the refusal hard cut (59.5 s) to 62.0 s"
+      },
+      {
+        "id": "M4",
+        "from": 62.0,
+        "to": 83.0,
+        "brief": "warmer, wider harmonic layer",
+        "layers_db": {
+          "HARMONY": -22,
+          "PIANO": -26,
+          "ATMOS": -28
+        },
+        "notes": "full silence 76.3–76.7 s (held breath); small lift from 'Reply sent' (78.8 s), then hold"
+      },
+      {
+        "id": "M5",
+        "from": 83.0,
+        "to": 93.0,
+        "brief": "technical resolution",
+        "layers_db": {
+          "PULSE": -30,
+          "HARMONY": -24,
+          "BASS": -28
+        },
+        "notes": "pulse returns softly and resolves under L19; drop to near-silence 93.15–93.5 s"
+      },
+      {
+        "id": "M6",
+        "from": 93.0,
+        "to": 100.0,
+        "brief": "minimal ending",
+        "layers_db": {
+          "PIANO": -22,
+          "ATMOS": -32
+        },
+        "notes": "one resolving piano note with the lockup (93.5 s); silent by 98.6 s (0.8 s after the final word); fade to black 99.6–100"
+      }
+    ],
+    "silences_and_drops": [
+      {
+        "from": 17.6,
+        "to": 18.0,
+        "why": "inhale before 'NavisLabs'"
+      },
+      {
+        "from": 42.8,
+        "to": 44.0,
+        "why": "'continue'"
+      },
+      {
+        "from": 59.5,
+        "to": 62.0,
+        "why": "music drops under the refusal (−18 dB)"
+      },
+      {
+        "from": 76.3,
+        "to": 76.7,
+        "why": "held breath after Approve & send"
+      },
+      {
+        "from": 93.15,
+        "to": 93.5,
+        "why": "before the brand (after L19 ends)"
+      },
+      {
+        "from": 98.6,
+        "to": 100.0,
+        "why": "silence after the final word"
+      }
+    ],
+    "ducking": "music −8 dB under VO (150 ms attack, 400 ms release)",
+    "files": "public/music/score.wav + public/music/stems/*.wav — licensed or commissioned; never paper-kite-drift.mp3"
+  },
+  "sfx": {
+    "events": [
+      {
+        "id": "FX01",
+        "t": 0.0,
+        "frame": 0,
+        "sound": "room tone bed (0–6.4 s)",
+        "level": "-40 dB",
+        "asset_id": "SFX_ROOM_TONE"
+      },
+      {
+        "id": "FX02",
+        "t": null,
+        "frame": null,
+        "sound": "soft ticks on 'email', 'meetings', 'chat', 'docs' (keyed to the recorded VO)",
+        "level": "-32 dB",
+        "asset_id": "SFX_TICK_SOFT"
+      },
+      {
+        "id": "FX03",
+        "t": 16.8,
+        "frame": 504,
+        "sound": "faint digital texture under the convergence",
+        "level": "-32 dB",
+        "asset_id": "SFX_DATA_TEXTURE"
+      },
+      {
+        "id": "FX04",
+        "t": 18.4,
+        "frame": 552,
+        "sound": "low-frequency impact — the lockup lands",
+        "level": "-18 dB",
+        "asset_id": "SFX_LF_IMPACT"
+      },
+      {
+        "id": "FX05",
+        "t": 28.0,
+        "frame": 840,
+        "sound": "soft air on the zoom-through (no whoosh)",
+        "level": "-32 dB",
+        "asset_id": "SFX_WHOOSH_TAIL"
+      },
+      {
+        "id": "FX06",
+        "t": 30.6,
+        "frame": 918,
+        "sound": "keyboard while the goal is typed",
+        "level": "-26 dB",
+        "asset_id": "SFX_KEYBOARD"
+      },
+      {
+        "id": "FX07",
+        "t": 34.3,
+        "frame": 1029,
+        "sound": "soft tick — 'Checkpoint recorded for …'",
+        "level": "-28 dB",
+        "asset_id": "SFX_TICK_SOFT"
+      },
+      {
+        "id": "FX08",
+        "t": 36.2,
+        "frame": 1086,
+        "sound": "keyboard — /exit",
+        "level": "-26 dB",
+        "asset_id": "SFX_KEYBOARD"
+      },
+      {
+        "id": "FX09",
+        "t": 42.6,
+        "frame": 1278,
+        "sound": "keyboard — 'continue'",
+        "level": "-26 dB",
+        "asset_id": "SFX_KEYBOARD"
+      },
+      {
+        "id": "FX10",
+        "t": 43.0,
+        "frame": 1290,
+        "sound": "terminal Return",
+        "level": "-20 dB",
+        "asset_id": "SFX_RETURN_KEY"
+      },
+      {
+        "id": "FX11",
+        "t": 46.0,
+        "frame": 1380,
+        "sound": "terminal Return on the cut",
+        "level": "-26 dB",
+        "asset_id": "SFX_RETURN_KEY"
+      },
+      {
+        "id": "FX12",
+        "t": 48.0,
+        "frame": 1440,
+        "sound": "faint digital texture under the MCP call (re-key to footage)",
+        "level": "-30 dB",
+        "asset_id": "SFX_DATA_TEXTURE"
+      },
+      {
+        "id": "FX13",
+        "t": 59.5,
+        "frame": 1785,
+        "sound": "muted low thud on the refusal hard cut",
+        "level": "-24 dB",
+        "asset_id": "SFX_THUD_LOW"
+      },
+      {
+        "id": "FX14",
+        "t": 62.0,
+        "frame": 1860,
+        "sound": "soft air under the horizon wipe",
+        "level": "-30 dB",
+        "asset_id": "SFX_WHOOSH_AIRY"
+      },
+      {
+        "id": "FX15",
+        "t": 68.4,
+        "frame": 2052,
+        "sound": "trackpad click — the card",
+        "level": "-26 dB",
+        "asset_id": "SFX_TRACKPAD_CLICK"
+      },
+      {
+        "id": "FX16",
+        "t": 71.0,
+        "frame": 2130,
+        "sound": "trackpad click — caret",
+        "level": "-30 dB",
+        "asset_id": "SFX_TRACKPAD_CLICK"
+      },
+      {
+        "id": "FX17",
+        "t": 71.2,
+        "frame": 2136,
+        "sound": "keyboard — the human edit",
+        "level": "-26 dB",
+        "asset_id": "SFX_KEYBOARD"
+      },
+      {
+        "id": "FX18",
+        "t": 76.2,
+        "frame": 2286,
+        "sound": "trackpad click — Approve & send",
+        "level": "-24 dB",
+        "asset_id": "SFX_TRACKPAD_CLICK"
+      },
+      {
+        "id": "FX19",
+        "t": 78.8,
+        "frame": 2364,
+        "sound": "soft confirmation tick — 'Reply sent'",
+        "level": "-28 dB",
+        "asset_id": "SFX_CONFIRM_TICK"
+      },
+      {
+        "id": "FX20",
+        "t": 81.0,
+        "frame": 2430,
+        "sound": "soft original arrival chime — inbox (never Gmail's sound)",
+        "level": "-26 dB",
+        "asset_id": "SFX_ARRIVAL_CHIME"
+      },
+      {
+        "id": "FX21",
+        "t": 93.5,
+        "frame": 2805,
+        "sound": "low-frequency impact — final lockup",
+        "level": "-18 dB",
+        "asset_id": "SFX_LF_IMPACT"
+      }
+    ],
+    "never": [
+      "cheesy whooshes",
+      "trailer booms",
+      "bass drops",
+      "Gmail's own sound"
+    ]
+  },
+  "typography": {
+    "on_screen_copy_inventory": [
+      "<approved tagline — decision D3>",
+      "AGENTS",
+      "CONTEXT",
+      "DAY 1",
+      "DAY 2",
+      "DECISION",
+      "EXECUTION",
+      "FIELDSTONE · AGENT KEY",
+      "FIELDSTONE · READ-ONLY KEY",
+      "FOR AGENTS",
+      "FOR PEOPLE",
+      "LEARNING",
+      "MARLOW HEALTH · AGENT KEY",
+      "MEMORY",
+      "NAVIS AI APPLICATION",
+      "NAVIS AI APPLICATION · FOR PEOPLE",
+      "NAVIS DEVELOPER",
+      "NAVIS DEVELOPER · FOR AGENTS",
+      "NEXT",
+      "NavisLabs",
+      "NavisLabs (lockup)",
+      "ONE SHARED UNDERSTANDING",
+      "OUTCOME",
+      "PEOPLE",
+      "Pre-release software. Demo organization and data. Some waits shortened.",
+      "WITH SOURCES (after the VO says it)",
+      "navislabs.in"
+    ],
+    "rules": [
+      "never cover product UI with large text",
+      "captions only where the VO has already spoken or for muted viewers"
+    ]
+  },
+  "color": {
+    "file_to_create_in_phase_2": "src/config/navisBrand.ts",
+    "company": "NavisLabs",
+    "products": {
+      "people": "Navis AI Application",
+      "agents": "Navis Developer"
+    },
+    "logo": {
+      "source": "navis-labs-website/public/navis-logo.png (256 px, black ground: cobalt arcs, white nodes, cobalt arrow)",
+      "copy_to": "public/images/navislabs-logo.png",
+      "treatment": "website lockup: rounded tile (radius = 26% of size, inset 1 px rgba(255,255,255,0.06)) + 'NavisLabs' Geist Sans 600, letter-spacing ≈0.01 em",
+      "max_size_1080p": "≈160 px tile (256 px source)",
+      "vector": "A01 still required for 4K / part-by-part animation (U07)"
+    },
+    "darkWorld": {
+      "ground": "#14130F (website --ink-ground)",
+      "raised": "#1C1B17",
+      "text": "#FFFFFF (website --text-on-dark)",
+      "text2": "#A8A49C (--text-on-dark-2)",
+      "border": "rgba(255,255,255,0.12) (--border-dark)",
+      "grain": "2.5%"
+    },
+    "lightWorld": {
+      "canvas": "#F7F6F3",
+      "surface": "#FFFFFF",
+      "surfaceAlt": "#F0EEEA",
+      "surfaceSunk": "#E9E6E1",
+      "text": "#14130F",
+      "text2": "#66625B",
+      "border": "rgba(28,25,20,0.10)",
+      "borderStrong": "rgba(28,25,20,0.18)",
+      "grain": "1.5%"
+    },
+    "accent": {
+      "ui": "#2E2A24 graphite (website + developer) — film pills, chips, rules",
+      "line_only": "logo cobalt #1976FE (gradient #1669FE → #1C93FE, sampled from the logo) — ONLY the shared-layer line and the logo; never type, never UI, never backgrounds",
+      "why": "the website has no brand colour; the only cobalt in the brand is the mark, so the line borrows the mark — not an invented theme"
+    },
+    "product_footage": "never recoloured: Navis AI Application keeps #FBFAF7 / indigo / emerald; terminal keeps its own colours; Gmail as captured",
+    "typography": {
+      "display": "Geist Sans (public/fonts)",
+      "labels": "Geist Mono",
+      "body_if_needed": "Inter (website body) — not needed in the film",
+      "opening": "large & minimal",
+      "reveal": "small, premium",
+      "ui": "real product typography",
+      "ending": "large company lockup"
+    },
+    "spacing": {
+      "base": 8,
+      "title_safe": {
+        "x": 96,
+        "y": 54
+      },
+      "radius": {
+        "window": 16,
+        "card": 20,
+        "pill": 999,
+        "chip": 10
+      }
+    },
+    "shadow": "website --shadow-lg for windows on light; 0 30px 80px -30px rgba(0,0,0,0.6) on dark",
+    "motion": {
+      "ease": "cubic-bezier(0.22,1,0.36,1) (website --ease = master glide)",
+      "reveal": "700 ms (website --t-reveal) for brand; 21 f text reveal for captions",
+      "cuts": "hard cuts for proof; slow transitions for concept"
+    }
+  },
+  "assets": {
+    "missing": [
+      "R01 — Navis Developer (CLI + hooks) in Claude Code",
+      "R03 — Navis Developer restore in Claude Code",
+      "R05 — Navis Developer MCP (Fieldstone agent key)",
+      "R06 — Navis Developer MCP (Marlow Health key)",
+      "R07 — Navis Developer MCP (Fieldstone read-only key)",
+      "R08 — Navis AI Application — /dashboard (Today)",
+      "R09 — Navis AI Application — DecisionDrawer > DraftReviewPanel",
+      "R10 — Gmail — recipient demo inbox",
+      "STILL_R05 — frame from R05",
+      "STILL_R09 — frame from R09 ('Reply sent')",
+      "public/voiceover/L01.wav",
+      "public/voiceover/L02.wav",
+      "public/voiceover/L03.wav",
+      "public/voiceover/L04.wav",
+      "public/voiceover/L05.wav",
+      "public/voiceover/L06.wav",
+      "public/voiceover/L07.wav",
+      "public/voiceover/L08.wav",
+      "public/voiceover/L09.wav",
+      "public/voiceover/L10.wav",
+      "public/voiceover/L11.wav",
+      "public/voiceover/L12.wav",
+      "public/voiceover/L13.wav",
+      "public/voiceover/L14.wav",
+      "public/voiceover/L15.wav",
+      "public/voiceover/L16.wav",
+      "public/voiceover/L17.wav",
+      "public/voiceover/L18.wav",
+      "public/voiceover/L19.wav",
+      "public/voiceover/L20.wav",
+      "public/music/ score + stems (ATMOS, TEXTURE, PULSE, PERC, BASS, HARMONY, PIANO)",
+      "public/sfx/sfx_arrival_chime.wav",
+      "public/sfx/sfx_confirm_tick.wav",
+      "public/sfx/sfx_data_texture.wav",
+      "public/sfx/sfx_keyboard.wav",
+      "public/sfx/sfx_lf_impact.wav",
+      "public/sfx/sfx_return_key.wav",
+      "public/sfx/sfx_room_tone.wav",
+      "public/sfx/sfx_thud_low.wav",
+      "public/sfx/sfx_tick_soft.wav",
+      "public/sfx/sfx_trackpad_click.wav",
+      "public/sfx/sfx_whoosh_airy.wav",
+      "public/sfx/sfx_whoosh_tail.wav",
+      "public/images/navislabs-logo.png (copy from the website — Phase 2) and the vector A01 (U07)",
+      "public/images/grain-512.png (optional; procedural grain already used)"
+    ],
+    "present": [
+      "public/fonts/Geist-Variable.woff2",
+      "public/fonts/GeistMono-Variable.woff2"
+    ],
+    "asset_requirements_json": "regenerate in Phase 2 from this plan (status: missing for each)"
+  },
+  "claims": {
+    "by_line": [
+      {
+        "line": "L01",
+        "text": "Every company now runs on people and AI agents.",
+        "claim": "framing",
+        "evidence": [
+          "founder thesis (opinion)"
+        ],
+        "flag": "Sweeping framing ('every company'). Founder line kept; acceptable as belief, not a statistic.",
+        "status": "framing"
+      },
+      {
+        "line": "L02",
+        "text": "But they don’t work from the same truth.",
+        "claim": "framing",
+        "evidence": [
+          "founder thesis"
+        ],
+        "flag": null,
+        "status": "framing"
+      },
+      {
+        "line": "L03",
+        "text": "What’s true lives across email, meetings, chat and docs.",
+        "claim": "framing",
+        "evidence": [
+          "C02-style framing (where truth lives, not what NavisLabs ingests)"
+        ],
+        "flag": "Framing only: 'chat and docs' describe where company truth lives — NOT what NavisLabs reads (Gmail, Calendar, Drive metadata). No visual may imply a chat or document integration.",
+        "status": "framing"
+      },
+      {
+        "line": "L04",
+        "text": "People rebuild it by hand.",
+        "claim": "framing",
+        "evidence": [
+          "founder thesis"
+        ],
+        "flag": null,
+        "status": "framing"
+      },
+      {
+        "line": "L05",
+        "text": "Agents start every session without it.",
+        "claim": "framing",
+        "evidence": [
+          "C02 must-not: do not say agents remember nothing (Claude Code re-injects CLAUDE.md and its own memory)"
+        ],
+        "flag": "CHANGED from the founder draft 'Agents start from zero, every session.' — that contradicts the master's claims_to_avoid (agents do get CLAUDE.md and their own memory). The new line says they start without the company truth. Founder approval needed.",
+        "status": "framing"
+      },
+      {
+        "line": "L06",
+        "text": "NavisLabs gives your company one shared understanding — for your people and your agents.",
+        "claim": "C10 + N01",
+        "evidence": [
+          "F18 (staging): one implementation of each organizational read, shared by agents and people",
+          "navislabs.in: 'One core · Two products'"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L07",
+        "text": "Here’s Claude Code yesterday: a goal, decisions, open items.",
+        "claim": "C03",
+        "evidence": [
+          "F01",
+          "X02: decisions are recorded with `navis workstate checkpoint`"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L08",
+        "text": "Today, a brand-new session.",
+        "claim": "C04",
+        "evidence": [
+          "F01"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L09",
+        "text": "Navis Developer restores where it left off.",
+        "claim": "C04",
+        "evidence": [
+          "F01: SessionStart restores the recorded checkpoint (objective, decisions, open)",
+          "brief rule: never claim model memory"
+        ],
+        "flag": "CHANGED from the founder draft 'It already knows where it left off.' — a model-memory claim the brief itself forbids. 'Restores' is what the product does (SessionStart). Founder approval needed.",
+        "status": "supported"
+      },
+      {
+        "line": "L10",
+        "text": "You type one word.",
+        "claim": "C05",
+        "evidence": [
+          "F01 (only 'continue' typed on camera)"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L11",
+        "text": "The agent asks Navis Developer for company context.",
+        "claim": "C06",
+        "evidence": [
+          "F03",
+          "F02 (MCP)"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L12",
+        "text": "It gets facts — with sources, and how fresh they are.",
+        "claim": "C06",
+        "evidence": [
+          "F03: items with kind/source/lineage, freshness.as_of/newest_fact_at, sources.detail"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L13",
+        "text": "Each key sees its own company — and only what it’s allowed to.",
+        "claim": "C07",
+        "evidence": [
+          "F05 (org from the credential)",
+          "F04 (exact refusal text)"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L14",
+        "text": "For people, the same understanding becomes Today.",
+        "claim": "C08",
+        "evidence": [
+          "F12",
+          "F18"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L15",
+        "text": "Who’s waiting on you? Open it — the reply is drafted.",
+        "claim": "C08",
+        "evidence": [
+          "F12 (waiting-reply obligations)",
+          "DraftReviewPanel loads the draft on open ('Preparing the draft…')"
+        ],
+        "flag": "Honest about drafting: the panel prepares the draft when opened, so the VO never says 'already drafted'.",
+        "status": "supported"
+      },
+      {
+        "line": "L16",
+        "text": "You read it. You change a line. You approve it.",
+        "claim": "C09 + B01",
+        "evidence": [
+          "F09",
+          "DraftReviewPanel edit/save"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L17",
+        "text": "Navis AI Application sends it — and only says sent when Gmail confirms.",
+        "claim": "C09",
+        "evidence": [
+          "F09: 'Reply sent' only with a real provider id; 'Gmail accepted the message.'"
+        ],
+        "flag": "Names the product explicitly instead of the old bare 'Navis sends it'.",
+        "status": "supported"
+      },
+      {
+        "line": "L18",
+        "text": "Two products. One shared understanding of your company.",
+        "claim": "C10",
+        "evidence": [
+          "F18 (staging)",
+          "navislabs.in 'One core · Two products'"
+        ],
+        "flag": null,
+        "status": "supported"
+      },
+      {
+        "line": "L19",
+        "text": "Next: every outcome feeds back into what it knows.",
+        "claim": "C11 (FUTURE)",
+        "evidence": [
+          "future_features.items[0]; record_outcome emits no learning event"
+        ],
+        "flag": null,
+        "status": "future"
+      },
+      {
+        "line": "L20",
+        "text": "NavisLabs. Built for your people — and your agents.",
+        "claim": "C12 + N01",
+        "evidence": [
+          "navislabs.in 'Built for people. Built for agents.'"
+        ],
+        "flag": null,
+        "status": "supported"
+      }
+    ],
+    "removed_or_softened": [
+      {
+        "item": "'Agents start from zero, every session.' (founder draft)",
+        "why": "claims_to_avoid: agents do get CLAUDE.md and their own memory",
+        "replacement": "'Agents start every session without it.'"
+      },
+      {
+        "item": "'It already knows where it left off.' (founder draft)",
+        "why": "model-memory claim forbidden by the brief",
+        "replacement": "'Navis Developer restores where it left off.'"
+      },
+      {
+        "item": "'The reply, already drafted.' (earlier VO)",
+        "why": "the app prepares the draft on open ('Preparing the draft…')",
+        "replacement": "'Open it — the reply is drafted.'"
+      },
+      {
+        "item": "Bare 'Navis' in narration ('the agent asks Navis', 'Navis sends it')",
+        "why": "brand lock",
+        "replacement": "'Navis Developer' / 'Navis AI Application'"
+      },
+      {
+        "item": "'NAVIS' wordmark and 'NAVIS AI' title",
+        "why": "brand lock",
+        "replacement": "NavisLabs lockup; NAVIS AI APPLICATION"
+      },
+      {
+        "item": "'Navis Application' (AV master naming)",
+        "why": "superseded by the new lock",
+        "replacement": "Navis AI Application"
+      },
+      {
+        "item": "EARLY ACCESS on the end card",
+        "why": "master ending C — requires U04 (a working intake path)",
+        "replacement": "omitted unless approvals.json approves U04"
+      },
+      {
+        "item": "$70M valuation / any funding number",
+        "why": "U03 not approved",
+        "replacement": "none"
+      },
+      {
+        "item": "Runs / costs / ROI / savings",
+        "why": "economics unknown (F16), console local (F07); no real cost data",
+        "replacement": "none (optional R11 runs page only, no costs — D9)"
+      },
+      {
+        "item": "MCP · API · SDK · CLI feature wall; SDK/API as public products",
+        "why": "unpublished; proof over feature counting",
+        "replacement": "MCP and CLI only as seen in real footage"
+      },
+      {
+        "item": "GMAIL · CALENDAR · DRIVE input pills in S15",
+        "why": "reads as an architecture diagram; Drive never demonstrated",
+        "replacement": "none — Gmail is proven by the real send"
+      },
+      {
+        "item": "Slack, Cursor, Notion, GitHub, HubSpot, Salesforce, Jira, Zoom, Microsoft logos",
+        "why": "not demonstrated / not implemented",
+        "replacement": "none"
+      },
+      {
+        "item": "'YOUR AGENT REMEMBERS', 'YOUR CONTEXT STAYS YOURS' (master copy)",
+        "why": "model memory / custody over-claims",
+        "replacement": "none"
+      },
+      {
+        "item": "Film captions over product UI: APPROVE, SENT, SCOPED TO EACH KEY, WORK STATE RESTORED, ASK YOUR COMPANY",
+        "why": "restraint — the real UI and VO carry these beats; never cover product UI",
+        "replacement": "kept: DAY 1, DAY 2, WITH SOURCES (after the VO), panel key labels"
+      }
+    ]
+  },
+  "future_features": {
+    "in_film": [
+      "Every outcome feeds organizational learning (S16 dashed + NEXT)"
+    ],
+    "rule": "Future items appear ONLY in S16, drawn dashed, labelled NEXT, after all present-tense proof. Nothing in this list may appear in any present-tense VO line, UI shot or end card."
+  },
+  "validation": {
+    "script_to_build": "scripts/validate-production.mjs (Phase 2)",
+    "checks": [
+      "100 s / 3000 frames / 30 fps / 1920x1080",
+      "S01–S17 match the master; no gaps/overlaps",
+      "every VO, recording, music, SFX, logo, font file present (final)",
+      "brand scan of .ts/.tsx/.json with classification (company / product / repository / UI evidence / invalid copy)",
+      "unsupported-claim scan",
+      "no development labels in final",
+      "VO and visual timing (forced-alignment output)",
+      "ending approval (B/C/EARLY ACCESS)",
+      "real proof recordings present",
+      "source JSON hashes unchanged"
+    ]
+  },
+  "render_requirements": {
+    "final_mode": "mode 'final' refuses to render while any required proof asset is missing, and renders no HUD, placeholders, scene/asset IDs or dev labels",
+    "package_cleanup": {
+      "used": [
+        "remotion",
+        "@remotion/cli",
+        "@remotion/media",
+        "@remotion/motion-blur",
+        "@remotion/fonts",
+        "react",
+        "react-dom",
+        "zod"
+      ],
+      "unused_spec_listed_keep": [
+        "@remotion/transitions",
+        "@remotion/media-utils"
+      ],
+      "remove": [
+        "@huggingface/transformers",
+        "@remotion/animated-emoji",
+        "@remotion/animation-utils",
+        "@remotion/cloudrun",
+        "@remotion/enable-scss",
+        "@remotion/gif",
+        "@remotion/gsap",
+        "@remotion/install-whisper-cpp",
+        "@remotion/lambda",
+        "@remotion/layout-utils",
+        "@remotion/licensing",
+        "@remotion/lottie",
+        "@remotion/mcp",
+        "@remotion/rounded-text-box",
+        "@remotion/video-matting",
+        "@remotion/whisper-web",
+        "@remotion/whisper-webgpu"
+      ],
+      "then": [
+        "npm install",
+        "npm run typecheck",
+        "npm run lint"
+      ],
+      "note": "If forced alignment is automated later, add back exactly one whisper package for it."
+    },
+    "phase_2_files": {
+      "new": [
+        "src/config/navisBrand.ts",
+        "src/config/audio.ts",
+        "src/config/loadFilmPlan.ts",
+        "scripts/validate-production.mjs",
+        "public/images/navislabs-logo.png (copied from the website)"
+      ],
+      "edit": [
+        "src/config/design.ts",
+        "src/config/recordingEdit.ts",
+        "src/config/assets.ts",
+        "src/components/World.tsx",
+        "src/components/BlueLine.tsx",
+        "src/components/Logomark.tsx",
+        "src/components/BrowserFrame.tsx",
+        "src/components/TerminalFrame.tsx",
+        "src/components/AudioLayer.tsx",
+        "src/components/DevMode.tsx",
+        "src/components/RecordingViewport.tsx",
+        "src/components/CursorTrack.tsx",
+        "src/scenes/S01–S05.tsx (rebuild)",
+        "src/scenes/S06–S16.tsx (changes per scene)",
+        "src/scenes/S17.tsx (rebuild)",
+        "src/scenes/shared.tsx",
+        "src/compositions/NavisLaunch.tsx",
+        "src/Root.tsx",
+        "scripts/asset-requirements.mjs",
+        "asset_requirements.json",
+        "package.json",
+        "package-lock.json"
+      ],
+      "never": [
+        "the four source JSON files",
+        "Devtool",
+        "Navis-AI",
+        "Backend",
+        "navis-labs-website"
+      ]
+    }
+  },
+  "decisions_required": [
+    {
+      "id": "D1",
+      "q": "Product name: the website says 'Navis Application', your lock says 'Navis AI Application'. The film follows your lock — update the website later?",
+      "default": "Film uses NAVIS AI APPLICATION."
+    },
+    {
+      "id": "D2",
+      "q": "Approve the two VO safety edits: L05 'Agents start every session without it.' and L09 'Navis Developer restores where it left off.'?",
+      "default": "Use the edits."
+    },
+    {
+      "id": "D3",
+      "q": "End-card tagline: 'Enterprise Intelligence Infrastructure' (navislabs.in title), 'FOR PEOPLE · FOR AGENTS' (master end card), or none (L20 already says 'Built for your people — and your agents')?",
+      "default": "'Enterprise Intelligence Infrastructure' — published, and it does not repeat the VO."
+    },
+    {
+      "id": "D4",
+      "q": "EARLY ACCESS: is there a working intake path (U04)? If yes, create public/approvals.json approving U04 and the end card shows 'EARLY ACCESS · navislabs.in'.",
+      "default": "Omitted."
+    },
+    {
+      "id": "D5",
+      "q": "Logo: use the website PNG lockup now (≤160 px, fine at 1080p) while the vector A01 is commissioned?",
+      "default": "Yes for 1080p; vector before any 4K render."
+    },
+    {
+      "id": "D6",
+      "q": "Line colour: keep the logo's cobalt for the shared-layer line only (everything else ink/stone/graphite)?",
+      "default": "Yes."
+    },
+    {
+      "id": "D7",
+      "q": "Opening on-screen copy: only AGENTS / PEOPLE labels (approved), or a large statement? No large statement copy is approved for the new opening.",
+      "default": "Labels only; the VO carries the thesis."
+    },
+    {
+      "id": "D8",
+      "q": "Seed Marlow Health with its own demo mail so Company B shows Company B data?",
+      "default": "Yes — required for the A/B/refusal sequence."
+    },
+    {
+      "id": "D9",
+      "q": "Add a runs beat (R11, console 'Coding session', no costs)? There is no free time in the developer act.",
+      "default": "No."
+    },
+    {
+      "id": "D10",
+      "q": "Remove the 17 packages Studio installed (unused by the film)?",
+      "default": "Yes — Phase 2, then npm install / typecheck / lint."
+    },
+    {
+      "id": "D11",
+      "q": "Confirm the cursor will follow the recorded pointer path (record the system cursor in R08/R09, or log its coordinates) instead of estimates.",
+      "default": "Yes."
+    }
+  ],
+  "source_files": {
+    "navis_code_audit.json": "37b2053542b7247e19a696feb82d6649cc988e1ccf3850cc6eeced2655762416",
+    "navis_master_cinematic_launch_spec.json": "9762f353f1146be9cc16a6ee0fcebc892ae031111226e5cc7d9a8bec16f03c67",
+    "navis_launch_production_blueprint.json": "9f96538ffff7d3c2282ef19e2007d9fde740d9ad3cb4cd95d001aa6d2994966e",
+    "navis_launch_av_master.json": "12c2f8782fd64f10258657a393fc1decf86367c9f4ff13568b537827f3b5e5bf",
+    "navis_av_validation_report.json": "faaadaf0c54e6e4cb0f0cdce316240922bd4d91e82a17de659bf33498daafa40",
+    "navis_current_vs_target_film_audit.json": "61940090eebc6b398a13d9c276ca6830a30cd4c032193f385d3898590b9eb8c1",
+    "asset_requirements.json": "9d4890ea67d7f8b897ab4ba1fa99ad3d839655cab8fa6d2e13926527fce84ddf"
+  }
+}

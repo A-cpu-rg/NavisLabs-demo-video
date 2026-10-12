@@ -1,0 +1,576 @@
+{
+  "about": "V6 audio: the founder's final voice in eight chunks (P1–P8), placed by the measured performance; music ducks under every spoken line (deeper under the key lines); UI SFX sit below speech. Each slot plays FINAL, else TEMP, else silence.",
+  "fps": 30,
+  "duration_s": 125.233,
+  "resolve_order": [
+    "final",
+    "temp"
+  ],
+  "layers": {
+    "vo": {
+      "gain_db": 0
+    },
+    "music": {
+      "gain_db": -7
+    },
+    "ui_sfx": {
+      "gain_db": -2
+    },
+    "transitions": {
+      "gain_db": -4
+    },
+    "ambience": {
+      "gain_db": -10
+    }
+  },
+  "voiceover": [
+    {
+      "id": "P1",
+      "scene": "S01",
+      "start_s": 0.41,
+      "end_s": 13.079,
+      "ceiling_s": 13.98,
+      "text": "Your people and agents see different truths. The truth is scattered across the systems where work happens. People rebuild it by hand. Agents start without it.",
+      "final": "voiceover/final/v6/P1.wav",
+      "temp": "voiceover/final/v6/P1.wav"
+    },
+    {
+      "id": "P2",
+      "scene": "S03",
+      "start_s": 13.98,
+      "end_s": 28.191,
+      "ceiling_s": 28.86,
+      "text": "Navis turns those signals into one shared understanding. Every email, meeting, document and message becomes a signal — remembered, connected, and turned into what should happen next.",
+      "final": "voiceover/final/v6/P2.wav",
+      "temp": "voiceover/final/v6/P2.wav"
+    },
+    {
+      "id": "P3",
+      "scene": "S05",
+      "start_s": 28.86,
+      "end_s": 51.064,
+      "ceiling_s": 53.13,
+      "text": "Inside a company, the Navis App is for people. It shows what changed — and why it matters. Every fact has its source, its time, and how fresh it is. When something needs a decision, Navis prepares the next step. A person decides. Then the company acts.",
+      "final": "voiceover/final/v6/P3.wav",
+      "temp": "voiceover/final/v6/P3.wav"
+    },
+    {
+      "id": "P4",
+      "scene": "S10",
+      "start_s": 53.13,
+      "end_s": 82.936,
+      "ceiling_s": 83.52,
+      "text": "The same company's agents use Navis Developer. Invite the team. Connect once — through MCP, API, SDK or CLI. The agent asks — and gets the company's context, with sources and freshness. Navis isn't the model. It supplies the company's truth. Every request is checked against its permissions. The agent does the work, and the run is on record.",
+      "final": "voiceover/final/v6/P4.wav",
+      "temp": "voiceover/final/v6/P4.wav"
+    },
+    {
+      "id": "P5",
+      "scene": "S16",
+      "start_s": 83.52,
+      "end_s": 97.078,
+      "ceiling_s": 97.47,
+      "text": "A solo builder gets a private workspace. A team can work together. And the work state carries into the next session. One company. The person and the agent acted on the same event.",
+      "final": "voiceover/final/v6/P5.wav",
+      "temp": "voiceover/final/v6/P5.wav"
+    },
+    {
+      "id": "P6",
+      "scene": "S17",
+      "start_s": 97.47,
+      "end_s": 104.079,
+      "ceiling_s": 105.13,
+      "text": "Same facts. Same sources. Same freshness. One understanding. Two ways in.",
+      "final": "voiceover/final/v6/P6.wav",
+      "temp": "voiceover/final/v6/P6.wav"
+    },
+    {
+      "id": "P7",
+      "scene": "S18",
+      "start_s": 105.13,
+      "end_s": 117.956,
+      "ceiling_s": 118.77,
+      "text": "Models change. Agents change. Tools change. What your company knows shouldn't have to start over. Company-owned. Model-neutral. Shared by people and agents.",
+      "final": "voiceover/final/v6/P7.wav",
+      "temp": "voiceover/final/v6/P7.wav"
+    },
+    {
+      "id": "P8",
+      "scene": "S18",
+      "start_s": 118.77,
+      "end_s": 123.838,
+      "ceiling_s": 125.233,
+      "text": "NavisLabs. The shared understanding for your organization.",
+      "final": "voiceover/final/v6/P8.wav",
+      "temp": "voiceover/final/v6/P8.wav"
+    }
+  ],
+  "speech": [
+    {
+      "from_s": 0.6,
+      "to_s": 3.6,
+      "chunk": "P1",
+      "key": false
+    },
+    {
+      "from_s": 6.2,
+      "to_s": 9.42,
+      "chunk": "P1",
+      "key": false
+    },
+    {
+      "from_s": 9.77,
+      "to_s": 11.31,
+      "chunk": "P1",
+      "key": false
+    },
+    {
+      "from_s": 11.62,
+      "to_s": 12.98,
+      "chunk": "P1",
+      "key": false
+    },
+    {
+      "from_s": 14.03,
+      "to_s": 17.02,
+      "chunk": "P2",
+      "key": true
+    },
+    {
+      "from_s": 19.97,
+      "to_s": 23.64,
+      "chunk": "P2",
+      "key": false
+    },
+    {
+      "from_s": 24.4,
+      "to_s": 28.1,
+      "chunk": "P2",
+      "key": false
+    },
+    {
+      "from_s": 28.95,
+      "to_s": 31.59,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 32.39,
+      "to_s": 33.85,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 34.29,
+      "to_s": 35.63,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 36.38,
+      "to_s": 40.09,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 40.88,
+      "to_s": 44.34,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 46.07,
+      "to_s": 47.42,
+      "chunk": "P3",
+      "key": true
+    },
+    {
+      "from_s": 49.15,
+      "to_s": 51.05,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 53.25,
+      "to_s": 56.04,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 56.52,
+      "to_s": 57.27,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 58.14,
+      "to_s": 63.34,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 64.2,
+      "to_s": 65.13,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 65.55,
+      "to_s": 69.56,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 70.31,
+      "to_s": 72.08,
+      "chunk": "P4",
+      "key": true
+    },
+    {
+      "from_s": 73.66,
+      "to_s": 75.81,
+      "chunk": "P4",
+      "key": true
+    },
+    {
+      "from_s": 76.77,
+      "to_s": 79.38,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 79.97,
+      "to_s": 81.02,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 81.34,
+      "to_s": 82.75,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 83.65,
+      "to_s": 85.74,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 85.96,
+      "to_s": 87.2,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 87.86,
+      "to_s": 89.86,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 92.99,
+      "to_s": 93.65,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 94.21,
+      "to_s": 96.92,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 97.57,
+      "to_s": 98.3,
+      "chunk": "P6",
+      "key": false
+    },
+    {
+      "from_s": 98.95,
+      "to_s": 99.73,
+      "chunk": "P6",
+      "key": false
+    },
+    {
+      "from_s": 100.34,
+      "to_s": 101.2,
+      "chunk": "P6",
+      "key": false
+    },
+    {
+      "from_s": 101.8,
+      "to_s": 102.85,
+      "chunk": "P6",
+      "key": true
+    },
+    {
+      "from_s": 103.47,
+      "to_s": 104.06,
+      "chunk": "P6",
+      "key": true
+    },
+    {
+      "from_s": 105.21,
+      "to_s": 106.03,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 106.08,
+      "to_s": 106.98,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 107.1,
+      "to_s": 107.88,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 110.44,
+      "to_s": 113.03,
+      "chunk": "P7",
+      "key": true
+    },
+    {
+      "from_s": 113.9,
+      "to_s": 114.65,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 114.9,
+      "to_s": 115.8,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 116.05,
+      "to_s": 117.95,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 118.8,
+      "to_s": 119.47,
+      "chunk": "P8",
+      "key": true
+    },
+    {
+      "from_s": 121.43,
+      "to_s": 123.81,
+      "chunk": "P8",
+      "key": false
+    }
+  ],
+  "music": {
+    "final": "music/final/v6/score.wav",
+    "temp": "music/temp/v6/score.wav",
+    "style": "Premium, minimal, intelligent AI-infrastructure founder film: late-night engineering, emotional but restrained. No generic corporate, EDM, cyberpunk, trailer hits or cheesy inspirational piano. The founder's voice always wins.",
+    "sections": [
+      {
+        "id": "M1",
+        "role": "restrained",
+        "from_s": 0.0,
+        "to_s": 13.98,
+        "brief": "near silence: a low bed under the problem"
+      },
+      {
+        "id": "M2",
+        "role": "emergence",
+        "from_s": 13.98,
+        "to_s": 28.5,
+        "brief": "Navis reveal: a subtle pulse begins under the connected systems and the pipeline"
+      },
+      {
+        "id": "M3",
+        "role": "human",
+        "from_s": 28.5,
+        "to_s": 52.933,
+        "brief": "the Navis App: warm expansion, human; a held breath on Approve & send"
+      },
+      {
+        "id": "M4",
+        "role": "technical",
+        "from_s": 52.933,
+        "to_s": 83.3,
+        "brief": "Navis Developer: a precise developer rhythm"
+      },
+      {
+        "id": "M5",
+        "role": "convergence",
+        "from_s": 83.3,
+        "to_s": 104.7,
+        "brief": "solo → team → one company → one understanding: broader, emotional expansion"
+      },
+      {
+        "id": "M6",
+        "role": "conviction",
+        "from_s": 104.7,
+        "to_s": 118.2,
+        "brief": "the moat: deep, confident, restrained"
+      },
+      {
+        "id": "M7",
+        "role": "resolve",
+        "from_s": 118.2,
+        "to_s": 125.233,
+        "brief": "the name: the music resolves, then silence"
+      }
+    ],
+    "gain_db": -7,
+    "duck_under_vo_db": -10,
+    "duck_key_line_db": -14,
+    "duck_attack_s": 0.12,
+    "duck_release_s": 0.45,
+    "dips": [
+      {
+        "from_s": 13.18,
+        "to_s": 13.93,
+        "db": -96,
+        "why": "the breath before Navis"
+      },
+      {
+        "from_s": 48.85,
+        "to_s": 49.15,
+        "db": -96,
+        "why": "held breath on Approve & send"
+      },
+      {
+        "from_s": 78.635,
+        "to_s": 79.68,
+        "db": -18,
+        "why": "the refusal: quieter, not louder"
+      },
+      {
+        "from_s": 119.67,
+        "to_s": 121.33,
+        "db": -18,
+        "why": "silence after 'NavisLabs.'"
+      },
+      {
+        "from_s": 124.31,
+        "to_s": 125.233,
+        "db": -96,
+        "why": "silent end"
+      }
+    ]
+  },
+  "sfx": {
+    "style": "Understated, physical, quiet: keys, Enter, trackpad clicks, soft ticks; small precise confirmations; silence on purpose.",
+    "library": {
+      "key": {
+        "final": "sfx/final/key.wav",
+        "temp": "sfx/temp/key.wav",
+        "gain_db": -26,
+        "category": "KEYBOARD"
+      },
+      "key2": {
+        "final": "sfx/final/key2.wav",
+        "temp": "sfx/temp/key2.wav",
+        "gain_db": -26,
+        "category": "KEYBOARD"
+      },
+      "key3": {
+        "final": "sfx/final/key3.wav",
+        "temp": "sfx/temp/key3.wav",
+        "gain_db": -26,
+        "category": "KEYBOARD"
+      },
+      "enter": {
+        "final": "sfx/final/enter.wav",
+        "temp": "sfx/temp/enter.wav",
+        "gain_db": -20,
+        "category": "TERMINAL ENTER"
+      },
+      "click": {
+        "final": "sfx/final/click.wav",
+        "temp": "sfx/temp/click.wav",
+        "gain_db": -18,
+        "category": "CURSOR CLICK"
+      },
+      "select": {
+        "final": "sfx/final/select.wav",
+        "temp": "sfx/temp/select.wav",
+        "gain_db": -27,
+        "category": "SOURCE APPEARING"
+      },
+      "run": {
+        "final": "sfx/final/run.wav",
+        "temp": "sfx/temp/run.wav",
+        "gain_db": -28,
+        "category": "RUN START"
+      },
+      "confirm": {
+        "final": "sfx/final/confirm.wav",
+        "temp": "sfx/temp/confirm.wav",
+        "gain_db": -23,
+        "category": "RUN COMPLETE"
+      },
+      "sent": {
+        "final": "sfx/final/sent.wav",
+        "temp": "sfx/temp/sent.wav",
+        "gain_db": -21,
+        "category": "SENDING"
+      },
+      "deny": {
+        "final": "sfx/final/deny.wav",
+        "temp": "sfx/temp/deny.wav",
+        "gain_db": -27,
+        "category": "PERMISSION DENIED"
+      },
+      "air": {
+        "final": "sfx/final/air.wav",
+        "temp": "sfx/temp/air.wav",
+        "gain_db": -34,
+        "category": "PRODUCT TRANSITION"
+      },
+      "connect": {
+        "final": "sfx/final/connect.wav",
+        "temp": "sfx/temp/connect.wav",
+        "gain_db": -24,
+        "category": "MCP CONNECTION"
+      },
+      "retrieve": {
+        "final": "sfx/final/retrieve.wav",
+        "temp": "sfx/temp/retrieve.wav",
+        "gain_db": -29,
+        "category": "CONTEXT RETRIEVAL"
+      },
+      "save": {
+        "final": "sfx/final/save.wav",
+        "temp": "sfx/temp/save.wav",
+        "gain_db": -27,
+        "category": "SAVE"
+      },
+      "approve": {
+        "final": "sfx/final/approve.wav",
+        "temp": "sfx/temp/approve.wav",
+        "gain_db": -22,
+        "category": "APPROVE"
+      },
+      "gmail": {
+        "final": "sfx/final/gmail.wav",
+        "temp": "sfx/temp/gmail.wav",
+        "gain_db": -24,
+        "category": "GMAIL CONFIRMATION"
+      },
+      "brand": {
+        "final": "sfx/final/brand.wav",
+        "temp": "sfx/temp/brand.wav",
+        "gain_db": -26,
+        "category": "NAVISLABS REVEAL"
+      }
+    }
+  },
+  "ambience": {
+    "temp": "sfx/temp/flow.wav",
+    "final": "sfx/final/flow.wav",
+    "from_s": 19.467,
+    "to_s": 28.3,
+    "gain_db": -32,
+    "why": "temp data-flow texture under S04; muted automatically once the final score is in"
+  }
+}

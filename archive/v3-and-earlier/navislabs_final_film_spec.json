@@ -1,0 +1,852 @@
+{
+  "about": "The NavisLabs launch film, as data. The Remotion project reads scene timing (scenes), every on-screen beat (timing.beats, timing.typing) and the film's own copy (onscreen_copy) from this file; voice, music and SFX slots live in navislabs_final_audio_map.json. Edit here, re-render.",
+  "version": "final-1",
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration_s": 100,
+    "frames": 3000
+  },
+  "brand": {
+    "company": "NavisLabs",
+    "products": [
+      {
+        "name": "Navis Application",
+        "on_screen": "NAVIS APPLICATION",
+        "audience": "people",
+        "status": "product"
+      },
+      {
+        "name": "Navis Developer",
+        "on_screen": "NAVIS DEVELOPER",
+        "audience": "developers + AI agents",
+        "status": "Private preview (website badge)"
+      }
+    ],
+    "never": [
+      "Navis (as the company)",
+      "Navis AI",
+      "Navis-AI",
+      "repository names as product names"
+    ],
+    "allowed_navis_in_ui": "Real product UI text that says 'Navis' (e.g. 'Today · Navis', 'Why Navis surfaced this', 'NAVIS WORK CONTINUITY', the sidebar brand) stays, because it is the product's own text.",
+    "colors": {
+      "ink": "#14130F",
+      "canvas": "#F7F6F3",
+      "graphite": "#2E2A24",
+      "cobalt_logo_only": "#1976FE",
+      "app_bg": "#FBFAF7",
+      "dev_line": "#e5e2dc"
+    },
+    "type": {
+      "display": "Geist Sans",
+      "mono": "Geist Mono",
+      "app_ui": "Inter (system UI stand-in: Inter is not bundled)",
+      "editorial": "Charter"
+    },
+    "logo": "public/images/navislabs-logo.png (copy of navis-labs-website/public/navis-logo.png)"
+  },
+  "narrative": {
+    "thesis": "Companies already have the intelligence they need, but it is scattered; NavisLabs turns it into one shared understanding that people use through Navis Application and AI agents use through Navis Developer.",
+    "arc": [
+      "Problem",
+      "Why current software is not enough",
+      "NavisLabs",
+      "Navis Application",
+      "Navis Developer",
+      "One shared understanding",
+      "Why it matters as AI agents scale"
+    ],
+    "one_company_story": "NavisLabs runs on its own products. Abhishek (founder) sees in Navis Application that the Acme Corp renewal is at risk and replies after editing the draft; in parallel his Claude Code agent updates NavisLabs' renewal logic and gets the same Acme facts from Navis Developer. Acme Corp, Jordan Lee and all facts are DEMO DATA.",
+    "real_abhishek": {
+      "name": "Abhishek Meena",
+      "mac_prompt": "abhishekmeena@Abhisheks-MacBook-Pro-8 NavisLabs %",
+      "app_identity": "Abhishek Meena · abhishek@navislabs.in",
+      "repository_folder": "NavisLabs (as written in the brief; the Navis Developer source repository on this Mac is a different folder)"
+    }
+  },
+  "voiceover": {
+    "lines": 31,
+    "words": 175,
+    "source": "navislabs_final_audio_map.json",
+    "ids": [
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "L06",
+      "L07",
+      "L08",
+      "L09",
+      "L10",
+      "L11",
+      "L12",
+      "L13",
+      "L14",
+      "L15",
+      "L16",
+      "L17",
+      "L18",
+      "L19",
+      "L20",
+      "L21",
+      "L22",
+      "L23",
+      "L24",
+      "L25",
+      "L26",
+      "L27",
+      "L28",
+      "L29",
+      "L30",
+      "L31"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "from_s": 0,
+      "to_s": 4.0,
+      "overlap_frames": 0,
+      "beat": "Operating memory",
+      "act": "Problem"
+    },
+    {
+      "id": "S02",
+      "from_s": 4.0,
+      "to_s": 11.6,
+      "overlap_frames": 0,
+      "beat": "Every decision, customer, commitment, meeting",
+      "act": "Problem"
+    },
+    {
+      "id": "S03",
+      "from_s": 11.6,
+      "to_s": 17.4,
+      "overlap_frames": 12,
+      "beat": "Scattered across the systems",
+      "act": "Problem"
+    },
+    {
+      "id": "S04",
+      "from_s": 17.4,
+      "to_s": 24.0,
+      "overlap_frames": 12,
+      "beat": "People reconstruct; agents start with none of it",
+      "act": "Why current software is not enough"
+    },
+    {
+      "id": "S05",
+      "from_s": 24.0,
+      "to_s": 30.4,
+      "overlap_frames": 0,
+      "beat": "The question every task begins with",
+      "act": "Why current software is not enough"
+    },
+    {
+      "id": "S06",
+      "from_s": 30.4,
+      "to_s": 40.0,
+      "overlap_frames": 18,
+      "beat": "NavisLabs: one shared understanding",
+      "act": "NavisLabs"
+    },
+    {
+      "id": "S07",
+      "from_s": 40.0,
+      "to_s": 45.4,
+      "overlap_frames": 0,
+      "beat": "Navis Application: Today",
+      "act": "Navis Application"
+    },
+    {
+      "id": "S08",
+      "from_s": 45.4,
+      "to_s": 50.6,
+      "overlap_frames": 0,
+      "beat": "Why it matters: the trace",
+      "act": "Navis Application"
+    },
+    {
+      "id": "S09",
+      "from_s": 50.6,
+      "to_s": 54.4,
+      "overlap_frames": 0,
+      "beat": "The draft; a person edits",
+      "act": "Navis Application"
+    },
+    {
+      "id": "S10",
+      "from_s": 54.4,
+      "to_s": 57.4,
+      "overlap_frames": 0,
+      "beat": "Approve & send; Gmail confirms",
+      "act": "Navis Application"
+    },
+    {
+      "id": "S11",
+      "from_s": 57.4,
+      "to_s": 61.6,
+      "overlap_frames": 0,
+      "beat": "Navis Developer: Abhishek's environment and the task",
+      "act": "Navis Developer"
+    },
+    {
+      "id": "S12",
+      "from_s": 61.6,
+      "to_s": 66.2,
+      "overlap_frames": 0,
+      "beat": "The right company context",
+      "act": "Navis Developer"
+    },
+    {
+      "id": "S13",
+      "from_s": 66.2,
+      "to_s": 69.4,
+      "overlap_frames": 0,
+      "beat": "The right work state",
+      "act": "Navis Developer"
+    },
+    {
+      "id": "S14",
+      "from_s": 69.4,
+      "to_s": 72.9,
+      "overlap_frames": 0,
+      "beat": "The right permissions",
+      "act": "Navis Developer"
+    },
+    {
+      "id": "S15",
+      "from_s": 72.9,
+      "to_s": 77.6,
+      "overlap_frames": 12,
+      "beat": "The agent works; the run is on record",
+      "act": "Navis Developer"
+    },
+    {
+      "id": "S16",
+      "from_s": 77.6,
+      "to_s": 87.4,
+      "overlap_frames": 18,
+      "beat": "Not a chatbot: one shared understanding",
+      "act": "One shared understanding"
+    },
+    {
+      "id": "S17",
+      "from_s": 87.4,
+      "to_s": 100.0,
+      "overlap_frames": 0,
+      "beat": "Models change; how your company works is yours",
+      "act": "Why it matters as agents scale"
+    }
+  ],
+  "shots": [
+    {
+      "id": "S01-A",
+      "scene": "S01",
+      "from_s": 0.0,
+      "to_s": 4.0,
+      "said": "L01",
+      "shown": "Black; a point of cobalt becomes a thin line.",
+      "why": "Opens on the thesis without a product claim.",
+      "product": "NavisLabs (brand)",
+      "feature": "—",
+      "source": "navis-labs-website logo colour (#1976FE arcs)",
+      "proof_status": "film-graphic"
+    },
+    {
+      "id": "S02-A",
+      "scene": "S02",
+      "from_s": 4.0,
+      "to_s": 11.6,
+      "said": "L02–L06",
+      "shown": "Five signal cards attach to the line, each with the system it came from: decision, customer, commitment, meeting, context.",
+      "why": "Makes 'operating memory' concrete with one company story (Acme renewal) that returns in both products.",
+      "product": "—",
+      "feature": "Signals from supported systems",
+      "source": "navis-labs-website components/site/logos.tsx (supported marks); demo data",
+      "proof_status": "demo-data"
+    },
+    {
+      "id": "S03-A",
+      "scene": "S03",
+      "from_s": 11.6,
+      "to_s": 17.4,
+      "said": "L07–L08",
+      "shown": "The line breaks; each card flies into its system's tile; six tiles, unconnected.",
+      "why": "The problem: the truth exists but is split across systems.",
+      "product": "—",
+      "feature": "—",
+      "source": "Supported systems only (website MARKS status 'supported')",
+      "proof_status": "film-graphic"
+    },
+    {
+      "id": "S04-A",
+      "scene": "S04",
+      "from_s": 17.4,
+      "to_s": 24.0,
+      "said": "L09–L10",
+      "shown": "Split: PEOPLE copy pieces into a note by hand; AGENTS open a session with nothing.",
+      "why": "Why current software is not enough, for both audiences.",
+      "product": "—",
+      "feature": "—",
+      "source": "—",
+      "proof_status": "film-graphic"
+    },
+    {
+      "id": "S05-A",
+      "scene": "S05",
+      "from_s": 24.0,
+      "to_s": 27.5,
+      "said": "L11",
+      "shown": "Claude Code in a terminal; the task is typed.",
+      "why": "Every task starts by needing company context.",
+      "product": "—",
+      "feature": "Claude Code (agent)",
+      "source": "Devtool/docs/mcp/CLIENTS.md: Claude Code LIVE VERIFIED",
+      "proof_status": "reconstructed"
+    },
+    {
+      "id": "S05-B",
+      "scene": "S05",
+      "from_s": 27.5,
+      "to_s": 30.4,
+      "said": "L12",
+      "shown": "'What does this company already know?' — large type on black; then a breath of silence.",
+      "why": "The question the company answers.",
+      "product": "—",
+      "feature": "—",
+      "source": "—",
+      "proof_status": "film-graphic"
+    },
+    {
+      "id": "S06-A",
+      "scene": "S06",
+      "from_s": 30.4,
+      "to_s": 33.4,
+      "said": "L13",
+      "shown": "NavisLabs lockup (website treatment) and the line.",
+      "why": "Company name lands on a beat of silence.",
+      "product": "NavisLabs",
+      "feature": "—",
+      "source": "navis-labs-website components/site/wordmark.tsx, public/navis-logo.png",
+      "proof_status": "verified-asset"
+    },
+    {
+      "id": "S06-B",
+      "scene": "S06",
+      "from_s": 33.4,
+      "to_s": 40.0,
+      "said": "L14",
+      "shown": "The website's light canvas; six real vendor marks connect; signals (EMAIL, MEETING, COMMITMENT, PROJECT, CUSTOMER, DECISION) flow into NavisLabs; ONE SHARED UNDERSTANDING; six entities.",
+      "why": "Where the understanding comes from — the systems the company already uses.",
+      "product": "NavisLabs",
+      "feature": "Connected systems",
+      "source": "navis-labs-website logos.tsx (supported) and pipeline.tsx ('One live model of people, projects, decisions and commitments')",
+      "proof_status": "film-graphic"
+    },
+    {
+      "id": "S07-A",
+      "scene": "S07",
+      "from_s": 40.0,
+      "to_s": 42.8,
+      "said": "L15",
+      "shown": "Product caption; Navis Application's Today page rises: 'Today · Navis', 'Good morning, Abhishek.', the Acme priority.",
+      "why": "Shows the product, not a description of it.",
+      "product": "Navis Application",
+      "feature": "Today",
+      "source": "Navis-AI PageMasthead, DailyBriefHero, NarrativeCard; website Morning Intelligence content",
+      "proof_status": "reconstructed"
+    },
+    {
+      "id": "S07-B",
+      "scene": "S07",
+      "from_s": 42.8,
+      "to_s": 44.3,
+      "said": "L16",
+      "shown": "Cut to a macro of 'What changed · Verified shifts only' with one 'Just learned' card.",
+      "why": "Voice says 'what changed'; screen shows What changed.",
+      "product": "Navis Application",
+      "feature": "What changed",
+      "source": "Navis-AI app/dashboard/page.tsx SECTION_META.changed (learning category only)",
+      "proof_status": "reconstructed"
+    },
+    {
+      "id": "S07-C",
+      "scene": "S07",
+      "from_s": 44.3,
+      "to_s": 45.4,
+      "said": "L17",
+      "shown": "Cut to 'Waiting on you': '1 thing is waiting on you · 1 person is waiting on your reply'.",
+      "why": "Voice says 'what's waiting'.",
+      "product": "Navis Application",
+      "feature": "Waiting on you",
+      "source": "Navis-AI ObligationsPanel.tsx, lib/obligations.ts, lib/signalTypes.ts",
+      "proof_status": "reconstructed"
+    },
+    {
+      "id": "S08-A",
+      "scene": "S08",
+      "from_s": 45.4,
+      "to_s": 48.7,
+      "said": "L18",
+      "shown": "Click 'Why this matters' → 'Why Navis surfaced this'; evidence rows and the film's TRACE notes (source, timeline, freshness).",
+      "why": "Every conclusion has evidence behind it.",
+      "product": "Navis Application",
+      "feature": "Why this matters / evidence",
+      "source": "Navis-AI WhyThisDrawer.tsx",
+      "proof_status": "reconstructed + film annotation"
+    },
+    {
+      "id": "S08-B",
+      "scene": "S08",
+      "from_s": 48.7,
+      "to_s": 50.6,
+      "said": "L19",
+      "shown": "'What you can do' → 'Review & reply' → DecisionDrawer → 'Review draft' → 'Preparing the draft…'.",
+      "why": "What should happen next — prepared, not executed.",
+      "product": "Navis Application",
+      "feature": "Decision → draft",
+      "source": "Navis-AI DecisionDrawer.tsx, DraftReviewPanel.tsx",
+      "proof_status": "reconstructed"
+    },
+    {
+      "id": "S09-A",
+      "scene": "S09",
+      "from_s": 50.6,
+      "to_s": 54.4,
+      "said": "—",
+      "shown": "The draft; Abhishek selects one sentence and writes his own; 'Saved' → 'Save changes'; cursor to 'Approve & send'. Caption: NAVIS PREPARES · A PERSON DECIDES.",
+      "why": "The person decides.",
+      "product": "Navis Application",
+      "feature": "Draft review, human edit",
+      "source": "Navis-AI DraftReviewPanel.tsx",
+      "proof_status": "reconstructed"
+    },
+    {
+      "id": "S10-A",
+      "scene": "S10",
+      "from_s": 54.4,
+      "to_s": 57.4,
+      "said": "—",
+      "shown": "'Approved — sending' → 'Sending…' → Gmail accepted → 'Reply sent · Gmail accepted the message.'",
+      "why": "Sent only after a real provider receipt.",
+      "product": "Navis Application",
+      "feature": "Send status",
+      "source": "Navis-AI DraftReviewPanel.tsx SendStatus",
+      "proof_status": "reconstructed"
+    },
+    {
+      "id": "S11-A",
+      "scene": "S11",
+      "from_s": 57.4,
+      "to_s": 61.6,
+      "said": "L20",
+      "shown": "Hard cut: VS Code (NavisLabs repository, renewals.ts) with Claude Code in the integrated terminal, prompt abhishekmeena@Abhisheks-MacBook-Pro-8; the task is typed; the agent says what it is missing.",
+      "why": "Abhishek's real environment; the agent needs company context.",
+      "product": "Navis Developer",
+      "feature": "—",
+      "source": "Real macOS user/host; Claude Code LIVE VERIFIED (CLIENTS.md)",
+      "proof_status": "reconstructed"
+    },
+    {
+      "id": "S12-A",
+      "scene": "S12",
+      "from_s": 61.6,
+      "to_s": 66.2,
+      "said": "L21",
+      "shown": "navis_get_relevant_context → ACME CORP: relevant decision, customer, open commitment, owner, last customer response — each with SOURCE and FRESHNESS.",
+      "why": "The right company context, with provenance.",
+      "product": "Navis Developer",
+      "feature": "navis_get_relevant_context (MCP)",
+      "source": "Devtool services/mcp-server/src/tools/register.ts; packages/types GroundedFact",
+      "proof_status": "reconstructed + demo data"
+    },
+    {
+      "id": "S13-A",
+      "scene": "S13",
+      "from_s": 66.2,
+      "to_s": 69.4,
+      "said": "L22",
+      "shown": "macOS Terminal: Day 1 'Checkpoint recorded for NavisLabs (main).' → DAY 2 · new session → NAVIS WORK CONTINUITY restores CURRENT TASK / DECISIONS / OPEN.",
+      "why": "The right work state — restored by Navis Developer, not remembered by the model.",
+      "product": "Navis Developer",
+      "feature": "Work-state continuity",
+      "source": "Devtool packages/cli workstate.ts, workstate/restore.ts, checkpoint.ts, commands/hook.ts",
+      "proof_status": "reconstructed"
+    },
+    {
+      "id": "S14-A",
+      "scene": "S14",
+      "from_s": 69.4,
+      "to_s": 72.9,
+      "said": "L23",
+      "shown": "Two keys: agent key AUTHORIZED; read-only key DENIED → the exact refusal.",
+      "why": "The right permissions.",
+      "product": "Navis Developer",
+      "feature": "Permission-scoped context",
+      "source": "Devtool services/mcp-server/src/authorization/authorize.ts",
+      "proof_status": "reconstructed (refusal text verbatim)"
+    },
+    {
+      "id": "S15-A",
+      "scene": "S15",
+      "from_s": 72.9,
+      "to_s": 75.6,
+      "said": "L24",
+      "shown": "Back in VS Code: the agent applies the change (diff) and reports what it used.",
+      "why": "The agent works inside the organization's context.",
+      "product": "Navis Developer",
+      "feature": "—",
+      "source": "demo code",
+      "proof_status": "demo-data"
+    },
+    {
+      "id": "S15-B",
+      "scene": "S15",
+      "from_s": 75.6,
+      "to_s": 77.6,
+      "said": "L24",
+      "shown": "Navis Developer Console → Runs: the task, two runs, 'Completed', 'CLI session'.",
+      "why": "Agent work is on record.",
+      "product": "Navis Developer",
+      "feature": "Runs",
+      "source": "Devtool apps/dashboard features/runs/RunsPanel.tsx, lib/runs.ts",
+      "proof_status": "reconstructed + demo data"
+    },
+    {
+      "id": "S16-A",
+      "scene": "S16",
+      "from_s": 77.6,
+      "to_s": 81.2,
+      "said": "L25–L26",
+      "shown": "Two quiet type cards on black.",
+      "why": "Why existing categories are not enough.",
+      "product": "—",
+      "feature": "—",
+      "source": "—",
+      "proof_status": "film-graphic"
+    },
+    {
+      "id": "S16-B",
+      "scene": "S16",
+      "from_s": 81.2,
+      "to_s": 87.4,
+      "said": "L27",
+      "shown": "HERO: Navis Application (people) left, Navis Developer (developers + AI agents) right, NavisLabs centre; the same Acme signal travels from one to the other through NavisLabs; ONE SHARED UNDERSTANDING.",
+      "why": "The core brand image: two products, one understanding.",
+      "product": "NavisLabs",
+      "feature": "Both products",
+      "source": "Same demo facts in both products",
+      "proof_status": "film-graphic over reconstructed UI"
+    },
+    {
+      "id": "S17-A",
+      "scene": "S17",
+      "from_s": 87.4,
+      "to_s": 93.8,
+      "said": "L28–L30",
+      "shown": "'Models will change.' 'Agents will change.' The company's own entities hold, then gather into the mark.",
+      "why": "What stays as agents scale: the company's own understanding.",
+      "product": "NavisLabs",
+      "feature": "—",
+      "source": "—",
+      "proof_status": "film-graphic"
+    },
+    {
+      "id": "S17-B",
+      "scene": "S17",
+      "from_s": 93.8,
+      "to_s": 100.0,
+      "said": "L31",
+      "shown": "End card: NavisLabs lockup; NAVIS APPLICATION for people; NAVIS DEVELOPER for developers + AI agents; ONE SHARED UNDERSTANDING; navislabs.in.",
+      "why": "Remember the company and its two products.",
+      "product": "NavisLabs",
+      "feature": "—",
+      "source": "website lockup",
+      "proof_status": "verified-asset"
+    }
+  ],
+  "onscreen_copy": {
+    "company": "NavisLabs",
+    "product.application": "NAVIS APPLICATION",
+    "product.application.audience": "for people",
+    "product.developer": "NAVIS DEVELOPER",
+    "product.developer.audience": "for developers + AI agents",
+    "product.developer.status": "Private preview",
+    "people": "People",
+    "agents": "Agents",
+    "question": "What does this company already know?",
+    "understanding": "One shared understanding",
+    "notChatbot": "Not another chatbot.",
+    "notAutomation": "Not another automation layer.",
+    "modelsChange": "Models will change.",
+    "agentsChange": "Agents will change.",
+    "yours": "How your company works is yours.",
+    "trace": "Source · Timeline · Freshness",
+    "decides": "Navis prepares · A person decides",
+    "restored": "Restored by Navis Developer — not remembered by the model",
+    "runRecorded": "The run is on record",
+    "url": "navislabs.in",
+    "disclosure": "Interfaces recreated from the Navis source. Demo company data. Some waits shortened."
+  },
+  "visuals": {
+    "worlds": {
+      "problem": "ink, one cobalt line",
+      "company": "website light canvas with real vendor marks",
+      "application": "Navis Application light UI (Tailwind gray, black pills, Charter greeting)",
+      "developer": "VS Code dark + macOS Terminal + Navis Developer Console (light, graphite)",
+      "category": "ink; the two products either side of NavisLabs"
+    },
+    "rules": [
+      "Product is the hero; motion clarifies.",
+      "Macro crops and hard cuts within real UI; no particles, no neon, no gradients beyond the website's.",
+      "Cobalt only on the line and the logo."
+    ]
+  },
+  "camera": {
+    "model": "world-space camera: keyframes {f,x,y,scale,easing}; a keyframe note containing 'cut' is a hard cut",
+    "easings": [
+      "glide",
+      "settle",
+      "weighted",
+      "exit",
+      "drift"
+    ],
+    "style": "slow, controlled; macro crops for proof; hard cuts on 'what changed', 'what's waiting', 'Navis Developer', 'work state', 'permissions'"
+  },
+  "cursor": {
+    "style": "macOS arrow; every click causes the next beat",
+    "clicks": [
+      "whyClick",
+      "reviewReplyClick",
+      "reviewDraftClick",
+      "selectStart",
+      "approveClick"
+    ],
+    "scale": 0.72
+  },
+  "music": {
+    "source": "navislabs_final_audio_map.json",
+    "sections": [
+      "M1 almost silent; low atmospheric tension",
+      "M2 a subtle pulse enters under the problem",
+      "M3 NavisLabs: a low swell, then the systems connect",
+      "M4 warmer, human — Navis Application",
+      "M5 developer rhythm, restrained electronic texture — Navis Developer",
+      "M6 build through the hero shot and the closing thought",
+      "M7 resolve into silence"
+    ]
+  },
+  "sfx": {
+    "source": "navislabs_final_audio_map.json",
+    "events": "derived from timing.beats in src/config/beats.ts"
+  },
+  "transitions": [
+    {
+      "at_s": 11.8,
+      "kind": "line breaks; signals return to their systems"
+    },
+    {
+      "at_s": 17.4,
+      "kind": "split screen fade (12 f)"
+    },
+    {
+      "at_s": 29.6,
+      "kind": "fade to black; 0.9 s silence"
+    },
+    {
+      "at_s": 33.4,
+      "kind": "line wipe from ink to the website canvas"
+    },
+    {
+      "at_s": 40.0,
+      "kind": "application window rises (18 f)"
+    },
+    {
+      "at_s": 42.8,
+      "kind": "hard cut (macro) — What changed"
+    },
+    {
+      "at_s": 44.3,
+      "kind": "hard cut (macro) — Waiting on you"
+    },
+    {
+      "at_s": 57.4,
+      "kind": "hard cut — Navis Developer"
+    },
+    {
+      "at_s": 66.2,
+      "kind": "hard cut — macOS Terminal"
+    },
+    {
+      "at_s": 69.4,
+      "kind": "hard cut — permissions"
+    },
+    {
+      "at_s": 72.9,
+      "kind": "hard cut — back to VS Code"
+    },
+    {
+      "at_s": 77.6,
+      "kind": "fade to ink (12 f)"
+    },
+    {
+      "at_s": 81.2,
+      "kind": "hero rises from ink"
+    },
+    {
+      "at_s": 93.8,
+      "kind": "words gather into the mark; end card"
+    }
+  ],
+  "assets": {
+    "logo": "public/images/navislabs-logo.png",
+    "integration_marks": [
+      "public/images/integrations/gmail.svg",
+      "google-calendar.svg",
+      "google-meet.svg",
+      "google-drive.svg",
+      "google-docs.svg",
+      "slack.svg (canvas cropped)"
+    ],
+    "fonts": [
+      "public/fonts/Geist-Variable.woff2",
+      "public/fonts/GeistMono-Variable.woff2"
+    ],
+    "audio": "navislabs_final_audio_map.json"
+  },
+  "timing": {
+    "beats": {
+      "memoryPoint": 0.45,
+      "memoryLine": 0.8,
+      "signalDecision": 4.2,
+      "signalCustomer": 5.5,
+      "signalCommitment": 6.8,
+      "signalMeeting": 8.3,
+      "signalContext": 9.6,
+      "scatter": 11.8,
+      "tilesSettle": 13.6,
+      "problem": 15.6,
+      "peopleStart": 17.6,
+      "copy1": 18.2,
+      "copy2": 18.9,
+      "copy3": 19.6,
+      "agentsStart": 21.0,
+      "taskPreview": 24.5,
+      "questionCard": 27.5,
+      "blackout": 29.6,
+      "logoTile": 30.6,
+      "logoWord": 30.9,
+      "logoLine": 31.2,
+      "toLight": 33.4,
+      "iconsIn": 33.8,
+      "signalsOut": 34.3,
+      "understanding": 37.0,
+      "entitiesIn": 37.4,
+      "appRise": 40.0,
+      "whatChanged": 42.8,
+      "waiting": 44.3,
+      "backToCard": 45.15,
+      "whyClick": 45.65,
+      "whyOpen": 45.75,
+      "evidence0": 46.3,
+      "evidence1": 46.65,
+      "evidence2": 47.0,
+      "evidence3": 47.35,
+      "freshness": 47.7,
+      "youCanDo": 48.7,
+      "whyClose": 49.55,
+      "reviewReplyClick": 49.95,
+      "drawerOpen": 50.05,
+      "reviewDraftClick": 50.45,
+      "preparing": 50.5,
+      "draftShown": 50.95,
+      "selectStart": 51.45,
+      "selectEnd": 51.95,
+      "caption": 53.1,
+      "approveHover": 53.95,
+      "approveClick": 54.3,
+      "approved": 54.5,
+      "sending": 54.9,
+      "gmailAccepted": 56.1,
+      "replySent": 56.45,
+      "devCut": 57.4,
+      "devCaption": 57.6,
+      "agentEnter": 60.3,
+      "agentRead": 60.55,
+      "agentNeeds": 61.0,
+      "contextCall": 61.7,
+      "contextResult": 62.35,
+      "contextSource": 63.3,
+      "contextFresh": 64.2,
+      "dayOne": 66.2,
+      "dayTwo": 66.85,
+      "restore": 67.1,
+      "restoreTask": 67.5,
+      "restoreDecisions": 67.95,
+      "restoreOpen": 68.4,
+      "permAuthorized": 69.75,
+      "permDenied": 70.45,
+      "refusal": 71.0,
+      "agentUses": 73.1,
+      "agentDone": 74.1,
+      "runs": 75.6,
+      "notChatbot": 78.0,
+      "notAutomation": 79.6,
+      "heroIn": 81.2,
+      "sharedSignal": 82.4,
+      "sharedUnderstanding": 84.6,
+      "modelsChange": 87.6,
+      "agentsChange": 89.4,
+      "yours": 91.0,
+      "wordsIn": 91.2,
+      "collapse": 92.8,
+      "endLockup": 93.8,
+      "endProducts": 94.9,
+      "endUnderstanding": 96.1,
+      "endUrl": 97.2,
+      "fadeOut": 99.6
+    },
+    "typing": {
+      "taskPreview": {
+        "start": 24.5,
+        "text": "Update renewals so annual plans keep their current terms.",
+        "cps": 38
+      },
+      "agentTask": {
+        "start": 58.9,
+        "text": "Update renewals so annual plans keep their current terms.",
+        "cps": 45
+      },
+      "humanEdit": {
+        "start": 52.05,
+        "text": "Happy to walk you through it Thursday.",
+        "cps": 32
+      }
+    }
+  },
+  "proof_status": {
+    "legend": {
+      "verified-asset": "a real NavisLabs asset",
+      "reconstructed": "rebuilt in Remotion from the real product source (labels, states, layout)",
+      "demo-data": "fictional content in a real format",
+      "film-graphic": "a film element, not product UI",
+      "reconstructed + film annotation": "real UI plus a clearly separate film overlay"
+    },
+    "not_shown_for_lack_of_evidence": [
+      "Cursor / Codex / VS Code MCP integrations (CONFIG VERIFIED only)",
+      "public API / published SDK / hosted MCP as available today",
+      "confidence percentages",
+      "usage telemetry as a source",
+      "timestamped audit chain",
+      "cost, ROI, savings, agent economics",
+      "autonomous sending",
+      "learning/outcome loop as shipped",
+      "Slack execution",
+      "Notion, Jira, Salesforce, HubSpot, Zoom, Microsoft 365, GitHub"
+    ]
+  }
+}

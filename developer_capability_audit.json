@@ -1,0 +1,142 @@
+{
+ "about": "What each Navis Developer surface shown in the film is, in fact. implemented = in the Devtool source; private_preview = implemented, not publicly released; published = available from a public registry or host; working = how it was verified. Sources are read-only research paths (~/Desktop/Devtool).",
+ "surfaces": [
+  {
+   "surface": "MCP server",
+   "implemented": true,
+   "private_preview": true,
+   "published": false,
+   "working": "Claude Code LIVE VERIFIED 2026-09-08 (stdio, tools/list, navis_me, a correct permission refusal); Cursor / Codex / VS Code CONFIG VERIFIED only",
+   "safe_to_show": true,
+   "shown_as": "S11: claude mcp add navis --env NAVIS_API_KEY=navis_<prefix>_<secret> -- node ./services/mcp-server/dist/stdio.js → claude mcp list → ✓ Connected",
+   "secrets": "placeholder key only (navis_<prefix>_<secret>)",
+   "source": [
+    "Devtool/services/mcp-server",
+    "Devtool/docs/mcp/CLIENTS.md",
+    "Devtool/apps/dashboard/src/features/connect/data/surfaces.ts"
+   ]
+  },
+  {
+   "surface": "Developer API",
+   "implemented": true,
+   "private_preview": true,
+   "published": false,
+   "working": "implemented in source; not publicly hosted, so the film uses $NAVIS_BASE_URL",
+   "safe_to_show": true,
+   "shown_as": "S13: curl -s \"$NAVIS_BASE_URL/developer/context\" -H \"X-API-Key: $NAVIS_API_KEY\" → items · sources · freshness (demo values, real field names)",
+   "secrets": "$NAVIS_API_KEY placeholder; the organization comes from the key, never a parameter",
+   "source": [
+    "Devtool/packages/api-client/src/credentials.ts",
+    "Devtool/services/mcp-server/src/tools/register.ts"
+   ]
+  },
+  {
+   "surface": "TypeScript SDK (@navis/sdk 0.1.0)",
+   "implemented": true,
+   "private_preview": true,
+   "published": false,
+   "working": "local tarball install (npm install ./navis-sdk-0.1.0.tgz)",
+   "safe_to_show": true,
+   "shown_as": "S13: npm install ./navis-sdk-0.1.0.tgz · '# @navis/sdk 0.1.0 · local package · not on npm yet'",
+   "secrets": "process.env.NAVIS_API_KEY",
+   "source": [
+    "Devtool/apps/dashboard/src/features/connect/data/surfaces.ts (SDK_PACKAGES)"
+   ]
+  },
+  {
+   "surface": "Python SDK (navis-sdk wheel)",
+   "implemented": true,
+   "private_preview": true,
+   "published": false,
+   "working": "wheel built locally",
+   "safe_to_show": true,
+   "shown_as": "named on the Connect page only",
+   "source": [
+    "surfaces.ts SDK_PACKAGES"
+   ]
+  },
+  {
+   "surface": "CLI (navis)",
+   "implemented": true,
+   "private_preview": true,
+   "published": false,
+   "working": "built from packages/cli; not on npm",
+   "safe_to_show": true,
+   "shown_as": "S16: navis workstate checkpoint → next session: NAVIS WORK CONTINUITY restored",
+   "source": [
+    "Devtool/packages/cli/src/commands/workstate.ts",
+    "Devtool/packages/cli/src/workstate/restore.ts"
+   ]
+  },
+  {
+   "surface": "Console › Connect",
+   "implemented": true,
+   "private_preview": true,
+   "published": false,
+   "working": "dashboard app source",
+   "safe_to_show": true,
+   "shown_as": "S11: MCP · API · SDK · CLI cards",
+   "source": [
+    "Devtool/apps/dashboard/src/features/connect"
+   ]
+  },
+  {
+   "surface": "Console › Runs / Run detail",
+   "implemented": true,
+   "private_preview": true,
+   "published": false,
+   "working": "designed and implemented; rows are demo data",
+   "safe_to_show": true,
+   "shown_as": "S15: one run (7c2e91a0) with a 5-step timeline; Outcome 'Not judged'; Model/Tokens/Cost/Latency shown as '—'",
+   "source": [
+    "Devtool/apps/dashboard/src/features/runs/RunsPanel.tsx",
+    "RunDetailPanel.tsx",
+    "Devtool/packages/types/src/run.ts"
+   ]
+  },
+  {
+   "surface": "Console › Projects",
+   "implemented": false,
+   "private_preview": false,
+   "published": false,
+   "working": "not a Console concept",
+   "safe_to_show": false,
+   "shown_as": "not shown",
+   "source": [
+    "Devtool/apps/dashboard/src/lib/navigation.ts (no Projects entry)"
+   ]
+  },
+  {
+   "surface": "Central policy engine",
+   "implemented": false,
+   "private_preview": false,
+   "published": false,
+   "working": "'Not enabled yet' in the product",
+   "safe_to_show": false,
+   "shown_as": "not shown as live; S14 shows only per-credential permission checks",
+   "source": [
+    "Devtool/apps/dashboard/src/features/policies/PoliciesPanel.tsx"
+   ]
+  },
+  {
+   "surface": "Model use",
+   "implemented": true,
+   "private_preview": true,
+   "published": false,
+   "working": "Navis calls no generative model",
+   "safe_to_show": true,
+   "shown_as": "S13: 'No model is called · Navis grounds · your agent reasons'",
+   "source": [
+    "Devtool/services/mcp-server/src/tools/register.ts"
+   ]
+  }
+ ],
+ "claims_avoided": [
+  "no npm install @navis/sdk shown as working",
+  "no public base URL",
+  "no real key",
+  "no economics numbers",
+  "no outcome judgement",
+  "no Cursor/Codex/VS Code shown as live"
+ ]
+}

@@ -1,0 +1,911 @@
+{
+ "about": "Every SFX the V6 film plays, generated from src/config/beats.ts (the code that plays them).",
+ "rules": [
+  "The founder's voice always wins: SFX at least 12 dB below speech.",
+  "Only for visible actions; silence on purpose.",
+  "No whooshes on ordinary moves, no booms, no trailer hits."
+ ],
+ "categories": [
+  {
+   "category": "KEYBOARD",
+   "meaning": "Keystrokes when someone types: the person's sentence, the agent's task, terminal commands.",
+   "count": 41,
+   "events": [
+    {
+     "at_s": 45.09,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.174,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.259,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.343,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.427,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.512,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.596,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.68,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.765,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.849,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 45.933,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 46.007,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 46.091,
+     "scene": "S08",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the person writes their own sentence"
+    },
+    {
+     "at_s": 53.6,
+     "scene": "S10",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 53.671,
+     "scene": "S10",
+     "sound": "key3",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 53.73,
+     "scene": "S10",
+     "sound": "key2",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 53.79,
+     "scene": "S10",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 53.86,
+     "scene": "S10",
+     "sound": "key3",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 53.919,
+     "scene": "S10",
+     "sound": "key2",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 53.979,
+     "scene": "S10",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.038,
+     "scene": "S10",
+     "sound": "key3",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.109,
+     "scene": "S10",
+     "sound": "key2",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.169,
+     "scene": "S10",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.228,
+     "scene": "S10",
+     "sound": "key3",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.288,
+     "scene": "S10",
+     "sound": "key2",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.358,
+     "scene": "S10",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.418,
+     "scene": "S10",
+     "sound": "key3",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.477,
+     "scene": "S10",
+     "sound": "key2",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.547,
+     "scene": "S10",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 54.607,
+     "scene": "S10",
+     "sound": "key3",
+     "gain_db": -29,
+     "why": "the task typed to the agent"
+    },
+    {
+     "at_s": 58.033,
+     "scene": "S11",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "claude mcp list"
+    },
+    {
+     "at_s": 58.109,
+     "scene": "S11",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "claude mcp list"
+    },
+    {
+     "at_s": 58.185,
+     "scene": "S11",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "claude mcp list"
+    },
+    {
+     "at_s": 58.261,
+     "scene": "S11",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "claude mcp list"
+    },
+    {
+     "at_s": 58.337,
+     "scene": "S11",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "claude mcp list"
+    },
+    {
+     "at_s": 70.01,
+     "scene": "S13",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "npm install ./navis-sdk-0.1.0.tgz"
+    },
+    {
+     "at_s": 70.092,
+     "scene": "S13",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "npm install ./navis-sdk-0.1.0.tgz"
+    },
+    {
+     "at_s": 70.174,
+     "scene": "S13",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "npm install ./navis-sdk-0.1.0.tgz"
+    },
+    {
+     "at_s": 70.256,
+     "scene": "S13",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "npm install ./navis-sdk-0.1.0.tgz"
+    },
+    {
+     "at_s": 70.338,
+     "scene": "S13",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "npm install ./navis-sdk-0.1.0.tgz"
+    },
+    {
+     "at_s": 70.42,
+     "scene": "S13",
+     "sound": "key",
+     "gain_db": -29,
+     "why": "npm install ./navis-sdk-0.1.0.tgz"
+    }
+   ]
+  },
+  {
+   "category": "TERMINAL ENTER",
+   "meaning": "One Enter as a command or task is sent.",
+   "count": 4,
+   "events": [
+    {
+     "at_s": 54.711,
+     "scene": "S10",
+     "sound": "enter",
+     "gain_db": -20,
+     "why": "the task is sent"
+    },
+    {
+     "at_s": 57.633,
+     "scene": "S11",
+     "sound": "enter",
+     "gain_db": -24,
+     "why": "claude mcp add"
+    },
+    {
+     "at_s": 58.438,
+     "scene": "S11",
+     "sound": "enter",
+     "gain_db": -24,
+     "why": "claude mcp list"
+    },
+    {
+     "at_s": 88.16,
+     "scene": "S16",
+     "sound": "enter",
+     "gain_db": -24,
+     "why": "navis workstate checkpoint"
+    }
+   ]
+  },
+  {
+   "category": "MCP CONNECTION",
+   "meaning": "'✓ Connected'.",
+   "count": 1,
+   "events": [
+    {
+     "at_s": 58.558,
+     "scene": "S11",
+     "sound": "connect",
+     "gain_db": -24,
+     "why": "✓ Connected"
+    }
+   ]
+  },
+  {
+   "category": "CONTEXT RETRIEVAL",
+   "meaning": "Navis assembles or returns context.",
+   "count": 5,
+   "events": [
+    {
+     "at_s": 25.27,
+     "scene": "S04",
+     "sound": "retrieve",
+     "gain_db": -33,
+     "why": "memory becomes context"
+    },
+    {
+     "at_s": 38.88,
+     "scene": "S07",
+     "sound": "confirm",
+     "gain_db": -33,
+     "why": "six live sources resolve into one customer state"
+    },
+    {
+     "at_s": 64.25,
+     "scene": "S12",
+     "sound": "retrieve",
+     "gain_db": -29,
+     "why": "navis_get_relevant_context"
+    },
+    {
+     "at_s": 72.73,
+     "scene": "S13",
+     "sound": "retrieve",
+     "gain_db": -33,
+     "why": "the API returns items, sources, freshness"
+    },
+    {
+     "at_s": 89.625,
+     "scene": "S16",
+     "sound": "retrieve",
+     "gain_db": -35,
+     "why": "the next session restores the work state"
+    }
+   ]
+  },
+  {
+   "category": "SOURCE APPEARING",
+   "meaning": "A signal, fact or record appears with its source.",
+   "count": 26,
+   "events": [
+    {
+     "at_s": 0.75,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -33,
+     "why": "the person's view: the email"
+    },
+    {
+     "at_s": 1.6,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -33,
+     "why": "the agent's view: the workflow file"
+    },
+    {
+     "at_s": 7.44,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -38,
+     "why": "a piece of the truth lands in its system"
+    },
+    {
+     "at_s": 7.6,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -38,
+     "why": "a piece of the truth lands in its system"
+    },
+    {
+     "at_s": 7.76,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -38,
+     "why": "a piece of the truth lands in its system"
+    },
+    {
+     "at_s": 7.92,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -38,
+     "why": "a piece of the truth lands in its system"
+    },
+    {
+     "at_s": 8.08,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -38,
+     "why": "a piece of the truth lands in its system"
+    },
+    {
+     "at_s": 8.24,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -38,
+     "why": "a piece of the truth lands in its system"
+    },
+    {
+     "at_s": 8.4,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -38,
+     "why": "a piece of the truth lands in its system"
+    },
+    {
+     "at_s": 8.56,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -38,
+     "why": "a piece of the truth lands in its system"
+    },
+    {
+     "at_s": 8.72,
+     "scene": "S01",
+     "sound": "select",
+     "gain_db": -38,
+     "why": "a piece of the truth lands in its system"
+    },
+    {
+     "at_s": 20.97,
+     "scene": "S04",
+     "sound": "select",
+     "gain_db": -37,
+     "why": "a live system emits a signal"
+    },
+    {
+     "at_s": 21.21,
+     "scene": "S04",
+     "sound": "select",
+     "gain_db": -37,
+     "why": "a live system emits a signal"
+    },
+    {
+     "at_s": 21.45,
+     "scene": "S04",
+     "sound": "select",
+     "gain_db": -37,
+     "why": "a live system emits a signal"
+    },
+    {
+     "at_s": 21.69,
+     "scene": "S04",
+     "sound": "select",
+     "gain_db": -37,
+     "why": "a live system emits a signal"
+    },
+    {
+     "at_s": 21.93,
+     "scene": "S04",
+     "sound": "select",
+     "gain_db": -37,
+     "why": "a live system emits a signal"
+    },
+    {
+     "at_s": 22.17,
+     "scene": "S04",
+     "sound": "select",
+     "gain_db": -37,
+     "why": "a live system emits a signal"
+    },
+    {
+     "at_s": 36.43,
+     "scene": "S07",
+     "sound": "select",
+     "gain_db": -35,
+     "why": "an evidence row with its source"
+    },
+    {
+     "at_s": 36.55,
+     "scene": "S07",
+     "sound": "select",
+     "gain_db": -35,
+     "why": "an evidence row with its source"
+    },
+    {
+     "at_s": 36.67,
+     "scene": "S07",
+     "sound": "select",
+     "gain_db": -35,
+     "why": "an evidence row with its source"
+    },
+    {
+     "at_s": 36.79,
+     "scene": "S07",
+     "sound": "select",
+     "gain_db": -35,
+     "why": "an evidence row with its source"
+    },
+    {
+     "at_s": 36.91,
+     "scene": "S07",
+     "sound": "select",
+     "gain_db": -35,
+     "why": "an evidence row with its source"
+    },
+    {
+     "at_s": 37.03,
+     "scene": "S07",
+     "sound": "select",
+     "gain_db": -35,
+     "why": "an evidence row with its source"
+    },
+    {
+     "at_s": 37.15,
+     "scene": "S07",
+     "sound": "select",
+     "gain_db": -35,
+     "why": "an evidence row with its source"
+    },
+    {
+     "at_s": 51.4,
+     "scene": "S09",
+     "sound": "select",
+     "gain_db": -37,
+     "why": "the same event across the company's systems"
+    },
+    {
+     "at_s": 64.75,
+     "scene": "S12",
+     "sound": "select",
+     "gain_db": -31,
+     "why": "cited facts with sources arrive"
+    }
+   ]
+  },
+  {
+   "category": "CURSOR CLICK",
+   "meaning": "A visible cursor presses a control (never without a visible click).",
+   "count": 9,
+   "events": [
+    {
+     "at_s": 9.92,
+     "scene": "S02",
+     "sound": "click",
+     "gain_db": -28,
+     "why": "copying a fragment by hand"
+    },
+    {
+     "at_s": 10.37,
+     "scene": "S02",
+     "sound": "click",
+     "gain_db": -28,
+     "why": "copying a fragment by hand"
+    },
+    {
+     "at_s": 10.82,
+     "scene": "S02",
+     "sound": "click",
+     "gain_db": -28,
+     "why": "copying a fragment by hand"
+    },
+    {
+     "at_s": 34.558,
+     "scene": "S07",
+     "sound": "click",
+     "gain_db": -18,
+     "why": "Why this matters"
+    },
+    {
+     "at_s": 41.847,
+     "scene": "S08",
+     "sound": "click",
+     "gain_db": -18,
+     "why": "Review & reply"
+    },
+    {
+     "at_s": 42.447,
+     "scene": "S08",
+     "sound": "click",
+     "gain_db": -20,
+     "why": "Review draft"
+    },
+    {
+     "at_s": 44.49,
+     "scene": "S08",
+     "sound": "click",
+     "gain_db": -22,
+     "why": "the person selects a sentence"
+    },
+    {
+     "at_s": 57.033,
+     "scene": "S11",
+     "sound": "click",
+     "gain_db": -18,
+     "why": "Add member"
+    },
+    {
+     "at_s": 84.09,
+     "scene": "S16",
+     "sound": "click",
+     "gain_db": -18,
+     "why": "For myself"
+    }
+   ]
+  },
+  {
+   "category": "PERMISSION DENIED",
+   "meaning": "A key without the permission is refused — quiet, low.",
+   "count": 1,
+   "events": [
+    {
+     "at_s": 78.09,
+     "scene": "S14",
+     "sound": "deny",
+     "gain_db": -27,
+     "why": "a key without view_memory is refused"
+    }
+   ]
+  },
+  {
+   "category": "SAVE",
+   "meaning": "'Checkpoint recorded'.",
+   "count": 1,
+   "events": [
+    {
+     "at_s": 88.31,
+     "scene": "S16",
+     "sound": "save",
+     "gain_db": -29,
+     "why": "Checkpoint recorded"
+    }
+   ]
+  },
+  {
+   "category": "APPROVE",
+   "meaning": "Approve & send.",
+   "count": 1,
+   "events": [
+    {
+     "at_s": 48.85,
+     "scene": "S09",
+     "sound": "approve",
+     "gain_db": -22,
+     "why": "Approve & send"
+    }
+   ]
+  },
+  {
+   "category": "SENDING",
+   "meaning": "The approved reply is sent.",
+   "count": 1,
+   "events": [
+    {
+     "at_s": 49.35,
+     "scene": "S09",
+     "sound": "sent",
+     "gain_db": -25,
+     "why": "Sending…"
+    }
+   ]
+  },
+  {
+   "category": "GMAIL CONFIRMATION",
+   "meaning": "Gmail accepts the message.",
+   "count": 1,
+   "events": [
+    {
+     "at_s": 49.76,
+     "scene": "S09",
+     "sound": "gmail",
+     "gain_db": -24,
+     "why": "Gmail accepted the message"
+    }
+   ]
+  },
+  {
+   "category": "RUN START",
+   "meaning": "The agent starts the work.",
+   "count": 1,
+   "events": [
+    {
+     "at_s": 79.82,
+     "scene": "S15",
+     "sound": "run",
+     "gain_db": -30,
+     "why": "the agent starts the work"
+    }
+   ]
+  },
+  {
+   "category": "RUN COMPLETE",
+   "meaning": "The run is recorded as Completed.",
+   "count": 1,
+   "events": [
+    {
+     "at_s": 81.39,
+     "scene": "S15",
+     "sound": "confirm",
+     "gain_db": -31,
+     "why": "the run is recorded: Completed"
+    }
+   ]
+  },
+  {
+   "category": "PRODUCT TRANSITION",
+   "meaning": "A move between worlds (soft air, never a swoosh).",
+   "count": 4,
+   "events": [
+    {
+     "at_s": 19.62,
+     "scene": "S04",
+     "sound": "air",
+     "gain_db": -42,
+     "why": "wipe into the light data-flow world"
+    },
+    {
+     "at_s": 30.17,
+     "scene": "S05",
+     "sound": "air",
+     "gain_db": -44,
+     "why": "the Navis App opens"
+    },
+    {
+     "at_s": 52.95,
+     "scene": "S10",
+     "sound": "air",
+     "gain_db": -42,
+     "why": "light → dark: Navis Developer"
+    },
+    {
+     "at_s": 96.139,
+     "scene": "S17",
+     "sound": "air",
+     "gain_db": -40,
+     "why": "the event reaches both products"
+    }
+   ]
+  },
+  {
+   "category": "NAVISLABS REVEAL",
+   "meaning": "The mark: the reveal and the end lockup.",
+   "count": 2,
+   "events": [
+    {
+     "at_s": 13.93,
+     "scene": "S03",
+     "sound": "brand",
+     "gain_db": -26,
+     "why": "the NavisLabs mark appears"
+    },
+    {
+     "at_s": 118.5,
+     "scene": "S18",
+     "sound": "brand",
+     "gain_db": -30,
+     "why": "the end lockup"
+    }
+   ]
+  }
+ ],
+ "silences": [
+  {
+   "from_s": 0,
+   "to_s": 0.6,
+   "why": "the film opens on the voice"
+  },
+  {
+   "from_s": 13.28,
+   "to_s": 13.92,
+   "why": "breath before NavisLabs"
+  },
+  {
+   "from_s": 48.9,
+   "to_s": 49.3,
+   "why": "held breath after Approve & send"
+  },
+  {
+   "from_s": 78.19,
+   "to_s": 79.77,
+   "why": "the refusal sits in near-silence"
+  },
+  {
+   "from_s": 97.27,
+   "to_s": 102,
+   "why": "'Same facts. Same sources. Same freshness.' is carried by the voice alone"
+  },
+  {
+   "from_s": 118.6,
+   "to_s": 125.23,
+   "why": "the end card resolves into silence"
+  }
+ ],
+ "final_files": [
+  {
+   "file": "public/sfx/final/key.wav",
+   "used": 30
+  },
+  {
+   "file": "public/sfx/final/key2.wav",
+   "used": 5
+  },
+  {
+   "file": "public/sfx/final/key3.wav",
+   "used": 6
+  },
+  {
+   "file": "public/sfx/final/enter.wav",
+   "used": 4
+  },
+  {
+   "file": "public/sfx/final/click.wav",
+   "used": 9
+  },
+  {
+   "file": "public/sfx/final/select.wav",
+   "used": 26
+  },
+  {
+   "file": "public/sfx/final/run.wav",
+   "used": 1
+  },
+  {
+   "file": "public/sfx/final/confirm.wav",
+   "used": 2
+  },
+  {
+   "file": "public/sfx/final/sent.wav",
+   "used": 1
+  },
+  {
+   "file": "public/sfx/final/deny.wav",
+   "used": 1
+  },
+  {
+   "file": "public/sfx/final/air.wav",
+   "used": 4
+  },
+  {
+   "file": "public/sfx/final/connect.wav",
+   "used": 1
+  },
+  {
+   "file": "public/sfx/final/retrieve.wav",
+   "used": 4
+  },
+  {
+   "file": "public/sfx/final/save.wav",
+   "used": 1
+  },
+  {
+   "file": "public/sfx/final/approve.wav",
+   "used": 1
+  },
+  {
+   "file": "public/sfx/final/gmail.wav",
+   "used": 1
+  },
+  {
+   "file": "public/sfx/final/brand.wav",
+   "used": 2
+  }
+ ],
+ "status": "temp SFX are synthesized placeholders (public/sfx/temp); final recorded/licensed sounds drop into public/sfx/final with the same names."
+}

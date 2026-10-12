@@ -1,0 +1,150 @@
+{
+ "about": "Final-score brief for the V6 film, locked to the founder's measured voice (the master clock).",
+ "deliverable": {
+  "file": "public/music/final/v6/score.wav",
+  "format": "WAV, 48 kHz, 24-bit, stereo",
+  "length_s": 125.233,
+  "start": "sample-accurate at 0.000 s",
+  "end": "music resolves under the end card, then silence from 124.31 s",
+  "loudness": "score alone about −16 LUFS integrated, true peak ≤ −1 dBTP (the film applies −7 dB, ducks −10 dB under every line and −14 dB under the key lines)"
+ },
+ "style": "Premium, minimal, intelligent AI-infrastructure founder film: late-night engineering, emotional but restrained. No generic corporate, EDM, cyberpunk, trailer hits or cheesy inspirational piano. The founder's voice always wins.",
+ "arc": [
+  {
+   "range_s": [
+    0.0,
+    13.98
+   ],
+   "role": "restrained",
+   "brief": "near silence: a low bed under the problem"
+  },
+  {
+   "range_s": [
+    13.98,
+    28.5
+   ],
+   "role": "emergence",
+   "brief": "Navis reveal: a subtle pulse begins under the connected systems and the pipeline"
+  },
+  {
+   "range_s": [
+    28.5,
+    52.933
+   ],
+   "role": "human",
+   "brief": "the Navis App: warm expansion, human; a held breath on Approve & send"
+  },
+  {
+   "range_s": [
+    52.933,
+    83.3
+   ],
+   "role": "technical",
+   "brief": "Navis Developer: a precise developer rhythm"
+  },
+  {
+   "range_s": [
+    83.3,
+    104.7
+   ],
+   "role": "convergence",
+   "brief": "solo → team → one company → one understanding: broader, emotional expansion"
+  },
+  {
+   "range_s": [
+    104.7,
+    118.2
+   ],
+   "role": "conviction",
+   "brief": "the moat: deep, confident, restrained"
+  },
+  {
+   "range_s": [
+    118.2,
+    125.233
+   ],
+   "role": "resolve",
+   "brief": "the name: the music resolves, then silence"
+  }
+ ],
+ "key_lines_duck_deeper": [
+  {
+   "text": "Navis turns those signals into one shared understanding.",
+   "at_s": 14.03
+  },
+  {
+   "text": "A person decides.",
+   "at_s": 46.07
+  },
+  {
+   "text": "Navis isn't the model.",
+   "at_s": 70.31
+  },
+  {
+   "text": "It supplies the company's truth.",
+   "at_s": 73.66
+  },
+  {
+   "text": "One understanding.",
+   "at_s": 101.8
+  },
+  {
+   "text": "Two ways in.",
+   "at_s": 103.47
+  },
+  {
+   "text": "What your company knows shouldn't have to start over.",
+   "at_s": 110.44
+  },
+  {
+   "text": "NavisLabs.",
+   "at_s": 118.8
+  }
+ ],
+ "silences": [
+  {
+   "from_s": 13.18,
+   "to_s": 13.93,
+   "db": -96,
+   "why": "the breath before Navis"
+  },
+  {
+   "from_s": 48.85,
+   "to_s": 49.15,
+   "db": -96,
+   "why": "held breath on Approve & send"
+  },
+  {
+   "from_s": 78.635,
+   "to_s": 79.68,
+   "db": -18,
+   "why": "the refusal: quieter, not louder"
+  },
+  {
+   "from_s": 119.67,
+   "to_s": 121.33,
+   "db": -18,
+   "why": "silence after 'NavisLabs.'"
+  },
+  {
+   "from_s": 124.31,
+   "to_s": 125.233,
+   "db": -96,
+   "why": "silent end"
+  }
+ ],
+ "voice_first": [
+  "Leave 120–350 Hz and 2–4 kHz open under speech; no lead melody under a line.",
+  "Let the score rise in the founder's pauses (P1 2.6 s, P2 2.9 s, P5 3.1 s, P7 2.6 s) — those are written into the ducking."
+ ],
+ "forbidden": [
+  "generic corporate",
+  "EDM",
+  "trailer booms / hits / braams",
+  "cyberpunk",
+  "cheesy inspirational piano",
+  "overly dramatic Hollywood score",
+  "constant risers or whooshes"
+ ],
+ "status": "brief only — the final score is not generated. A synthesized temp bed following this arc plays in the review cut (public/music/temp/v6/score.wav)."
+}

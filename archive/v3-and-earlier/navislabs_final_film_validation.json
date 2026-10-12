@@ -1,0 +1,147 @@
+{
+  "report": "navislabs_final_film_validation",
+  "date": "2026-10-05",
+  "validated": "navislabs_final_film_master_plan.json",
+  "summary": {
+    "checks": 20,
+    "passed": 20,
+    "errors": 0,
+    "warnings": 11
+  },
+  "checks": [
+    {
+      "id": 1,
+      "check": "Plan parses and has every required section",
+      "pass": true,
+      "details": "19 sections"
+    },
+    {
+      "id": 2,
+      "check": "Format: 100 s, 3000 frames, 30 fps, 1920x1080",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 3,
+      "check": "S01–S17 identical to the master; no gaps or overlaps",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 4,
+      "check": "Shots tile every scene exactly",
+      "pass": true,
+      "details": "57 shots"
+    },
+    {
+      "id": 5,
+      "check": "VO: L01–Lnn in order, no overlaps, each starts inside its scene, no line inside a deliberate silence, pace ≤ 2.5 w/s",
+      "pass": true,
+      "details": "20 lines, 169 words"
+    },
+    {
+      "id": 6,
+      "check": "Acts land within 3 s of the brief without changing scene timing",
+      "pass": true,
+      "details": "{'ACT 2': 0.0, 'ACT 3': 3.0, 'ACT 4': 2.0, 'ACT 5': 1.0, 'ACT 6': 1.0}"
+    },
+    {
+      "id": 7,
+      "check": "Brand naming in narration and film typography: NavisLabs / Navis AI Application / Navis Developer only",
+      "pass": true,
+      "details": "clean"
+    },
+    {
+      "id": 8,
+      "check": "Every VO line maps to a claim with evidence",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 9,
+      "check": "No unsupported claims, money, availability, integrations or memory language in narration / film copy",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "id": 10,
+      "check": "Future only in S16 and spoken as 'Next'",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "id": 11,
+      "check": "Every shot's recording is planned; every required recording is used",
+      "pass": true,
+      "details": "11 recordings referenced"
+    },
+    {
+      "id": 12,
+      "check": "No integration logo/label wall (Gmail only as real footage)",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "id": 13,
+      "check": "Music sections contiguous 0–100 s; SFX timed inside the film",
+      "pass": true,
+      "details": "6 sections, 7 layers, 21 SFX"
+    },
+    {
+      "id": 14,
+      "check": "Real brand assets exist (website logo; Geist fonts in the film)",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 15,
+      "check": "Package cleanup removes only unused packages (none imported by src/ or remotion.config.ts)",
+      "pass": true,
+      "details": "remove 17; imported by src: ['@remotion/cli', '@remotion/fonts', '@remotion/media', '@remotion/motion-blur', 'react', 'remotion', 'zod']"
+    },
+    {
+      "id": 16,
+      "check": "Source JSON files unchanged (and master/audit still match the Devtool originals)",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 17,
+      "check": "Ending: default card has no EARLY ACCESS, valuation or funding; approvals.json absent",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 18,
+      "check": "Real-UI scenes use the wide → medium → macro → interaction → confirmation grammar",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 19,
+      "check": "No development labels in film copy",
+      "pass": true,
+      "details": "[]"
+    },
+    {
+      "id": 20,
+      "check": "Every VO sync anchor lands in (or within 0.7 s of) its shot",
+      "pass": true,
+      "details": "all anchors resolved"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "L01: Sweeping framing ('every company'). Founder line kept; acceptable as belief, not a statistic.",
+    "L03: Framing only: 'chat and docs' describe where company truth lives — NOT what NavisLabs reads (Gmail, Calendar, Drive metadata). No visual may imply a chat or document integration.",
+    "L05: CHANGED from the founder draft 'Agents start from zero, every session.' — that contradicts the master's claims_to_avoid (agents do get CLAUDE.md and their own memory). The new line says they start without the company truth. Founder approval needed.",
+    "L09: CHANGED from the founder draft 'It already knows where it left off.' — a model-memory claim the brief itself forbids. 'Restores' is what the product does (SessionStart). Founder approval needed.",
+    "L15: Honest about drafting: the panel prepares the draft when opened, so the VO never says 'already drafted'.",
+    "L17: Names the product explicitly instead of the old bare 'Navis sends it'.",
+    "Phase 2 not started: the running Remotion film still shows NAVIS / NAVIS AI, the old opening, captions over product UI, the blueprint S10 order and the old audio plan.",
+    "navislabs.in calls the people product 'Navis Application'; the film follows the new lock 'Navis AI Application' (decision D1).",
+    "All proof recordings, VO, music and SFX are missing; the cursor must follow the recorded pointer path once R08/R09 exist.",
+    "17 unused packages remain installed until the Phase 2 cleanup.",
+    "Word timings are estimates until the founder's lines are recorded and force-aligned."
+  ]
+}

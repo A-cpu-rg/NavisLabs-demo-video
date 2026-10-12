@@ -1,0 +1,84 @@
+{
+ "about": "Team and permission behaviour shown in the film, against the Devtool source (read-only).",
+ "items": [
+  {
+   "capability": "Invite a member",
+   "implemented": true,
+   "shown": "S11 Members: 'Add a member' → 'Add member' → row shows 'Invited'",
+   "source": "Devtool/apps/dashboard/src/features/settings/InviteMemberForm.tsx L119, L190; MembersPanel.tsx L179"
+  },
+  {
+   "capability": "Member list (Application role · Developer access)",
+   "implemented": true,
+   "shown": "S11: Abhishek Meena (Founder · owner · Active), Arjun Rao (Member · developer · Invited); S16: the company's Members as the team",
+   "source": "MembersPanel.tsx L146",
+   "data": "SYNTHETIC except the founder"
+  },
+  {
+   "capability": "Developer roles",
+   "implemented": true,
+   "values": [
+    "owner",
+    "admin",
+    "developer",
+    "viewer"
+   ],
+   "shown": "owner, developer",
+   "source": "Devtool/packages/types/src/auth.ts L160 DEVELOPER_ROLES"
+  },
+  {
+   "capability": "Developer access is explicit, never inherited",
+   "implemented": true,
+   "shown": "not stated on screen",
+   "source": "MembersPanel.tsx L198"
+  },
+  {
+   "capability": "Organization (company workspace)",
+   "implemented": true,
+   "shown": "S11 Members; S17 'One company · NavisLabs'",
+   "source": "OrganizationPanel.tsx"
+  },
+  {
+   "capability": "Personal workspace (sign-up 'For myself')",
+   "implemented": true,
+   "shown": "S16: 'For myself' at sign-up → Workspace 'Personal', Workspace ownership 'Owner' (Navis Developer without the Navis App)",
+   "source": "Devtool/apps/dashboard/src/features/auth/SignUpForm.tsx; MembersPanel.tsx L241; lib/format.ts"
+  },
+  {
+   "capability": "API key",
+   "implemented": true,
+   "shown": "placeholders only (navis_<prefix>_<secret>, $NAVIS_API_KEY)",
+   "source": "Devtool/packages/api-client/src/credentials.ts"
+  },
+  {
+   "capability": "Agent credential permissions",
+   "implemented": true,
+   "values": [
+    "view_memory",
+    "view_state",
+    "…"
+   ],
+   "shown": "S14: key with view_memory → authorized; key without → exact refusal",
+   "source": "Devtool/packages/types/src/auth.ts NAVIS_PERMISSIONS; services/mcp-server authorization/authorize.ts"
+  },
+  {
+   "capability": "Organization scope",
+   "implemented": true,
+   "shown": "S14 'OWN SCOPE': a key reads only its own organization",
+   "source": "credentials.ts (organization from the key)"
+  },
+  {
+   "capability": "Central policy enforcement",
+   "implemented": false,
+   "shown": "not shown",
+   "status": "Not enabled yet",
+   "source": "PoliciesPanel.tsx L219"
+  },
+  {
+   "capability": "Projects",
+   "implemented": false,
+   "shown": "not shown (not a Console concept)",
+   "source": "lib/navigation.ts"
+  }
+ ]
+}

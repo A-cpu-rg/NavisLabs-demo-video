@@ -1,0 +1,192 @@
+1
+00:00:00,600 --> 00:00:03,600
+Your people and agents see different truths.
+
+2
+00:00:06,200 --> 00:00:09,420
+The truth is scattered across the systems where work happens.
+
+3
+00:00:09,770 --> 00:00:11,310
+People rebuild it by hand.
+
+4
+00:00:11,620 --> 00:00:12,980
+Agents start without it.
+
+5
+00:00:14,030 --> 00:00:17,020
+Navis turns those signals into one shared understanding.
+
+6
+00:00:19,970 --> 00:00:21,282
+Every email, meeting,
+
+7
+00:00:21,322 --> 00:00:23,640
+document and message becomes a signal —
+
+8
+00:00:24,400 --> 00:00:25,820
+remembered, connected,
+
+9
+00:00:26,190 --> 00:00:28,100
+and turned into what should happen next.
+
+10
+00:00:28,950 --> 00:00:31,590
+Inside a company, the Navis App is for people.
+
+11
+00:00:32,390 --> 00:00:33,850
+It shows what changed —
+
+12
+00:00:34,290 --> 00:00:35,630
+and why it matters.
+
+13
+00:00:36,380 --> 00:00:37,980
+Every fact has its source,
+
+14
+00:00:38,250 --> 00:00:40,090
+its time, and how fresh it is.
+
+15
+00:00:40,880 --> 00:00:42,330
+When something needs a decision,
+
+16
+00:00:42,660 --> 00:00:44,340
+Navis prepares the next step.
+
+17
+00:00:46,070 --> 00:00:47,420
+A person decides.
+
+18
+00:00:49,150 --> 00:00:51,050
+Then the company acts.
+
+19
+00:00:53,250 --> 00:00:56,040
+The same company's agents use Navis Developer.
+
+20
+00:00:56,520 --> 00:00:57,270
+Invite the team.
+
+21
+00:00:58,140 --> 00:01:03,340
+Connect once — through MCP, API, SDK or CLI.
+
+22
+00:01:04,200 --> 00:01:05,130
+The agent asks —
+
+23
+00:01:05,550 --> 00:01:07,720
+and gets the company's context,
+
+24
+00:01:07,950 --> 00:01:09,560
+with sources and freshness.
+
+25
+00:01:10,310 --> 00:01:12,080
+Navis isn't the model.
+
+26
+00:01:13,660 --> 00:01:15,810
+It supplies the company's truth.
+
+27
+00:01:16,770 --> 00:01:19,380
+Every request is checked against its permissions.
+
+28
+00:01:19,970 --> 00:01:21,020
+The agent does the work,
+
+29
+00:01:21,340 --> 00:01:22,750
+and the run is on record.
+
+30
+00:01:23,650 --> 00:01:25,740
+A solo builder gets a private workspace.
+
+31
+00:01:25,960 --> 00:01:27,200
+A team can work together.
+
+32
+00:01:27,860 --> 00:01:29,860
+And the work state carries into the next session.
+
+33
+00:01:32,990 --> 00:01:33,650
+One company.
+
+34
+00:01:34,210 --> 00:01:36,920
+The person and the agent acted on the same event.
+
+35
+00:01:37,570 --> 00:01:38,300
+Same facts.
+
+36
+00:01:38,950 --> 00:01:39,730
+Same sources.
+
+37
+00:01:40,340 --> 00:01:41,200
+Same freshness.
+
+38
+00:01:41,800 --> 00:01:42,850
+One understanding.
+
+39
+00:01:43,470 --> 00:01:44,070
+Two ways in.
+
+40
+00:01:45,210 --> 00:01:46,030
+Models change.
+
+41
+00:01:46,080 --> 00:01:46,980
+Agents change.
+
+42
+00:01:47,100 --> 00:01:47,880
+Tools change.
+
+43
+00:01:50,440 --> 00:01:53,030
+What your company knows shouldn't have to start over.
+
+44
+00:01:53,900 --> 00:01:54,650
+Company-owned.
+
+45
+00:01:54,900 --> 00:01:55,800
+Model-neutral.
+
+46
+00:01:56,050 --> 00:01:57,950
+Shared by people and agents.
+
+47
+00:01:58,800 --> 00:01:59,470
+NavisLabs.
+
+48
+00:02:01,430 --> 00:02:03,810
+The shared understanding for your organization.
+

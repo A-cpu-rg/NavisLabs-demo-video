@@ -1,0 +1,2219 @@
+{
+  "audit": "navis_current_vs_target_film_audit",
+  "date": "2026-10-05",
+  "mode": "READ-ONLY — no file was edited; this JSON is the only file written",
+  "sources_inspected": {
+    "film_project": [
+      "navis_code_audit.json",
+      "navis_master_cinematic_launch_spec.json",
+      "navis_launch_production_blueprint.json",
+      "navis_launch_av_master.json",
+      "src/ (S01–S17, components, config)",
+      "public/ (fonts only)",
+      "asset_requirements.json (stale)",
+      "renders from the last verification pass"
+    ],
+    "repositories_read_only": [
+      "~/Desktop/navis-labs-website (globals.css, layout.tsx, wordmark.tsx, home.tsx, public/navis-logo.png, public/logo/)",
+      "~/Desktop/Navis-AI (globals.css, layout.tsx, DraftReviewPanel.tsx, DailyBriefHero.tsx, PageMasthead.tsx, page.tsx)",
+      "~/Desktop/Devtool (apps/dashboard globals.css + layout.tsx, packages/cli workstate.ts / restore.ts / hook.ts, services/mcp-server authorize.ts)"
+    ],
+    "not_opened": [
+      "Devtool/.claude/settings.local.json (real key)",
+      "Navis-AI/.env*"
+    ]
+  },
+  "brand_hierarchy": {
+    "company": "NavisLabs",
+    "products": {
+      "Navis Application": "people",
+      "Navis Developer": "developers + AI agents"
+    },
+    "confirmed_by": "navislabs.in already uses exactly these names ('Navis Application', 'Navis Developer', 'One core · Two products', 'Built for people. Built for agents.')",
+    "film_reveal_target": "NavisLabs → NAVIS DEVELOPER + NAVIS APPLICATION",
+    "never": [
+      "NAVIS AI",
+      "Navis-AI",
+      "Navis as the company"
+    ],
+    "allowed_shorthand": "'Navis' only where the real product UI shows it (masthead 'Today · Navis', CLI/MCP strings)"
+  },
+  "current_voiceover": {
+    "source": "navis_launch_av_master.json (latest primary VO); the running code's HUD still shows the blueprint text where noted",
+    "total_words": 186,
+    "lines": [
+      {
+        "id": "L01",
+        "exact_current_text": "AI knows the world.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S01",
+        "start": 0.8,
+        "end": 2.4,
+        "duration": 1.6,
+        "words": 4,
+        "wps": 2.5,
+        "product": "none",
+        "claim": [
+          "C01"
+        ],
+        "viewer_should_see": "The statement 'AI knows the world.' alone on warm ink."
+      },
+      {
+        "id": "L02",
+        "exact_current_text": "It doesn’t know your company.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S02",
+        "start": 3.6,
+        "end": 5.52,
+        "duration": 1.92,
+        "words": 5,
+        "wps": 2.6,
+        "product": "none",
+        "claim": [
+          "C01"
+        ],
+        "viewer_should_see": "'It doesn’t know your company.' — then only 'your company' holds in silence."
+      },
+      {
+        "id": "L03",
+        "exact_current_text": "What was decided. Who’s waiting. What’s still open.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S03",
+        "start": 6.8,
+        "end": 10.2,
+        "duration": 3.4,
+        "words": 8,
+        "wps": 2.35,
+        "product": "none",
+        "claim": [
+          "C02"
+        ],
+        "viewer_should_see": "Fragment cards arriving as each kind is named: a recorded decision, a waiting email, an open question."
+      },
+      {
+        "id": "L04",
+        "exact_current_text": "It lives in inboxes, calendars and people’s heads — so every new session starts with a re-brief.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S03",
+        "start": 10.4,
+        "end": 16.8,
+        "duration": 6.4,
+        "words": 17,
+        "wps": 2.66,
+        "product": "none",
+        "claim": [
+          "C02"
+        ],
+        "viewer_should_see": "Cards brightening on 'inboxes', 'calendars', 'people’s heads', and the terminal prompt on 're-brief'; then everything converges into one line."
+      },
+      {
+        "id": "L05",
+        "exact_current_text": "Models will change. Agents will change.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S04",
+        "start": 17.2,
+        "end": 20.0,
+        "duration": 2.8,
+        "words": 6,
+        "wps": 2.14,
+        "product": "none",
+        "claim": [
+          "C01"
+        ],
+        "viewer_should_see": "MODEL · AGENT labels whose version tags keep flipping above a neutral line."
+      },
+      {
+        "id": "L06",
+        "exact_current_text": "What your company knows should persist.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S04",
+        "start": 20.4,
+        "end": 22.8,
+        "duration": 2.4,
+        "words": 6,
+        "wps": 2.5,
+        "product": "none",
+        "claim": [
+          "C01"
+        ],
+        "viewer_should_see": "YOUR COMPANY settling beneath the line and staying still."
+      },
+      {
+        "id": "L07",
+        "exact_current_text": "This is NavisLabs.",
+        "text_currently_shown_by_the_remotion_dev_hud": "This is Navis.",
+        "scene": "S05",
+        "start": 25.6,
+        "end": 27.0,
+        "duration": 1.4,
+        "words": 3,
+        "wps": 2.14,
+        "product": "NavisLabs (brand)",
+        "claim": [
+          "N01"
+        ],
+        "viewer_should_see": "The line turns blue; the NavisLabs mark and name lock on it."
+      },
+      {
+        "id": "L08",
+        "exact_current_text": "For agents, Navis Developer keeps the work state.",
+        "text_currently_shown_by_the_remotion_dev_hud": "For agents, Navis keeps the work state.",
+        "scene": "S06 (continues into S07)",
+        "start": 28.2,
+        "end": 31.43,
+        "duration": 3.23,
+        "words": 8,
+        "wps": 2.48,
+        "product": "Navis Developer",
+        "claim": [
+          "C03",
+          "N02"
+        ],
+        "viewer_should_see": "NAVIS DEVELOPER · FOR AGENTS, then the real Claude Code terminal rising in."
+      },
+      {
+        "id": "L09",
+        "exact_current_text": "Close the session tonight.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S07",
+        "start": 34.6,
+        "end": 36.2,
+        "duration": 1.6,
+        "words": 4,
+        "wps": 2.5,
+        "product": "Navis Developer",
+        "claim": [
+          "C03"
+        ],
+        "viewer_should_see": "Real footage: the agent's `navis workstate checkpoint` and 'Checkpoint recorded for …', then /exit."
+      },
+      {
+        "id": "L10",
+        "exact_current_text": "Tomorrow, a fresh one opens with the objective, the decisions it recorded, and what’s still open.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S08",
+        "start": 37.4,
+        "end": 43.0,
+        "duration": 5.6,
+        "words": 16,
+        "wps": 2.86,
+        "product": "Navis Developer",
+        "claim": [
+          "C04"
+        ],
+        "viewer_should_see": "Real footage: a fresh session; the restored block's objective, DECISIONS and OPEN lines in macro."
+      },
+      {
+        "id": "L11",
+        "exact_current_text": "You type one word.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S08",
+        "start": 43.4,
+        "end": 45.0,
+        "duration": 1.6,
+        "words": 4,
+        "wps": 2.5,
+        "product": "Navis Developer",
+        "claim": [
+          "C05"
+        ],
+        "viewer_should_see": "Real footage: 'continue' typed and submitted; the reply begins naming the recorded decision."
+      },
+      {
+        "id": "L12",
+        "exact_current_text": "When the task depends on your company, the agent asks Navis —",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S09",
+        "start": 46.4,
+        "end": 50.4,
+        "duration": 4.0,
+        "words": 11,
+        "wps": 2.75,
+        "product": "Navis Developer",
+        "claim": [
+          "C06"
+        ],
+        "viewer_should_see": "Real footage: the new task, then the MCP tool call navis_get_relevant_context."
+      },
+      {
+        "id": "L13",
+        "exact_current_text": "and gets the facts that bear on it. With sources. With how fresh they are.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S09",
+        "start": 50.6,
+        "end": 55.9,
+        "duration": 5.3,
+        "words": 15,
+        "wps": 2.83,
+        "product": "Navis Developer",
+        "claim": [
+          "C06"
+        ],
+        "viewer_should_see": "Real footage: a returned fact with its source, the sources detail, then the freshness fields — each as it is named."
+      },
+      {
+        "id": "L14",
+        "exact_current_text": "Every key sees only its own company — and only what it’s allowed to.",
+        "text_currently_shown_by_the_remotion_dev_hud": "Every key sees only what it’s allowed to — and only its own company.",
+        "scene": "S10",
+        "start": 56.4,
+        "end": 61.7,
+        "duration": 5.3,
+        "words": 13,
+        "wps": 2.45,
+        "product": "Navis Developer",
+        "claim": [
+          "C07"
+        ],
+        "viewer_should_see": "Three real terminals: one key answers, another company's key gets nothing about Fieldstone, a read-only key is refused."
+      },
+      {
+        "id": "L15",
+        "exact_current_text": "For people, the same understanding becomes your morning.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S11 (continues into S12)",
+        "start": 62.4,
+        "end": 65.6,
+        "duration": 3.2,
+        "words": 8,
+        "wps": 2.5,
+        "product": "Navis Application",
+        "claim": [
+          "C08",
+          "C10"
+        ],
+        "viewer_should_see": "The blue line wipes dark to light; NAVIS APPLICATION · FOR PEOPLE; the real Today screen rising in."
+      },
+      {
+        "id": "L16",
+        "exact_current_text": "Who’s waiting on you. The reply, already drafted.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S12",
+        "start": 65.8,
+        "end": 69.38,
+        "duration": 3.58,
+        "words": 8,
+        "wps": 2.23,
+        "product": "Navis Application",
+        "claim": [
+          "C08"
+        ],
+        "viewer_should_see": "Real Navis Application: the waiting-reply card on Today, a click, the drawer with the drafted reply."
+      },
+      {
+        "id": "L17",
+        "exact_current_text": "You read it. You change a line. You approve it.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S13",
+        "start": 70.6,
+        "end": 75.15,
+        "duration": 4.55,
+        "words": 10,
+        "wps": 2.2,
+        "product": "Navis Application",
+        "claim": [
+          "C09",
+          "B01"
+        ],
+        "viewer_should_see": "Real UI: the draft, the human typing one sentence, the cursor reaching 'Approve & send'."
+      },
+      {
+        "id": "L18",
+        "exact_current_text": "Navis sends it — and only says sent when Gmail confirms.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S14",
+        "start": 76.7,
+        "end": 80.85,
+        "duration": 4.15,
+        "words": 10,
+        "wps": 2.41,
+        "product": "Navis Application",
+        "claim": [
+          "C09"
+        ],
+        "viewer_should_see": "Real UI: the click, 'Sending…', then 'Reply sent' / 'Gmail accepted the message.'; the reply arriving in the recipient's Gmail."
+      },
+      {
+        "id": "L19",
+        "exact_current_text": "People and agents, working from one shared understanding of your company.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S15",
+        "start": 83.4,
+        "end": 87.78,
+        "duration": 4.38,
+        "words": 11,
+        "wps": 2.51,
+        "product": "shared layer",
+        "claim": [
+          "C10"
+        ],
+        "viewer_should_see": "Both products as two halves of one frame joined by the blue seam, fed by GMAIL · CALENDAR · DRIVE."
+      },
+      {
+        "id": "L20",
+        "exact_current_text": "Next: every outcome feeds back into what it knows.",
+        "text_currently_shown_by_the_remotion_dev_hud": "same",
+        "scene": "S16",
+        "start": 89.2,
+        "end": 92.7,
+        "duration": 3.5,
+        "words": 9,
+        "wps": 2.57,
+        "product": "future (shared)",
+        "claim": [
+          "C11"
+        ],
+        "viewer_should_see": "The seam bending into a loop: solid for what exists, dashed blue with NEXT for what is next."
+      },
+      {
+        "id": "L21",
+        "exact_current_text": "NavisLabs. Your company’s intelligence — for your people, and your agents.",
+        "text_currently_shown_by_the_remotion_dev_hud": "Navis. Your company’s intelligence — for your people, and your agents.",
+        "scene": "S17",
+        "start": 93.4,
+        "end": 98.05,
+        "duration": 4.65,
+        "words": 10,
+        "wps": 2.15,
+        "product": "NavisLabs (brand)",
+        "claim": [
+          "C12",
+          "N01"
+        ],
+        "viewer_should_see": "The loop resolving into the NavisLabs mark and name, FOR PEOPLE · FOR AGENTS, navislabs.in, the disclosure."
+      }
+    ]
+  },
+  "current_screen_by_scene": {
+    "S01": {
+      "scene_id": "S01",
+      "time": [
+        0.0,
+        3.2
+      ],
+      "current_visual": "Black fades up to warm ink with 2.5% grain; 'AI knows the world.' reveals at center (Geist Sans 84 px) at 1.2 s.",
+      "current_onscreen_text": [
+        "AI knows the world."
+      ],
+      "current_product_label": null,
+      "current_recording": null,
+      "current_status": "cinematic typography",
+      "current_background": "ink #14130F + grain",
+      "current_color": "ink / #EDEBE6 text",
+      "current_camera": "push 1.00→1.03",
+      "current_cursor": "none",
+      "current_feature": null,
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S02": {
+      "scene_id": "S02",
+      "time": [
+        3.2,
+        6.4
+      ],
+      "current_visual": "Hard cut to 'It doesn’t know your company.'; all words except 'your company' fade at 5.4–6.0 s.",
+      "current_onscreen_text": [
+        "It doesn’t know your company."
+      ],
+      "current_product_label": null,
+      "current_recording": null,
+      "current_status": "cinematic typography",
+      "current_background": "ink + grain",
+      "current_color": "ink / #EDEBE6",
+      "current_camera": "push 1.00→1.02",
+      "current_cursor": "none",
+      "current_feature": null,
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S03": {
+      "scene_id": "S03",
+      "time": [
+        6.4,
+        16.8
+      ],
+      "current_visual": "'your company' dissolves; seven typographic fragment cards (fictional demo content) drift in parallax, brighten on their words, then converge into a 1 px neutral line.",
+      "current_onscreen_text": [
+        "Decided: annual plans keep current terms",
+        "Re: Renewal terms for 2027 — Daniel Ortiz · 3 days ago",
+        "who owns the renewal?",
+        "Pricing review · Thu 10:00",
+        "Maya — out until Monday",
+        "Q4-pricing.pdf",
+        "$ claude▌"
+      ],
+      "current_product_label": null,
+      "current_recording": null,
+      "current_status": "cinematic illustration (fictional, unbranded)",
+      "current_background": "ink + grain",
+      "current_color": "ink, #1C1B17 cards",
+      "current_camera": "lateral drift −240→160→0, parallax softened (z/2000, spread 0.85)",
+      "current_cursor": "none",
+      "current_feature": null,
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S04": {
+      "scene_id": "S04",
+      "time": [
+        16.8,
+        23.0
+      ],
+      "current_visual": "Neutral line; MODEL · AGENT with flipping v1/v2/v3 tags above; YOUR COMPANY below.",
+      "current_onscreen_text": [
+        "MODEL · AGENT (+ v1/v2/v3 tags)",
+        "YOUR COMPANY"
+      ],
+      "current_product_label": null,
+      "current_recording": null,
+      "current_status": "cinematic typography",
+      "current_background": "ink + grain",
+      "current_color": "neutral line rgba(237,235,230,0.4)",
+      "current_camera": "pull 1.06→1.00",
+      "current_cursor": "none",
+      "current_feature": null,
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S05": {
+      "scene_id": "S05",
+      "time": [
+        23.0,
+        28.0
+      ],
+      "current_visual": "Line ignites Navis blue from the center; a dashed EMPTY logomark slot with a dev tag 'LOGOMARK REQUIRED · A01'; wordmark 'NAVIS' (Geist Sans 600, 120 px, tracking 0.22 em); AGENTS / PEOPLE at the line ends; camera slides to AGENTS and zooms through.",
+      "current_onscreen_text": [
+        "NAVIS",
+        "AGENTS",
+        "PEOPLE",
+        "dev: LOGOMARK REQUIRED · A01"
+      ],
+      "current_product_label": "NAVIS",
+      "current_recording": null,
+      "current_status": "cinematic brand (logo missing)",
+      "current_background": "ink + blue radial lift",
+      "current_color": "#1976FE line with glow",
+      "current_camera": "locked; weighted pan to x −620; zoom-through exit",
+      "current_cursor": "none",
+      "current_feature": null,
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S06": {
+      "scene_id": "S06",
+      "time": [
+        28.0,
+        30.0
+      ],
+      "current_visual": "Arrives through the label (motion blur 10 f); 'NAVIS DEVELOPER' + 'FOR AGENTS' (55%) at the left margin.",
+      "current_onscreen_text": [
+        "NAVIS DEVELOPER",
+        "FOR AGENTS"
+      ],
+      "current_product_label": "NAVIS DEVELOPER",
+      "current_recording": null,
+      "current_status": "cinematic title",
+      "current_background": "ink + lift",
+      "current_color": "ink",
+      "current_camera": "1.15→1.00",
+      "current_cursor": "none",
+      "current_feature": "F01 (title only)",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S07": {
+      "scene_id": "S07",
+      "time": [
+        30.0,
+        37.0
+      ],
+      "current_visual": "Custom dark terminal window titled 'fieldstone-api' rises in; content area is a grid placeholder with 'REAL RECORDING REQUIRED · R01'; DAY 1 plate top-left; macro to a dashed focus marker; window dims at the end.",
+      "current_onscreen_text": [
+        "DAY 1",
+        "dev: REAL RECORDING REQUIRED · R01"
+      ],
+      "current_product_label": "(terminal title) fieldstone-api",
+      "current_recording": "R01 MISSING → placeholder",
+      "current_status": "framing ready, footage missing",
+      "current_background": "ink + lift",
+      "current_color": "terminal #14130F, placeholder #1C1B17 grid",
+      "current_camera": "0.92→1.0→1.6–1.65 macro→1.0",
+      "current_cursor": "none (keyboard)",
+      "current_feature": "F01",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S08": {
+      "scene_id": "S08",
+      "time": [
+        37.0,
+        46.0
+      ],
+      "current_visual": "Fade to ink, 'DAY 2' centered then gliding to the corner; terminal fades up with placeholder R03; macro steps CURRENT TASK → DECISIONS → OPEN on focus markers; pull to the prompt; 'WORK STATE RESTORED' plate at f240.",
+      "current_onscreen_text": [
+        "DAY 2",
+        "WORK STATE RESTORED",
+        "dev: REAL RECORDING REQUIRED · R03"
+      ],
+      "current_product_label": "fieldstone-api",
+      "current_recording": "R03 MISSING → placeholder (R04 fallback off)",
+      "current_status": "framing ready, footage missing",
+      "current_background": "ink + lift",
+      "current_color": "as S07",
+      "current_camera": "blueprint override (1.8x macro steps)",
+      "current_cursor": "none",
+      "current_feature": "F01",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S09": {
+      "scene_id": "S09",
+      "time": [
+        46.0,
+        56.0
+      ],
+      "current_visual": "Same terminal, placeholder R05; camera to tool name → item → sources → freshness → wide; captions 'ASK YOUR COMPANY', 'WITH SOURCES' on ink plates.",
+      "current_onscreen_text": [
+        "ASK YOUR COMPANY",
+        "WITH SOURCES",
+        "dev: REAL RECORDING REQUIRED · R05"
+      ],
+      "current_product_label": "fieldstone-api",
+      "current_recording": "R05 MISSING → placeholder",
+      "current_status": "framing ready, footage missing",
+      "current_background": "ink + lift",
+      "current_color": "as S07",
+      "current_camera": "blueprint override (freshness hold NOT yet extended)",
+      "current_cursor": "none",
+      "current_feature": "F03, F02",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S10": {
+      "scene_id": "S10",
+      "time": [
+        56.0,
+        62.0
+      ],
+      "current_visual": "S09's window shrinks into panel 1; panels in BLUEPRINT order R05 | R07 (refusal) | R06 (Marlow); labels FIELDSTONE · AGENT KEY | FIELDSTONE · READ-ONLY KEY | MARLOW HEALTH · AGENT KEY; dims; 'SCOPED TO EACH KEY'.",
+      "current_onscreen_text": [
+        "FIELDSTONE · AGENT KEY",
+        "FIELDSTONE · READ-ONLY KEY",
+        "MARLOW HEALTH · AGENT KEY",
+        "SCOPED TO EACH KEY"
+      ],
+      "current_product_label": "fieldstone-api / marlow-api",
+      "current_recording": "R05, R07, R06 MISSING → placeholders",
+      "current_status": "framing ready, footage missing",
+      "current_background": "ink + lift",
+      "current_color": "as S07",
+      "current_camera": "blueprint override (refusal in the middle)",
+      "current_cursor": "none",
+      "current_feature": "F04, F05",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S11": {
+      "scene_id": "S11",
+      "time": [
+        62.0,
+        64.0
+      ],
+      "current_visual": "Blue line rises as the horizon wipe; canvas below; 'NAVIS AI' + 'FOR PEOPLE' title fades in and out.",
+      "current_onscreen_text": [
+        "NAVIS AI",
+        "FOR PEOPLE"
+      ],
+      "current_product_label": "NAVIS AI",
+      "current_recording": null,
+      "current_status": "cinematic transition",
+      "current_background": "canvas #F7F6F3 below the line, S10 above",
+      "current_color": "#1976FE line",
+      "current_camera": "locked",
+      "current_cursor": "none",
+      "current_feature": null,
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S12": {
+      "scene_id": "S12",
+      "time": [
+        64.0,
+        70.0
+      ],
+      "current_visual": "Custom white browser window with the address pill reading 'Navis' rises on canvas; content is a light grid placeholder 'REAL RECORDING REQUIRED · R08'; synthetic cursor enters, arcs to an estimated card position, clicks at 68.4 s.",
+      "current_onscreen_text": [
+        "(address pill) Navis",
+        "dev: REAL RECORDING REQUIRED · R08",
+        "dev: focus · waiting-reply card title (calibrate)"
+      ],
+      "current_product_label": "Navis (address pill)",
+      "current_recording": "R08 MISSING → placeholder",
+      "current_status": "framing ready, footage missing",
+      "current_background": "canvas + 1.5% grain",
+      "current_color": "white window, #FBFAF8 placeholder grid",
+      "current_camera": "0.92→1.5→1.55",
+      "current_cursor": "synthetic arrow, enter/arc/pause/click",
+      "current_feature": "F12",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S13": {
+      "scene_id": "S13",
+      "time": [
+        70.0,
+        76.0
+      ],
+      "current_visual": "Same browser, placeholder R09; cursor to the estimated draft position, click, hides while 'typing', travels to the estimated button; 'APPROVE' caption beside it.",
+      "current_onscreen_text": [
+        "APPROVE",
+        "dev: REAL RECORDING REQUIRED · R09"
+      ],
+      "current_product_label": "Navis (address pill)",
+      "current_recording": "R09 MISSING → placeholder",
+      "current_status": "framing ready, footage missing",
+      "current_background": "canvas",
+      "current_color": "as S12",
+      "current_camera": "1.55→1.8→2.2",
+      "current_cursor": "synthetic, caret click + hover",
+      "current_feature": "F09",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S14": {
+      "scene_id": "S14",
+      "time": [
+        76.0,
+        83.0
+      ],
+      "current_visual": "Placeholder R09; click at 76.2 s; the 'SENT' caption is deliberately NOT shown (dev tag says it appears only after the real 'Reply sent'); hard cut to a blank-pill browser with placeholder R10.",
+      "current_onscreen_text": [
+        "dev: “SENT” appears only after the real ‘Reply sent’ (R09)",
+        "dev: REAL RECORDING REQUIRED · R10"
+      ],
+      "current_product_label": "Navis / blank pill",
+      "current_recording": "R09, R10 MISSING → placeholders",
+      "current_status": "framing ready, footage missing",
+      "current_background": "canvas",
+      "current_color": "as S12",
+      "current_camera": "2.0–2.1 on status card; match cut; 1.0→1.04",
+      "current_cursor": "click, rest, fade before the cut",
+      "current_feature": "F09",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S15": {
+      "scene_id": "S15",
+      "time": [
+        83.0,
+        89.0
+      ],
+      "current_visual": "Pull back: inbox placeholder shrinks to the right half and crossfades to a browser ('Navis' pill) with 'STILL REQUIRED · R09'; left half ink with a terminal 'STILL REQUIRED · R05'; blue seam; AGENTS / PEOPLE; GMAIL · CALENDAR · DRIVE pills with lines into the seam; 'ONE SHARED UNDERSTANDING' pill.",
+      "current_onscreen_text": [
+        "AGENTS",
+        "PEOPLE",
+        "GMAIL",
+        "CALENDAR",
+        "DRIVE",
+        "ONE SHARED UNDERSTANDING"
+      ],
+      "current_product_label": "AGENTS / PEOPLE",
+      "current_recording": "STILL_R05, STILL_R09 MISSING → slots",
+      "current_status": "conceptual architecture with real-footage slots",
+      "current_background": "ink left / canvas right",
+      "current_color": "#1976FE seam",
+      "current_camera": "2.4→1.1→1.0, motion blur f0–20",
+      "current_cursor": "none",
+      "current_feature": "F18",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S16": {
+      "scene_id": "S16",
+      "time": [
+        89.0,
+        93.0
+      ],
+      "current_visual": "The seam bends into a circle; solid ink-white arc MEMORY→CONTEXT→DECISION→EXECUTION; dashed blue arc OUTCOME→LEARNING→MEMORY; 'NEXT' in blue.",
+      "current_onscreen_text": [
+        "MEMORY",
+        "CONTEXT",
+        "DECISION",
+        "EXECUTION",
+        "OUTCOME",
+        "LEARNING",
+        "NEXT"
+      ],
+      "current_product_label": null,
+      "current_recording": null,
+      "current_status": "future (dashed + NEXT)",
+      "current_background": "ink",
+      "current_color": "#EDEBE6 solid, #1976FE dashed",
+      "current_camera": "1.00→0.96",
+      "current_cursor": "none",
+      "current_feature": "future",
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    },
+    "S17": {
+      "scene_id": "S17",
+      "time": [
+        93.0,
+        100.0
+      ],
+      "current_visual": "Loop contracts; empty logomark slot (dev tag); wordmark 'NAVIS'; 'FOR PEOPLE · FOR AGENTS'; legal line from 95.8 s; 'navislabs.in'; fade to black.",
+      "current_onscreen_text": [
+        "NAVIS",
+        "FOR PEOPLE · FOR AGENTS",
+        "navislabs.in",
+        "Pre-release software. Demo organization and data. Some waits shortened.",
+        "dev: LOGOMARK REQUIRED · A01"
+      ],
+      "current_product_label": "NAVIS",
+      "current_recording": null,
+      "current_status": "cinematic brand (logo missing)",
+      "current_background": "ink + lift",
+      "current_color": "ink / #EDEBE6",
+      "current_camera": "1.00→1.02",
+      "current_cursor": "none",
+      "current_feature": null,
+      "overlay": "development HUD bottom-left (scene · shot · time · frame, plus 'VOICEOVER REQUIRED · Lxx', 'MUSIC REQUIRED · Mx', 'REAL RECORDING REQUIRED · Rxx' tags)"
+    }
+  },
+  "screen_classification": {
+    "A_pure_cinematic_typography": [
+      "S01",
+      "S02",
+      "S03 (typographic fragment cards)",
+      "S04",
+      "S05 (brand)",
+      "S06 (title)",
+      "S11 (title + wipe)",
+      "S17 (brand)"
+    ],
+    "B_real_navis_developer_footage": [],
+    "C_real_navis_application_footage": [],
+    "D_generated_framing_around_real_footage": [
+      "S07",
+      "S08",
+      "S09",
+      "S10 (three panels)",
+      "S12",
+      "S13",
+      "S14 (+ Gmail R10)",
+      "S15 (miniature windows)"
+    ],
+    "E_placeholder_because_recording_missing": [
+      "S07 (R01)",
+      "S08 (R03)",
+      "S09 (R05)",
+      "S10 (R05, R07, R06)",
+      "S12 (R08)",
+      "S13 (R09)",
+      "S14 (R09, R10)",
+      "S15 (stills from R05, R09)",
+      "S05 + S17 logomark slot (A01)"
+    ],
+    "F_conceptual_architecture": [
+      "S15 (split world + seam + inputs)"
+    ],
+    "G_future_functionality": [
+      "S16 (dashed loop, NEXT)"
+    ],
+    "note": "B and C are empty today: no recording exists, so every product moment currently renders the custom window chrome around a 'REAL RECORDING REQUIRED' placeholder. Nothing imitates product UI."
+  },
+  "voice_screen_alignment": {
+    "counts": {
+      "YES": 7,
+      "PARTIAL": 10,
+      "NO": 4
+    },
+    "lines": [
+      {
+        "line": "L01",
+        "voice_says": "AI knows the world.",
+        "screen_shows_now": "statement 'AI knows the world.'",
+        "match": "YES",
+        "required_on_screen": "—"
+      },
+      {
+        "line": "L02",
+        "voice_says": "It doesn’t know your company.",
+        "screen_shows_now": "'It doesn’t know your company.' → 'your company' held",
+        "match": "YES",
+        "required_on_screen": "—"
+      },
+      {
+        "line": "L03",
+        "voice_says": "What was decided. Who’s waiting. What’s still open.",
+        "screen_shows_now": "fragment cards entering in word order",
+        "match": "YES",
+        "required_on_screen": "—"
+      },
+      {
+        "line": "L04",
+        "voice_says": "It lives in inboxes, calendars and people’s heads — so every new session starts with a re-brief.",
+        "screen_shows_now": "cards brightening on inboxes / calendars / people's heads / re-brief",
+        "match": "YES",
+        "required_on_screen": "'inboxes' is tight (estimate 0.18 s overlap) — align the highlight to the recorded word"
+      },
+      {
+        "line": "L05",
+        "voice_says": "Models will change. Agents will change.",
+        "screen_shows_now": "MODEL · AGENT with flipping version tags",
+        "match": "YES",
+        "required_on_screen": "—"
+      },
+      {
+        "line": "L06",
+        "voice_says": "What your company knows should persist.",
+        "screen_shows_now": "YOUR COMPANY settles below the line",
+        "match": "YES",
+        "required_on_screen": "—"
+      },
+      {
+        "line": "L07",
+        "voice_says": "This is NavisLabs.",
+        "screen_shows_now": "wordmark 'NAVIS' + empty logo slot",
+        "match": "NO",
+        "required_on_screen": "VO says NavisLabs, screen says NAVIS and shows no mark. Required: the NavisLabs mark + name locking on the line."
+      },
+      {
+        "line": "L08",
+        "voice_says": "For agents, Navis Developer keeps the work state.",
+        "screen_shows_now": "NAVIS DEVELOPER title, then a terminal placeholder",
+        "match": "PARTIAL",
+        "required_on_screen": "Title matches. Required: real Claude Code terminal (R01) as the line ends."
+      },
+      {
+        "line": "L09",
+        "voice_says": "Close the session tonight.",
+        "screen_shows_now": "terminal placeholder; macro to a focus marker; dim",
+        "match": "PARTIAL",
+        "required_on_screen": "Required: real R01 — the agent's checkpoint command, 'Checkpoint recorded for …', /exit."
+      },
+      {
+        "line": "L10",
+        "voice_says": "Tomorrow, a fresh one opens with the objective, the decisions it recorded, and what’s still open.",
+        "screen_shows_now": "DAY 2 move, placeholder, macro steps",
+        "match": "PARTIAL",
+        "required_on_screen": "Required: real R03 restore block (or R04 if U06 fails). The OPEN line must stay in frame while 'continue' is typed."
+      },
+      {
+        "line": "L11",
+        "voice_says": "You type one word.",
+        "screen_shows_now": "placeholder; 'WORK STATE RESTORED' caption",
+        "match": "PARTIAL",
+        "required_on_screen": "Required: real 'continue' and the reply; keep the submitted 'continue' line in frame until 45.0 s."
+      },
+      {
+        "line": "L12",
+        "voice_says": "When the task depends on your company, the agent asks Navis —",
+        "screen_shows_now": "terminal placeholder; 'ASK YOUR COMPANY'",
+        "match": "PARTIAL",
+        "required_on_screen": "Required: real R05 MCP tool-call row (navis_get_relevant_context, shown by Claude Code as an MCP tool)."
+      },
+      {
+        "line": "L13",
+        "voice_says": "and gets the facts that bear on it. With sources. With how fresh they are.",
+        "screen_shows_now": "placeholder; macro steps; 'WITH SOURCES'",
+        "match": "PARTIAL",
+        "required_on_screen": "Required: real payload with an item's source, sources.detail, freshness. Code still uses the blueprint camera — extend the freshness hold to f276 (AV master)."
+      },
+      {
+        "line": "L14",
+        "voice_says": "Every key sees only its own company — and only what it’s allowed to.",
+        "screen_shows_now": "three placeholder panels in BLUEPRINT order (refusal in the middle)",
+        "match": "NO",
+        "required_on_screen": "AV master VO ends on the refusal ('…and only what it’s allowed to'); the code shows the refusal second. Required: master panel order (Fieldstone | Marlow | read-only refusal last) + real R05/R06/R07."
+      },
+      {
+        "line": "L15",
+        "voice_says": "For people, the same understanding becomes your morning.",
+        "screen_shows_now": "blue-line wipe + 'NAVIS AI' title",
+        "match": "NO",
+        "required_on_screen": "Name wrong. Required: NAVIS APPLICATION · FOR PEOPLE, then real Today (R08)."
+      },
+      {
+        "line": "L16",
+        "voice_says": "Who’s waiting on you. The reply, already drafted.",
+        "screen_shows_now": "light browser placeholder; cursor arc; click",
+        "match": "PARTIAL",
+        "required_on_screen": "Generic light browser is NOT ENOUGH. Required: real Today with the waiting-reply card and the drawer. Verify 'already drafted' (the panel shows 'Preparing the draft…' while it loads)."
+      },
+      {
+        "line": "L17",
+        "voice_says": "You read it. You change a line. You approve it.",
+        "screen_shows_now": "placeholder; cursor caret click; APPROVE caption",
+        "match": "PARTIAL",
+        "required_on_screen": "Required: real DraftReviewPanel, the human's typed sentence, the black 'Approve & send' pill."
+      },
+      {
+        "line": "L18",
+        "voice_says": "Navis sends it — and only says sent when Gmail confirms.",
+        "screen_shows_now": "placeholder; click; SENT deliberately withheld; placeholder Gmail",
+        "match": "PARTIAL",
+        "required_on_screen": "Required: real 'Approved — sending' + 'Sending…' → 'Reply sent' / 'Gmail accepted the message.' and R10 Gmail arrival. Rename 'Navis' → 'Navis Application' (D5)."
+      },
+      {
+        "line": "L19",
+        "voice_says": "People and agents, working from one shared understanding of your company.",
+        "screen_shows_now": "split world, seam, inputs, 'ONE SHARED UNDERSTANDING'",
+        "match": "PARTIAL",
+        "required_on_screen": "Diagram right; both miniatures are empty slots. Required: stills from R05 and R09; add product names under AGENTS / PEOPLE."
+      },
+      {
+        "line": "L20",
+        "voice_says": "Next: every outcome feeds back into what it knows.",
+        "screen_shows_now": "solid + dashed loop, NEXT",
+        "match": "YES",
+        "required_on_screen": "—"
+      },
+      {
+        "line": "L21",
+        "voice_says": "NavisLabs. Your company’s intelligence — for your people, and your agents.",
+        "screen_shows_now": "wordmark 'NAVIS' + empty logo slot, tagline, URL, legal",
+        "match": "NO",
+        "required_on_screen": "VO says NavisLabs; screen says NAVIS. Required: NavisLabs mark + name."
+      }
+    ]
+  },
+  "brand_mismatches": {
+    "on_screen": [
+      {
+        "scene": "S05",
+        "where": "wordmark (blueprint O05 → code)",
+        "current": "NAVIS",
+        "should_be": "NavisLabs lockup (mark + 'NavisLabs'), or NAVISLABS if the cinematic all-caps treatment is chosen — DECISION D1",
+        "why": "brand reveal must name the company"
+      },
+      {
+        "scene": "S05",
+        "where": "line-end labels",
+        "current": "AGENTS / PEOPLE",
+        "should_be": "keep AGENTS / PEOPLE + add NAVIS DEVELOPER / NAVIS APPLICATION beneath (AV master O06S)",
+        "why": "establish NavisLabs → two products at the reveal"
+      },
+      {
+        "scene": "S05 / S17",
+        "where": "logomark",
+        "current": "empty dashed slot + dev tag",
+        "should_be": "the real NavisLabs mark (A01) — interim option: navis-labs-website/public/navis-logo.png (256 px raster) — DECISION D3",
+        "why": "the company must be unmistakable"
+      },
+      {
+        "scene": "S06",
+        "where": "act title",
+        "current": "NAVIS DEVELOPER · FOR AGENTS",
+        "should_be": "correct (matches navislabs.in 'Navis Developer' / 'For your agents')",
+        "why": "—"
+      },
+      {
+        "scene": "S11",
+        "where": "act title (master O15)",
+        "current": "NAVIS AI · FOR PEOPLE",
+        "should_be": "NAVIS APPLICATION · FOR PEOPLE",
+        "why": "locked product name; matches navislabs.in 'Navis Application'"
+      },
+      {
+        "scene": "S12–S15",
+        "where": "browser address pill (film chrome)",
+        "current": "Navis",
+        "should_be": "blank pill",
+        "why": "film chrome must not brand the company as 'Navis'; the real app's own masthead 'Today · Navis' stays because it is real UI"
+      },
+      {
+        "scene": "S17",
+        "where": "wordmark (blueprint O23) + end card line_1 (master)",
+        "current": "NAVIS",
+        "should_be": "NavisLabs lockup (same decision as S05)",
+        "why": "closing brand"
+      },
+      {
+        "scene": "S17",
+        "where": "tagline / CTA",
+        "current": "FOR PEOPLE · FOR AGENTS / navislabs.in",
+        "should_be": "correct (navislabs.in uses 'Built for people. Built for agents.')",
+        "why": "—"
+      },
+      {
+        "scene": "all",
+        "where": "dev HUD VO text",
+        "current": "blueprint text ('This is Navis.', 'Navis. Your company’s intelligence…')",
+        "should_be": "AV master text",
+        "why": "the HUD reads the blueprint, not the AV master"
+      }
+    ],
+    "voiceover": [
+      {
+        "line": "L07",
+        "current_in_code_hud": "This is Navis.",
+        "current_av_master": "This is NavisLabs.",
+        "verdict": "AV master correct"
+      },
+      {
+        "line": "L21",
+        "current_in_code_hud": "Navis. Your company’s intelligence — for your people, and your agents.",
+        "current_av_master": "NavisLabs. Your company’s intelligence — for your people, and your agents.",
+        "verdict": "AV master correct"
+      },
+      {
+        "line": "L08",
+        "current_in_code_hud": "For agents, Navis keeps the work state.",
+        "current_av_master": "For agents, Navis Developer keeps the work state.",
+        "verdict": "AV master correct"
+      },
+      {
+        "line": "L12",
+        "current": "…the agent asks Navis —",
+        "verdict": "MISMATCH under the stricter rule in this brief ('Navis' only where the real UI shows it). Should name Navis Developer — DECISION D5"
+      },
+      {
+        "line": "L18",
+        "current": "Navis sends it — and only says sent when Gmail confirms.",
+        "verdict": "MISMATCH under the same rule. Should be 'Navis Application sends it…' — DECISION D5"
+      }
+    ],
+    "allowed_real_ui_text": [
+      "'Today · Navis' (Navis Application masthead, real)",
+      "'NAVIS WORK CONTINUITY — …' (restore header, real CLI)",
+      "navis_get_relevant_context (real MCP tool name)",
+      "`navis workstate checkpoint` (real CLI)",
+      "browser tab 'Navis · Organizational Intelligence' (cropped out anyway)"
+    ],
+    "never_in_film": [
+      "NAVIS AI",
+      "Navis-AI",
+      "'Navis' as the company"
+    ]
+  },
+  "navislabs_brand_system": {
+    "source": "navis-labs-website/app/globals.css, app/layout.tsx, components/site/wordmark.tsx, components/site/home.tsx (read-only)",
+    "company_lockup": "logo tile (public/navis-logo.png, rounded) + 'NavisLabs' in Geist Sans semibold, mixed case, tracking ≈0.01 em",
+    "published_product_copy": {
+      "Navis Application": "eyebrow 'For your team · Use Navis' — 'Keep replies, promises and decisions moving.'",
+      "Navis Developer": "eyebrow 'For your agents · Build on Navis' — badge 'Private preview'",
+      "section": "'One core · Two products' — 'Built for people. Built for agents.'"
+    },
+    "tokens": {
+      "canvas": "#F7F6F3",
+      "surface": "#FFFFFF",
+      "surface_alt": "#F0EEEA",
+      "surface_sunk": "#E9E6E1",
+      "ink_ground": "#14130F",
+      "text": "#14130F",
+      "text_2": "#66625B",
+      "text_on_dark_2": "#A8A49C",
+      "border": "rgba(28,25,20,0.10)",
+      "border_strong": "rgba(28,25,20,0.18)",
+      "accent": "#2E2A24 (graphite)",
+      "steady": "#3D6350",
+      "risk": "#8C3A2E",
+      "watch": "#7A5A1E",
+      "radius": {
+        "card": 20,
+        "panel": 16,
+        "button": 14,
+        "chip": 10
+      },
+      "shadow_lg": "0 24px 64px -26px rgba(28,25,20,0.20), 0 2px 8px rgba(28,25,20,0.05)",
+      "ease": "cubic-bezier(0.22,1,0.36,1)"
+    },
+    "fonts": {
+      "display": "Geist Sans",
+      "body": "Inter",
+      "mono": "Geist Mono"
+    },
+    "explicit_rule": "'NO BRAND COLOUR. The system is ink, stone and graphite.' (globals.css header). The only blue is in the logo's arcs.",
+    "logo": "public/navis-logo.png — 256×256 palette PNG on black; blue signal arcs, white three-node graph, blue arrowhead. No vector exists (U07).",
+    "note": "The website shows third-party connector logos (incl. Slack, HubSpot, Salesforce, Jira, Notion, Zoom, Microsoft, GitHub). The film must NOT copy that strip: the audit says Slack cannot be connected (X01) and the others are not implemented."
+  },
+  "navis_application_visual_system": {
+    "source": "Navis-AI/src/app/globals.css, layout.tsx, components/navis/* (read-only)",
+    "tokens": {
+      "bg": "#FBFAF7",
+      "card": "#FFFFFF",
+      "card_inner": "#F3F4F6",
+      "border": "#E5E7EB",
+      "text": "#111827",
+      "muted": "#6B7280",
+      "body": "#4B5563",
+      "accent": "#6366F1 / #4F46E5 (indigo)",
+      "success": "#10B981 (emerald)",
+      "urgent": "#EF4444"
+    },
+    "fonts": {
+      "ui": "Inter",
+      "editorial": "Charter / Iowan Old Style (serif)"
+    },
+    "components_in_film": {
+      "masthead": "PageMasthead 'Today · Navis' — 10 px uppercase, tracking 0.28em, gray-500, hairline border",
+      "draft_panel": "white card rounded-2xl, ring black/6%; inputs gray-50 with gray-200 ring",
+      "approve_button": "black pill (rounded-full, 12 px medium white text) 'Approve & send'",
+      "after_approve": "emerald chip 'Approved — sending'",
+      "status": "'Sending…' → 'Reply sent' + 'Gmail accepted the message.' (dry run: 'Prepared — not sent' — never film)",
+      "loading": "'Preparing the draft…' while the draft loads; 'Navis can’t draft this yet' if none"
+    },
+    "in_app_name": "Navis (title 'Navis · Organizational Intelligence', masthead 'Today · Navis')",
+    "risk": "src/app/page.tsx (the landing page) contains a STATIC mock with 'Today · Navis' and 'Approve & send' — never film it; R08 must be /dashboard."
+  },
+  "navis_developer_visual_system": {
+    "source": "Devtool/apps/dashboard/src/app/globals.css + layout.tsx; packages/cli; services/mcp-server (read-only; .claude/settings.local.json not opened — it holds a real key)",
+    "dashboard_tokens": {
+      "canvas": "#F7F6F3",
+      "surface": "#FFFFFF",
+      "surface_muted": "#F0EEEA",
+      "line": "#E5E2DC",
+      "line_strong": "#D3CFC7",
+      "ink": "#14130F",
+      "ink_muted": "#514D45",
+      "ink_subtle": "#6F6A61",
+      "accent": "#2E2A24",
+      "positive": "#3D6350",
+      "caution": "#7A5A1E",
+      "critical": "#8C3A2E",
+      "radius": "0.5–0.625 rem"
+    },
+    "dashboard_fonts": {
+      "sans": "Inter, Geist Sans",
+      "mono": "Geist Mono"
+    },
+    "dashboard_title": "Navis Developer",
+    "in_film_surface": "NOT the dashboard — the Claude Code terminal (capture spec: Geist Mono 15 pt, #14130F on #EDEBE6, prompt 'fieldstone-api %'); Claude Code's own UI colours stay as recorded.",
+    "real_strings": {
+      "checkpoint": "'Checkpoint recorded for <where>.' (commands/workstate.ts:393)",
+      "restore": "'NAVIS WORK CONTINUITY — a PREVIOUS session’s record of this work, not a transcript.' (restore.ts:121)",
+      "degraded": "'NAVIS WORK CONTINUITY — NOT RESTORED: …' (never film)",
+      "show": "'Work state — <where>' (R04 fallback)",
+      "refusal": "'… requires the \"view_memory\" permission, which this credential does not hold. Do not retry — the answer will not change. Ask an organization admin to issue a key carrying it.' (authorize.ts)"
+    }
+  },
+  "film_visual_system": {
+    "ink": "#14130F",
+    "ink_raised": "#1C1B17",
+    "on_ink_text": "#EDEBE6",
+    "canvas": "#F7F6F3",
+    "surface": "#FFFFFF",
+    "text_muted": "#514D45",
+    "text_subtle": "#6F6A61",
+    "blue_line": "#1976FE",
+    "fonts": "Geist Sans / Geist Mono (public/fonts)"
+  },
+  "color_comparison": [
+    {
+      "element": "dark ground",
+      "film": "#14130F",
+      "website": "#14130F (ink-ground)",
+      "developer": "#14130F ink; terminal bg #14130F",
+      "application": "—",
+      "verdict": "MATCH"
+    },
+    {
+      "element": "light ground",
+      "film": "#F7F6F3",
+      "website": "#F7F6F3",
+      "developer": "#F7F6F3",
+      "application": "#FBFAF7",
+      "verdict": "MATCH (website, developer) / CLOSE (application)"
+    },
+    {
+      "element": "surface",
+      "film": "#FFFFFF",
+      "website": "#FFFFFF",
+      "developer": "#FFFFFF",
+      "application": "#FFFFFF",
+      "verdict": "MATCH"
+    },
+    {
+      "element": "secondary text",
+      "film": "#514D45 / #6F6A61",
+      "website": "#66625B",
+      "developer": "#514D45 / #6F6A61",
+      "application": "#6B7280",
+      "verdict": "MATCH (developer) / CLOSE (website, application)"
+    },
+    {
+      "element": "accent",
+      "film": "#1976FE (line only)",
+      "website": "#2E2A24 graphite; NO brand colour",
+      "developer": "#2E2A24",
+      "application": "#6366F1 indigo",
+      "verdict": "MISMATCH with every UI — but it IS the logo's arc blue. DECISION D2"
+    },
+    {
+      "element": "display / label type",
+      "film": "Geist Sans / Geist Mono",
+      "website": "Geist Sans / Inter / Geist Mono",
+      "developer": "Inter + Geist Mono",
+      "application": "Inter",
+      "verdict": "MATCH (website display + mono) / CLOSE (apps, which only appear inside footage)"
+    },
+    {
+      "element": "wordmark",
+      "film": "'NAVIS' 120 px, tracking 0.22 em, all caps",
+      "website": "'NavisLabs' semibold, tracking ≈0.01 em, mixed case, with the logo tile",
+      "developer": "'Navis Developer'",
+      "application": "'Navis'",
+      "verdict": "MISMATCH — DECISION D1"
+    },
+    {
+      "element": "window radius / shadow",
+      "film": "14 px; shadow_light = website shadow-lg",
+      "website": "panel 16 / button 14; shadow-lg identical",
+      "developer": "8–10 px",
+      "application": "rounded-2xl (16 px)",
+      "verdict": "CLOSE"
+    }
+  ],
+  "developer_demo_quality": [
+    {
+      "beat": "agent starts work",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R01: typed task + real tool calls"
+    },
+    {
+      "beat": "Navis work state exists",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R01: `navis workstate checkpoint --decision … --open …` → 'Checkpoint recorded for …'"
+    },
+    {
+      "beat": "session ends",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R01: /exit; window dims; night"
+    },
+    {
+      "beat": "next session restores the state",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG if U06 passes; otherwise R04 + Claude's reply",
+      "evidence": "R03"
+    },
+    {
+      "beat": "agent asks Navis for company context",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R05: MCP tool call"
+    },
+    {
+      "beat": "Navis returns facts",
+      "current_render": "MISSING",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R05: expanded tool result"
+    },
+    {
+      "beat": "sources visible",
+      "current_render": "MISSING",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R05: item.source + sources.detail (verify legible at 2x)"
+    },
+    {
+      "beat": "freshness visible",
+      "current_render": "MISSING",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R05: freshness.as_of / newest_fact_at"
+    },
+    {
+      "beat": "permission boundaries work",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R07: the exact refusal text"
+    },
+    {
+      "beat": "company isolation works",
+      "current_render": "WEAK",
+      "with_planned_recordings": "WEAK→STRONG only if Marlow Health is seeded with its own data",
+      "evidence": "R06"
+    },
+    {
+      "beat": "MCP involved where demonstrated",
+      "current_render": "MISSING",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R05–R07: Claude Code shows the call as an MCP tool"
+    }
+  ],
+  "application_demo_quality": [
+    {
+      "beat": "human opens Navis Application",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R08 load; NAVIS APPLICATION title (after rename)"
+    },
+    {
+      "beat": "Today shows what matters",
+      "current_render": "MISSING",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R08: real Today (masthead 'Today · Navis')"
+    },
+    {
+      "beat": "something is waiting",
+      "current_render": "MISSING",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R08: the waiting-reply card about Daniel's email"
+    },
+    {
+      "beat": "reply is already drafted",
+      "current_render": "MISSING",
+      "with_planned_recordings": "WEAK until verified",
+      "evidence": "R08→R09: the panel loads the draft on open ('Preparing the draft…'); if the draft is generated on open, change VO L16"
+    },
+    {
+      "beat": "human reads it",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R09: 2 s hold on the draft"
+    },
+    {
+      "beat": "human edits it",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R09: one typed sentence"
+    },
+    {
+      "beat": "human approves it",
+      "current_render": "WEAK",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R09: black 'Approve & send' pill, hover, click"
+    },
+    {
+      "beat": "Navis sends it",
+      "current_render": "MISSING",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R09: 'Approved — sending' chip + 'Sending…'"
+    },
+    {
+      "beat": "Gmail confirms it",
+      "current_render": "MISSING",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R10: the reply arrives in the recipient's inbox"
+    },
+    {
+      "beat": "UI says 'Reply sent'",
+      "current_render": "MISSING (SENT caption deliberately withheld)",
+      "with_planned_recordings": "STRONG",
+      "evidence": "R09: 'Reply sent' + 'Gmail accepted the message.'"
+    }
+  ],
+  "integration_visuals": {
+    "icons_in_current_code": "None. The film draws no third-party logos — only plain-text labels (GMAIL · CALENDAR · DRIVE pills in S15), generic macOS window dots, and the synthetic cursor.",
+    "items": [
+      {
+        "icon": "Gmail",
+        "where": "S14 (R10 inbox, cropped, logo hidden), S15 text pill",
+        "why": "the send is real and the recipient's inbox proves it",
+        "evidence": "F09 (local), ingestion (staging)",
+        "integration": true,
+        "decorative": false,
+        "decision": "KEEP as real footage + text label"
+      },
+      {
+        "icon": "Google Calendar",
+        "where": "S15 text pill",
+        "why": "an ingestion source the context comes from",
+        "evidence": "shared_layer.truth (staging)",
+        "integration": "ingestion only; invites unknown (F10)",
+        "decorative": false,
+        "decision": "KEEP as text; never show invites"
+      },
+      {
+        "icon": "Google Drive",
+        "where": "S15 text pill",
+        "why": "ingestion source",
+        "evidence": "file metadata only",
+        "integration": "metadata only",
+        "decorative": "borderline",
+        "decision": "KEEP as text or DROP — DECISION D7 (it is not demonstrated in any shot)"
+      },
+      {
+        "icon": "Slack",
+        "where": "nowhere",
+        "why": "—",
+        "evidence": "planned; no install route (X01) — although navislabs.in lists it as a connector",
+        "integration": false,
+        "decorative": true,
+        "decision": "EXCLUDE"
+      },
+      {
+        "icon": "GitHub",
+        "where": "nowhere",
+        "why": "—",
+        "evidence": "roadmap",
+        "integration": false,
+        "decorative": true,
+        "decision": "EXCLUDE"
+      },
+      {
+        "icon": "Cursor",
+        "where": "nowhere",
+        "why": "—",
+        "evidence": "unverified (U09)",
+        "integration": false,
+        "decorative": true,
+        "decision": "EXCLUDE"
+      },
+      {
+        "icon": "Claude / Claude Code",
+        "where": "inside R01–R07 footage only",
+        "why": "the agent the developer product works with today",
+        "evidence": "F01 is Claude Code-specific",
+        "integration": "compatibility",
+        "decorative": false,
+        "decision": "KEEP as footage; no logo; crop the startup banner; never imply partnership"
+      },
+      {
+        "icon": "MCP",
+        "where": "R05–R07 tool-call rows",
+        "why": "how the agent reaches Navis Developer",
+        "evidence": "F02/F03 (local server)",
+        "integration": "protocol",
+        "decorative": false,
+        "decision": "KEEP via real footage; no MCP logo or diagram"
+      },
+      {
+        "icon": "API / SDK",
+        "where": "nowhere",
+        "why": "—",
+        "evidence": "unpublished (npm/PyPI 404)",
+        "integration": false,
+        "decorative": true,
+        "decision": "EXCLUDE from the main cut"
+      },
+      {
+        "icon": "CLI",
+        "where": "R01 (`navis workstate checkpoint`), R04 fallback",
+        "why": "the real mechanism of work state",
+        "evidence": "F01",
+        "integration": "product",
+        "decorative": false,
+        "decision": "KEEP via real footage; no install line"
+      }
+    ]
+  },
+  "voiceover_quality": {
+    "overall": {
+      "founder_credibility": "strong — plain, concrete, no hype",
+      "clarity": "strong in the opening; dense in the developer act",
+      "technical_credibility": "strong — 'the decisions it recorded', 'with sources', 'only says sent when Gmail confirms'",
+      "product_naming": "fixed in the AV master for L07/L08/L21; L12 and L18 still say bare 'Navis'",
+      "emotional_build": "belief → proof → payoff (SENT) → shared → next → brand: good arc",
+      "silicon_valley_launch_quality": "good — short sentences, one idea each",
+      "natural_spoken_english": "mostly; L10 and L13 read like copy (long lists)",
+      "pacing": "tight in L04, L10, L12, L13 (2.7–3.1 words/s for a ~2.4 target)",
+      "product_specificity": "high"
+    },
+    "per_line": {
+      "L01": "KEEP",
+      "L02": "KEEP",
+      "L03": "KEEP",
+      "L04": "KEEP (consider a breath before 'so every new session…')",
+      "L05": "KEEP",
+      "L06": "KEEP — the belief",
+      "L07": "KEEP (AV)",
+      "L08": "KEEP (AV)",
+      "L09": "KEEP",
+      "L10": "CHANGE — tighten for breath (16 words, ends exactly on the Return key); keep 'the decisions it recorded'",
+      "L11": "KEEP",
+      "L12": "CHANGE — name the product ('…the agent asks Navis Developer') or restructure to fit",
+      "L13": "CHANGE — tighten 'and gets the facts that bear on it'; keep 'With sources. With how fresh they are.' (sync anchors)",
+      "L14": "KEEP (AV order: ends on the refusal)",
+      "L15": "CHANGE (optional) — 'becomes your morning' suggests a scheduled morning brief; the UI says 'Today'",
+      "L16": "KEEP if the draft exists before opening; else CHANGE 'already drafted'",
+      "L17": "KEEP (AV)",
+      "L18": "CHANGE — 'Navis Application sends it…'",
+      "L19": "KEEP",
+      "L20": "KEEP",
+      "L21": "KEEP (AV); U01 still open"
+    },
+    "add": [
+      "Nothing spoken — there is no room. Optional on-screen line at the reveal from published site copy: 'ONE CORE · TWO PRODUCTS' (approved on navislabs.in) instead of the unapproved 'TWO WAYS IN' — DECISION D4."
+    ],
+    "remove": [
+      "Nothing."
+    ]
+  },
+  "elevenlabs_voice_plan": {
+    "workflow": [
+      "Founder records each line naturally (3 takes), close-mic, dry room, 48 kHz / 24-bit WAV — performance first, no reading to a timer.",
+      "Light clean-up only (Adobe Podcast Enhance ~40–60% if needed).",
+      "ElevenLabs Voice Changer (speech-to-speech) with the founder's OWN voice to polish while keeping his cadence, pauses, emphasis and accent; no other person's voice.",
+      "Forced-align the final WAVs (word timestamps, e.g. Whisper via @remotion/openai-whisper) and re-key camera stops, captions and cursor clicks to the REAL words — instead of the current estimated word timings.",
+      "Only scene boundaries stay fixed; everything inside a scene follows the performance."
+    ],
+    "do_not": [
+      "design around synthetic TTS timing",
+      "time-stretch more than ~5%",
+      "use anyone else's voice"
+    ],
+    "breathing_room_per_line": [
+      {
+        "line": "L01",
+        "words": 4,
+        "available_s": 2.6,
+        "natural_founder_read_s": 1.67,
+        "room": "comfortable",
+        "reaction_space_after_s": 1.2
+      },
+      {
+        "line": "L02",
+        "words": 5,
+        "available_s": 2.0,
+        "natural_founder_read_s": 2.08,
+        "room": "tight — fits with a slightly brisker read",
+        "reaction_space_after_s": 1.28
+      },
+      {
+        "line": "L03",
+        "words": 8,
+        "available_s": 3.4,
+        "natural_founder_read_s": 4.03,
+        "room": "too tight — will force a rushed read",
+        "reaction_space_after_s": 0.2
+      },
+      {
+        "line": "L04",
+        "words": 17,
+        "available_s": 6.4,
+        "natural_founder_read_s": 7.53,
+        "room": "too tight — will force a rushed read",
+        "reaction_space_after_s": 0.4
+      },
+      {
+        "line": "L05",
+        "words": 6,
+        "available_s": 2.8,
+        "natural_founder_read_s": 2.85,
+        "room": "tight — fits with a slightly brisker read",
+        "reaction_space_after_s": 0.4
+      },
+      {
+        "line": "L06",
+        "words": 6,
+        "available_s": 2.6,
+        "natural_founder_read_s": 2.5,
+        "room": "tight — fits with a slightly brisker read",
+        "reaction_space_after_s": 2.8
+      },
+      {
+        "line": "L07",
+        "words": 3,
+        "available_s": 2.0,
+        "natural_founder_read_s": 1.25,
+        "room": "comfortable",
+        "reaction_space_after_s": 1.2
+      },
+      {
+        "line": "L08",
+        "words": 8,
+        "available_s": 4.8,
+        "natural_founder_read_s": 3.48,
+        "room": "comfortable",
+        "reaction_space_after_s": 3.17
+      },
+      {
+        "line": "L09",
+        "words": 4,
+        "available_s": 2.2,
+        "natural_founder_read_s": 1.67,
+        "room": "comfortable",
+        "reaction_space_after_s": 1.2
+      },
+      {
+        "line": "L10",
+        "words": 16,
+        "available_s": 5.6,
+        "natural_founder_read_s": 7.12,
+        "room": "too tight — will force a rushed read",
+        "reaction_space_after_s": 0.4
+      },
+      {
+        "line": "L11",
+        "words": 4,
+        "available_s": 2.4,
+        "natural_founder_read_s": 1.67,
+        "room": "comfortable",
+        "reaction_space_after_s": 1.4
+      },
+      {
+        "line": "L12",
+        "words": 11,
+        "available_s": 4.0,
+        "natural_founder_read_s": 5.03,
+        "room": "too tight — will force a rushed read",
+        "reaction_space_after_s": 0.2
+      },
+      {
+        "line": "L13",
+        "words": 15,
+        "available_s": 5.3,
+        "natural_founder_read_s": 6.95,
+        "room": "too tight — will force a rushed read",
+        "reaction_space_after_s": 0.5
+      },
+      {
+        "line": "L14",
+        "words": 13,
+        "available_s": 5.4,
+        "natural_founder_read_s": 5.72,
+        "room": "too tight — will force a rushed read",
+        "reaction_space_after_s": 0.7
+      },
+      {
+        "line": "L15",
+        "words": 8,
+        "available_s": 3.2,
+        "natural_founder_read_s": 3.48,
+        "room": "tight — fits with a slightly brisker read",
+        "reaction_space_after_s": 0.2
+      },
+      {
+        "line": "L16",
+        "words": 8,
+        "available_s": 4.0,
+        "natural_founder_read_s": 3.83,
+        "room": "tight — fits with a slightly brisker read",
+        "reaction_space_after_s": 1.22
+      },
+      {
+        "line": "L17",
+        "words": 10,
+        "available_s": 4.8,
+        "natural_founder_read_s": 4.87,
+        "room": "tight — fits with a slightly brisker read",
+        "reaction_space_after_s": 1.55
+      },
+      {
+        "line": "L18",
+        "words": 10,
+        "available_s": 4.3,
+        "natural_founder_read_s": 4.47,
+        "room": "tight — fits with a slightly brisker read",
+        "reaction_space_after_s": 2.55
+      },
+      {
+        "line": "L19",
+        "words": 11,
+        "available_s": 5.4,
+        "natural_founder_read_s": 4.73,
+        "room": "comfortable",
+        "reaction_space_after_s": 1.42
+      },
+      {
+        "line": "L20",
+        "words": 9,
+        "available_s": 3.5,
+        "natural_founder_read_s": 4.05,
+        "room": "too tight — will force a rushed read",
+        "reaction_space_after_s": 0.7
+      },
+      {
+        "line": "L21",
+        "words": 10,
+        "available_s": 5.6,
+        "natural_founder_read_s": 4.97,
+        "room": "comfortable",
+        "reaction_space_after_s": 1.95
+      }
+    ],
+    "scene_budget": [
+      {
+        "scene": "S01",
+        "lines": [
+          "L01"
+        ],
+        "natural_read_s": 1.67,
+        "room_from_first_line_s": 2.4,
+        "carries_into": null,
+        "verdict": "fits"
+      },
+      {
+        "scene": "S02",
+        "lines": [
+          "L02"
+        ],
+        "natural_read_s": 2.08,
+        "room_from_first_line_s": 2.8,
+        "carries_into": null,
+        "verdict": "fits"
+      },
+      {
+        "scene": "S03",
+        "lines": [
+          "L03",
+          "L04"
+        ],
+        "natural_read_s": 11.96,
+        "room_from_first_line_s": 10.0,
+        "carries_into": null,
+        "verdict": "OVER by 2.0 s — trim words or let it carry over the cut"
+      },
+      {
+        "scene": "S04",
+        "lines": [
+          "L05",
+          "L06"
+        ],
+        "natural_read_s": 5.75,
+        "room_from_first_line_s": 5.8,
+        "carries_into": null,
+        "verdict": "tight"
+      },
+      {
+        "scene": "S05",
+        "lines": [
+          "L07"
+        ],
+        "natural_read_s": 1.25,
+        "room_from_first_line_s": 2.4,
+        "carries_into": null,
+        "verdict": "fits"
+      },
+      {
+        "scene": "S06",
+        "lines": [
+          "L08"
+        ],
+        "natural_read_s": 3.48,
+        "room_from_first_line_s": 8.8,
+        "carries_into": "S07",
+        "verdict": "fits"
+      },
+      {
+        "scene": "S07",
+        "lines": [
+          "L09"
+        ],
+        "natural_read_s": 1.67,
+        "room_from_first_line_s": 2.4,
+        "carries_into": null,
+        "verdict": "fits"
+      },
+      {
+        "scene": "S08",
+        "lines": [
+          "L10",
+          "L11"
+        ],
+        "natural_read_s": 9.19,
+        "room_from_first_line_s": 8.6,
+        "carries_into": null,
+        "verdict": "OVER by 0.6 s — trim words or let it carry over the cut"
+      },
+      {
+        "scene": "S09",
+        "lines": [
+          "L12",
+          "L13"
+        ],
+        "natural_read_s": 12.38,
+        "room_from_first_line_s": 9.6,
+        "carries_into": null,
+        "verdict": "OVER by 2.8 s — trim words or let it carry over the cut"
+      },
+      {
+        "scene": "S10",
+        "lines": [
+          "L14"
+        ],
+        "natural_read_s": 5.72,
+        "room_from_first_line_s": 5.6,
+        "carries_into": null,
+        "verdict": "tight"
+      },
+      {
+        "scene": "S11",
+        "lines": [
+          "L15"
+        ],
+        "natural_read_s": 3.48,
+        "room_from_first_line_s": 7.6,
+        "carries_into": "S12",
+        "verdict": "fits"
+      },
+      {
+        "scene": "S12",
+        "lines": [
+          "L16"
+        ],
+        "natural_read_s": 3.83,
+        "room_from_first_line_s": 4.2,
+        "carries_into": null,
+        "verdict": "fits"
+      },
+      {
+        "scene": "S13",
+        "lines": [
+          "L17"
+        ],
+        "natural_read_s": 4.87,
+        "room_from_first_line_s": 5.4,
+        "carries_into": null,
+        "verdict": "fits"
+      },
+      {
+        "scene": "S14",
+        "lines": [
+          "L18"
+        ],
+        "natural_read_s": 4.47,
+        "room_from_first_line_s": 6.3,
+        "carries_into": null,
+        "verdict": "fits"
+      },
+      {
+        "scene": "S15",
+        "lines": [
+          "L19"
+        ],
+        "natural_read_s": 4.73,
+        "room_from_first_line_s": 5.6,
+        "carries_into": null,
+        "verdict": "fits"
+      },
+      {
+        "scene": "S16",
+        "lines": [
+          "L20"
+        ],
+        "natural_read_s": 4.05,
+        "room_from_first_line_s": 3.8,
+        "carries_into": null,
+        "verdict": "tight"
+      },
+      {
+        "scene": "S17",
+        "lines": [
+          "L21"
+        ],
+        "natural_read_s": 4.97,
+        "room_from_first_line_s": 6.6,
+        "carries_into": null,
+        "verdict": "fits"
+      }
+    ],
+    "summary": {
+      "comfortable": 7,
+      "tight": [
+        "L02",
+        "L05",
+        "L06",
+        "L15",
+        "L16",
+        "L17",
+        "L18"
+      ],
+      "too_tight": [
+        "L03",
+        "L04",
+        "L10",
+        "L12",
+        "L13",
+        "L14",
+        "L20"
+      ]
+    },
+    "model": "natural read = words / 2.4 (master talent direction) + pauses (comma 0.15 s, dash/colon 0.3 s, sentence break 0.35 s); available = start → the line's hard sync point. Founders speak short lines faster and lists slower; treat as a guide until the real takes exist."
+  },
+  "music_and_sfx_current_state": {
+    "files_present": "none (public/music, public/sfx, public/voiceover are empty; only fonts exist)",
+    "code_wiring": {
+      "voiceover": "AudioLayer plays public/voiceover/Lxx.wav at the BLUEPRINT start frames when a file exists; missing lines show a HUD tag. Line ends use the blueprint's hard_latest_end, not the AV master ends.",
+      "music": "MUS_SCORE plays from frame 0 if present, with VO ducking (−8 dB, 150/400 ms) and the BLUEPRINT dips (incl. tail to silence by 99.6 s). Not yet: the AV master's silence from 98.6 s, the −4 dB critical-proof windows, the 7-layer stem plan.",
+      "sfx": "23 events at blueprint frames; refusal thud at 58.1 s (AV master: 59.8 s because the refusal moves to the last panel)."
+    },
+    "dev_mode": "HUD shows 'MUSIC REQUIRED · Mx' throughout and flashes 'SFX · …' at each event."
+  },
+  "kanu_reference": "Principles only (belief first, minimal type, real product proof, gradual reveal, whitespace, controlled camera, short statements, founder voice). No wording, positioning or identity borrowed; nothing in the film references Kanu.",
+  "desired_film_vs_current_timing": [
+    {
+      "target": "0–25 s why the problem exists",
+      "current": "S01–S04 0–23 s (hook, fragments, belief)",
+      "fit": "matches (belief ends 2 s early)"
+    },
+    {
+      "target": "25–30 s NavisLabs reveal",
+      "current": "S05 23–28 s; name lands 25.6 s",
+      "fit": "matches the moment; brand text wrong today"
+    },
+    {
+      "target": "30–62 s Navis Developer",
+      "current": "S06–S10 28–62 s",
+      "fit": "matches"
+    },
+    {
+      "target": "62–82 s Navis Application",
+      "current": "S11–S14 62–83 s",
+      "fit": "matches"
+    },
+    {
+      "target": "82–94 s one shared understanding",
+      "current": "S15 83–89 s + S16 NEXT 89–93 s",
+      "fit": "matches (includes the future beat)"
+    },
+    {
+      "target": "94–100 s NavisLabs ending",
+      "current": "S17 93–100 s",
+      "fit": "matches"
+    },
+    {
+      "verdict": "No timing change is needed for the desired structure."
+    }
+  ],
+  "scenes_to_keep": {
+    "S01": "works; matches the brief (belief first, minimal type)",
+    "S02": "works",
+    "S03": "works after the readability fix",
+    "S04": "works",
+    "S06": "correct product title",
+    "S07": "framing complete; needs R01",
+    "S08": "Day 1 → Day 2 move complete; needs R03",
+    "S12": "framing complete; needs R08 + cursor calibration",
+    "S13": "framing complete; needs R09 + calibration",
+    "S14": "truth rules implemented (no fake SENT); needs R09 + R10",
+    "S16": "future treatment correct"
+  },
+  "scenes_to_change": {
+    "S05": [
+      "wordmark → NavisLabs lockup (D1)",
+      "real logomark (D3)",
+      "add NAVIS DEVELOPER / NAVIS APPLICATION beneath AGENTS / PEOPLE",
+      "optional 'ONE CORE · TWO PRODUCTS' (D4)"
+    ],
+    "S09": [
+      "camera: hold the freshness macro to f276; pull f276–296 (AV master)"
+    ],
+    "S10": [
+      "panel order and camera back to the master (refusal last); labels in master O13 order; thud at 59.8 s"
+    ],
+    "S11": [
+      "title NAVIS AI → NAVIS APPLICATION"
+    ],
+    "S12–S15": [
+      "browser address pill blank (no 'Navis')"
+    ],
+    "S15": [
+      "add product names under AGENTS / PEOPLE (consistent with S05)",
+      "decide DRIVE label (D7)"
+    ],
+    "S17": [
+      "wordmark + end card line_1 → NavisLabs lockup (D1)",
+      "real logomark (D3)",
+      "music silent from 98.6 s"
+    ],
+    "global": [
+      "load the AV master in code (copy, VO ends, audio plan) so the HUD and captions stop reading the blueprint",
+      "development placeholder text block is clipped at the frame edge when the camera zooms (seen in S12) — keep dev labels inside the frame"
+    ]
+  },
+  "scenes_to_rebuild": {
+    "none_structural": "No scene needs rebuilding: the S01–S17 systems already do what the target film needs. What is missing is real footage, the logo, and copy/brand corrections.",
+    "rebuild_when_assets_arrive": [
+      "S05 and S17 logo animation, once a vector mark with separable arcs / nodes / arrowhead exists (the PNG can only fade/reveal)."
+    ]
+  },
+  "recordings_required": {
+    "R01": "Day 1: agent works and runs `navis workstate checkpoint`; /exit (Claude Code, fieldstone-api)",
+    "R03": "Day 2 (≥12 h later): fresh session, restore block (U06), 'continue', reply naming the decision",
+    "R04": "fallback only if U06 fails: `navis workstate show`",
+    "R05": "MCP context call with expanded payload: item + source, sources.detail, freshness; Claude's cited draft",
+    "R06": "Marlow Health key, same prompt: nothing about Fieldstone (seed Marlow's own data — D8)",
+    "R07": "Fieldstone read-only key: exact refusal naming view_memory",
+    "R08": "Navis Application /dashboard (NOT the landing page mock): Today, waiting-reply card, click, drawer",
+    "R09": "same take: read, edit one sentence, Approve & send, Approved — sending / Sending…, Reply sent",
+    "R10": "recipient Gmail (second machine): the reply arrives",
+    "stills": "STILL_R05 and STILL_R09 exported from the takes",
+    "brand_assets": "A01 vector logomark (interim: website PNG, D3)",
+    "prerequisites": [
+      "U05 filming backend",
+      "QG06 isolation re-run",
+      "a real 'Reply sent' in rehearsal",
+      "U06 test",
+      "U08 demo-name clearance",
+      "NEXT_PUBLIC_USE_MOCK off"
+    ]
+  },
+  "exact_changes_recommended": [
+    {
+      "id": "C1",
+      "area": "brand",
+      "change": "S05 + S17 wordmark and end-card line_1: 'NAVIS' → NavisLabs lockup",
+      "files": [
+        "src/scenes/S05.tsx",
+        "src/scenes/S17.tsx",
+        "(copy source: AV master)"
+      ],
+      "blocked_by": "D1"
+    },
+    {
+      "id": "C2",
+      "area": "brand",
+      "change": "S11 title: 'NAVIS AI' → 'NAVIS APPLICATION'",
+      "files": [
+        "src/scenes/S11.tsx (copy from AV master)"
+      ],
+      "blocked_by": null
+    },
+    {
+      "id": "C3",
+      "area": "brand",
+      "change": "S05 sublabels NAVIS DEVELOPER / NAVIS APPLICATION under AGENTS / PEOPLE (+ S15)",
+      "files": [
+        "src/scenes/S05.tsx",
+        "src/scenes/S15.tsx"
+      ],
+      "blocked_by": "copy sign-off"
+    },
+    {
+      "id": "C4",
+      "area": "brand",
+      "change": "Browser address pill blank for R08/R09 and the S15 still",
+      "files": [
+        "src/config/recordingEdit.ts",
+        "src/scenes/S15.tsx"
+      ],
+      "blocked_by": null
+    },
+    {
+      "id": "C5",
+      "area": "brand",
+      "change": "Logomark: drop in A01 (or the interim PNG)",
+      "files": [
+        "public/images/navis-logomark.svg (asset)"
+      ],
+      "blocked_by": "D3"
+    },
+    {
+      "id": "C6",
+      "area": "sync",
+      "change": "S10: master panel order + master camera; thud 59.8 s; L14 in AV order",
+      "files": [
+        "src/scenes/S10.tsx",
+        "AV master as copy source"
+      ],
+      "blocked_by": "L14 sign-off"
+    },
+    {
+      "id": "C7",
+      "area": "sync",
+      "change": "S09: freshness hold to f276",
+      "files": [
+        "src/scenes/S09.tsx (keyframes from AV master)"
+      ],
+      "blocked_by": null
+    },
+    {
+      "id": "C8",
+      "area": "audio",
+      "change": "Music silent from 98.6 s; −4 dB critical-proof windows; VO ends from the AV master",
+      "files": [
+        "src/components/AudioLayer.tsx"
+      ],
+      "blocked_by": null
+    },
+    {
+      "id": "C9",
+      "area": "data",
+      "change": "Load navis_launch_av_master.json (validated against master timing) as the source for copy, VO and audio; HUD reads it",
+      "files": [
+        "src/config/ (new loader)",
+        "src/components/AudioLayer.tsx"
+      ],
+      "blocked_by": null
+    },
+    {
+      "id": "C10",
+      "area": "VO",
+      "change": "L12 and L18: replace bare 'Navis' with the product name (or restructure)",
+      "files": [
+        "AV master (VO lines)"
+      ],
+      "blocked_by": "D5"
+    },
+    {
+      "id": "C11",
+      "area": "VO",
+      "change": "Tighten L10 and L13 for breathing room; optional L15 'morning'; conditional L16",
+      "files": [
+        "AV master"
+      ],
+      "blocked_by": "D6 + rehearsal"
+    },
+    {
+      "id": "C12",
+      "area": "dev",
+      "change": "Keep the development placeholder text inside the frame at macro zoom",
+      "files": [
+        "src/components/RecordingViewport.tsx"
+      ],
+      "blocked_by": null
+    },
+    {
+      "id": "C13",
+      "area": "assets",
+      "change": "Regenerate asset_requirements.json from the blueprint manifest",
+      "files": [
+        "scripts/asset-requirements.mjs",
+        "asset_requirements.json"
+      ],
+      "blocked_by": null
+    },
+    {
+      "id": "C14",
+      "area": "post-recording",
+      "change": "Forced-align the founder's VO and re-key camera stops, captions and cursor clicks to the real words; calibrate CURSOR_TARGETS / STATUS_CARD to the real UI",
+      "files": [
+        "src/config/recordingEdit.ts",
+        "AV master"
+      ],
+      "blocked_by": "recordings + VO"
+    }
+  ],
+  "final_decisions_required": [
+    {
+      "id": "D1",
+      "question": "Wordmark treatment: the website's lockup (mark + 'NavisLabs', mixed case, tight tracking) or a cinematic all-caps 'NAVISLABS' (≈930 px wide at 120 px, tracking 0.22 em)?",
+      "recommendation": "Use the website lockup style ('NavisLabs', Geist Sans semibold) so the film and navislabs.in read as one brand; all caps only if you want a deliberately cinematic mark."
+    },
+    {
+      "id": "D2",
+      "question": "Keep the Navis-blue line (#1976FE, from the logo's arcs) even though the website's system has no brand colour and the apps use graphite (website/developer) and indigo (application)?",
+      "recommendation": "Keep it as the film's single accent, only on the line and logo — it is the mark's own colour; never tint product UI."
+    },
+    {
+      "id": "D3",
+      "question": "Logomark: wait for the vector redraw (A01) or use navis-logo.png (256 px, black ground) as an interim on the dark scenes?",
+      "recommendation": "Commission the vector now; use the PNG only for review cuts (its black tile will not match the ink ground)."
+    },
+    {
+      "id": "D4",
+      "question": "Reveal copy: show 'ONE CORE · TWO PRODUCTS' (published on navislabs.in) at S05, 'TWO WAYS IN' (unapproved), or only the product names?",
+      "recommendation": "Product names under AGENTS / PEOPLE; add 'ONE CORE · TWO PRODUCTS' only if it fits under one-line-at-a-time."
+    },
+    {
+      "id": "D5",
+      "question": "Spoken product names in L12 and L18: 'Navis Developer' / 'Navis Application' (longer, clearer) or keep the shorthand 'Navis' (the real UI's own name)?",
+      "recommendation": "Name the products in VO — the brief allows 'Navis' only where the real UI shows it."
+    },
+    {
+      "id": "D6",
+      "question": "Approve VO tightening for L10 and L13 (and L15 'morning')?",
+      "recommendation": "Yes — the founder's natural pace needs ~0.5–1 s more than these windows allow."
+    },
+    {
+      "id": "D7",
+      "question": "Keep DRIVE in the S15 input labels (metadata only, never demonstrated)?",
+      "recommendation": "Keep only if Drive metadata appears in the real R05 payload; otherwise show GMAIL · CALENDAR."
+    },
+    {
+      "id": "D8",
+      "question": "Seed Marlow Health with its own demo mail so R06 shows Marlow's facts (strong isolation proof) rather than an empty result?",
+      "recommendation": "Yes."
+    },
+    {
+      "id": "D9",
+      "question": "Website/audit conflict: navislabs.in lists Slack as a connector, the audit says no org can connect it. The film excludes Slack — confirm.",
+      "recommendation": "Exclude from the film; fix the site separately."
+    },
+    {
+      "id": "D11",
+      "question": "Keep the 17 packages installed via Remotion Studio at 10:29 (Lambda, Cloud Run, GSAP, Lottie, whisper, transformers…), or remove them? The film does not use them.",
+      "recommendation": "Remove unless you installed them on purpose (they add ~435 packages); @remotion/whisper-web or install-whisper-cpp could later serve VO forced alignment."
+    },
+    {
+      "id": "D10",
+      "question": "Confirm U02 naming with co-founders if required; resolve U01, U05, U06, U07, U08 before the shoot / final render.",
+      "recommendation": "—"
+    }
+  ],
+  "unexpected_project_changes": {
+    "what": "package.json / package-lock.json changed at 10:29 (not by this audit and not by the film build): 17 dependencies were added — @huggingface/transformers, @remotion/animated-emoji, @remotion/animation-utils, @remotion/cloudrun, @remotion/enable-scss, @remotion/gif, @remotion/gsap, @remotion/install-whisper-cpp, @remotion/lambda, @remotion/layout-utils, @remotion/licensing, @remotion/lottie, @remotion/mcp, @remotion/rounded-text-box, @remotion/video-matting, @remotion/whisper-web, @remotion/whisper-webgpu.",
+    "evidence": "The running Remotion Studio log shows 'added 435 packages in 1m … Done in 71159ms' — consistent with an install from Studio's package installer.",
+    "film_impact": "None of these packages is imported by the film code.",
+    "action_taken": "None (read-only audit). See decision D11."
+  }
+}

@@ -1,0 +1,2778 @@
+{
+ "about": "NavisLabs SOCIAL V1 audit (scripts/build-social-audit.py). V7 = investor/product demo; SOCIAL V1 = attention + product thesis + proof.",
+ "flags": {
+  "SOCIAL_DURATION": "TRUE — 69.92 s (2098 frames)",
+  "SOCIAL_FORMAT": "TRUE — 4:5 · H.264 High · yuv420p · 30 fps · AAC 48 kHz stereo 320 kb/s",
+  "RESOLUTION": "TRUE — 1080 × 1350",
+  "VOICEOVER_READY": "TRUE",
+  "MUSIC_READY": "FALSE",
+  "SFX_READY": "FALSE",
+  "CAPTIONS_READY": "TRUE",
+  "VISUAL_QC": "TRUE",
+  "AUDIO_QC": "TRUE",
+  "MOBILE_READABILITY": "PARTIAL",
+  "FINAL_SOCIAL_READY": "FALSE"
+ },
+ "flag_reasons": {
+  "SOCIAL_DURATION": "Inside the 65–70 s brief; the founder's lines play at natural speed (no stretching), with shortened pauses only.",
+  "SOCIAL_FORMAT": "1080×1350, 30/1 fps, h264 High yuv420p ~3871 kb/s (CRF 16), aac 48000 Hz 2 ch; faststart.",
+  "RESOLUTION": "Native 1080 × 1350 render of the reframed V7 picture (via a 1.5× sharpened proxy of the V7 1080p master).",
+  "VOICEOVER_READY": "The founder's own P1/P2/P3/P4/P6/P8 recordings, unmodified and not regenerated: 19 social lines (26 of V7's 43 lines) cut at measured line boundaries with 20 ms fades; no speed change or stretching. Onsets within 44.8 ms of plan; A/V offset 18.7 ms.",
+  "MUSIC_READY": "The edit is done (the founder-supplied Eleven Music track re-cut into four sections that follow the brief's arc; ducked under every line, deeper under key lines, near-silence after 'NavisLabs.', a slow decay to silence). FALSE because the track's licence tier is still NOT VERIFIED and it needs the founder's listening approval.",
+  "SFX_READY": "35 subtle cues on visible actions only, but they are the in-project synthesized placeholders (TEMPORARY) — no ElevenLabs SFX were supplied.",
+  "CAPTIONS_READY": "Burned in (≤ 2 lines, ≤ 34 characters per line, 44 px on an 80 % plate, 132 px above the bottom edge, inside 4:5 safe areas); the thesis lines are carried by the on-screen type and the last two lines by the end card. social-captions.srt / .vtt / .json carry every spoken line (word timings in .json).",
+  "VISUAL_QC": "2098/2098 frames; no stray black frames (one planned 6-frame dark beat before the mark); held frames decode identically to the frame before them (largest step 0.04/255); no repeated frames at cuts; soft frames only inside V7's own transitions; every framing checked on stills.",
+  "AUDIO_QC": "-14.0 LUFS integrated, -1.2 dBTP, 0 clipped samples, LRA 2.9 LU; voice 12.59 LU over music under speech (17.32 LU under key lines); no unexpected silence or level jumps; the only silence is the planned end.",
+  "MOBILE_READABILITY": "Captions (44 px ≈ 16 pt on a phone), the thesis type (60–78 px) and the end card read on a phone. Product UI is legible on a phone where the reframe is a macro (systems list, trace pills, Approve & send, Connect cards, context table, AUTHORIZED card); V7's small UI text in the wide moments (scatter, app intro, the thesis picture) is texture on a phone — the captions and type carry those beats.",
+  "FINAL_SOCIAL_READY": "FALSE until the founder approves this cut, the music licence is confirmed, the temporary SFX are replaced or accepted, and the V7 data noted under remaining problems is accepted for public posting."
+ },
+ "output": {
+  "file": "out/navislabs-social-v1-1080x1350.mp4",
+  "md5": "efae3ddbab4bb10600de59f181d459a9",
+  "size_mb": 36.5,
+  "duration_s": 69.93,
+  "frames": 2098,
+  "format": {
+   "width": 1080,
+   "height": 1350,
+   "fps": "30/1",
+   "codec": "h264",
+   "profile": "High",
+   "pix_fmt": "yuv420p",
+   "frames": 2098,
+   "video_s": 69.933333,
+   "audio_s": 69.952,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "channels": 2,
+   "video_kbps": 3871,
+   "size_mb": 36.5
+  },
+  "captions": [
+   "captions/social-captions.srt",
+   "captions/social-captions.vtt",
+   "captions/social-captions.json"
+  ],
+  "stems": [
+   "out/stems/social/social-voice.wav",
+   "out/stems/social/social-music.wav",
+   "out/stems/social/social-sfx.wav"
+  ],
+  "composition": "NavisSocialV1 (src/social/SocialFilm.tsx, plan src/social/navislabs_social_v1_plan.json)"
+ },
+ "v7_v8_untouched": {
+  "out/navislabs-v7-review-1080p.mp4": {
+   "md5_before": "66cf0c12f7915f39bdea6de010169db6",
+   "md5_now": "66cf0c12f7915f39bdea6de010169db6",
+   "unchanged": true
+  },
+  "out/navislabs-v7-review-540p.mp4": {
+   "md5_before": "304260ecb7d76f078b6d5c535d3a4c43",
+   "md5_now": "304260ecb7d76f078b6d5c535d3a4c43",
+   "unchanged": true
+  },
+  "out/navislabs-final-audio-review-1080p.mp4": {
+   "md5_before": "95fbb9af331a8efb10afd04f9e97df7b",
+   "md5_now": "95fbb9af331a8efb10afd04f9e97df7b",
+   "unchanged": true
+  },
+  "out/navislabs-final-audio-review-540p.mp4": {
+   "md5_before": "80783c28327bd15c7f87a252d9d829b7",
+   "md5_now": "80783c28327bd15c7f87a252d9d829b7",
+   "unchanged": true
+  }
+ },
+ "recommendation": {
+  "format": "4:5",
+  "why": "Every product beat reframes to a readable 4:5 macro or a whole-frame composition; no shot needed the 16:9 fallback, so out/navislabs-social-v1-1920x1080.mp4 was not created (V7 itself remains the 16:9 demo)."
+ },
+ "total_duration_s": 69.92,
+ "sections": [
+  {
+   "section": "Social hook",
+   "brief_s": [
+    0,
+    5
+   ],
+   "social_s": [
+    0.0,
+    3.9
+   ]
+  },
+  {
+   "section": "Scattered truth",
+   "brief_s": [
+    5,
+    11
+   ],
+   "social_s": [
+    3.9,
+    10.82
+   ]
+  },
+  {
+   "section": "Navis reveal",
+   "brief_s": [
+    11,
+    17
+   ],
+   "social_s": [
+    10.82,
+    15.46
+   ]
+  },
+  {
+   "section": "Navis App",
+   "brief_s": [
+    17,
+    30
+   ],
+   "social_s": [
+    15.46,
+    27.63
+   ]
+  },
+  {
+   "section": "Human decision",
+   "brief_s": [
+    30,
+    36
+   ],
+   "social_s": [
+    27.63,
+    32.68
+   ]
+  },
+  {
+   "section": "Navis Developer",
+   "brief_s": [
+    36,
+    49
+   ],
+   "social_s": [
+    32.68,
+    47.58
+   ]
+  },
+  {
+   "section": "Permissions + run",
+   "brief_s": [
+    49,
+    56
+   ],
+   "social_s": [
+    47.58,
+    56.28
+   ]
+  },
+  {
+   "section": "Shared understanding",
+   "brief_s": [
+    56,
+    63
+   ],
+   "social_s": [
+    56.28,
+    63.87
+   ]
+  },
+  {
+   "section": "End",
+   "brief_s": [
+    63,
+    70
+   ],
+   "social_s": [
+    63.87,
+    69.92
+   ]
+  }
+ ],
+ "shots_retained": [
+  {
+   "n": 1,
+   "shot": "hook",
+   "social_in_s": 0.0,
+   "social_out_s": 3.9,
+   "dur_s": 3.9,
+   "v7_in_s": 0.25,
+   "v7_out_s": 4.15,
+   "v7_scenes": [
+    "S01"
+   ],
+   "kind": "split panels",
+   "shows": "PEOPLE | AI AGENTS — the person's inbox says the renewal moved to Nov 28; the agent's workflow file still says Nov 14. Restacked as two 4:5 panels.",
+   "framing": {
+    "keys": [
+     {
+      "label": "PEOPLE",
+      "label_y": 96,
+      "y0": 140,
+      "y1": 570,
+      "cx": 495,
+      "cy": 560,
+      "s": 1.62
+     },
+     {
+      "label": "AI AGENTS",
+      "label_y": 628,
+      "y0": 672,
+      "y1": 1092,
+      "cx": 1345,
+      "cy": 560,
+      "s": 1.62
+     }
+    ]
+   }
+  },
+  {
+   "n": 2,
+   "shot": "scatter",
+   "social_in_s": 3.9,
+   "social_out_s": 5.75,
+   "dur_s": 1.85,
+   "v7_in_s": 7.3,
+   "v7_out_s": 9.15,
+   "v7_scenes": [
+    "S01"
+   ],
+   "kind": "live V7",
+   "shows": "The truth breaks apart across the company's tools.",
+   "framing": {
+    "keys": [
+     {
+      "src": 7.3,
+      "cx": 960,
+      "cy": 470,
+      "s": 0.86
+     },
+     {
+      "src": 9.2,
+      "cx": 960,
+      "cy": 470,
+      "s": 0.9
+     }
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "shot": "systems",
+   "social_in_s": 5.75,
+   "social_out_s": 7.55,
+   "dur_s": 1.8,
+   "v7_in_s": 20.3,
+   "v7_out_s": 22.1,
+   "v7_scenes": [
+    "S04"
+   ],
+   "kind": "live V7",
+   "shows": "CONNECTED SYSTEMS — only V7's first column: Gmail, Google Calendar, Google Meet, Google Drive, Google Docs, Slack (the six live integrations). Salesforce and the second column (upcoming) are out of frame.",
+   "framing": {
+    "keys": [
+     {
+      "src": 20.3,
+      "cx": 368,
+      "cy": 410,
+      "s": 1.9
+     },
+     {
+      "src": 22.2,
+      "cx": 368,
+      "cy": 410,
+      "s": 1.94
+     }
+    ],
+    "clip_bottom": 1062,
+    "clip_right": 760
+   }
+  },
+  {
+   "n": 4,
+   "shot": "by_hand",
+   "social_in_s": 7.55,
+   "social_out_s": 9.44,
+   "dur_s": 1.89,
+   "v7_in_s": 9.65,
+   "v7_out_s": 11.54,
+   "v7_scenes": [
+    "S02"
+   ],
+   "kind": "live V7",
+   "shows": "PEOPLE copy it by hand.",
+   "framing": {
+    "keys": [
+     {
+      "src": 9.6,
+      "cx": 470,
+      "cy": 480,
+      "s": 1.25
+     },
+     {
+      "src": 11.5,
+      "cx": 470,
+      "cy": 480,
+      "s": 1.28
+     }
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "shot": "without",
+   "social_in_s": 9.44,
+   "social_out_s": 10.82,
+   "dur_s": 1.38,
+   "v7_in_s": 11.5,
+   "v7_out_s": 12.88,
+   "v7_scenes": [
+    "S02"
+   ],
+   "kind": "live V7",
+   "shows": "AI AGENTS start empty.",
+   "framing": {
+    "keys": [
+     {
+      "src": 11.5,
+      "cx": 1400,
+      "cy": 480,
+      "s": 1.25
+     },
+     {
+      "src": 13.1,
+      "cx": 1400,
+      "cy": 480,
+      "s": 1.28
+     }
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "shot": "reveal",
+   "social_in_s": 10.82,
+   "social_out_s": 15.46,
+   "dur_s": 4.64,
+   "v7_in_s": 13.13,
+   "v7_out_s": 17.77,
+   "v7_scenes": [
+    "S02",
+    "S03"
+   ],
+   "kind": "live V7",
+   "shows": "'Navis' lands on the NavisLabs mark → Navis App (for people) / Navis Developer (for developers + AI agents).",
+   "framing": {
+    "keys": [
+     {
+      "src": 13.1,
+      "cx": 960,
+      "cy": 470,
+      "s": 1.05
+     },
+     {
+      "src": 16.55,
+      "cx": 960,
+      "cy": 450,
+      "s": 1.08
+     },
+     {
+      "src": 17.3,
+      "cx": 960,
+      "cy": 470,
+      "s": 0.76
+     },
+     {
+      "src": 17.9,
+      "cx": 960,
+      "cy": 470,
+      "s": 0.77
+     }
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "shot": "app_intro",
+   "social_in_s": 15.46,
+   "social_out_s": 18.6,
+   "dur_s": 3.14,
+   "v7_in_s": 28.75,
+   "v7_out_s": 31.89,
+   "v7_scenes": [
+    "S05"
+   ],
+   "kind": "live V7",
+   "shows": "A company opens the Navis App — Today at a glance.",
+   "framing": {
+    "keys": [
+     {
+      "src": 28.7,
+      "cx": 810,
+      "cy": 540,
+      "s": 1.1
+     },
+     {
+      "src": 30.1,
+      "cx": 810,
+      "cy": 540,
+      "s": 1.12
+     },
+     {
+      "src": 30.13,
+      "cx": 620,
+      "cy": 560,
+      "s": 1.22
+     },
+     {
+      "src": 32.3,
+      "cx": 640,
+      "cy": 570,
+      "s": 1.25
+     }
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "shot": "why",
+   "social_in_s": 18.6,
+   "social_out_s": 22.29,
+   "dur_s": 3.69,
+   "v7_in_s": 32.24,
+   "v7_out_s": 35.93,
+   "v7_scenes": [
+    "S06",
+    "S07"
+   ],
+   "kind": "live V7",
+   "shows": "What changed → 'Kaveri Freightworks's renewal moved to Nov 28' (Gmail · Meera Iyer · Oct 5) → Waiting on you → Why this matters.",
+   "framing": {
+    "keys": [
+     {
+      "src": 32.2,
+      "cx": 680,
+      "cy": 480,
+      "s": 1.25
+     },
+     {
+      "src": 33.64,
+      "cx": 680,
+      "cy": 480,
+      "s": 1.27
+     },
+     {
+      "src": 33.67,
+      "cx": 850,
+      "cy": 480,
+      "s": 1.0
+     },
+     {
+      "src": 34.02,
+      "cx": 850,
+      "cy": 480,
+      "s": 1.01
+     },
+     {
+      "src": 34.05,
+      "cx": 850,
+      "cy": 470,
+      "s": 0.95
+     },
+     {
+      "src": 34.62,
+      "cx": 850,
+      "cy": 470,
+      "s": 0.96
+     },
+     {
+      "src": 34.95,
+      "cx": 820,
+      "cy": 420,
+      "s": 1.28
+     },
+     {
+      "src": 36.0,
+      "cx": 820,
+      "cy": 420,
+      "s": 1.3
+     }
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "shot": "sources_a",
+   "social_in_s": 22.29,
+   "social_out_s": 23.19,
+   "dur_s": 0.9,
+   "v7_in_s": 35.75,
+   "v7_out_s": 36.65,
+   "v7_scenes": [
+    "S07"
+   ],
+   "kind": "live V7",
+   "shows": "The Why drawer: what's happening, who it is about, why it matters.",
+   "framing": {
+    "keys": [
+     {
+      "src": 35.75,
+      "cx": 760,
+      "cy": 470,
+      "s": 1.2
+     },
+     {
+      "src": 36.65,
+      "cx": 770,
+      "cy": 470,
+      "s": 1.22
+     }
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "shot": "sources_b",
+   "social_in_s": 23.19,
+   "social_out_s": 23.65,
+   "dur_s": 0.46,
+   "v7_in_s": 37.36,
+   "v7_out_s": 37.82,
+   "v7_scenes": [
+    "S07"
+   ],
+   "kind": "live V7",
+   "shows": "TRACE · SIGNALS USED — Gmail, Google Calendar, Google Meet, Google Drive, Google Docs, Slack, each with its time and freshness (V7's last pill, Salesforce, and its CRM line are clipped).",
+   "framing": {
+    "keys": [
+     {
+      "src": 37.36,
+      "cx": 820,
+      "cy": 560,
+      "s": 1.26
+     },
+     {
+      "src": 37.82,
+      "cx": 820,
+      "cy": 560,
+      "s": 1.26
+     }
+    ],
+    "clip_bottom": 935
+   }
+  },
+  {
+   "n": 11,
+   "shot": "sources_hold",
+   "social_in_s": 23.65,
+   "social_out_s": 26.1,
+   "dur_s": 2.45,
+   "v7_in_s": 37.8,
+   "v7_out_s": 37.8,
+   "v7_scenes": [
+    "S07"
+   ],
+   "kind": "held frame",
+   "shows": "Held on the trace (V7 frame 37.80) with a slow drift.",
+   "framing": {
+    "keys": [
+     {
+      "src": 0,
+      "cx": 820,
+      "cy": 560,
+      "s": 1.26
+     },
+     {
+      "src": 2.45,
+      "cx": 870,
+      "cy": 560,
+      "s": 1.26
+     }
+    ],
+    "clip_bottom": 935
+   }
+  },
+  {
+   "n": 12,
+   "shot": "prepared",
+   "social_in_s": 26.1,
+   "social_out_s": 27.63,
+   "dur_s": 1.53,
+   "v7_in_s": 43.4,
+   "v7_out_s": 44.93,
+   "v7_scenes": [
+    "S08"
+   ],
+   "kind": "live V7",
+   "shows": "Navis prepares the reply.",
+   "framing": {
+    "keys": [
+     {
+      "src": 43.4,
+      "cx": 820,
+      "cy": 560,
+      "s": 1.15
+     },
+     {
+      "src": 44.95,
+      "cx": 820,
+      "cy": 560,
+      "s": 1.18
+     }
+    ]
+   }
+  },
+  {
+   "n": 13,
+   "shot": "decides",
+   "social_in_s": 27.63,
+   "social_out_s": 30.43,
+   "dur_s": 2.8,
+   "v7_in_s": 46.25,
+   "v7_out_s": 49.05,
+   "v7_scenes": [
+    "S08",
+    "S09"
+   ],
+   "kind": "live V7",
+   "shows": "The cursor reaches Approve & send — a person decides.",
+   "framing": {
+    "keys": [
+     {
+      "src": 46.2,
+      "cx": 1080,
+      "cy": 520,
+      "s": 1.3
+     },
+     {
+      "src": 49.05,
+      "cx": 1060,
+      "cy": 540,
+      "s": 1.36
+     }
+    ]
+   }
+  },
+  {
+   "n": 14,
+   "shot": "acts",
+   "social_in_s": 30.43,
+   "social_out_s": 32.68,
+   "dur_s": 2.25,
+   "v7_in_s": 49.05,
+   "v7_out_s": 51.3,
+   "v7_scenes": [
+    "S09"
+   ],
+   "kind": "live V7",
+   "shows": "Approve & send → Sending… → Gmail accepted → Reply sent.",
+   "framing": {
+    "keys": [
+     {
+      "src": 49.05,
+      "cx": 560,
+      "cy": 470,
+      "s": 1.3
+     },
+     {
+      "src": 49.29,
+      "cx": 560,
+      "cy": 470,
+      "s": 1.3
+     },
+     {
+      "src": 49.31,
+      "cx": 600,
+      "cy": 520,
+      "s": 1.25
+     },
+     {
+      "src": 51.3,
+      "cx": 600,
+      "cy": 520,
+      "s": 1.27
+     }
+    ]
+   }
+  },
+  {
+   "n": 15,
+   "shot": "dev",
+   "social_in_s": 32.68,
+   "social_out_s": 35.23,
+   "dur_s": 2.55,
+   "v7_in_s": 53.55,
+   "v7_out_s": 56.1,
+   "v7_scenes": [
+    "S10"
+   ],
+   "kind": "live V7",
+   "shows": "Hard cut to the developer world: VS Code + Claude Code on the same company's repository; the task.",
+   "framing": {
+    "keys": [
+     {
+      "src": 53.55,
+      "cx": 880,
+      "cy": 470,
+      "s": 1.2
+     },
+     {
+      "src": 56.1,
+      "cx": 880,
+      "cy": 500,
+      "s": 1.26
+     }
+    ]
+   }
+  },
+  {
+   "n": 16,
+   "shot": "dev_hold",
+   "social_in_s": 35.23,
+   "social_out_s": 36.02,
+   "dur_s": 0.79,
+   "v7_in_s": 56.05,
+   "v7_out_s": 56.05,
+   "v7_scenes": [
+    "S10"
+   ],
+   "kind": "held frame",
+   "shows": "Held on the task (V7 frame 56.05).",
+   "framing": {
+    "keys": [
+     {
+      "src": 0,
+      "cx": 880,
+      "cy": 500,
+      "s": 1.26
+     },
+     {
+      "src": 0.79,
+      "cx": 880,
+      "cy": 510,
+      "s": 1.3
+     }
+    ]
+   }
+  },
+  {
+   "n": 17,
+   "shot": "connect_term",
+   "social_in_s": 36.02,
+   "social_out_s": 37.38,
+   "dur_s": 1.36,
+   "v7_in_s": 57.99,
+   "v7_out_s": 59.35,
+   "v7_scenes": [
+    "S11"
+   ],
+   "kind": "live V7",
+   "shows": "claude mcp add / claude mcp list → ✓ Connected (terminal macro, 1.4 s).",
+   "framing": {
+    "keys": [
+     {
+      "src": 58.0,
+      "cx": 425,
+      "cy": 480,
+      "s": 1.3
+     },
+     {
+      "src": 59.35,
+      "cx": 425,
+      "cy": 480,
+      "s": 1.32
+     }
+    ]
+   }
+  },
+  {
+   "n": 18,
+   "shot": "connect",
+   "social_in_s": 37.38,
+   "social_out_s": 41.72,
+   "dur_s": 4.34,
+   "v7_in_s": 59.35,
+   "v7_out_s": 63.69,
+   "v7_scenes": [
+    "S11"
+   ],
+   "kind": "live V7",
+   "shows": "Connect › Access surfaces — MCP, Developer API, SDK, CLI, each card on its word.",
+   "framing": {
+    "keys": [
+     {
+      "src": 59.33,
+      "cx": 1025,
+      "cy": 470,
+      "s": 0.84
+     },
+     {
+      "src": 59.62,
+      "cx": 1025,
+      "cy": 470,
+      "s": 0.84
+     },
+     {
+      "src": 59.65,
+      "cx": 690,
+      "cy": 390,
+      "s": 1.55
+     },
+     {
+      "src": 60.5,
+      "cx": 690,
+      "cy": 390,
+      "s": 1.56
+     },
+     {
+      "src": 60.53,
+      "cx": 1320,
+      "cy": 390,
+      "s": 1.55
+     },
+     {
+      "src": 61.42,
+      "cx": 1320,
+      "cy": 390,
+      "s": 1.56
+     },
+     {
+      "src": 61.45,
+      "cx": 690,
+      "cy": 565,
+      "s": 1.55
+     },
+     {
+      "src": 62.82,
+      "cx": 690,
+      "cy": 565,
+      "s": 1.56
+     },
+     {
+      "src": 62.85,
+      "cx": 1320,
+      "cy": 565,
+      "s": 1.55
+     },
+     {
+      "src": 63.4,
+      "cx": 1320,
+      "cy": 565,
+      "s": 1.56
+     },
+     {
+      "src": 63.43,
+      "cx": 1025,
+      "cy": 470,
+      "s": 0.84
+     },
+     {
+      "src": 63.7,
+      "cx": 1025,
+      "cy": 470,
+      "s": 0.85
+     }
+    ],
+    "side_fade": 60,
+    "top_fade": 24,
+    "top_cut": 58
+   }
+  },
+  {
+   "n": 19,
+   "shot": "context",
+   "social_in_s": 41.72,
+   "social_out_s": 45.91,
+   "dur_s": 4.19,
+   "v7_in_s": 64.05,
+   "v7_out_s": 68.24,
+   "v7_scenes": [
+    "S12"
+   ],
+   "kind": "live V7",
+   "shows": "navis_get_relevant_context → KAVERI FREIGHTWORKS · cited facts with source · date and freshness (V7's sixth row — the Salesforce CRM fact — is clipped).",
+   "framing": {
+    "keys": [
+     {
+      "src": 64.05,
+      "cx": 890,
+      "cy": 560,
+      "s": 1.25
+     },
+     {
+      "src": 68.21,
+      "cx": 890,
+      "cy": 560,
+      "s": 1.27
+     }
+    ],
+    "clip_bottom": 771
+   }
+  },
+  {
+   "n": 20,
+   "shot": "context_sources",
+   "social_in_s": 45.91,
+   "social_out_s": 46.71,
+   "dur_s": 0.8,
+   "v7_in_s": 68.24,
+   "v7_out_s": 69.04,
+   "v7_scenes": [
+    "S12"
+   ],
+   "kind": "live V7",
+   "shows": "V7's own zoom onto SOURCE · DATE.",
+   "framing": {
+    "keys": [
+     {
+      "src": 68.24,
+      "cx": 1020,
+      "cy": 600,
+      "s": 1.15
+     },
+     {
+      "src": 69.01,
+      "cx": 1020,
+      "cy": 600,
+      "s": 1.16
+     }
+    ],
+    "clip_bottom": 698
+   }
+  },
+  {
+   "n": 21,
+   "shot": "context_fresh",
+   "social_in_s": 46.71,
+   "social_out_s": 47.24,
+   "dur_s": 0.53,
+   "v7_in_s": 69.04,
+   "v7_out_s": 69.57,
+   "v7_scenes": [
+    "S12"
+   ],
+   "kind": "live V7",
+   "shows": "V7's own pan to FRESHNESS.",
+   "framing": {
+    "keys": [
+     {
+      "src": 69.04,
+      "cx": 760,
+      "cy": 600,
+      "s": 1.15
+     },
+     {
+      "src": 69.567,
+      "cx": 760,
+      "cy": 600,
+      "s": 1.155
+     }
+    ],
+    "clip_bottom": 698
+   }
+  },
+  {
+   "n": 22,
+   "shot": "context_hold",
+   "social_in_s": 47.24,
+   "social_out_s": 47.58,
+   "dur_s": 0.34,
+   "v7_in_s": 69.57,
+   "v7_out_s": 69.57,
+   "v7_scenes": [
+    "S12"
+   ],
+   "kind": "held frame",
+   "shows": "Held on V7 frame 2087 (V7 zooms out next).",
+   "framing": {
+    "keys": [
+     {
+      "src": 0,
+      "cx": 760,
+      "cy": 600,
+      "s": 1.155
+     },
+     {
+      "src": 0.343,
+      "cx": 760,
+      "cy": 600,
+      "s": 1.16
+     }
+    ],
+    "clip_bottom": 698
+   }
+  },
+  {
+   "n": 23,
+   "shot": "truth",
+   "social_in_s": 47.58,
+   "social_out_s": 52.63,
+   "dur_s": 5.05,
+   "v7_in_s": 72.45,
+   "v7_out_s": 77.5,
+   "v7_scenes": [
+    "S13",
+    "S14"
+   ],
+   "kind": "live V7",
+   "shows": "Developer API response: items · sources · freshness, 'No model is called' → the permission check: Agent credential → Organization · NavisLabs, Agent key AUTHORIZED.",
+   "framing": {
+    "keys": [
+     {
+      "src": 72.45,
+      "cx": 900,
+      "cy": 470,
+      "s": 1.0
+     },
+     {
+      "src": 76.3,
+      "cx": 900,
+      "cy": 470,
+      "s": 1.04
+     },
+     {
+      "src": 76.34,
+      "cx": 580,
+      "cy": 314,
+      "s": 1.28
+     },
+     {
+      "src": 77.5,
+      "cx": 580,
+      "cy": 314,
+      "s": 1.31
+     }
+    ]
+   }
+  },
+  {
+   "n": 24,
+   "shot": "truth_hold",
+   "social_in_s": 52.63,
+   "social_out_s": 53.2,
+   "dur_s": 0.57,
+   "v7_in_s": 77.5,
+   "v7_out_s": 77.5,
+   "v7_scenes": [
+    "S14"
+   ],
+   "kind": "held frame",
+   "shows": "Held on V7 frame 77.50 (V7's other cards — own scope, denied — fade in next and stay in V7).",
+   "framing": {
+    "keys": [
+     {
+      "src": 0,
+      "cx": 580,
+      "cy": 314,
+      "s": 1.31
+     },
+     {
+      "src": 0.57,
+      "cx": 580,
+      "cy": 314,
+      "s": 1.33
+     }
+    ]
+   }
+  },
+  {
+   "n": 25,
+   "shot": "run_diff",
+   "social_in_s": 53.2,
+   "social_out_s": 54.21,
+   "dur_s": 1.01,
+   "v7_in_s": 79.82,
+   "v7_out_s": 80.83,
+   "v7_scenes": [
+    "S15"
+   ],
+   "kind": "live V7",
+   "shows": "The agent's diff to src/workflows/kaveri-renewal.ts in the editor.",
+   "framing": {
+    "keys": [
+     {
+      "src": 79.8,
+      "cx": 950,
+      "cy": 560,
+      "s": 1.25
+     },
+     {
+      "src": 80.833,
+      "cx": 950,
+      "cy": 560,
+      "s": 1.27
+     }
+    ]
+   }
+  },
+  {
+   "n": 26,
+   "shot": "run_work",
+   "social_in_s": 54.21,
+   "social_out_s": 54.68,
+   "dur_s": 0.47,
+   "v7_in_s": 80.83,
+   "v7_out_s": 81.3,
+   "v7_scenes": [
+    "S15"
+   ],
+   "kind": "live V7",
+   "shows": "The agent works with the context: 'Using Navis context: renewal moved to Nov 28 (gmail, Oct 5)…' → Update(src/workflows/kaveri-renewal.ts), 4 additions and 2 removals → the summary (V7's context table above it is masked).",
+   "framing": {
+    "keys": [
+     {
+      "src": 80.833,
+      "cx": 954,
+      "cy": 683,
+      "s": 1.0
+     },
+     {
+      "src": 81.3,
+      "cx": 954,
+      "cy": 683,
+      "s": 1.01
+     }
+    ],
+    "top_fade": 20,
+    "top_cut": 520
+   }
+  },
+  {
+   "n": 27,
+   "shot": "run_record",
+   "social_in_s": 54.68,
+   "social_out_s": 56.28,
+   "dur_s": 1.6,
+   "v7_in_s": 81.43,
+   "v7_out_s": 83.03,
+   "v7_scenes": [
+    "S15"
+   ],
+   "kind": "live V7",
+   "shows": "Runs → Run detail: the run on record, each step Completed (from V7 frame 2443, after V7's crossfade).",
+   "framing": {
+    "keys": [
+     {
+      "src": 81.433,
+      "cx": 990,
+      "cy": 676,
+      "s": 1.0
+     },
+     {
+      "src": 83.1,
+      "cx": 990,
+      "cy": 676,
+      "s": 1.02
+     }
+    ]
+   }
+  },
+  {
+   "n": 28,
+   "shot": "thesis",
+   "social_in_s": 56.28,
+   "social_out_s": 63.87,
+   "dur_s": 7.59,
+   "v7_in_s": 97.02,
+   "v7_out_s": 104.61,
+   "v7_scenes": [
+    "S17"
+   ],
+   "kind": "live V7",
+   "shows": "One company · NavisLabs: Navis App and Navis Developer either side of the shared understanding → same fact / same source / same freshness → the pull-back; SAME FACTS. SAME SOURCES. SAME FRESHNESS. → ONE UNDERSTANDING. TWO WAYS IN. on the founder's words.",
+   "framing": {
+    "keys": [
+     {
+      "src": 97.0,
+      "cx": 960,
+      "cy": 239,
+      "s": 0.55
+     },
+     {
+      "src": 97.5,
+      "cx": 960,
+      "cy": 239,
+      "s": 0.55
+     },
+     {
+      "src": 98.2,
+      "cx": 960,
+      "cy": 112,
+      "s": 0.55
+     },
+     {
+      "src": 101.0,
+      "cx": 960,
+      "cy": 112,
+      "s": 0.55
+     },
+     {
+      "src": 102.6,
+      "cx": 960,
+      "cy": 180,
+      "s": 0.62
+     },
+     {
+      "src": 104.7,
+      "cx": 960,
+      "cy": 188,
+      "s": 0.63
+     }
+    ],
+    "clip_bottom": 720,
+    "top_fade": 60,
+    "fade_out": 0.35
+   }
+  },
+  {
+   "n": 29,
+   "shot": "name",
+   "social_in_s": 63.87,
+   "social_out_s": 65.94,
+   "dur_s": 2.07,
+   "v7_in_s": 118.45,
+   "v7_out_s": 120.52,
+   "v7_scenes": [
+    "S18"
+   ],
+   "kind": "live V7",
+   "shows": "The mark; 'NavisLabs.' — near silence.",
+   "framing": {
+    "keys": [
+     {
+      "src": 118.2,
+      "cx": 960,
+      "cy": 400,
+      "s": 1.12
+     },
+     {
+      "src": 121.0,
+      "cx": 960,
+      "cy": 400,
+      "s": 1.14
+     }
+    ]
+   }
+  },
+  {
+   "n": 30,
+   "shot": "tagline",
+   "social_in_s": 65.94,
+   "social_out_s": 66.81,
+   "dur_s": 0.87,
+   "v7_in_s": 121.33,
+   "v7_out_s": 122.2,
+   "v7_scenes": [
+    "S18"
+   ],
+   "kind": "live V7",
+   "shows": "The shared understanding for your organization.",
+   "framing": {
+    "keys": [
+     {
+      "src": 121.3,
+      "cx": 960,
+      "cy": 400,
+      "s": 1.14
+     },
+     {
+      "src": 122.2,
+      "cx": 960,
+      "cy": 400,
+      "s": 1.145
+     }
+    ]
+   }
+  },
+  {
+   "n": 31,
+   "shot": "end_hold",
+   "social_in_s": 66.81,
+   "social_out_s": 69.92,
+   "dur_s": 3.11,
+   "v7_in_s": 122.2,
+   "v7_out_s": 122.2,
+   "v7_scenes": [
+    "S18"
+   ],
+   "kind": "held frame",
+   "shows": "Held end frame (V7 frame 122.20) with the social disclosure line.",
+   "framing": {
+    "keys": [
+     {
+      "src": 0,
+      "cx": 960,
+      "cy": 400,
+      "s": 1.145
+     },
+     {
+      "src": 3.11,
+      "cx": 960,
+      "cy": 400,
+      "s": 1.16
+     }
+    ]
+   }
+  }
+ ],
+ "shots_removed_from_v7": [
+  {
+   "v7_in_s": 0.0,
+   "v7_out_s": 0.25,
+   "dur_s": 0.25,
+   "v7_scenes": [
+    "S01"
+   ],
+   "what": "The first 0.25 s before the hook settles."
+  },
+  {
+   "v7_in_s": 4.15,
+   "v7_out_s": 7.3,
+   "dur_s": 3.15,
+   "v7_scenes": [
+    "S01"
+   ],
+   "what": "The rest of the S01 split: the two date chips (Nov 28 vs Nov 14) and the views breaking apart."
+  },
+  {
+   "v7_in_s": 9.15,
+   "v7_out_s": 9.65,
+   "dur_s": 0.5,
+   "v7_scenes": [
+    "S01",
+    "S02"
+   ],
+   "what": "S01 → S02 transition."
+  },
+  {
+   "v7_in_s": 12.88,
+   "v7_out_s": 13.13,
+   "dur_s": 0.25,
+   "v7_scenes": [
+    "S02"
+   ],
+   "what": "S02 tail into the reveal."
+  },
+  {
+   "v7_in_s": 17.77,
+   "v7_out_s": 20.3,
+   "dur_s": 2.53,
+   "v7_scenes": [
+    "S03",
+    "S04"
+   ],
+   "what": "S03 tail ('One understanding. Two ways in.' under the products) and the wipe into S04."
+  },
+  {
+   "v7_in_s": 22.1,
+   "v7_out_s": 28.75,
+   "dur_s": 6.65,
+   "v7_scenes": [
+    "S04",
+    "S05"
+   ],
+   "what": "S04 pipeline: thirteen systems → signals → memory → context → intelligence → decision → execution → outcome → learning; P2 'Every email, meeting, document and message becomes a signal — remembered, connected, and turned into what should happen next.'; S05 opening."
+  },
+  {
+   "v7_in_s": 31.89,
+   "v7_out_s": 32.24,
+   "dur_s": 0.35,
+   "v7_scenes": [
+    "S05",
+    "S06"
+   ],
+   "what": "S05 → S06 transition."
+  },
+  {
+   "v7_in_s": 36.65,
+   "v7_out_s": 37.36,
+   "dur_s": 0.71,
+   "v7_scenes": [
+    "S07"
+   ],
+   "what": "S07: the sources arriving (0.7 s)."
+  },
+  {
+   "v7_in_s": 37.82,
+   "v7_out_s": 43.4,
+   "dur_s": 5.58,
+   "v7_scenes": [
+    "S07",
+    "S08"
+   ],
+   "what": "S07 evidence opened out (eight systems → one customer state — the CRM conflict); S08 'Waiting on you → Review & reply'; P3 'When something needs a decision, Navis prepares the next step.'"
+  },
+  {
+   "v7_in_s": 44.93,
+   "v7_out_s": 46.25,
+   "dur_s": 1.32,
+   "v7_scenes": [
+    "S08"
+   ],
+   "what": "S08: the person edits the draft."
+  },
+  {
+   "v7_in_s": 51.3,
+   "v7_out_s": 53.55,
+   "dur_s": 2.25,
+   "v7_scenes": [
+    "S09",
+    "S10"
+   ],
+   "what": "S09: the same event across Gmail, Salesforce, GitHub and Jira; the light → dark wipe into Navis Developer."
+  },
+  {
+   "v7_in_s": 56.1,
+   "v7_out_s": 57.99,
+   "dur_s": 1.89,
+   "v7_scenes": [
+    "S10",
+    "S11"
+   ],
+   "what": "S10 tail; S11 Console › Members: Add a member → Invited; P4 'Invite the team.'"
+  },
+  {
+   "v7_in_s": 63.69,
+   "v7_out_s": 64.05,
+   "dur_s": 0.36,
+   "v7_scenes": [
+    "S11",
+    "S12"
+   ],
+   "what": "S11 → S12 transition."
+  },
+  {
+   "v7_in_s": 69.57,
+   "v7_out_s": 72.45,
+   "dur_s": 2.88,
+   "v7_scenes": [
+    "S12",
+    "S13"
+   ],
+   "what": "S12 zoom-out tail; S13 'npm install ./navis-sdk-0.1.0.tgz' (local package) + the SDK example."
+  },
+  {
+   "v7_in_s": 77.5,
+   "v7_out_s": 79.82,
+   "dur_s": 2.32,
+   "v7_scenes": [
+    "S14",
+    "S15"
+   ],
+   "what": "S14: the other organization's card (own scope), the read-only key (denied) and the exact refusal; P4 'Every request is checked against its permissions.'"
+  },
+  {
+   "v7_in_s": 81.3,
+   "v7_out_s": 81.43,
+   "dur_s": 0.13,
+   "v7_scenes": [
+    "S15"
+   ],
+   "what": "S15: V7's 0.13 s crossfade from the terminal into the Runs page (replaced by a hard cut)."
+  },
+  {
+   "v7_in_s": 83.03,
+   "v7_out_s": 97.02,
+   "dur_s": 13.99,
+   "v7_scenes": [
+    "S15",
+    "S16",
+    "S17"
+   ],
+   "what": "S15 run-detail economics/outcome; all of S16 (sign up 'For myself' → personal workspace → the company's Members and roles → navis workstate checkpoint → the next session restores it; P5 'A solo builder gets a private workspace. A team can work together. And the work state carries into the next session.'); S17 'One company. The person and the agent acted on the same event.'"
+  },
+  {
+   "v7_in_s": 104.61,
+   "v7_out_s": 118.45,
+   "dur_s": 13.84,
+   "v7_scenes": [
+    "S17",
+    "S18"
+   ],
+   "what": "S17 tail; all of S18's moat section: 'Models change. Agents change. Tools change.' → 'What your company knows shouldn't have to start over.' → Company-owned · Model-neutral · Shared by people and agents (all of P7)."
+  },
+  {
+   "v7_in_s": 120.52,
+   "v7_out_s": 121.33,
+   "dur_s": 0.81,
+   "v7_scenes": [
+    "S18"
+   ],
+   "what": "0.8 s of the silence after 'NavisLabs.' (shortened)."
+  },
+  {
+   "v7_in_s": 122.2,
+   "v7_out_s": 125.23,
+   "dur_s": 3.03,
+   "v7_scenes": [
+    "S18"
+   ],
+   "what": "The end-card build: the product row (Navis App / Navis Developer), navislabs.in and V7's disclosure (replaced by the held frame and the social disclosure line)."
+  }
+ ],
+ "v7_overlaps": "why (V7 32.24–35.93) and sources_a (35.75–36.65) share 0.18 s of V7 across a re-framed cut; by_hand/without share 0.04 s.",
+ "voice_lines_retained": [
+  {
+   "line": "L01",
+   "text": "Your people and agents see different truths.",
+   "file": "voiceover/final/v6/P1.wav",
+   "social_s": [
+    0.35,
+    3.35
+   ],
+   "v7_s": [
+    0.6,
+    3.6
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L02",
+   "text": "The truth is scattered across the systems where work happens.",
+   "file": "voiceover/final/v6/P1.wav",
+   "social_s": [
+    4.05,
+    7.27
+   ],
+   "v7_s": [
+    6.2,
+    9.42
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L03",
+   "text": "People rebuild it by hand.",
+   "file": "voiceover/final/v6/P1.wav",
+   "social_s": [
+    7.67,
+    9.21
+   ],
+   "v7_s": [
+    9.77,
+    11.31
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L04",
+   "text": "Agents start without it.",
+   "file": "voiceover/final/v6/P1.wav",
+   "social_s": [
+    9.56,
+    10.92
+   ],
+   "v7_s": [
+    11.62,
+    12.98
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L05",
+   "text": "Navis turns those signals into one shared understanding.",
+   "file": "voiceover/final/v6/P2.wav",
+   "social_s": [
+    11.72,
+    14.71
+   ],
+   "v7_s": [
+    14.03,
+    17.02
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L06",
+   "text": "Inside a company, the Navis App is for people.",
+   "file": "voiceover/final/v6/P3.wav",
+   "social_s": [
+    15.66,
+    18.3
+   ],
+   "v7_s": [
+    28.95,
+    31.59
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L07",
+   "text": "It shows what changed — and why it matters.",
+   "file": "voiceover/final/v6/P3.wav",
+   "social_s": [
+    18.75,
+    21.99
+   ],
+   "v7_s": [
+    32.39,
+    35.63
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L08",
+   "text": "Every fact has its source, its time, and how fresh it is.",
+   "file": "voiceover/final/v6/P3.wav",
+   "social_s": [
+    22.44,
+    26.15
+   ],
+   "v7_s": [
+    36.38,
+    40.09
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L09",
+   "text": "A person decides.",
+   "file": "voiceover/final/v6/P3.wav",
+   "social_s": [
+    27.45,
+    28.8
+   ],
+   "v7_s": [
+    46.07,
+    47.42
+   ],
+   "key_line": true
+  },
+  {
+   "line": "L10",
+   "text": "Then the company acts.",
+   "file": "voiceover/final/v6/P3.wav",
+   "social_s": [
+    30.53,
+    32.43
+   ],
+   "v7_s": [
+    49.15,
+    51.05
+   ],
+   "key_line": true
+  },
+  {
+   "line": "L11",
+   "text": "The same company's agents use Navis Developer.",
+   "file": "voiceover/final/v6/P4.wav",
+   "social_s": [
+    33.08,
+    35.87
+   ],
+   "v7_s": [
+    53.25,
+    56.04
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L12",
+   "text": "Connect once — through MCP, API, SDK or CLI.",
+   "file": "voiceover/final/v6/P4.wav",
+   "social_s": [
+    36.17,
+    41.37
+   ],
+   "v7_s": [
+    58.14,
+    63.34
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L13",
+   "text": "The agent asks — and gets the company's context, with sources and freshness.",
+   "file": "voiceover/final/v6/P4.wav",
+   "social_s": [
+    41.87,
+    47.23
+   ],
+   "v7_s": [
+    64.2,
+    69.56
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L14",
+   "text": "Navis isn't the model.",
+   "file": "voiceover/final/v6/P4.wav",
+   "social_s": [
+    47.73,
+    49.5
+   ],
+   "v7_s": [
+    70.31,
+    72.08
+   ],
+   "key_line": true
+  },
+  {
+   "line": "L15",
+   "text": "It supplies the company's truth.",
+   "file": "voiceover/final/v6/P4.wav",
+   "social_s": [
+    50.4,
+    52.55
+   ],
+   "v7_s": [
+    73.66,
+    75.81
+   ],
+   "key_line": true
+  },
+  {
+   "line": "L16",
+   "text": "The agent does the work, and the run is on record.",
+   "file": "voiceover/final/v6/P4.wav",
+   "social_s": [
+    53.35,
+    56.13
+   ],
+   "v7_s": [
+    79.97,
+    82.75
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L17",
+   "text": "Same facts. Same sources. Same freshness. One understanding. Two ways in.",
+   "file": "voiceover/final/v6/P6.wav",
+   "social_s": [
+    56.83,
+    63.32
+   ],
+   "v7_s": [
+    97.57,
+    104.06
+   ],
+   "key_line": false
+  },
+  {
+   "line": "L18",
+   "text": "NavisLabs.",
+   "file": "voiceover/final/v6/P8.wav",
+   "social_s": [
+    64.22,
+    64.89
+   ],
+   "v7_s": [
+    118.8,
+    119.47
+   ],
+   "key_line": true
+  },
+  {
+   "line": "L19",
+   "text": "The shared understanding for your organization.",
+   "file": "voiceover/final/v6/P8.wav",
+   "social_s": [
+    66.04,
+    68.42
+   ],
+   "v7_s": [
+    121.43,
+    123.81
+   ],
+   "key_line": false
+  }
+ ],
+ "voice_lines_removed": [
+  {
+   "chunk": "P2",
+   "line": 1,
+   "text": "Every email, meeting, document and message becomes a signal —",
+   "v7_s": [
+    19.97,
+    23.64
+   ]
+  },
+  {
+   "chunk": "P2",
+   "line": 2,
+   "text": "remembered, connected, and turned into what should happen next.",
+   "v7_s": [
+    24.4,
+    28.1
+   ]
+  },
+  {
+   "chunk": "P3",
+   "line": 4,
+   "text": "When something needs a decision, Navis prepares the next step.",
+   "v7_s": [
+    40.88,
+    44.34
+   ]
+  },
+  {
+   "chunk": "P4",
+   "line": 1,
+   "text": "Invite the team.",
+   "v7_s": [
+    56.52,
+    57.27
+   ]
+  },
+  {
+   "chunk": "P4",
+   "line": 7,
+   "text": "Every request is checked against its permissions.",
+   "v7_s": [
+    76.77,
+    79.38
+   ]
+  },
+  {
+   "chunk": "P5",
+   "line": 0,
+   "text": "A solo builder gets a private workspace.",
+   "v7_s": [
+    83.65,
+    85.74
+   ]
+  },
+  {
+   "chunk": "P5",
+   "line": 1,
+   "text": "A team can work together.",
+   "v7_s": [
+    85.96,
+    87.2
+   ]
+  },
+  {
+   "chunk": "P5",
+   "line": 2,
+   "text": "And the work state carries into the next session.",
+   "v7_s": [
+    87.86,
+    89.86
+   ]
+  },
+  {
+   "chunk": "P5",
+   "line": 3,
+   "text": "One company.",
+   "v7_s": [
+    92.99,
+    93.65
+   ]
+  },
+  {
+   "chunk": "P5",
+   "line": 4,
+   "text": "The person and the agent acted on the same event.",
+   "v7_s": [
+    94.21,
+    96.92
+   ]
+  },
+  {
+   "chunk": "P7",
+   "line": 0,
+   "text": "Models change.",
+   "v7_s": [
+    105.21,
+    106.03
+   ]
+  },
+  {
+   "chunk": "P7",
+   "line": 1,
+   "text": "Agents change.",
+   "v7_s": [
+    106.08,
+    106.98
+   ]
+  },
+  {
+   "chunk": "P7",
+   "line": 2,
+   "text": "Tools change.",
+   "v7_s": [
+    107.1,
+    107.88
+   ]
+  },
+  {
+   "chunk": "P7",
+   "line": 3,
+   "text": "What your company knows shouldn't have to start over.",
+   "v7_s": [
+    110.44,
+    113.03
+   ]
+  },
+  {
+   "chunk": "P7",
+   "line": 4,
+   "text": "Company-owned.",
+   "v7_s": [
+    113.9,
+    114.65
+   ]
+  },
+  {
+   "chunk": "P7",
+   "line": 5,
+   "text": "Model-neutral.",
+   "v7_s": [
+    114.9,
+    115.8
+   ]
+  },
+  {
+   "chunk": "P7",
+   "line": 6,
+   "text": "Shared by people and agents.",
+   "v7_s": [
+    116.05,
+    117.95
+   ]
+  }
+ ],
+ "music": {
+  "file": "music/final/v8/score.wav",
+  "gain_db": -6.0,
+  "segments": [
+   {
+    "id": "A · tension → Navis lift → warm App pulse",
+    "at": 0.0,
+    "end": 32.83,
+    "src": 6.88,
+    "fade_in": 0.6,
+    "fade_out": 0.3,
+    "src_end": 39.71
+   },
+   {
+    "id": "B · developer rhythm → precise energy",
+    "at": 32.53,
+    "end": 56.88,
+    "src": 52.95,
+    "fade_in": 0.3,
+    "fade_out": 1.2,
+    "src_end": 77.3
+   },
+   {
+    "id": "C · wide emotional expansion",
+    "at": 55.68,
+    "end": 64.37,
+    "src": 92.4,
+    "fade_in": 1.2,
+    "fade_out": 1.0,
+    "src_end": 101.09
+   },
+   {
+    "id": "D · resolve → near silence",
+    "at": 63.37,
+    "end": 69.92,
+    "src": 117.9,
+    "fade_in": 1.0,
+    "fade_out": 0.0,
+    "src_end": 124.45
+   }
+  ],
+  "dips": [
+   {
+    "from": 30.23,
+    "to": 30.53,
+    "db": -8.0,
+    "why": "held breath on Approve & send"
+   },
+   {
+    "from": 65.04,
+    "to": 65.89,
+    "db": -18.0,
+    "why": "near-silence after 'NavisLabs.'"
+   },
+   {
+    "from": 69.77,
+    "to": 69.92,
+    "db": -40.0,
+    "why": "the score decays under the held end frame"
+   },
+   {
+    "from": 69.77,
+    "to": 69.92,
+    "db": -96.0,
+    "why": "silent last frames"
+   }
+  ]
+ },
+ "sfx_cues": 35,
+ "qc": {
+  "format": {
+   "width": 1080,
+   "height": 1350,
+   "fps": "30/1",
+   "codec": "h264",
+   "profile": "High",
+   "pix_fmt": "yuv420p",
+   "frames": 2098,
+   "video_s": 69.933333,
+   "audio_s": 69.952,
+   "audio_codec": "aac",
+   "audio_rate": "48000",
+   "channels": 2,
+   "video_kbps": 3871,
+   "size_mb": 36.5
+  },
+  "black_runs_s": [
+   [
+    63.87,
+    64.1,
+    0.27,
+    "thesis"
+   ]
+  ],
+  "hold_cuts": [
+   {
+    "shot": "sources_hold",
+    "cut_s": 23.65,
+    "luma_before": 196.47,
+    "luma_after": 196.47,
+    "step": 0.0
+   },
+   {
+    "shot": "dev_hold",
+    "cut_s": 35.23,
+    "luma_before": 26.75,
+    "luma_after": 26.73,
+    "step": -0.02
+   },
+   {
+    "shot": "context_hold",
+    "cut_s": 47.237,
+    "luma_before": 32.25,
+    "luma_after": 32.21,
+    "step": -0.04
+   },
+   {
+    "shot": "truth_hold",
+    "cut_s": 52.63,
+    "luma_before": 18.86,
+    "luma_after": 18.86,
+    "step": 0.0
+   },
+   {
+    "shot": "end_hold",
+    "cut_s": 66.81,
+    "luma_before": 14.98,
+    "luma_after": 15.01,
+    "step": 0.03
+   }
+  ],
+  "duplicates_at_cuts": [],
+  "soft_frame_runs_s": [
+   [
+    0.0,
+    0.43,
+    "hook"
+   ],
+   [
+    3.9,
+    4.1,
+    "scatter"
+   ],
+   [
+    7.57,
+    7.73,
+    "by_hand"
+   ],
+   [
+    9.43,
+    9.63,
+    "by_hand"
+   ],
+   [
+    11.07,
+    11.77,
+    "reveal"
+   ],
+   [
+    15.47,
+    15.7,
+    "app_intro"
+   ],
+   [
+    16.7,
+    16.87,
+    "app_intro"
+   ],
+   [
+    18.5,
+    18.57,
+    "app_intro"
+   ],
+   [
+    20.97,
+    21.13,
+    "why"
+   ],
+   [
+    22.27,
+    22.27,
+    "why"
+   ],
+   [
+    22.4,
+    22.5,
+    "sources_a"
+   ],
+   [
+    26.3,
+    26.8,
+    "prepared"
+   ],
+   [
+    30.43,
+    30.57,
+    "acts"
+   ],
+   [
+    30.67,
+    30.77,
+    "acts"
+   ],
+   [
+    32.6,
+    33.1,
+    "acts"
+   ],
+   [
+    36.07,
+    36.2,
+    "connect_term"
+   ],
+   [
+    41.6,
+    41.7,
+    "connect"
+   ],
+   [
+    42.43,
+    42.47,
+    "context"
+   ],
+   [
+    47.57,
+    48.57,
+    "context_hold"
+   ],
+   [
+    52.73,
+    53.17,
+    "truth_hold"
+   ],
+   [
+    56.37,
+    56.9,
+    "thesis"
+   ],
+   [
+    60.97,
+    61.1,
+    "thesis"
+   ],
+   [
+    63.7,
+    64.7,
+    "thesis"
+   ],
+   [
+    64.77,
+    64.93,
+    "name"
+   ],
+   [
+    65.0,
+    66.0,
+    "name"
+   ]
+  ],
+  "loudness": {
+   "integrated_lufs": -14.0,
+   "true_peak_dbtp": -1.2,
+   "lra_lu": 2.9,
+   "clipped_samples": 0,
+   "sample_peak": 0.866
+  },
+  "silence_gaps": [
+   {
+    "from_s": 69.5,
+    "to_s": 69.95,
+    "why": "the silent end"
+   }
+  ],
+  "separation": {
+   "voice_lufs_under_speech": -16.18,
+   "music_lufs_under_speech": -28.77,
+   "voice_minus_music_lu": 12.59,
+   "voice_minus_music_key_lines_lu": 17.32,
+   "music_rise_in_pauses_lu": 5.25,
+   "voice_peak_minus_sfx_peak_db": 11.53
+  },
+  "voice_sync": {
+   "onsets": [
+    {
+     "line": "L01",
+     "plan_s": 0.35,
+     "measured_s": 0.354,
+     "diff_ms": 4.1
+    },
+    {
+     "line": "L02",
+     "plan_s": 4.05,
+     "measured_s": 4.057,
+     "diff_ms": 6.8
+    },
+    {
+     "line": "L03",
+     "plan_s": 7.67,
+     "measured_s": 7.686,
+     "diff_ms": 16.1
+    },
+    {
+     "line": "L04",
+     "plan_s": 9.56,
+     "measured_s": 9.549,
+     "diff_ms": -10.9
+    },
+    {
+     "line": "L05",
+     "plan_s": 11.72,
+     "measured_s": 11.765,
+     "diff_ms": 44.8
+    },
+    {
+     "line": "L06",
+     "plan_s": 15.66,
+     "measured_s": 15.665,
+     "diff_ms": 4.6
+    },
+    {
+     "line": "L07",
+     "plan_s": 18.75,
+     "measured_s": 18.763,
+     "diff_ms": 12.7
+    },
+    {
+     "line": "L08",
+     "plan_s": 22.44,
+     "measured_s": 22.458,
+     "diff_ms": 17.6
+    },
+    {
+     "line": "L09",
+     "plan_s": 27.45,
+     "measured_s": 27.443,
+     "diff_ms": -7.1
+    },
+    {
+     "line": "L10",
+     "plan_s": 30.53,
+     "measured_s": 30.524,
+     "diff_ms": -6.4
+    },
+    {
+     "line": "L11",
+     "plan_s": 33.08,
+     "measured_s": 33.058,
+     "diff_ms": -22.4
+    },
+    {
+     "line": "L12",
+     "plan_s": 36.17,
+     "measured_s": 36.179,
+     "diff_ms": 8.9
+    },
+    {
+     "line": "L13",
+     "plan_s": 41.87,
+     "measured_s": 41.872,
+     "diff_ms": 2.4
+    },
+    {
+     "line": "L14",
+     "plan_s": 47.73,
+     "measured_s": 47.713,
+     "diff_ms": -17.1
+    },
+    {
+     "line": "L15",
+     "plan_s": 50.4,
+     "measured_s": 50.397,
+     "diff_ms": -3.4
+    },
+    {
+     "line": "L16",
+     "plan_s": 53.35,
+     "measured_s": 53.346,
+     "diff_ms": -4.0
+    },
+    {
+     "line": "L17",
+     "plan_s": 56.83,
+     "measured_s": 56.801,
+     "diff_ms": -29.5
+    },
+    {
+     "line": "L18",
+     "plan_s": 64.22,
+     "measured_s": 64.264,
+     "diff_ms": 44.3
+    },
+    {
+     "line": "L19",
+     "plan_s": 66.04,
+     "measured_s": 66.057,
+     "diff_ms": 16.9
+    }
+   ],
+   "max_abs_diff_ms": 44.8,
+   "audio_minus_video_ms": 18.7
+  },
+  "loudness_jumps": {
+   "count": 7,
+   "unexpected": [],
+   "all": [
+    {
+     "t_s": 0.3,
+     "step_lu": 13.2,
+     "why": "the founder's voice starts/stops (music steady)"
+    },
+    {
+     "t_s": 7.6,
+     "step_lu": 10.7,
+     "why": "the founder's voice starts/stops (music steady)"
+    },
+    {
+     "t_s": 37.5,
+     "step_lu": 11.2,
+     "why": "the founder's voice starts/stops (music steady)"
+    },
+    {
+     "t_s": 39.4,
+     "step_lu": 9.8,
+     "why": "the founder's voice starts/stops (music steady)"
+    },
+    {
+     "t_s": 43.9,
+     "step_lu": 10.0,
+     "why": "the founder's voice starts/stops (music steady)"
+    },
+    {
+     "t_s": 62.6,
+     "step_lu": 10.6,
+     "why": "the founder's voice starts/stops (music steady)"
+    },
+    {
+     "t_s": 65.9,
+     "step_lu": 14.3,
+     "why": "the founder's voice starts/stops (music steady)"
+    }
+   ]
+  }
+ },
+ "claims_still_visible": [
+  {
+   "shot": "scatter",
+   "issue": "upcoming integration: Salesforce",
+   "from_s": 4.15,
+   "to_s": 5.65,
+   "examples": [
+    "SALESFORCE",
+    "Salesforce"
+   ]
+  },
+  {
+   "shot": "scatter",
+   "issue": "upcoming integration: HubSpot",
+   "from_s": 4.4,
+   "to_s": 5.65,
+   "examples": [
+    "HUBSPOT"
+   ]
+  },
+  {
+   "shot": "scatter",
+   "issue": "upcoming integration: Microsoft 365",
+   "from_s": 4.4,
+   "to_s": 5.65,
+   "examples": [
+    "MICROSOFT 365"
+   ]
+  },
+  {
+   "shot": "scatter",
+   "issue": "upcoming integration: Zoom",
+   "from_s": 4.4,
+   "to_s": 5.65,
+   "examples": [
+    "zoom",
+    "ZOOM"
+   ]
+  },
+  {
+   "shot": "scatter",
+   "issue": "date V8 corrected (renewal call Oct 8)",
+   "from_s": 4.4,
+   "to_s": 5.65,
+   "examples": [
+    "to Oct 9."
+   ]
+  },
+  {
+   "shot": "scatter",
+   "issue": "upcoming integration: Jira",
+   "from_s": 4.4,
+   "to_s": 5.65,
+   "examples": [
+    "JIRA"
+   ]
+  },
+  {
+   "shot": "scatter",
+   "issue": "Jira ticket id",
+   "from_s": 5.15,
+   "to_s": 5.65,
+   "examples": [
+    "KVR-142 • SSO export"
+   ]
+  },
+  {
+   "shot": "scatter",
+   "issue": "CRM detail",
+   "from_s": 5.4,
+   "to_s": 5.4,
+   "examples": [
+    "OPPORTUNITY"
+   ]
+  },
+  {
+   "shot": "app_intro",
+   "issue": "upcoming integration: Salesforce",
+   "from_s": 17.71,
+   "to_s": 18.46,
+   "examples": [
+    "SALESFORCE Opportunity • closes Nov 14"
+   ]
+  },
+  {
+   "shot": "app_intro",
+   "issue": "CRM detail",
+   "from_s": 17.71,
+   "to_s": 18.46,
+   "examples": [
+    "SALESFORCE Opportunity • closes Nov 14"
+   ]
+  },
+  {
+   "shot": "why",
+   "issue": "Jira ticket id",
+   "from_s": 18.6,
+   "to_s": 20.85,
+   "examples": [
+    "KVR-142 has waited three days for review; Kaveri's renewal call is Oct 9.",
+    "JIRA KVR-142 • Blocked"
+   ]
+  },
+  {
+   "shot": "why",
+   "issue": "date V8 corrected (renewal call Oct 8)",
+   "from_s": 18.6,
+   "to_s": 20.85,
+   "examples": [
+    "KVR-142 has waited three days for review; Kaveri's renewal call is Oct 9.",
+    "CALENDAR Renewal call • Oct 9"
+   ]
+  },
+  {
+   "shot": "why",
+   "issue": "upcoming integration: Jira",
+   "from_s": 18.6,
+   "to_s": 20.85,
+   "examples": [
+    "JIRA KVR-142 • Blocked"
+   ]
+  },
+  {
+   "shot": "why",
+   "issue": "date V8 corrected (6 days ago)",
+   "from_s": 18.6,
+   "to_s": 19.35,
+   "examples": [
+    "Committed 9 days ago in the Q3 review. The board deck hasn't been touched since."
+   ]
+  },
+  {
+   "shot": "why",
+   "issue": "upcoming integration: Salesforce",
+   "from_s": 20.1,
+   "to_s": 20.85,
+   "examples": [
+    "SALESFORCE Opportunity • closes Nov 14"
+   ]
+  },
+  {
+   "shot": "why",
+   "issue": "CRM detail",
+   "from_s": 20.1,
+   "to_s": 20.85,
+   "examples": [
+    "SALESFORCE Opportunity • closes Nov 14"
+   ]
+  },
+  {
+   "shot": "run_record",
+   "issue": "upcoming integration: Salesforce",
+   "from_s": 55.43,
+   "to_s": 56.18,
+   "examples": [
+    "salesforce • as_of 09:44",
+    "salesforce - as_of 09:44"
+   ]
+  }
+ ],
+ "claims_scan": {
+  "samples": 271,
+  "frames_without_text": [
+   {
+    "shot": "hook",
+    "v7_s": 0.25
+   },
+   {
+    "shot": "reveal",
+    "v7_s": 13.63
+   },
+   {
+    "shot": "reveal",
+    "v7_s": 13.88
+   },
+   {
+    "shot": "reveal",
+    "v7_s": 14.13
+   },
+   {
+    "shot": "why",
+    "v7_s": 35.49
+   },
+   {
+    "shot": "truth",
+    "v7_s": 76.45
+   },
+   {
+    "shot": "name",
+    "v7_s": 118.45
+   },
+   {
+    "shot": "name",
+    "v7_s": 118.7
+   }
+  ],
+  "legible_hits": 103,
+  "illegible_hits": 17
+ },
+ "ui_text_px_by_shot": {
+  "hook": {
+   "boxes": 144,
+   "median": 27.5,
+   "p90": 47.0,
+   "share_ge_30px": 0.49
+  },
+  "scatter": {
+   "boxes": 132,
+   "median": 12.3,
+   "p90": 15.2,
+   "share_ge_30px": 0.0
+  },
+  "systems": {
+   "boxes": 114,
+   "median": 27.0,
+   "p90": 32.6,
+   "share_ge_30px": 0.37
+  },
+  "by_hand": {
+   "boxes": 97,
+   "median": 21.7,
+   "p90": 25.5,
+   "share_ge_30px": 0.03
+  },
+  "without": {
+   "boxes": 31,
+   "median": 24.2,
+   "p90": 31.6,
+   "share_ge_30px": 0.16
+  },
+  "reveal": {
+   "boxes": 51,
+   "median": 21.0,
+   "p90": 66.2,
+   "share_ge_30px": 0.31
+  },
+  "app_intro": {
+   "boxes": 288,
+   "median": 17.7,
+   "p90": 28.3,
+   "share_ge_30px": 0.08
+  },
+  "why": {
+   "boxes": 246,
+   "median": 22.0,
+   "p90": 37.7,
+   "share_ge_30px": 0.24
+  },
+  "sources_a": {
+   "boxes": 40,
+   "median": 22.8,
+   "p90": 26.8,
+   "share_ge_30px": 0.07
+  },
+  "sources_b": {
+   "boxes": 49,
+   "median": 25.2,
+   "p90": 29.0,
+   "share_ge_30px": 0.02
+  },
+  "sources_hold": {
+   "boxes": 25,
+   "median": 25.2,
+   "p90": 30.2,
+   "share_ge_30px": 0.12
+  },
+  "prepared": {
+   "boxes": 121,
+   "median": 24.4,
+   "p90": 36.2,
+   "share_ge_30px": 0.32
+  },
+  "decides": {
+   "boxes": 120,
+   "median": 36.6,
+   "p90": 42.1,
+   "share_ge_30px": 0.93
+  },
+  "acts": {
+   "boxes": 101,
+   "median": 27.9,
+   "p90": 36.4,
+   "share_ge_30px": 0.39
+  },
+  "dev": {
+   "boxes": 50,
+   "median": 27.3,
+   "p90": 34.3,
+   "share_ge_30px": 0.32
+  },
+  "dev_hold": {
+   "boxes": 7,
+   "median": 31.5,
+   "p90": 36.5,
+   "share_ge_30px": 0.57
+  },
+  "connect_term": {
+   "boxes": 29,
+   "median": 25.0,
+   "p90": 30.3,
+   "share_ge_30px": 0.1
+  },
+  "connect": {
+   "boxes": 212,
+   "median": 26.3,
+   "p90": 31.2,
+   "share_ge_30px": 0.16
+  },
+  "context": {
+   "boxes": 403,
+   "median": 29.1,
+   "p90": 35.4,
+   "share_ge_30px": 0.45
+  },
+  "context_sources": {
+   "boxes": 83,
+   "median": 35.9,
+   "p90": 40.5,
+   "share_ge_30px": 0.92
+  },
+  "context_fresh": {
+   "boxes": 57,
+   "median": 35.8,
+   "p90": 43.9,
+   "share_ge_30px": 0.93
+  },
+  "context_hold": {
+   "boxes": 19,
+   "median": 35.8,
+   "p90": 43.9,
+   "share_ge_30px": 0.89
+  },
+  "truth": {
+   "boxes": 199,
+   "median": 22.2,
+   "p90": 28.7,
+   "share_ge_30px": 0.05
+  },
+  "truth_hold": {
+   "boxes": 9,
+   "median": 21.0,
+   "p90": 38.0,
+   "share_ge_30px": 0.11
+  },
+  "run_diff": {
+   "boxes": 89,
+   "median": 31.3,
+   "p90": 40.5,
+   "share_ge_30px": 0.54
+  },
+  "run_work": {
+   "boxes": 11,
+   "median": 25.0,
+   "p90": 27.1,
+   "share_ge_30px": 0.09
+  },
+  "run_record": {
+   "boxes": 138,
+   "median": 17.2,
+   "p90": 22.1,
+   "share_ge_30px": 0.0
+  },
+  "thesis": {
+   "boxes": 451,
+   "median": 10.6,
+   "p90": 16.5,
+   "share_ge_30px": 0.0
+  },
+  "name": {
+   "boxes": 7,
+   "median": 63.3,
+   "p90": 64.8,
+   "share_ge_30px": 1.0
+  },
+  "tagline": {
+   "boxes": 7,
+   "median": 57.0,
+   "p90": 57.2,
+   "share_ge_30px": 1.0
+  },
+  "end_hold": {
+   "boxes": 2,
+   "median": 57.2,
+   "p90": 57.2,
+   "share_ge_30px": 1.0
+  }
+ },
+ "remaining_problems": [
+  "V7 data (as the brief requires) still shows integrations that are not live yet and two dates V8 later corrected — see 'claims_still_visible'. The two strongest claims were removed by framing only (no data changed): the CONNECTED SYSTEMS list shows only the six live integrations, and the agent's context table and the trace no longer show the Salesforce/CRM row. Still visible: 'SALESFORCE Opportunity · closes Nov 14' and 'JIRA KVR-142 · Blocked' chips in the App (≈17.3–20.8 s), 'Renewal call · Oct 9' (V8: Thu, Oct 8) and 'Committed 9 days ago' (V8: 6 days ago) in the App (≈18.6–20.8 s), and 'salesforce · as_of 09:44' in the Runs page's run detail (≈55.4–56.2 s); the scatter shot's flying fragments name Salesforce, HubSpot, Microsoft 365, Jira and Zoom as tools where work happens (≈4.2–5.7 s). If these must not appear publicly, the cut can be re-sourced from the V8 picture (same plan) — not done because the brief makes V7 the source of truth.",
+  "Music licence not verified (Eleven Music tier) — needed before public posting.",
+  "SFX are temporary synthesized placeholders.",
+  "Picture is reframed from the 1080p V7 master: macros up to ~1.9× (systems list) are slightly soft; mitigated by a 1.5× Lanczos + light-sharpen proxy. A native 4:5 render of the V7 scenes would be sharper.",
+  "Wide moments (scatter, app intro, the thesis picture at 0.55×) carry small V7 UI text that is texture on a phone; the captions and the thesis type carry the message there.",
+  "Five intentional held frames (sources 2.45 s, developer task 0.79 s, context 0.34 s, permission check 0.57 s, end frame 3.11 s) — static picture under a slow camera drift, not accidental duplicates.",
+  "The terminal shots show the local prompt 'abhishekmeena@Abhisheks-MacBook-Pro-8' (inherited from V7) — consider whether that is fine for a public post.",
+  "Section timing lands up to ~2.5 s earlier than the brief's guide in the middle (natural line pacing); the hook is 3.9 s and the end converges on 70 s.",
+  "Brief macro edges: neighbouring Connect cards show as faint slivers at the frame edge in the MCP/API/SDK/CLI macros (softened with a 60 px side fade).",
+  "The disclosure line (21 px) is small on a phone."
+ ]
+}

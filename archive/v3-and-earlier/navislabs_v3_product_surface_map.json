@@ -1,0 +1,195 @@
+{
+  "about": "Every product surface the V3 film shows, the real source it is rebuilt from, and its claim status.",
+  "claim_status_legend": {
+    "PROVEN": "verified in the product source / live site",
+    "PRIVATE_PREVIEW": "implemented, not publicly released (packages unpublished, nothing hosted publicly)",
+    "DESIGNED": "implemented or designed, not yet proven in production use",
+    "ROADMAP": "not built yet; shown only with an explicit label",
+    "FILM_SIMULATION": "a film graphic or demo data, not a product claim"
+  },
+  "surfaces": [
+    {
+      "id": "website.hero",
+      "product": "NavisLabs",
+      "label": "The shared understanding for your organization.",
+      "source": "navislabs.in (live, fetched 2026-10-05)",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "website.cta",
+      "product": "NavisLabs",
+      "label": "Book Demo",
+      "source": "navislabs.in",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "integrations.live",
+      "product": "NavisLabs",
+      "label": "Gmail · Google Calendar · Google Meet · Google Drive · Google Docs · Slack",
+      "source": "navis-labs-website/components/site/logos.tsx (status 'supported'); navislabs.in 'Watching'",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "integrations.roadmap",
+      "product": "NavisLabs",
+      "label": "HubSpot · Salesforce · Jira · GitHub · Notion · Zoom · Microsoft 365 — shown with 'Coming soon'",
+      "source": "logos.tsx (status 'soon'); /platform 'Coming soon · 7 on the roadmap'",
+      "claim_status": "ROADMAP",
+      "swap": "move the id from ROADMAP_INTEGRATIONS to INTEGRATIONS in src/config/navisBrand.ts when the connector ships"
+    },
+    {
+      "id": "app.today",
+      "product": "Navis Application",
+      "label": "Today · Navis — Good morning, <name>.",
+      "source": "Navis-AI PageMasthead.tsx, DailyBriefHero.tsx",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.countstrip",
+      "product": "Navis Application",
+      "label": "Today at a glance: Decisions · Risks · Actions today · Meetings · Waiting on you · Updates",
+      "source": "Navis-AI components/navis/dashboard/CountStrip.tsx",
+      "claim_status": "PROVEN",
+      "data": "demo counts (3/1/2/4/1); Updates is 0 \"No changes\" because the product always reports 0 — Navis has no temporal diff yet"
+    },
+    {
+      "id": "app.whatChanged",
+      "product": "Navis Application",
+      "label": "What changed · Verified shifts only (learning narratives only)",
+      "source": "Navis-AI app/dashboard/page.tsx SECTION_META.changed",
+      "claim_status": "PROVEN",
+      "data": "demo"
+    },
+    {
+      "id": "app.priority",
+      "product": "Navis Application",
+      "label": "NarrativeCard: kind label, Next, Review & reply / Mark decided / Ask Navis / Snooze / Why this matters",
+      "source": "NarrativeCard.tsx, lib/briefingComposer.ts",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.whyThis",
+      "product": "Navis Application",
+      "label": "Why Navis surfaced this: What's happening / Who this is about / Why it matters / What supports this / What you can do",
+      "source": "WhyThisDrawer.tsx",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.waiting",
+      "product": "Navis Application",
+      "label": "Waiting on you — 1 thing is waiting on you · 1 person is waiting on your reply",
+      "source": "ObligationsPanel.tsx, lib/obligations.ts, lib/signalTypes.ts",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.draft",
+      "product": "Navis Application",
+      "label": "Preparing the draft… · Why this · To / Subject / Message · Approve & send · Saved / Save changes",
+      "source": "DraftReviewPanel.tsx",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "app.send",
+      "product": "Navis Application",
+      "label": "Approved — sending · Sending… · Reply sent · Gmail accepted the message.",
+      "source": "DraftReviewPanel.tsx SendStatus",
+      "claim_status": "DESIGNED",
+      "note": "Execution path and states are implemented; per the research only one real action (a calendar cancellation) has closed the loop so far."
+    },
+    {
+      "id": "dev.console.nav",
+      "product": "Navis Developer",
+      "label": "Overview · Agents · Context · Policies · API · SDKs · API keys · MCP · Runs · Outcomes · Economics · Learning · Memory · State",
+      "source": "Devtool apps/dashboard/src/lib/navigation.ts",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.connect.mcp",
+      "product": "Navis Developer",
+      "label": "MCP — claude mcp add navis --env NAVIS_API_KEY=navis_<prefix>_<secret> -- node <repo>/services/mcp-server/dist/stdio.js",
+      "source": "features/connect (ConnectionDetails), docs/mcp/CLIENTS.md",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.connect.api",
+      "product": "Navis Developer",
+      "label": "Developer API — POST /developer/context (navis_get_relevant_context, view_memory)",
+      "source": "features/connect/data/surfaces.ts MCP_TOOLS",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.connect.sdk",
+      "product": "Navis Developer",
+      "label": "SDKs — TypeScript @navis/sdk (installToday: npm install ./navis-sdk-0.1.0.tgz), Python navis-sdk (wheel); unpublished",
+      "source": "surfaces.ts SDK_PACKAGES",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.connect.cli",
+      "product": "Navis Developer",
+      "label": "CLI — navis status · navis hook <event> · navis workstate checkpoint · navis workstate show · navis config show",
+      "source": "surfaces.ts CLI_COMMANDS",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.clients",
+      "product": "Navis Developer",
+      "label": "Claude Code (LIVE VERIFIED) · Cursor / Codex / VS Code (CONFIG VERIFIED) · Custom MCP client",
+      "source": "docs/mcp/CLIENTS.md",
+      "claim_status": "PROVEN",
+      "note": "Only Claude Code is proven live; the others are configuration-verified and are labelled so."
+    },
+    {
+      "id": "dev.context",
+      "product": "Navis Developer",
+      "label": "items (kind, text, source, occurred_at) · freshness (as_of, newest_fact_at) · sources.detail (auth_state, last_success_at)",
+      "source": "services/mcp-server/src/tools/register.ts; packages/types GroundedFact",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.permissions",
+      "product": "Navis Developer",
+      "label": "Credential permissions checked server-side on every request; exact view_memory refusal",
+      "source": "authorization/authorize.ts; features/policies PoliciesPanel.tsx 'Current access model'",
+      "claim_status": "PRIVATE_PREVIEW"
+    },
+    {
+      "id": "dev.policyEngine",
+      "product": "Navis Developer",
+      "label": "Central policy enforcement — 'Not enabled yet'",
+      "source": "PoliciesPanel.tsx",
+      "claim_status": "ROADMAP",
+      "note": "Not shown as live."
+    },
+    {
+      "id": "dev.runs",
+      "product": "Navis Developer",
+      "label": "Runs: Task · Agent · Status · Started · Duration · CLI session",
+      "source": "features/runs/RunsPanel.tsx",
+      "claim_status": "DESIGNED",
+      "data": "demo rows"
+    },
+    {
+      "id": "dev.runDetail",
+      "product": "Navis Developer",
+      "label": "Run — What happened · Timeline (# · Type · What · Status · Model · Tokens · Cost · Latency; types Context/Tool/Model/Outcome) · Outcome ('Not judged')",
+      "source": "features/runs/RunDetailPanel.tsx; packages/types/src/run.ts",
+      "claim_status": "DESIGNED",
+      "note": "Economics columns shown as '—' (not recorded); no numbers invented."
+    },
+    {
+      "id": "dev.modelFree",
+      "product": "Navis Developer",
+      "label": "No model is called · Navis grounds · your agent reasons",
+      "source": "research codebase audit; register.ts ('Navis calls no generative model')",
+      "claim_status": "PROVEN"
+    },
+    {
+      "id": "moat.loop",
+      "product": "NavisLabs",
+      "label": "Decision → Execution → Outcome (BUILDING) → Learning (NEXT)",
+      "source": "deck p.4–5; research Pillar 3",
+      "claim_status": "ROADMAP"
+    }
+  ]
+}

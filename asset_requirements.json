@@ -1,0 +1,749 @@
+{
+  "generated_from": "navis_master_cinematic_launch_spec.json",
+  "spec_version": "1.0.0",
+  "path_mapping_note": "remotion_architecture.directory_structure names public/vo/; this project uses public/voiceover/ (same files, L01.wav ... L21.wav).",
+  "summary": {
+    "total": 41,
+    "present": 4,
+    "missing": 36,
+    "missing_required": 31
+  },
+  "assets": [
+    {
+      "id": "A01",
+      "kind": "image",
+      "asset_plan_ref": "A01",
+      "path": "public/images/navis-logomark.svg",
+      "status": "missing",
+      "required_by": [
+        "S05",
+        "S17",
+        "NavisPoster"
+      ],
+      "description": "Vector logomark (SVG) redrawn from navis-logo.png, with separable arcs/nodes/arrow for animation",
+      "blocking_item": "U07",
+      "spec_status": "required, missing"
+    },
+    {
+      "id": "A02",
+      "kind": "wordmark",
+      "asset_plan_ref": "A02",
+      "path": null,
+      "status": "provisional",
+      "required_by": [
+        "S05",
+        "S17"
+      ],
+      "description": "NAVIS set in Geist Sans 600 until approved",
+      "blocking_item": "U07",
+      "spec_status": "provisional (Geist Sans 600)"
+    },
+    {
+      "id": "A03:Geist-Variable.woff2",
+      "kind": "font",
+      "asset_plan_ref": "A03",
+      "path": "public/fonts/Geist-Variable.woff2",
+      "status": "present",
+      "required_by": [
+        "all scenes (film typography)"
+      ],
+      "description": "Geist (OFL), loaded locally via @remotion/fonts; file name proposed",
+      "spec_status": "available (geist package; website vendors GeistMono-Variable.woff2)"
+    },
+    {
+      "id": "A03:GeistMono-Variable.woff2",
+      "kind": "font",
+      "asset_plan_ref": "A03",
+      "path": "public/fonts/GeistMono-Variable.woff2",
+      "status": "present",
+      "required_by": [
+        "all scenes (film typography)"
+      ],
+      "description": "Geist (OFL), loaded locally via @remotion/fonts; file name proposed",
+      "spec_status": "available (geist package; website vendors GeistMono-Variable.woff2)"
+    },
+    {
+      "id": "R01",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R01.mov",
+      "status": "missing",
+      "required_by": [
+        "S07"
+      ],
+      "optional": false,
+      "description": "Navis Developer CLI in Claude Code — terminal: fieldstone-api",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R03",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R03.mov",
+      "status": "missing",
+      "required_by": [
+        "S08"
+      ],
+      "optional": false,
+      "description": "Navis Developer CLI in Claude Code — terminal: fieldstone-api",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R04",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R04.mov",
+      "status": "missing",
+      "required_by": [],
+      "optional": true,
+      "description": "Navis Developer CLI — terminal (secondary)",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R05",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R05.mov",
+      "status": "missing",
+      "required_by": [
+        "S09",
+        "S10"
+      ],
+      "optional": false,
+      "description": "Navis MCP inside Claude Code (Org A) — terminal: fieldstone-api",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R06",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R06.mov",
+      "status": "missing",
+      "required_by": [
+        "S10"
+      ],
+      "optional": false,
+      "description": "Navis MCP inside Claude Code (Org B) — terminal: marlow-api (demo)",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R07",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R07.mov",
+      "status": "missing",
+      "required_by": [
+        "S10"
+      ],
+      "optional": false,
+      "description": "Navis MCP inside Claude Code (Org A, read-only key) — terminal",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R08",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R08.mov",
+      "status": "missing",
+      "required_by": [
+        "S12"
+      ],
+      "optional": false,
+      "description": "Navis App — /dashboard (Today)",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R09",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R09.mov",
+      "status": "missing",
+      "required_by": [
+        "S13",
+        "S14"
+      ],
+      "optional": false,
+      "description": "Navis App — DecisionDrawer > DraftReviewPanel",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R10",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R10.mov",
+      "status": "missing",
+      "required_by": [
+        "S14"
+      ],
+      "optional": false,
+      "description": "Gmail (recipient, demo account) — inbox",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R11",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R11.mov",
+      "status": "missing",
+      "required_by": [
+        "ALT_C"
+      ],
+      "optional": true,
+      "description": "Developer Console — /runs/[runId] for the R01/R03 session",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R12",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R12.mov",
+      "status": "missing",
+      "required_by": [
+        "ALT_A"
+      ],
+      "optional": true,
+      "description": "Navis App — /dashboard/ask",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "R13",
+      "kind": "recording",
+      "asset_plan_ref": "A04",
+      "path": "public/recordings/R13.mov",
+      "status": "missing",
+      "required_by": [
+        "ALT_B"
+      ],
+      "optional": true,
+      "description": "Navis App + Google Calendar — Ask -> ScheduleMeetingProposalCard -> Calendar",
+      "capture": "see recording_plan.capture_defaults (2x HiDPI, 60 fps, ProRes 422 HQ)",
+      "spec_status": "to shoot"
+    },
+    {
+      "id": "L1",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L01.wav",
+      "status": "missing",
+      "required_by": [
+        "S01"
+      ],
+      "window_seconds": [
+        0.8,
+        2.4
+      ],
+      "script": "AI knows the world.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L2",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L02.wav",
+      "status": "missing",
+      "required_by": [
+        "S02"
+      ],
+      "window_seconds": [
+        3.6,
+        5.5
+      ],
+      "script": "It doesn’t know your company.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L3",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L03.wav",
+      "status": "missing",
+      "required_by": [
+        "S03"
+      ],
+      "window_seconds": [
+        6.8,
+        10.2
+      ],
+      "script": "What was decided. Who’s waiting. What’s still open.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L4",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L04.wav",
+      "status": "missing",
+      "required_by": [
+        "S03"
+      ],
+      "window_seconds": [
+        10.4,
+        16.6
+      ],
+      "script": "It lives in inboxes, calendars and people’s heads — so every new session starts with a re-brief.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L5",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L05.wav",
+      "status": "missing",
+      "required_by": [
+        "S04"
+      ],
+      "window_seconds": [
+        17.2,
+        20
+      ],
+      "script": "Models will change. Agents will change.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L6",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L06.wav",
+      "status": "missing",
+      "required_by": [
+        "S04"
+      ],
+      "window_seconds": [
+        20.4,
+        22.8
+      ],
+      "script": "What your company knows should persist.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L7",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L07.wav",
+      "status": "missing",
+      "required_by": [
+        "S05"
+      ],
+      "window_seconds": [
+        25.6,
+        27
+      ],
+      "script": "This is Navis.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L8",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L08.wav",
+      "status": "missing",
+      "required_by": [
+        "S06"
+      ],
+      "window_seconds": [
+        28.2,
+        30.8
+      ],
+      "script": "For agents, Navis keeps the work state.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L9",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L09.wav",
+      "status": "missing",
+      "required_by": [
+        "S07"
+      ],
+      "window_seconds": [
+        34.6,
+        36.2
+      ],
+      "script": "Close the session tonight.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L10",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L10.wav",
+      "status": "missing",
+      "required_by": [
+        "S08"
+      ],
+      "window_seconds": [
+        37.4,
+        43
+      ],
+      "script": "Tomorrow, a fresh one opens with the objective, the decisions it recorded, and what’s still open.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L11",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L11.wav",
+      "status": "missing",
+      "required_by": [
+        "S08"
+      ],
+      "window_seconds": [
+        43.4,
+        45
+      ],
+      "script": "You type one word.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L12",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L12.wav",
+      "status": "missing",
+      "required_by": [
+        "S09"
+      ],
+      "window_seconds": [
+        46.4,
+        50.2
+      ],
+      "script": "When the task depends on your company, the agent asks Navis —",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L13",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L13.wav",
+      "status": "missing",
+      "required_by": [
+        "S09"
+      ],
+      "window_seconds": [
+        50.6,
+        55.4
+      ],
+      "script": "and gets the facts that bear on it. With sources. With how fresh they are.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L14",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L14.wav",
+      "status": "missing",
+      "required_by": [
+        "S10"
+      ],
+      "window_seconds": [
+        56.4,
+        60.6
+      ],
+      "script": "Every key sees only what it’s allowed to — and only its own company.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L15",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L15.wav",
+      "status": "missing",
+      "required_by": [
+        "S11"
+      ],
+      "window_seconds": [
+        62.4,
+        65.4
+      ],
+      "script": "For people, the same understanding becomes your morning.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L16",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L16.wav",
+      "status": "missing",
+      "required_by": [
+        "S12"
+      ],
+      "window_seconds": [
+        65.8,
+        69
+      ],
+      "script": "Who’s waiting on you. The reply, already drafted.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L17",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L17.wav",
+      "status": "missing",
+      "required_by": [
+        "S13"
+      ],
+      "window_seconds": [
+        70.6,
+        73
+      ],
+      "script": "You read it. You approve it.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L18",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L18.wav",
+      "status": "missing",
+      "required_by": [
+        "S14"
+      ],
+      "window_seconds": [
+        76.6,
+        80.2
+      ],
+      "script": "Navis sends it — and only says sent when Gmail confirms.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L19",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L19.wav",
+      "status": "missing",
+      "required_by": [
+        "S15"
+      ],
+      "window_seconds": [
+        83.4,
+        87.6
+      ],
+      "script": "People and agents, working from one shared understanding of your company.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L20",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L20.wav",
+      "status": "missing",
+      "required_by": [
+        "S16"
+      ],
+      "window_seconds": [
+        89.2,
+        92.6
+      ],
+      "script": "Next: every outcome feeds back into what it knows.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "L21",
+      "kind": "voiceover",
+      "asset_plan_ref": "A05",
+      "path": "public/voiceover/L21.wav",
+      "status": "missing",
+      "required_by": [
+        "S17"
+      ],
+      "window_seconds": [
+        93.4,
+        97.8
+      ],
+      "script": "Navis. Your company’s intelligence — for your people, and your agents.",
+      "format": "WAV 48 kHz 24-bit mono",
+      "spec_status": "to record"
+    },
+    {
+      "id": "A06",
+      "kind": "music",
+      "asset_plan_ref": "A06",
+      "path": "public/music/",
+      "status": "present",
+      "required_by": [
+        "NavisLaunch"
+      ],
+      "description": "Commissioned original score or a library track with stems (licence covering web, paid social and events). Do NOT reuse navis-labs-website/public/paper-kite-drift.mp3.",
+      "cues": [
+        {
+          "cue": "M0",
+          "seconds": [
+            0,
+            6.4
+          ],
+          "mood": "minimal / mysterious"
+        },
+        {
+          "cue": "M1",
+          "seconds": [
+            6.4,
+            16.8
+          ],
+          "mood": "unresolved texture"
+        },
+        {
+          "cue": "M2",
+          "seconds": [
+            16.8,
+            23
+          ],
+          "mood": "belief"
+        },
+        {
+          "cue": "M3",
+          "seconds": [
+            23,
+            28
+          ],
+          "mood": "subtle rise"
+        },
+        {
+          "cue": "M4",
+          "seconds": [
+            28,
+            62
+          ],
+          "mood": "precise / technical"
+        },
+        {
+          "cue": "M5",
+          "seconds": [
+            62,
+            83
+          ],
+          "mood": "emotional lift"
+        },
+        {
+          "cue": "M6",
+          "seconds": [
+            83,
+            93
+          ],
+          "mood": "open / wide"
+        },
+        {
+          "cue": "M7",
+          "seconds": [
+            93,
+            100
+          ],
+          "mood": "quiet confidence"
+        }
+      ],
+      "spec_status": "to commission or license"
+    },
+    {
+      "id": "A07",
+      "kind": "sfx",
+      "asset_plan_ref": "A07",
+      "path": "public/sfx/",
+      "status": "present",
+      "required_by": [
+        "NavisLaunch"
+      ],
+      "description": "SFX set (keys, trackpad, tick, thud, whoosh, original arrival chime, LF impacts)",
+      "cues": [
+        {
+          "t": 0.8,
+          "sound": "felt piano note (music stem)"
+        },
+        {
+          "t": 30.4,
+          "sound": "keyboard, low-profile Mac keys, -26 dB, only while real typing is visible (S07, S08, S09)"
+        },
+        {
+          "t": 34.3,
+          "sound": "single soft tick when 'Checkpoint recorded for …' appears"
+        },
+        {
+          "t": 43,
+          "sound": "one Return key, slightly louder (-20 dB) — the 'continue' moment"
+        },
+        {
+          "t": 48.2,
+          "sound": "faint data texture under the MCP tool call (-30 dB)"
+        },
+        {
+          "t": 59.6,
+          "sound": "muted low thud on the refusal text"
+        },
+        {
+          "t": 68.4,
+          "sound": "trackpad click (card)"
+        },
+        {
+          "t": 76.2,
+          "sound": "trackpad click (Approve & send)"
+        },
+        {
+          "t": 81,
+          "sound": "soft arrival chime (original, NOT Gmail's sound)"
+        },
+        {
+          "t": 62,
+          "sound": "airy whoosh for the horizon wipe, -28 dB"
+        }
+      ],
+      "spec_status": "to source (licensed library)"
+    },
+    {
+      "id": "A08",
+      "kind": "texture",
+      "asset_plan_ref": "A08",
+      "path": "public/images/grain-512.png",
+      "status": "missing",
+      "required_by": [
+        "all scenes (grain overlay)"
+      ],
+      "description": "Monochrome film grain, 2.5% opacity on dark, 1.5% on light, 1:1 pixel, animated each frame (tiled 512 px noise texture offset per frame).",
+      "spec_status": "to generate"
+    },
+    {
+      "id": "A09",
+      "kind": "approval",
+      "asset_plan_ref": "A09",
+      "path": "public/approvals.json",
+      "status": "missing",
+      "required_by": [
+        "NavisLaunch endingVariant B (U03)",
+        "NavisLaunch endingVariant C (U04)"
+      ],
+      "optional": true,
+      "description": "Created only when an approval is granted. Shape: { \"U03\": { \"approved\": true }, \"U04\": { \"approved\": true } }",
+      "spec_status": "to create at approval time"
+    }
+  ]
+}

@@ -1,0 +1,1140 @@
+{
+  "about": "V7 audio: the founder's final voice in eight chunks (P1–P8), placed by the measured performance; a six-stem score mixed with keyframed volume curves (duck under every line, deeper under the key lines, rise in the pauses, controlled dips); SFX on visible actions only. Each slot plays FINAL, else TEMP, else silence.",
+  "fps": 30,
+  "duration_s": 125.233,
+  "resolve_order": [
+    "final",
+    "temp"
+  ],
+  "layers": {
+    "vo": {
+      "gain_db": 0
+    },
+    "music": {
+      "gain_db": -4
+    },
+    "ui_sfx": {
+      "gain_db": 0
+    },
+    "transitions": {
+      "gain_db": 0
+    },
+    "ambience": {
+      "gain_db": -96
+    }
+  },
+  "voiceover": [
+    {
+      "id": "P1",
+      "scene": "S01",
+      "start_s": 0.41,
+      "end_s": 13.079,
+      "ceiling_s": 13.98,
+      "text": "Your people and agents see different truths. The truth is scattered across the systems where work happens. People rebuild it by hand. Agents start without it.",
+      "final": "voiceover/final/v6/P1.wav",
+      "temp": "voiceover/final/v6/P1.wav"
+    },
+    {
+      "id": "P2",
+      "scene": "S03",
+      "start_s": 13.98,
+      "end_s": 28.191,
+      "ceiling_s": 28.86,
+      "text": "Navis turns those signals into one shared understanding. Every email, meeting, document and message becomes a signal — remembered, connected, and turned into what should happen next.",
+      "final": "voiceover/final/v6/P2.wav",
+      "temp": "voiceover/final/v6/P2.wav"
+    },
+    {
+      "id": "P3",
+      "scene": "S05",
+      "start_s": 28.86,
+      "end_s": 51.064,
+      "ceiling_s": 53.13,
+      "text": "Inside a company, the Navis App is for people. It shows what changed — and why it matters. Every fact has its source, its time, and how fresh it is. When something needs a decision, Navis prepares the next step. A person decides. Then the company acts.",
+      "final": "voiceover/final/v6/P3.wav",
+      "temp": "voiceover/final/v6/P3.wav"
+    },
+    {
+      "id": "P4",
+      "scene": "S10",
+      "start_s": 53.13,
+      "end_s": 82.936,
+      "ceiling_s": 83.52,
+      "text": "The same company's agents use Navis Developer. Invite the team. Connect once — through MCP, API, SDK or CLI. The agent asks — and gets the company's context, with sources and freshness. Navis isn't the model. It supplies the company's truth. Every request is checked against its permissions. The agent does the work, and the run is on record.",
+      "final": "voiceover/final/v6/P4.wav",
+      "temp": "voiceover/final/v6/P4.wav"
+    },
+    {
+      "id": "P5",
+      "scene": "S16",
+      "start_s": 83.52,
+      "end_s": 97.078,
+      "ceiling_s": 97.47,
+      "text": "A solo builder gets a private workspace. A team can work together. And the work state carries into the next session. One company. The person and the agent acted on the same event.",
+      "final": "voiceover/final/v6/P5.wav",
+      "temp": "voiceover/final/v6/P5.wav"
+    },
+    {
+      "id": "P6",
+      "scene": "S17",
+      "start_s": 97.47,
+      "end_s": 104.079,
+      "ceiling_s": 105.13,
+      "text": "Same facts. Same sources. Same freshness. One understanding. Two ways in.",
+      "final": "voiceover/final/v6/P6.wav",
+      "temp": "voiceover/final/v6/P6.wav"
+    },
+    {
+      "id": "P7",
+      "scene": "S18",
+      "start_s": 105.13,
+      "end_s": 117.956,
+      "ceiling_s": 118.77,
+      "text": "Models change. Agents change. Tools change. What your company knows shouldn't have to start over. Company-owned. Model-neutral. Shared by people and agents.",
+      "final": "voiceover/final/v6/P7.wav",
+      "temp": "voiceover/final/v6/P7.wav"
+    },
+    {
+      "id": "P8",
+      "scene": "S18",
+      "start_s": 118.77,
+      "end_s": 123.838,
+      "ceiling_s": 125.233,
+      "text": "NavisLabs. The shared understanding for your organization.",
+      "final": "voiceover/final/v6/P8.wav",
+      "temp": "voiceover/final/v6/P8.wav"
+    }
+  ],
+  "speech": [
+    {
+      "from_s": 0.6,
+      "to_s": 3.6,
+      "chunk": "P1",
+      "key": false
+    },
+    {
+      "from_s": 6.2,
+      "to_s": 9.42,
+      "chunk": "P1",
+      "key": false
+    },
+    {
+      "from_s": 9.77,
+      "to_s": 11.31,
+      "chunk": "P1",
+      "key": false
+    },
+    {
+      "from_s": 11.62,
+      "to_s": 12.98,
+      "chunk": "P1",
+      "key": false
+    },
+    {
+      "from_s": 14.03,
+      "to_s": 17.02,
+      "chunk": "P2",
+      "key": true
+    },
+    {
+      "from_s": 19.97,
+      "to_s": 23.64,
+      "chunk": "P2",
+      "key": false
+    },
+    {
+      "from_s": 24.4,
+      "to_s": 28.1,
+      "chunk": "P2",
+      "key": false
+    },
+    {
+      "from_s": 28.95,
+      "to_s": 31.59,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 32.39,
+      "to_s": 33.85,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 34.29,
+      "to_s": 35.63,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 36.38,
+      "to_s": 40.09,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 40.88,
+      "to_s": 44.34,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 46.07,
+      "to_s": 47.42,
+      "chunk": "P3",
+      "key": true
+    },
+    {
+      "from_s": 49.15,
+      "to_s": 51.05,
+      "chunk": "P3",
+      "key": false
+    },
+    {
+      "from_s": 53.25,
+      "to_s": 56.04,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 56.52,
+      "to_s": 57.27,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 58.14,
+      "to_s": 63.34,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 64.2,
+      "to_s": 65.13,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 65.55,
+      "to_s": 69.56,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 70.31,
+      "to_s": 72.08,
+      "chunk": "P4",
+      "key": true
+    },
+    {
+      "from_s": 73.66,
+      "to_s": 75.81,
+      "chunk": "P4",
+      "key": true
+    },
+    {
+      "from_s": 76.77,
+      "to_s": 79.38,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 79.97,
+      "to_s": 81.02,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 81.34,
+      "to_s": 82.75,
+      "chunk": "P4",
+      "key": false
+    },
+    {
+      "from_s": 83.65,
+      "to_s": 85.74,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 85.96,
+      "to_s": 87.2,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 87.86,
+      "to_s": 89.86,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 92.99,
+      "to_s": 93.65,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 94.21,
+      "to_s": 96.92,
+      "chunk": "P5",
+      "key": false
+    },
+    {
+      "from_s": 97.57,
+      "to_s": 98.3,
+      "chunk": "P6",
+      "key": false
+    },
+    {
+      "from_s": 98.95,
+      "to_s": 99.73,
+      "chunk": "P6",
+      "key": false
+    },
+    {
+      "from_s": 100.34,
+      "to_s": 101.2,
+      "chunk": "P6",
+      "key": false
+    },
+    {
+      "from_s": 101.8,
+      "to_s": 102.85,
+      "chunk": "P6",
+      "key": true
+    },
+    {
+      "from_s": 103.47,
+      "to_s": 104.06,
+      "chunk": "P6",
+      "key": true
+    },
+    {
+      "from_s": 105.21,
+      "to_s": 106.03,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 106.08,
+      "to_s": 106.98,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 107.1,
+      "to_s": 107.88,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 110.44,
+      "to_s": 113.03,
+      "chunk": "P7",
+      "key": true
+    },
+    {
+      "from_s": 113.9,
+      "to_s": 114.65,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 114.9,
+      "to_s": 115.8,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 116.05,
+      "to_s": 117.95,
+      "chunk": "P7",
+      "key": false
+    },
+    {
+      "from_s": 118.8,
+      "to_s": 119.47,
+      "chunk": "P8",
+      "key": true
+    },
+    {
+      "from_s": 121.43,
+      "to_s": 123.81,
+      "chunk": "P8",
+      "key": false
+    }
+  ],
+  "music": {
+    "final": "music/final/v7/score.wav",
+    "temp": "music/temp/v7/score-mixdown.wav",
+    "style": "Premium cinematic AI-infrastructure score: organic analog synth texture, warm low end, a subtle pulse, restrained percussion, an evolving harmonic bed, technical micro-textures and an emotional final resolution. No EDM, cyberpunk, trailer braams, cheesy piano, corporate stock or generic motivational music. The founder's voice always wins.",
+    "stems": [
+      {
+        "id": "bed",
+        "role": "atmospheric bed: low drone, air, distant shimmer",
+        "final": "music/final/v7/bed.wav",
+        "temp": "music/temp/v7/bed.wav",
+        "gain_db": -3.0,
+        "duck": 0.8
+      },
+      {
+        "id": "pulse",
+        "role": "low cinematic pulse: soft kick, sub, analog bass",
+        "final": "music/final/v7/pulse.wav",
+        "temp": "music/temp/v7/pulse.wav",
+        "gain_db": -3.0,
+        "duck": 1.0
+      },
+      {
+        "id": "harmony",
+        "role": "warm harmonic texture: detuned analog pads, strings-like",
+        "final": "music/final/v7/harmony.wav",
+        "temp": "music/temp/v7/harmony.wav",
+        "gain_db": -1.5,
+        "duck": 1.0
+      },
+      {
+        "id": "rhythm",
+        "role": "technical rhythmic layer: plucked 16ths, soft ticks",
+        "final": "music/final/v7/rhythm.wav",
+        "temp": "music/temp/v7/rhythm.wav",
+        "gain_db": -4.0,
+        "duck": 1.0
+      },
+      {
+        "id": "texture",
+        "role": "transition textures: reverse swells, digital micro-texture, the permission tone",
+        "final": "music/final/v7/texture.wav",
+        "temp": "music/temp/v7/texture.wav",
+        "gain_db": -3.0,
+        "duck": 0.5
+      },
+      {
+        "id": "resolve",
+        "role": "emotional resolution: soft mallet / bell motifs",
+        "final": "music/final/v7/resolve.wav",
+        "temp": "music/temp/v7/resolve.wav",
+        "gain_db": -3.0,
+        "duck": 0.7
+      }
+    ],
+    "sections": [
+      {
+        "id": "M1",
+        "role": "problem",
+        "from_s": 0.0,
+        "to_s": 13.98,
+        "brief": "almost no music, never dead: a low atmosphere under the contradiction; scattered high fragments as the systems appear; heavier on 'by hand'; held on 'without it'; a breath, then a reverse swell into 'Navis'"
+      },
+      {
+        "id": "M2",
+        "role": "reveal",
+        "from_s": 13.98,
+        "to_s": 28.5,
+        "brief": "the first wow: on 'Navis' the music opens — warm harmonic bloom, deep pulse, small digital texture; the pipeline builds layer by layer and pulls back on 'next'"
+      },
+      {
+        "id": "M3",
+        "role": "human",
+        "from_s": 28.5,
+        "to_s": 52.933,
+        "brief": "the Navis App: warm, intelligent, half-time; drops back to a controlled breath on 'A person decides.', returns on 'Then the company acts.'"
+      },
+      {
+        "id": "M4",
+        "role": "technical",
+        "from_s": 52.933,
+        "to_s": 83.3,
+        "brief": "Navis Developer: precise 16th-note rhythm, soft kick, analog bass; thins under the key lines; slows for the permission check with a low tonal shift on DENIED; resolves slightly as the run completes"
+      },
+      {
+        "id": "M5",
+        "role": "scale",
+        "from_s": 83.3,
+        "to_s": 104.7,
+        "brief": "solo → team → company: from one voice to the full ensemble; the voice alone carries 'Same facts. Same sources. Same freshness.'; lift on 'One understanding.', resolution on 'Two ways in.'"
+      },
+      {
+        "id": "M6",
+        "role": "thesis",
+        "from_s": 104.7,
+        "to_s": 118.2,
+        "brief": "slow, deep, warm, wide; no rhythm; rises in the pause after 'Tools change.'; no crescendo"
+      },
+      {
+        "id": "M7",
+        "role": "end",
+        "from_s": 118.2,
+        "to_s": 125.233,
+        "brief": "everything almost stops for 'NavisLabs.'; logo in near-silence; a very soft harmonic tail under the tagline; then silence"
+      }
+    ],
+    "gain_db": 0,
+    "duck_under_vo_db": -6.0,
+    "duck_key_line_db": -11.0,
+    "duck_attack_s": 0.15,
+    "duck_release_s": 0.6,
+    "dips": [
+      {
+        "from_s": 13.18,
+        "to_s": 13.86,
+        "db": -14,
+        "ramp_s": 0.5,
+        "why": "the breath before Navis (the reverse swell rides through it)"
+      },
+      {
+        "from_s": 45.87,
+        "to_s": 48.8,
+        "db": -4,
+        "ramp_s": 0.6,
+        "why": "'A person decides.' — the music drops back to a controlled breath, not silence"
+      },
+      {
+        "from_s": 48.85,
+        "to_s": 49.1,
+        "db": -8,
+        "ramp_s": 0.12,
+        "why": "held breath on Approve & send"
+      },
+      {
+        "from_s": 78.04,
+        "to_s": 79.68,
+        "db": -5,
+        "ramp_s": 0.4,
+        "why": "the refusal: quieter, darker, serious"
+      },
+      {
+        "from_s": 119.62,
+        "to_s": 121.28,
+        "db": -20,
+        "ramp_s": 0.5,
+        "why": "near-silence after 'NavisLabs.'"
+      },
+      {
+        "from_s": 124.31,
+        "to_s": 125.233,
+        "db": -96,
+        "ramp_s": 0.8,
+        "why": "silent end"
+      }
+    ],
+    "curves": {
+      "duck": {
+        "t": [
+          0.0,
+          0.44,
+          0.46,
+          0.6,
+          3.6,
+          4.2,
+          6.04,
+          6.06,
+          6.2,
+          9.42,
+          9.7,
+          9.76,
+          9.78,
+          11.3,
+          11.56,
+          11.62,
+          12.98,
+          13.58,
+          13.88,
+          14.02,
+          14.04,
+          17.02,
+          17.62,
+          19.82,
+          19.96,
+          19.98,
+          23.64,
+          24.24,
+          24.26,
+          24.4,
+          28.1,
+          28.7,
+          28.8,
+          28.94,
+          28.96,
+          31.58,
+          32.2,
+          32.24,
+          32.38,
+          32.4,
+          33.84,
+          34.2,
+          34.28,
+          34.3,
+          35.62,
+          36.22,
+          36.24,
+          36.38,
+          40.08,
+          40.7,
+          40.72,
+          40.74,
+          40.88,
+          44.34,
+          44.94,
+          45.92,
+          46.06,
+          46.08,
+          47.42,
+          48.02,
+          49.0,
+          49.14,
+          49.16,
+          51.04,
+          51.66,
+          53.1,
+          53.24,
+          53.26,
+          56.04,
+          56.42,
+          56.44,
+          56.52,
+          57.26,
+          57.88,
+          57.98,
+          58.0,
+          58.14,
+          63.34,
+          63.94,
+          64.04,
+          64.06,
+          64.2,
+          65.12,
+          65.46,
+          65.48,
+          65.54,
+          65.56,
+          69.56,
+          70.16,
+          70.3,
+          70.32,
+          72.08,
+          72.68,
+          73.5,
+          73.52,
+          73.66,
+          75.8,
+          75.82,
+          76.4,
+          76.42,
+          76.62,
+          76.76,
+          76.78,
+          79.38,
+          79.84,
+          79.86,
+          79.96,
+          79.98,
+          81.02,
+          81.26,
+          81.28,
+          81.34,
+          82.74,
+          83.36,
+          83.5,
+          83.64,
+          83.66,
+          85.74,
+          85.9,
+          85.92,
+          85.96,
+          87.2,
+          87.72,
+          87.74,
+          87.86,
+          89.86,
+          90.46,
+          92.84,
+          92.98,
+          93.0,
+          93.64,
+          94.1,
+          94.2,
+          94.22,
+          96.92,
+          97.44,
+          97.56,
+          97.58,
+          98.3,
+          98.82,
+          98.94,
+          98.96,
+          99.72,
+          100.22,
+          100.34,
+          101.2,
+          101.66,
+          101.68,
+          101.8,
+          102.84,
+          102.86,
+          103.34,
+          103.36,
+          103.46,
+          103.48,
+          104.06,
+          104.66,
+          105.06,
+          105.2,
+          105.22,
+          106.02,
+          106.06,
+          106.08,
+          106.98,
+          107.06,
+          107.08,
+          107.1,
+          107.88,
+          108.48,
+          110.28,
+          110.3,
+          110.44,
+          113.02,
+          113.04,
+          113.62,
+          113.64,
+          113.74,
+          113.76,
+          113.9,
+          114.64,
+          114.84,
+          114.86,
+          114.9,
+          115.8,
+          116.0,
+          116.04,
+          116.06,
+          117.94,
+          118.54,
+          118.64,
+          118.66,
+          118.8,
+          119.46,
+          119.48,
+          120.06,
+          120.08,
+          121.28,
+          121.42,
+          121.44,
+          123.8,
+          124.42,
+          125.233
+        ],
+        "db": [
+          0.0,
+          0.0,
+          -0.4,
+          -6.0,
+          -6.0,
+          0.0,
+          0.0,
+          -0.4,
+          -6.0,
+          -6.0,
+          -3.2,
+          -5.6,
+          -6.0,
+          -6.0,
+          -3.6,
+          -6.0,
+          -6.0,
+          -0.0,
+          -0.0,
+          -10.27,
+          -11.0,
+          -11.0,
+          0.0,
+          0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          0.0,
+          -0.4,
+          -6.0,
+          -6.0,
+          -0.0,
+          0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          0.0,
+          0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          -2.5,
+          -5.6,
+          -6.0,
+          -6.0,
+          -0.1,
+          -0.4,
+          -6.0,
+          -6.0,
+          0.0,
+          0.0,
+          -0.4,
+          -6.0,
+          -6.0,
+          -0.0,
+          0.0,
+          -10.27,
+          -11.0,
+          -11.0,
+          0.0,
+          0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          0.0,
+          0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          -2.2,
+          -2.8,
+          -6.0,
+          -6.0,
+          0.0,
+          0.0,
+          -0.4,
+          -6.0,
+          -6.0,
+          0.0,
+          0.0,
+          -0.4,
+          -6.0,
+          -6.0,
+          -2.7,
+          -3.2,
+          -5.6,
+          -6.0,
+          -6.0,
+          -0.0,
+          -10.27,
+          -11.0,
+          -11.0,
+          0.0,
+          0.0,
+          -0.73,
+          -11.0,
+          -11.0,
+          -10.82,
+          -0.18,
+          0.0,
+          -0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          -1.4,
+          -1.6,
+          -5.6,
+          -6.0,
+          -6.0,
+          -3.6,
+          -3.6,
+          -6.0,
+          -6.0,
+          0.0,
+          0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          -4.4,
+          -4.4,
+          -6.0,
+          -6.0,
+          -0.8,
+          -1.2,
+          -6.0,
+          -6.0,
+          0.0,
+          -0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          -1.6,
+          -5.6,
+          -6.0,
+          -6.0,
+          -0.8,
+          -5.6,
+          -6.0,
+          -6.0,
+          -0.8,
+          -5.6,
+          -6.0,
+          -6.0,
+          -1.2,
+          -6.0,
+          -6.0,
+          -1.4,
+          -2.2,
+          -11.0,
+          -11.0,
+          -10.82,
+          -2.02,
+          -2.93,
+          -10.27,
+          -11.0,
+          -11.0,
+          -0.0,
+          -0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          -5.7,
+          -6.0,
+          -6.0,
+          -5.2,
+          -5.2,
+          -6.0,
+          -6.0,
+          0.0,
+          0.0,
+          -0.73,
+          -11.0,
+          -11.0,
+          -10.82,
+          -0.18,
+          0.0,
+          0.0,
+          -0.4,
+          -6.0,
+          -6.0,
+          -4.1,
+          -4.4,
+          -6.0,
+          -6.0,
+          -4.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          -0.1,
+          0.0,
+          -0.73,
+          -11.0,
+          -11.0,
+          -10.82,
+          -0.18,
+          0.0,
+          0.0,
+          -5.6,
+          -6.0,
+          -6.0,
+          0.0,
+          0.0
+        ]
+      },
+      "dips": {
+        "t": [
+          0.0,
+          12.68,
+          13.18,
+          13.86,
+          14.36,
+          45.26,
+          45.88,
+          48.78,
+          48.8,
+          48.84,
+          48.86,
+          49.1,
+          49.2,
+          49.4,
+          77.64,
+          78.04,
+          79.68,
+          80.08,
+          119.12,
+          119.62,
+          121.28,
+          121.78,
+          123.5,
+          123.52,
+          124.3,
+          124.32,
+          125.233
+        ],
+        "db": [
+          0.0,
+          0.0,
+          -14.0,
+          -14.0,
+          0.0,
+          0.0,
+          -4.0,
+          -4.0,
+          -4.67,
+          -7.33,
+          -8.0,
+          -8.0,
+          -1.33,
+          0.0,
+          0.0,
+          -5.0,
+          -5.0,
+          -0.0,
+          0.0,
+          -20.0,
+          -20.0,
+          0.0,
+          0.0,
+          -1.2,
+          -94.8,
+          -96.0,
+          -96.0
+        ]
+      }
+    }
+  },
+  "sfx": {
+    "style": "Felt, subtle, realistic, premium: real-sounding keys and trackpad, small precise confirmations, a serious low tone for a refusal; never louder than the voice; silence on purpose.",
+    "library": {
+      "key1": {
+        "final": "sfx/final/v7/key1.wav",
+        "temp": "sfx/temp/v7/key1.wav",
+        "gain_db": -25,
+        "category": "KEYBOARD"
+      },
+      "key2": {
+        "final": "sfx/final/v7/key2.wav",
+        "temp": "sfx/temp/v7/key2.wav",
+        "gain_db": -25,
+        "category": "KEYBOARD"
+      },
+      "key3": {
+        "final": "sfx/final/v7/key3.wav",
+        "temp": "sfx/temp/v7/key3.wav",
+        "gain_db": -25,
+        "category": "KEYBOARD"
+      },
+      "key4": {
+        "final": "sfx/final/v7/key4.wav",
+        "temp": "sfx/temp/v7/key4.wav",
+        "gain_db": -25,
+        "category": "KEYBOARD"
+      },
+      "enter": {
+        "final": "sfx/final/v7/enter.wav",
+        "temp": "sfx/temp/v7/enter.wav",
+        "gain_db": -19,
+        "category": "TERMINAL"
+      },
+      "save": {
+        "final": "sfx/final/v7/save.wav",
+        "temp": "sfx/temp/v7/save.wav",
+        "gain_db": -21,
+        "category": "TERMINAL"
+      },
+      "click": {
+        "final": "sfx/final/v7/click.wav",
+        "temp": "sfx/temp/v7/click.wav",
+        "gain_db": -15,
+        "category": "UI CLICK"
+      },
+      "data": {
+        "final": "sfx/final/v7/data.wav",
+        "temp": "sfx/temp/v7/data.wav",
+        "gain_db": -21,
+        "category": "DATA ARRIVAL"
+      },
+      "source": {
+        "final": "sfx/final/v7/source.wav",
+        "temp": "sfx/temp/v7/source.wav",
+        "gain_db": -21,
+        "category": "SOURCE APPEAR"
+      },
+      "connect": {
+        "final": "sfx/final/v7/connect.wav",
+        "temp": "sfx/temp/v7/connect.wav",
+        "gain_db": -18,
+        "category": "MCP CONNECT"
+      },
+      "surface": {
+        "final": "sfx/final/v7/surface.wav",
+        "temp": "sfx/temp/v7/surface.wav",
+        "gain_db": -23,
+        "category": "MCP CONNECT"
+      },
+      "api": {
+        "final": "sfx/final/v7/api.wav",
+        "temp": "sfx/temp/v7/api.wav",
+        "gain_db": -13,
+        "category": "API RESPONSE"
+      },
+      "retrieve": {
+        "final": "sfx/final/v7/retrieve.wav",
+        "temp": "sfx/temp/v7/retrieve.wav",
+        "gain_db": -22,
+        "category": "CONTEXT RETRIEVAL"
+      },
+      "deny": {
+        "final": "sfx/final/v7/deny.wav",
+        "temp": "sfx/temp/v7/deny.wav",
+        "gain_db": -17,
+        "category": "PERMISSION DENIED"
+      },
+      "approve": {
+        "final": "sfx/final/v7/approve.wav",
+        "temp": "sfx/temp/v7/approve.wav",
+        "gain_db": -15,
+        "category": "APPROVE"
+      },
+      "sent": {
+        "final": "sfx/final/v7/sent.wav",
+        "temp": "sfx/temp/v7/sent.wav",
+        "gain_db": -21,
+        "category": "SEND"
+      },
+      "gmail": {
+        "final": "sfx/final/v7/gmail.wav",
+        "temp": "sfx/temp/v7/gmail.wav",
+        "gain_db": -13,
+        "category": "GMAIL CONFIRM"
+      },
+      "run": {
+        "final": "sfx/final/v7/run.wav",
+        "temp": "sfx/temp/v7/run.wav",
+        "gain_db": -18,
+        "category": "RUN START"
+      },
+      "complete": {
+        "final": "sfx/final/v7/complete.wav",
+        "temp": "sfx/temp/v7/complete.wav",
+        "gain_db": -14,
+        "category": "RUN COMPLETE"
+      },
+      "reveal": {
+        "final": "sfx/final/v7/reveal.wav",
+        "temp": "sfx/temp/v7/reveal.wav",
+        "gain_db": -18,
+        "category": "PRODUCT REVEAL"
+      },
+      "air": {
+        "final": "sfx/final/v7/air.wav",
+        "temp": "sfx/temp/v7/air.wav",
+        "gain_db": -24,
+        "category": "TRANSITION"
+      },
+      "end": {
+        "final": "sfx/final/v7/end.wav",
+        "temp": "sfx/temp/v7/end.wav",
+        "gain_db": -20,
+        "category": "END REVEAL"
+      }
+    }
+  },
+  "ambience": {
+    "temp": "sfx/temp/flow.wav",
+    "final": "sfx/final/flow.wav",
+    "from_s": 0,
+    "to_s": 0.1,
+    "gain_db": -96,
+    "why": "retired in V7: the score's texture stem carries the data flow"
+  }
+}

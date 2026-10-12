@@ -1,0 +1,433 @@
+{
+ "about": "Music production brief: one continuous 100-second score for the approved V4 picture lock. The founder's voice is always dominant.",
+ "deliverable": {
+  "file": "public/music/final/v4/score.wav",
+  "format": "WAV, 48 kHz, 24-bit, stereo",
+  "length_s": 100.0,
+  "start": "sample-accurate at 0.000 s (the film's first frame)",
+  "end": "fully silent from 98.6 s to 100.0 s",
+  "loudness": "score alone: about −16 LUFS integrated, true peak ≤ −1 dBTP (the film applies −7 dB and ducks −9 dB under every voice line)",
+  "stems_optional": [
+   "bed / pads",
+   "pulse / rhythm",
+   "motif (piano / mallet)",
+   "textures"
+  ]
+ },
+ "reference": {
+  "video": "out/navislabs-v4-picture-lock-1080p.mp4 (temp voice and temp score; mute the temp score while composing)",
+  "voice_timing": "navislabs_v4_audio_production_plan.json"
+ },
+ "voice_first": [
+  "The founder's voice is always dominant: leave 120–350 Hz and 2–4 kHz open while he speaks.",
+  "No lead melody under a voice line; state the motif between lines.",
+  "Ducking is automatic: −9 dB under each line (attack 0.15 s, release 0.5 s). Write so the ducked score still sounds intentional."
+ ],
+ "forbidden": [
+  "generic corporate music (ukulele, claps, 'inspiring' piano-pop)",
+  "trailer drums, booms, braams, impacts",
+  "excessive risers or reverse swells",
+  "constant whooshes",
+  "'AI' clichés: fast glittery arpeggios, robotic vocoder",
+  "vocals or choirs with words",
+  "a hit on the NavisLabs reveal",
+  "anything louder than the voice"
+ ],
+ "arc": [
+  {
+   "range_s": [
+    0.0,
+    12.0
+   ],
+   "character": "Restrained, almost silent"
+  },
+  {
+   "range_s": [
+    12.0,
+    22.0
+   ],
+   "character": "Subtle brand emergence"
+  },
+  {
+   "range_s": [
+    22.0,
+    45.0
+   ],
+   "character": "Human / organizational"
+  },
+  {
+   "range_s": [
+    45.0,
+    68.0
+   ],
+   "character": "Technical developer momentum"
+  },
+  {
+   "range_s": [
+    68.0,
+    82.0
+   ],
+   "character": "Convergence / shared understanding"
+  },
+  {
+   "range_s": [
+    82.0,
+    94.0
+   ],
+   "character": "Conviction / moat"
+  },
+  {
+   "range_s": [
+    94.0,
+    100.0
+   ],
+   "character": "Resolution → silence"
+  }
+ ],
+ "sections": [
+  {
+   "id": "M1",
+   "range_s": [
+    0.0,
+    12.0
+   ],
+   "character": "Restrained, almost silent",
+   "brief": "restrained, almost silent: a low bed; the NavisLabs reveal at 10.5 s is carried by silence and one tonal SFX",
+   "instrumentation": "A low, soft bed (sustained low strings or a warm synth pad, very quiet); no pulse, no melody. Distant, sparse glints at most.",
+   "relative_level": "−30 to −24 dB relative to full score level",
+   "vo_density": 0.8,
+   "picture": "The voice opens the film over near-silence. At 10.0–10.45 s everything stops (full rest): the NavisLabs mark arrives on silence plus one tonal SFX. Do not score the reveal with a hit.",
+   "picture_anchors": [
+    {
+     "at_s": 0.0,
+     "picture": "film start"
+    },
+    {
+     "at_s": 10,
+     "picture": "black before NavisLabs"
+    },
+    {
+     "at_s": 10.5,
+     "picture": "NavisLabs mark"
+    }
+   ],
+   "scenes": [
+    "S01",
+    "S02",
+    "S03"
+   ]
+  },
+  {
+   "id": "M2",
+   "range_s": [
+    12.0,
+    22.0
+   ],
+   "character": "Subtle brand emergence",
+   "brief": "subtle brand emergence under the products and the data flow",
+   "instrumentation": "A gentle harmonic opening under the two products and the light data-flow world: a soft motif (2–4 notes) introduced on piano or mallet, a slow pad lift. Allow a very light pulse from ~14.3 s (the wipe to light).",
+   "relative_level": "−24 to −18 dB",
+   "vo_density": 0.85,
+   "picture": "Infrastructure, not spectacle: the pipeline builds stage by stage; let the music breathe with it. No riser into 22 s.",
+   "picture_anchors": [
+    {
+     "at_s": 12.6,
+     "picture": "the two products branch"
+    },
+    {
+     "at_s": 14.3,
+     "picture": "wipe to the light data-flow world"
+    }
+   ],
+   "scenes": [
+    "S03",
+    "S04"
+   ]
+  },
+  {
+   "id": "M3",
+   "range_s": [
+    22.0,
+    45.0
+   ],
+   "character": "Human / organizational",
+   "brief": "human / organizational: warm, unhurried, the person's decision",
+   "instrumentation": "Warm and unhurried: piano, soft strings or warm pads; the motif becomes human. Light movement, no driving rhythm.",
+   "relative_level": "−22 to −16 dB",
+   "vo_density": 0.66,
+   "picture": "A person's day: Today, why, the draft, a human edit. Full rest on Approve & send (40.95–41.2 s), then a small, warm resolution as the reply is sent (42.8 s).",
+   "picture_anchors": [
+    {
+     "at_s": 22.6,
+     "picture": "cut: the organization (Navis Application act)"
+    },
+    {
+     "at_s": 40.95,
+     "picture": "Approve & send"
+    },
+    {
+     "at_s": 42.8,
+     "picture": "Reply sent"
+    },
+    {
+     "at_s": 44.8,
+     "picture": "cut to dark: Navis Developer"
+    }
+   ],
+   "scenes": [
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10"
+   ]
+  },
+  {
+   "id": "M4",
+   "range_s": [
+    45.0,
+    68.0
+   ],
+   "character": "Technical developer momentum",
+   "brief": "technical developer momentum: precise, light rhythm",
+   "instrumentation": "Precise, light rhythm (muted plucks, soft arpeggio, restrained electronic pulse ~100–108 BPM feel); bass enters gently. Clean and modern, never aggressive.",
+   "relative_level": "−20 to −15 dB",
+   "vo_density": 0.84,
+   "picture": "Terminal, MCP, context, SDK, API, permissions, the run. Pull right back (−18 dB) under the refusal 60.9–62.1 s — quieter, not tense. Lighter again for the solo developer from 66.6 s.",
+   "picture_anchors": [
+    {
+     "at_s": 50.6,
+     "picture": "✓ Connected"
+    },
+    {
+     "at_s": 60.9,
+     "picture": "the exact refusal"
+    },
+    {
+     "at_s": 66.6,
+     "picture": "solo developer"
+    }
+   ],
+   "scenes": [
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16"
+   ]
+  },
+  {
+   "id": "M5",
+   "range_s": [
+    68.0,
+    82.0
+   ],
+   "character": "Convergence / shared understanding",
+   "brief": "convergence: the human and technical motifs meet; shared understanding",
+   "instrumentation": "The human motif and the technical pulse meet: the warm harmony returns over a softened pulse. By 73.4 s (One organization) both motifs are present.",
+   "relative_level": "−20 to −15 dB",
+   "vo_density": 0.81,
+   "picture": "Same facts, same sources, same freshness (77.7–79.9 s): keep the music steady with no accents — the voice and the macro cuts carry it.",
+   "picture_anchors": [
+    {
+     "at_s": 68.0,
+     "picture": "brief: convergence begins"
+    },
+    {
+     "at_s": 73.4,
+     "picture": "One organization · NavisLabs"
+    },
+    {
+     "at_s": 77.7,
+     "picture": "same fact / source / freshness macros"
+    }
+   ],
+   "scenes": [
+    "S16",
+    "S17"
+   ]
+  },
+  {
+   "id": "M6",
+   "range_s": [
+    82.0,
+    94.0
+   ],
+   "character": "Conviction / moat",
+   "brief": "conviction / moat: steady, grounded, no riser",
+   "instrumentation": "Grounded and steady: sustained harmony, a slow, confident pulse; the motif stated once, simply. No riser, no drum build.",
+   "relative_level": "−20 to −15 dB",
+   "vo_density": 0.84,
+   "picture": "Models change, agents change, tools change; the company keeps its history. Confidence through restraint.",
+   "picture_anchors": [
+    {
+     "at_s": 82.0,
+     "picture": "brief: conviction / moat"
+    },
+    {
+     "at_s": 84.0,
+     "picture": "cut: Models change. Agents change. Tools change."
+    }
+   ],
+   "scenes": [
+    "S17",
+    "S18"
+   ]
+  },
+  {
+   "id": "M7",
+   "range_s": [
+    94.0,
+    100.0
+   ],
+   "character": "Resolution → silence",
+   "brief": "resolution under the end card, then silence",
+   "instrumentation": "One resolving chord or the motif's last statement under the end card; decay naturally to silence.",
+   "relative_level": "fade from −22 dB to silence",
+   "vo_density": 0.57,
+   "picture": "The end lockup lands at 94.0 s; the score must be fully silent from 98.6 s to 100.0 s.",
+   "picture_anchors": [
+    {
+     "at_s": 94,
+     "picture": "end lockup"
+    },
+    {
+     "at_s": 98.6,
+     "picture": "silence"
+    }
+   ],
+   "scenes": [
+    "S18"
+   ]
+  }
+ ],
+ "sync_points": [
+  {
+   "at_s": 0.0,
+   "picture": "film start",
+   "music": "silence; the bed may enter softly under V01 (0.6 s)"
+  },
+  {
+   "at_s": 10,
+   "picture": "black before NavisLabs",
+   "music": "full rest (score silent) 10.0–10.45 s"
+  },
+  {
+   "at_s": 10.5,
+   "picture": "NavisLabs mark",
+   "music": "no hit; the tonal SFX carries it; the score re-enters softly after"
+  },
+  {
+   "at_s": 12.6,
+   "picture": "the two products branch",
+   "music": "M2 emergence begins around here (brief: 12 s)"
+  },
+  {
+   "at_s": 14.3,
+   "picture": "wipe to the light data-flow world",
+   "music": "gentle lift allowed; no whoosh, no hit"
+  },
+  {
+   "at_s": 22.6,
+   "picture": "cut: the organization (Navis Application act)",
+   "music": "M3 human texture by 22.6 s (brief: 22 s)"
+  },
+  {
+   "at_s": 40.95,
+   "picture": "Approve & send",
+   "music": "full rest 40.95–41.2 s (held breath)"
+  },
+  {
+   "at_s": 42.8,
+   "picture": "Reply sent",
+   "music": "small, warm resolution"
+  },
+  {
+   "at_s": 44.8,
+   "picture": "cut to dark: Navis Developer",
+   "music": "M4 technical momentum from here (brief: 45 s)"
+  },
+  {
+   "at_s": 50.6,
+   "picture": "✓ Connected",
+   "music": "optional subtle accent, under −6 dB relative"
+  },
+  {
+   "at_s": 60.9,
+   "picture": "the exact refusal",
+   "music": "score −18 dB until 62.1 s; no tension cue"
+  },
+  {
+   "at_s": 66.6,
+   "picture": "solo developer",
+   "music": "lighter texture"
+  },
+  {
+   "at_s": 68.0,
+   "picture": "brief: convergence begins",
+   "music": "start bringing the human motif back over the pulse"
+  },
+  {
+   "at_s": 73.4,
+   "picture": "One organization · NavisLabs",
+   "music": "both motifs present"
+  },
+  {
+   "at_s": 77.7,
+   "picture": "same fact / source / freshness macros",
+   "music": "steady, no accents (77.7–79.9 s)"
+  },
+  {
+   "at_s": 82.0,
+   "picture": "brief: conviction / moat",
+   "music": "settle into a grounded pulse"
+  },
+  {
+   "at_s": 84.0,
+   "picture": "cut: Models change. Agents change. Tools change.",
+   "music": "steady; no build"
+  },
+  {
+   "at_s": 94,
+   "picture": "end lockup",
+   "music": "resolve"
+  },
+  {
+   "at_s": 98.6,
+   "picture": "silence",
+   "music": "score fully silent to 100.0 s"
+  }
+ ],
+ "silences": [
+  {
+   "from_s": 10.0,
+   "to_s": 10.5,
+   "db": -96,
+   "why": "breath before NavisLabs"
+  },
+  {
+   "from_s": 40.95,
+   "to_s": 41.2,
+   "db": -96,
+   "why": "held breath on Approve & send"
+  },
+  {
+   "from_s": 60.9,
+   "to_s": 62.1,
+   "db": -18,
+   "why": "the refusal: quieter, not louder"
+  },
+  {
+   "from_s": 98.6,
+   "to_s": 100.0,
+   "db": -96,
+   "why": "silent end"
+  }
+ ],
+ "tempo": "Score to picture, not to a grid: picture events are not on a beat grid. A ~100–108 BPM feel suits 45–68 s; elsewhere free time or very slow pulse.",
+ "status": "brief only — the final score is not generated. A temp score that follows this arc plays in the current cut."
+}

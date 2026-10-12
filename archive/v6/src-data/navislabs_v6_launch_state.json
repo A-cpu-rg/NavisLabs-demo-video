@@ -1,0 +1,556 @@
+{
+  "about": "Film-only LAUNCH STATE configuration and demo data for the NavisLabs launch film (V6). Every entity, record and connector status the film shows comes from this file; components read it through src/ui/demoContent.ts. It does not describe or change the product code: the launch film represents the planned launch-state connector set supplied by the founder/team. Public website status may lag this film configuration. All customer, account, issue and repository records are fictional FILM DEMO data.",
+  "version": "v6-launch-state",
+  "names_policy": "Only names already approved in the film dataset are used: Abhishek Meena (founder, REAL_AUTHORIZED) and NavisLabs; everyone and everything else is SYNTHETIC. Mulayam Kumar and Digantara are not used: the dataset has no written authorization for either (Digantara is a real company). Swapping them in is a one-field change here once approved.",
+  "company": {
+    "id": "org_navislabs",
+    "name": "NavisLabs",
+    "slug": "navislabs",
+    "kind": "company",
+    "website": "navislabs.in",
+    "provenance": "REAL_AUTHORIZED",
+    "note": "The company itself, shown as an organization that uses its own products (dogfooding)."
+  },
+  "people": [
+    {
+      "id": "p_abhishek",
+      "name": "Abhishek Meena",
+      "first": "Abhishek",
+      "email": "abhishek@navislabs.in",
+      "title": "Founder",
+      "team": "t_leadership",
+      "application_role": "Founder",
+      "developer_role": "owner",
+      "mac_user": "abhishekmeena",
+      "mac_host": "Abhisheks-MacBook-Pro-8",
+      "provenance": "REAL_AUTHORIZED",
+      "note": "Founder; demo user in both products at the founder's request. Email and Mac user/host shown on screen at the founder's request — confirm before public release."
+    },
+    {
+      "id": "p_sam",
+      "name": "Sam Rivera",
+      "first": "Sam",
+      "email": "sam@example.com",
+      "title": "Engineer",
+      "team": "t_engineering",
+      "application_role": "Member",
+      "developer_role": "developer",
+      "provenance": "SYNTHETIC",
+      "note": "Synthetic engineer. Not a NavisLabs employee. Replace with an authorized teammate (e.g. Mulayam Kumar, CTO) only with written approval."
+    },
+    {
+      "id": "p_jordan",
+      "name": "Jordan Lee",
+      "first": "Jordan",
+      "email": "jordan.lee@acme.example",
+      "title": "Head of Operations",
+      "customer": "c_acme",
+      "provenance": "SYNTHETIC",
+      "note": "Synthetic customer contact; .example is a reserved domain."
+    },
+    {
+      "id": "p_solo",
+      "name": "Riya",
+      "first": "Riya",
+      "email": "riya@example.com",
+      "title": "Student developer",
+      "workspace": "w_riya",
+      "provenance": "SYNTHETIC",
+      "note": "Synthetic solo developer in a personal workspace."
+    }
+  ],
+  "teams": [
+    {
+      "id": "t_leadership",
+      "name": "Leadership",
+      "members": [
+        "p_abhishek"
+      ],
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "t_revenue",
+      "name": "Revenue",
+      "members": [
+        "p_abhishek"
+      ],
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "t_engineering",
+      "name": "Engineering",
+      "members": [
+        "p_abhishek",
+        "p_sam"
+      ],
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "customers": [
+    {
+      "id": "c_acme",
+      "name": "Acme Corp",
+      "short": "Acme",
+      "caps": "ACME CORP",
+      "slug": "acme-corp",
+      "contact": "p_jordan",
+      "owner": "p_abhishek",
+      "renewal_was": "Nov 14",
+      "renewal_now": "Nov 28",
+      "renewal_was_iso": "2026-11-14",
+      "renewal_now_iso": "2026-11-28",
+      "provenance": "SYNTHETIC",
+      "note": "Fictional customer; 'Acme' is the conventional placeholder company. No customer relationship is implied."
+    }
+  ],
+  "projects": [
+    {
+      "id": "pr_sso",
+      "name": "SSO export",
+      "ticket": "ACME-142",
+      "customer": "c_acme",
+      "owner": "p_sam",
+      "state": "blocked on review",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "pr_renewal_workflow",
+      "name": "Acme renewal workflow",
+      "file": "src/workflows/acme-renewal.ts",
+      "repository": "r_navislabs",
+      "customer": "c_acme",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "d_annual_terms",
+      "text": "Annual plans keep their current terms; usage-based pricing applies to new accounts only.",
+      "short": "Annual plans keep their current terms",
+      "made_in": "Pricing review",
+      "date": "Sep 30",
+      "date_iso": "2026-09-30",
+      "source": "meet",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "commitments": [
+    {
+      "id": "m_revised_terms",
+      "text": "Revised terms promised to Acme by Oct 7 — not yet sent.",
+      "short": "Revised terms promised by Oct 7",
+      "due": "Oct 7",
+      "owner": "p_abhishek",
+      "source": "slack",
+      "channel": "#acme",
+      "date": "Sep 30",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "m_board_metrics",
+      "text": "Updated metrics were promised to the board Thursday",
+      "short": "Board metrics due Thursday",
+      "owner": "p_abhishek",
+      "source": "meet",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "mt_renewal_call",
+      "title": "Acme renewal call",
+      "date": "Oct 9",
+      "moved_on": "Oct 5",
+      "source": "calendar",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "mt_pricing_review",
+      "title": "Pricing review",
+      "date": "Sep 30",
+      "source": "meet",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "emails": [
+    {
+      "id": "e_move_renewal",
+      "from": "p_jordan",
+      "subject": "Moving our renewal to Nov 28",
+      "ask": "Can we move our renewal to Nov 28?",
+      "date": "Oct 5",
+      "date_iso": "2026-10-05",
+      "source": "gmail",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_order_form",
+      "title": "Acme order form — annual plan, current terms",
+      "source": "drive",
+      "date": "Sep 12",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "doc_account_plan",
+      "title": "Acme account plan",
+      "fact": "Account owner: Abhishek Meena",
+      "source": "docs",
+      "date": "Sep 9",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "doc_sso_spec",
+      "title": "SSO export spec",
+      "source": "docs",
+      "date": "Sep 22",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "repositories": [
+    {
+      "id": "r_navislabs",
+      "name": "NavisLabs",
+      "branch": "main",
+      "provenance": "SYNTHETIC",
+      "note": "Demo repository name shown in VS Code and the terminal."
+    },
+    {
+      "id": "r_riya",
+      "name": "thesis-tracker",
+      "branch": "main",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "agents": [
+    {
+      "id": "a_claude_code",
+      "name": "claude-code",
+      "client": "Claude Code",
+      "owner": "p_abhishek",
+      "permissions": [
+        "view_memory",
+        "view_state"
+      ],
+      "provenance": "REAL_PUBLIC_PRODUCT",
+      "note": "Claude Code is a real public product, named nominatively as the MCP client (Devtool docs/mcp/CLIENTS.md: LIVE VERIFIED)."
+    }
+  ],
+  "runs": [
+    {
+      "id": "7c2e91a0",
+      "task": "Update the Acme renewal workflow.",
+      "agent": "a_claude_code",
+      "status": "Completed",
+      "started": "Oct 6, 09:44",
+      "duration": "4m 12s",
+      "outcome": "Not judged",
+      "steps": [
+        {
+          "at": "09:44:03",
+          "type": "Context",
+          "what": "navis_get_relevant_context → 5 facts · gmail, docs, meet, slack, calendar · as_of 09:44"
+        },
+        {
+          "at": "09:44:06",
+          "type": "Tool",
+          "what": "Read src/workflows/acme-renewal.ts"
+        },
+        {
+          "at": "09:44:41",
+          "type": "Tool",
+          "what": "Edit src/workflows/acme-renewal.ts — code changed (+4 −2)"
+        },
+        {
+          "at": "09:46:02",
+          "type": "Tool",
+          "what": "npm test -- workflows — verification passed"
+        },
+        {
+          "at": "09:48:15",
+          "type": "Outcome",
+          "what": "Result produced"
+        }
+      ],
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "3f9a1d27",
+      "task": "Add usage-based pricing for new accounts.",
+      "agent": "a_claude_code",
+      "status": "Completed",
+      "started": "Oct 5, 17:31",
+      "duration": "14m 08s",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "developer_workspace": {
+    "organization": "org_navislabs",
+    "kind": "company",
+    "members": [
+      {
+        "person": "p_abhishek",
+        "developer_role": "owner",
+        "application_role": "Founder",
+        "state": "Active"
+      },
+      {
+        "person": "p_sam",
+        "developer_role": "developer",
+        "application_role": "Member",
+        "state": "Invited"
+      }
+    ],
+    "solo": {
+      "id": "w_riya",
+      "person": "p_solo",
+      "kind": "personal",
+      "name": "Riya's workspace",
+      "repository": "r_riya",
+      "task": "Add CSV export to the results page.",
+      "decision": "Keep the export client-side; no new endpoint.",
+      "open": "Write the test for empty result sets.",
+      "provenance": "SYNTHETIC"
+    }
+  },
+  "application_workspace": {
+    "organization": "org_navislabs",
+    "user": "p_abhishek",
+    "date": "Tuesday, October 6",
+    "date_iso": "2026-10-06",
+    "synced": "2m ago",
+    "now": "09:44",
+    "glance": {
+      "decisions": 3,
+      "risks": 1,
+      "actions": 2,
+      "meetings": 4,
+      "waiting": 1,
+      "updates": 0
+    }
+  },
+  "integrations": {
+    "FILM_LAUNCH_INTEGRATIONS": [
+      {
+        "id": "gmail",
+        "label": "Gmail",
+        "role": "customer response",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Supported",
+        "local_source_status": "LIVE in the local checkout — Backend navis/signals/gmail; Navis-AI ConnectionId 'gmail'",
+        "in_film": "evidence"
+      },
+      {
+        "id": "calendar",
+        "label": "Google Calendar",
+        "role": "meeting & commitment",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Supported",
+        "local_source_status": "LIVE — Backend navis/signals/calendar; ConnectionId 'calendar' (covers Meet)",
+        "in_film": "evidence"
+      },
+      {
+        "id": "meet",
+        "label": "Google Meet",
+        "role": "discussion & decision",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Supported",
+        "local_source_status": "LIVE — Backend navis/signals/meet; reached through the Calendar grant",
+        "in_film": "evidence"
+      },
+      {
+        "id": "drive",
+        "label": "Google Drive",
+        "role": "project documents",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Supported",
+        "local_source_status": "LIVE — Backend navis/signals/drive; ConnectionId 'drive' (covers Docs)",
+        "in_film": "evidence"
+      },
+      {
+        "id": "docs",
+        "label": "Google Docs",
+        "role": "account context",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Supported",
+        "local_source_status": "LIVE — Backend navis/signals/drive/docs.py; Docs arrive as Drive files",
+        "in_film": "evidence"
+      },
+      {
+        "id": "slack",
+        "label": "Slack",
+        "role": "team signal",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Supported",
+        "local_source_status": "LIVE — Backend navis/signals/slack; ConnectionId 'slack'; credential resolver shipped (5.4.1)",
+        "in_film": "evidence"
+      },
+      {
+        "id": "salesforce",
+        "label": "Salesforce",
+        "role": "account & opportunity",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Coming soon",
+        "local_source_status": "NOT IN THE LOCAL CHECKOUT — no backend or frontend reference",
+        "in_film": "evidence (primary CRM)"
+      },
+      {
+        "id": "notion",
+        "label": "Notion",
+        "role": "company knowledge",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Coming soon",
+        "local_source_status": "NOT IN THE LOCAL CHECKOUT AS A CONNECTOR — enum members only (IntegrationProvider, SignalSource); no credential resolver (tests/execution/test_integration_boundary.py); Navis-AI: 'coming soon, no backend handler'",
+        "in_film": "evidence (company knowledge)"
+      },
+      {
+        "id": "microsoft365",
+        "label": "Microsoft 365",
+        "role": "documents & workplace",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Coming soon",
+        "local_source_status": "NOT IN THE LOCAL CHECKOUT — no connector",
+        "in_film": "connected infrastructure — no record shown"
+      },
+      {
+        "id": "hubspot",
+        "label": "HubSpot",
+        "role": "customer activity",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Coming soon",
+        "local_source_status": "NOT IN THE LOCAL CHECKOUT AS A CONNECTOR — identity-resolution alias only (AliasProvider.HUBSPOT)",
+        "in_film": "connected infrastructure — no record shown (Salesforce is the primary CRM example)"
+      },
+      {
+        "id": "jira",
+        "label": "Jira",
+        "role": "engineering issues",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Coming soon",
+        "local_source_status": "NOT IN THE LOCAL CHECKOUT — mentioned in comments only",
+        "in_film": "evidence (engineering)"
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "role": "code",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Coming soon",
+        "local_source_status": "NOT IN THE LOCAL CHECKOUT AS A CONNECTOR — identity-resolution alias only (AliasProvider.GITHUB)",
+        "in_film": "evidence (code)"
+      },
+      {
+        "id": "zoom",
+        "label": "Zoom",
+        "role": "meetings",
+        "film_status": "CONNECTED — launch state",
+        "public_website_status": "Coming soon",
+        "local_source_status": "NOT IN THE LOCAL CHECKOUT — mentioned in a comment only",
+        "in_film": "connected infrastructure — no record shown (Meet carries the meeting example)"
+      }
+    ],
+    "connected": [
+      "gmail",
+      "calendar",
+      "meet",
+      "drive",
+      "docs",
+      "slack",
+      "salesforce",
+      "notion",
+      "microsoft365",
+      "hubspot",
+      "jira",
+      "github",
+      "zoom"
+    ],
+    "semantics": {
+      "gmail": "customer response",
+      "calendar": "meeting & commitment",
+      "meet": "discussion & decision",
+      "drive": "project documents",
+      "docs": "account context",
+      "slack": "team signal",
+      "salesforce": "account & opportunity",
+      "hubspot": "customer activity",
+      "jira": "engineering issues",
+      "github": "code",
+      "notion": "company knowledge",
+      "zoom": "meetings",
+      "microsoft365": "documents & workplace"
+    },
+    "provenance": "REAL_PUBLIC_PRODUCT (vendor names and marks, nominative use)",
+    "note": "Film status is the founder-supplied launch state. Public website: Gmail, Google Calendar, Google Meet, Google Drive, Google Docs, Slack 'supported'; Salesforce, Notion, Microsoft 365, HubSpot, Jira, GitHub, Zoom 'Coming soon' (navis-labs-website components/site/logos.tsx, checked 2026-10-06)."
+  },
+  "crm_records": [
+    {
+      "id": "crm_acme_opportunity",
+      "system": "salesforce",
+      "object": "Opportunity",
+      "name": "Acme Corp — annual renewal",
+      "account": "c_acme",
+      "stage": "Renewal",
+      "close_date": "Nov 14",
+      "owner": "p_abhishek",
+      "last_activity": "Email from Jordan Lee · Oct 5",
+      "provenance": "SYNTHETIC",
+      "note": "FILM DEMO RECORD. No amounts, no pipeline numbers. The close date is still the old renewal date — the CRM has not caught up with the email; a person updates it."
+    }
+  ],
+  "knowledge": [
+    {
+      "id": "kn_renewal_playbook",
+      "system": "notion",
+      "title": "Renewal playbook",
+      "fact": "Annual plans renew on current terms; usage-based pricing is for new accounts.",
+      "date": "Sep 30",
+      "provenance": "SYNTHETIC",
+      "note": "FILM DEMO RECORD: the policy written up after the pricing review (the Meet decision)."
+    }
+  ],
+  "engineering_context": {
+    "issues": [
+      {
+        "id": "eng_acme_142",
+        "system": "jira",
+        "key": "ACME-142",
+        "title": "SSO export blocked on review",
+        "status": "Blocked",
+        "owner": "p_sam",
+        "customer": "c_acme",
+        "provenance": "SYNTHETIC"
+      }
+    ],
+    "code": [
+      {
+        "id": "code_acme_renewal",
+        "system": "github",
+        "repository": "r_navislabs",
+        "path": "src/workflows/acme-renewal.ts",
+        "fact": "renewsOn: \"2026-11-14\"",
+        "after": "renewsOn: \"2026-11-28\"",
+        "provenance": "SYNTHETIC",
+        "note": "The workflow file the agent updates in Navis Developer (S15). No PR numbers, no deployment."
+      }
+    ]
+  },
+  "team_workstate": {
+    "person": "p_abhishek",
+    "repository": "r_navislabs",
+    "branch": "main",
+    "task": "Update the Acme renewal workflow.",
+    "decision": "Renewal moves to Nov 28; annual plans keep current terms.",
+    "open": "Confirm the close date in Salesforce.",
+    "provenance": "SYNTHETIC"
+  },
+  "developer_roles": {
+    "values": [
+      "owner",
+      "admin",
+      "developer",
+      "viewer"
+    ],
+    "source": "Devtool packages/types/src/auth.ts DEVELOPER_ROLES"
+  }
+}

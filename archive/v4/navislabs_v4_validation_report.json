@@ -1,0 +1,672 @@
+{
+ "about": "Picture-lock validators (scripts/validate-film.py). All must pass before picture lock.",
+ "all_pass": true,
+ "summary": {
+  "brand": true,
+  "entity": true,
+  "product_claim": true,
+  "integration": true,
+  "interaction": true,
+  "timeline": true,
+  "audio_timing": true,
+  "visual_asset": true,
+  "data_consistency": true
+ },
+ "validators": {
+  "brand": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "no 'NAVIS AI' / 'Navis-AI' label on screen, in copy or in VO",
+     "pass": true
+    },
+    {
+     "check": "no 'Navis Labs' (company is one word: NavisLabs)",
+     "pass": true
+    },
+    {
+     "check": "no repository names as product labels ('Devtool')",
+     "pass": true
+    },
+    {
+     "check": "company name is NavisLabs",
+     "pass": true,
+     "detail": "NavisLabs"
+    },
+    {
+     "check": "products are Navis Application and Navis Developer",
+     "pass": true,
+     "detail": [
+      "NAVIS APPLICATION",
+      "NAVIS DEVELOPER"
+     ]
+    },
+    {
+     "check": "tagline is the website headline",
+     "pass": true,
+     "detail": "The shared understanding for your organization."
+    },
+    {
+     "check": "logo assets exist (mark without tile, dark + light)",
+     "pass": true
+    }
+   ]
+  },
+  "entity": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "every demo-data entity has an entity-audit row",
+     "pass": true
+    },
+    {
+     "check": "every row has a known provenance",
+     "pass": true
+    },
+    {
+     "check": "nothing unauthorized appears in a scene",
+     "pass": true
+    },
+    {
+     "check": "restricted names (Mulayam, Digantara) appear nowhere on screen, in copy, VO or demo values",
+     "pass": true
+    },
+    {
+     "check": "emails are the founder's own or reserved example domains",
+     "pass": true
+    },
+    {
+     "check": "synthetic people are marked SYNTHETIC",
+     "pass": true,
+     "detail": [
+      "Sam Rivera",
+      "Jordan Lee",
+      "Riya"
+     ]
+    },
+    {
+     "check": "no API keys, tokens or private keys in src, scripts or JSON",
+     "pass": true
+    },
+    {
+     "check": ".env is git-ignored",
+     "pass": true
+    }
+   ]
+  },
+  "product_claim": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "every surface has a known claim status",
+     "pass": true
+    },
+    {
+     "check": "future-state surfaces carry an on-screen label",
+     "pass": true,
+     "detail": [
+      "dev.policyEngine",
+      "integrations.expanding"
+     ]
+    },
+    {
+     "check": "end-card disclosure names demo data and the expanding ecosystem",
+     "pass": true,
+     "detail": "Interfaces recreated from the Navis source. Demo company data; some waits shortened. Expanding ecosystem: Salesforce, HubSpot, Jira, GitHub, Notion, Zoom and Microsoft 365 are rolling out. Developer surfaces in private preview."
+    },
+    {
+     "check": "SDK shown as not on npm",
+     "pass": true
+    },
+    {
+     "check": "no public-registry install shown as working",
+     "pass": true
+    },
+    {
+     "check": "the run's outcome is 'Not judged'",
+     "pass": true
+    },
+    {
+     "check": "no invented economics on run steps (shown as '—')",
+     "pass": true
+    },
+    {
+     "check": "no 'Projects' page in the Console",
+     "pass": true
+    },
+    {
+     "check": "central policy engine not shown as live",
+     "pass": true
+    },
+    {
+     "check": "only Claude Code is shown as live verified",
+     "pass": true,
+     "detail": [
+      [
+       "Claude Code",
+       "live verified"
+      ],
+      [
+       "Cursor",
+       "config verified"
+      ],
+      [
+       "Codex",
+       "config verified"
+      ],
+      [
+       "VS Code",
+       "config verified"
+      ],
+      [
+       "Any MCP client",
+       "Streamable HTTP"
+      ]
+     ]
+    },
+    {
+     "check": "placeholders only for credentials",
+     "pass": true
+    }
+   ]
+  },
+  "integration": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "live set matches the website's supported logos",
+     "pass": true,
+     "detail": [
+      [
+       "gmail",
+       "calendar",
+       "meet",
+       "drive",
+       "docs",
+       "slack"
+      ],
+      [
+       "gmail",
+       "calendar",
+       "meet",
+       "drive",
+       "docs",
+       "slack"
+      ]
+     ]
+    },
+    {
+     "check": "expanding set matches the website's 'soon' logos",
+     "pass": true,
+     "detail": [
+      [
+       "hubspot",
+       "salesforce",
+       "jira",
+       "github",
+       "notion",
+       "zoom",
+       "microsoft365"
+      ],
+      [
+       "salesforce",
+       "hubspot",
+       "jira",
+       "github",
+       "notion",
+       "zoom",
+       "microsoft365"
+      ]
+     ]
+    },
+    {
+     "check": "live and expanding are disjoint",
+     "pass": true
+    },
+    {
+     "check": "every system has a semantic",
+     "pass": true
+    },
+    {
+     "check": "demonstrated workflows cite live systems only",
+     "pass": true
+    },
+    {
+     "check": "run steps cite live systems only",
+     "pass": true
+    },
+    {
+     "check": "expanding systems appear only in the S04 ecosystem view",
+     "pass": true,
+     "detail": {}
+    },
+    {
+     "check": "expanding systems are labelled 'rolling out', not 'coming soon'",
+     "pass": true
+    }
+   ]
+  },
+  "interaction": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "why_this_matters: states are in time order",
+     "pass": true,
+     "detail": [
+      28.6,
+      29.78,
+      29.9,
+      30.0,
+      30.3
+     ]
+    },
+    {
+     "check": "why_this_matters: before → settle → click → feedback → after",
+     "pass": true,
+     "detail": [
+      "before",
+      "settle",
+      "click",
+      "feedback",
+      "after"
+     ]
+    },
+    {
+     "check": "why_this_matters: cursor settles ≥ 0.1 s before the click",
+     "pass": true,
+     "detail": 0.12
+    },
+    {
+     "check": "review_and_reply: states are in time order",
+     "pass": true,
+     "detail": [
+      35.0,
+      35.38,
+      35.5,
+      35.6,
+      35.98
+     ]
+    },
+    {
+     "check": "review_and_reply: before → settle → click → feedback → after",
+     "pass": true,
+     "detail": [
+      "before",
+      "settle",
+      "click",
+      "feedback",
+      "after"
+     ]
+    },
+    {
+     "check": "review_and_reply: cursor settles ≥ 0.1 s before the click",
+     "pass": true,
+     "detail": 0.12
+    },
+    {
+     "check": "review_draft: states are in time order",
+     "pass": true,
+     "detail": [
+      35.7,
+      35.9,
+      36.0,
+      36.05,
+      36.5
+     ]
+    },
+    {
+     "check": "review_draft: before → settle → click → feedback → after",
+     "pass": true,
+     "detail": [
+      "before",
+      "settle",
+      "click",
+      "feedback",
+      "after"
+     ]
+    },
+    {
+     "check": "review_draft: cursor settles ≥ 0.1 s before the click",
+     "pass": true,
+     "detail": 0.1
+    },
+    {
+     "check": "edit_sentence: states are in time order",
+     "pass": true,
+     "detail": [
+      37.0,
+      37.36,
+      37.5,
+      37.95,
+      39.288
+     ]
+    },
+    {
+     "check": "edit_sentence: before → settle → click → feedback → after",
+     "pass": true,
+     "detail": [
+      "before",
+      "settle",
+      "click",
+      "feedback",
+      "after"
+     ]
+    },
+    {
+     "check": "edit_sentence: cursor settles ≥ 0.1 s before the click",
+     "pass": true,
+     "detail": 0.14
+    },
+    {
+     "check": "approve_and_send: states are in time order",
+     "pass": true,
+     "detail": [
+      39.85,
+      40.5,
+      40.95,
+      41.15,
+      42.8
+     ]
+    },
+    {
+     "check": "approve_and_send: before → settle → click → feedback → after",
+     "pass": true,
+     "detail": [
+      "before",
+      "settle",
+      "click",
+      "feedback",
+      "after"
+     ]
+    },
+    {
+     "check": "approve_and_send: cursor settles ≥ 0.1 s before the click",
+     "pass": true,
+     "detail": 0.45
+    },
+    {
+     "check": "add_member: states are in time order",
+     "pass": true,
+     "detail": [
+      48.4,
+      48.73,
+      48.85,
+      49.05,
+      49.35
+     ]
+    },
+    {
+     "check": "add_member: before → settle → click → feedback → after",
+     "pass": true,
+     "detail": [
+      "before",
+      "settle",
+      "click",
+      "feedback",
+      "after"
+     ]
+    },
+    {
+     "check": "add_member: cursor settles ≥ 0.1 s before the click",
+     "pass": true,
+     "detail": 0.12
+    },
+    {
+     "check": "mcp_connect: states are in time order",
+     "pass": true,
+     "detail": [
+      49.55,
+      49.6,
+      49.85,
+      50.6
+     ]
+    },
+    {
+     "check": "context_call: states are in time order",
+     "pass": true,
+     "detail": [
+      52.45,
+      52.95,
+      53.65
+     ]
+    },
+    {
+     "check": "permission_check: states are in time order",
+     "pass": true,
+     "detail": [
+      58.85,
+      59.45,
+      59.9,
+      60.35
+     ]
+    },
+    {
+     "check": "open_run: states are in time order",
+     "pass": true,
+     "detail": [
+      63.75,
+      63.9,
+      64.4,
+      64.65
+     ]
+    },
+    {
+     "check": "for_myself: states are in time order",
+     "pass": true,
+     "detail": [
+      66.6,
+      66.93,
+      67.05,
+      67.17,
+      67.45
+     ]
+    },
+    {
+     "check": "for_myself: before → settle → click → feedback → after",
+     "pass": true,
+     "detail": [
+      "before",
+      "settle",
+      "click",
+      "feedback",
+      "after"
+     ]
+    },
+    {
+     "check": "for_myself: cursor settles ≥ 0.1 s before the click",
+     "pass": true,
+     "detail": 0.12
+    },
+    {
+     "check": "workstate_checkpoint: states are in time order",
+     "pass": true,
+     "detail": [
+      68.75,
+      69.55,
+      70.45
+     ]
+    },
+    {
+     "check": "cursor has no click ring",
+     "pass": true
+    },
+    {
+     "check": "every cursor click has a press sound (click / approve / select) at the same moment",
+     "pass": true
+    }
+   ]
+  },
+  "timeline": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "18 scenes S01–S18 in order",
+     "pass": true
+    },
+    {
+     "check": "starts at 0 s and ends at 100 s",
+     "pass": true
+    },
+    {
+     "check": "scenes are contiguous",
+     "pass": true
+    },
+    {
+     "check": "3000 frames at 30 fps",
+     "pass": true
+    },
+    {
+     "check": "scene lengths sum to 3000 frames",
+     "pass": true,
+     "detail": 3000
+    },
+    {
+     "check": "transitions are fade/wipe/none and at most half of each neighbour",
+     "pass": true
+    },
+    {
+     "check": "all beats lie within the film",
+     "pass": true
+    },
+    {
+     "check": "all typing ends within the film",
+     "pass": true
+    }
+   ]
+  },
+  "audio_timing": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "26 VO lines",
+     "pass": true,
+     "detail": 26
+    },
+    {
+     "check": "every temp VO file exists",
+     "pass": true
+    },
+    {
+     "check": "every VO line fits its ceiling and max duration",
+     "pass": true
+    },
+    {
+     "check": "VO lines never overlap",
+     "pass": true
+    },
+    {
+     "check": "each VO line starts inside its scene",
+     "pass": true
+    },
+    {
+     "check": "every line has a complete ElevenLabs block",
+     "pass": true
+    },
+    {
+     "check": "audio tags used sparingly (≤ 1/3 of lines)",
+     "pass": true,
+     "detail": "8/26"
+    },
+    {
+     "check": "music sections cover 0–100 s contiguously",
+     "pass": true
+    },
+    {
+     "check": "music follows the brief's arc (boundaries within 2.5 s)",
+     "pass": true
+    },
+    {
+     "check": "temp score exists",
+     "pass": true
+    },
+    {
+     "check": "every SFX event has a library sound with a temp file",
+     "pass": true
+    },
+    {
+     "check": "SFX events lie within the film",
+     "pass": true
+    },
+    {
+     "check": "every SFX event is one of the 15 meaningful categories",
+     "pass": true
+    },
+    {
+     "check": "no SFX inside the deliberate silences",
+     "pass": true
+    },
+    {
+     "check": "final VO takes, where present, fit their hard end at 48 kHz",
+     "pass": true
+    },
+    {
+     "check": "ambience sits under the S04 data flow only",
+     "pass": true,
+     "detail": [
+      14.4,
+      22.4
+     ]
+    },
+    {
+     "check": "audio layers defined (VO, music, UI SFX, transitions, ambience)",
+     "pass": true
+    }
+   ]
+  },
+  "visual_asset": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "every literal asset path in src exists in public/ (17 paths)",
+     "pass": true
+    },
+    {
+     "check": "every integration logo and brand mark exists",
+     "pass": true
+    },
+    {
+     "check": "Claude Code icon exists",
+     "pass": true
+    }
+   ]
+  },
+  "data_consistency": {
+   "pass": true,
+   "checks": [
+    {
+     "check": "no entity value hardcoded in TSX (outside the data and demoContent)",
+     "pass": true
+    },
+    {
+     "check": "run steps are in order and fit the run's duration",
+     "pass": true,
+     "detail": "09:44:03–09:48:15 vs 4m 12s"
+    },
+    {
+     "check": "run start matches its first step",
+     "pass": true,
+     "detail": [
+      "Oct 6, 09:44",
+      "09:44:03"
+     ]
+    },
+    {
+     "check": "'Updates' tile is 0 (the product always reports 0)",
+     "pass": true
+    },
+    {
+     "check": "dates in the VO exist in the demo data",
+     "pass": true
+    },
+    {
+     "check": "same customer, decision and commitment in both products",
+     "pass": true
+    },
+    {
+     "check": "one coherent run: the agent's task is the run's task",
+     "pass": true
+    }
+   ]
+  }
+ }
+}

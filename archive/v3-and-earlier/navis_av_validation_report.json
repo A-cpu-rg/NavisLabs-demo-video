@@ -1,0 +1,194 @@
+{
+  "report": "navis_av_validation_report",
+  "date": "2026-10-05",
+  "validated_file": "navis_launch_av_master.json",
+  "method": "Independent script: re-reads all four JSON files from disk, recomputes VO phrase timing with its own estimator, scans only film-facing text (VO, captions, end card) for naming, money and integration terms.",
+  "summary": {
+    "checks": 28,
+    "passed": 28,
+    "errors": 0,
+    "warnings": 9
+  },
+  "checks": [
+    {
+      "id": 1,
+      "check": "JSON parses",
+      "pass": true,
+      "details": "navis_launch_av_master.json, navis_master_cinematic_launch_spec.json, navis_code_audit.json, navis_launch_production_blueprint.json"
+    },
+    {
+      "id": 2,
+      "check": "Company name is always NavisLabs (company field, reveal wordmark, end wordmark, end card, VO L07/L21)",
+      "pass": true,
+      "details": "O05=NAVISLABS, O23=NAVISLABS, endA=NAVISLABS, L07='This is NavisLabs.', L21='NavisLabs. Your company’s intelligence — for your people, and your agents.'"
+    },
+    {
+      "id": 3,
+      "check": "No scene calls the company 'Navis' (bare 'Navis' only as spoken product shorthand inside its act)",
+      "pass": true,
+      "details": "bare 'Navis' only in L12 (product_shorthand:developer), L18 (product_shorthand:application)"
+    },
+    {
+      "id": 4,
+      "check": "No film-facing text calls a product 'Navis-AI' / 'Navis AI'",
+      "pass": true,
+      "details": "only as a code-repository name in evidence fields"
+    },
+    {
+      "id": 5,
+      "check": "Navis Application names the human-facing product (S11 title, S11–S14)",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 6,
+      "check": "Navis Developer names the developer/agent product (S06 title, S06–S10)",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 7,
+      "check": "Every feature exists in the audit (pointers resolve; ids exist in the master)",
+      "pass": true,
+      "details": "19 features, 8 used in shots"
+    },
+    {
+      "id": 8,
+      "check": "Every claim has evidence, and every VO line maps to a declared claim",
+      "pass": true,
+      "details": "18 claims"
+    },
+    {
+      "id": 9,
+      "check": "Every future feature is marked future and only appears in S16",
+      "pass": true,
+      "details": "future VO lines: ['L20']"
+    },
+    {
+      "id": 10,
+      "check": "Every unknown/unsupported feature or claim is excluded",
+      "pass": true,
+      "details": "excluded: ['F10', 'F11', 'F16'] + C13"
+    },
+    {
+      "id": 11,
+      "check": "Every recording dependency is mapped (R01, R03, R04 fallback, R05–R10, stills)",
+      "pass": true,
+      "details": "11 recordings/stills"
+    },
+    {
+      "id": 12,
+      "check": "Every VO line maps to a visual (shots it plays over)",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 13,
+      "check": "Every important VO phrase lands on its matching screen state (timing recomputed independently)",
+      "pass": true,
+      "details": "34 phrases checked"
+    },
+    {
+      "id": 14,
+      "check": "Every music section has timing and layers; sections are contiguous 0–100 s",
+      "pass": true,
+      "details": "10 sections, 7 layers"
+    },
+    {
+      "id": 15,
+      "check": "Every SFX has timing (t and frame agree, inside the film)",
+      "pass": true,
+      "details": "24 events"
+    },
+    {
+      "id": 16,
+      "check": "No audio gaps: music plan covers every frame; every silence is declared and intentional",
+      "pass": true,
+      "details": "7 intentional silences/drops: 5.6–6.4s, 20.0–20.4s, 25.0–25.5s, 42.8–44.0s, 76.3–76.7s, 92.7–93.2s, 98.6–100.0s"
+    },
+    {
+      "id": 17,
+      "check": "No scene timing changes",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 18,
+      "check": "S01–S17 align exactly with the master (17 scenes, 0–3000 frames, shots tile each scene)",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 19,
+      "check": "No $70M valuation claim without approval",
+      "pass": true,
+      "details": "variant B stays BLOCKED; approvals.json absent"
+    },
+    {
+      "id": 20,
+      "check": "No invented customers (no customer names, counts or logos in VO / captions)",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 21,
+      "check": "No invented revenue",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 22,
+      "check": "No invented ROI / savings / multipliers",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 23,
+      "check": "No fake external integrations (only demonstrated/verified ones; none of the excluded names in VO or captions)",
+      "pass": true,
+      "details": "shown: ['Claude Code', 'Gmail', 'Google Calendar', 'Google Drive', 'MCP']; flagged: []"
+    },
+    {
+      "id": 24,
+      "check": "No fake product UI presented as real (every verified product shot uses a real recording or a still of one; conceptual shots use none)",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "id": 25,
+      "check": "No future functionality presented as shipped",
+      "pass": true,
+      "details": "S16 only; L20 opens with 'Next:'"
+    },
+    {
+      "id": 26,
+      "check": "No unsupported MCP/API/SDK/CLI claims (only verified items included; no availability wording)",
+      "pass": true,
+      "details": "included: MCP, CLI"
+    },
+    {
+      "id": 27,
+      "check": "VO total 180–200 words and matches the declared total",
+      "pass": true,
+      "details": "186 words"
+    },
+    {
+      "id": 28,
+      "check": "Source files unchanged (master and audit match the Devtool originals; blueprint unchanged)",
+      "pass": true,
+      "details": ""
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "L04 'inboxes' overlaps its screen state by only 0.18s (estimate) — align on the recorded VO",
+    "The Remotion build does not yet reflect this AV master: it still renders 'NAVIS' (S05/S17 wordmark, end card) and 'NAVIS AI' (S11 title), the blueprint's S10 panel order, a 'Navis' browser address pill, and music to 99.6 s. See render_requirements.code_follow_ups_before_any_render.",
+    "asset_requirements.json is stale (generated from the master: 41 assets with different ids); the blueprint manifest drives the code.",
+    "Founder sign-off pending: VO L07/L08/L14/L17/L21 edits, S05 product sublabels, WORK STATE RESTORED / SCOPED TO EACH KEY captions, legal timing, music end at 98.6 s; U02 recorded as decided by the owner of record — confirm with co-founders if required.",
+    "Open blocking items: U05 filming backend, U06 restored-block visibility (else R04 fallback), U07 vector logomark, U08 demo-name clearance, U01 category language; U03/U04 keep endings B/C blocked.",
+    "R06 (Marlow Health): the master does not seed Marlow's own data, so the isolation panel may only show an honest empty result.",
+    "Cursor targets and caption anchors are estimates (calibrated: false) until the footage exists; VO phrase timings are estimates until the founder's lines are recorded.",
+    "Agent runs / economics are excluded: tasks and runs are real (F06), but the console is local (F07) and economics is unknown with no real data (F16). ALT_C (R11) is the honest option if a run page is wanted.",
+    "Wordmark NAVISLABS at 120 px is ≈930 px wide — check optically against the logomark."
+  ]
+}

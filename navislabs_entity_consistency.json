@@ -1,0 +1,305 @@
+{
+ "about": "The same company, customer, email, decision and commitment in the Navis App and Navis Developer, read from one record each (src/data/navislabs_v8_launch_state.json → src/ui/demoContent.ts). No scene writes these values itself (validator: data_consistency).",
+ "single_source_of_truth": "src/data/navislabs_v8_launch_state.json",
+ "shared_across_products": [
+  {
+   "entity": "c_kaveri",
+   "fact": "customer",
+   "value": "Kaveri Freightworks",
+   "source": "src/data/navislabs_v8_launch_state.json",
+   "application": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "developer": [
+    "S10",
+    "S12",
+    "S13",
+    "S14",
+    "S15"
+   ],
+   "hero": [
+    "S17"
+   ],
+   "in_both_products": true
+  },
+  {
+   "entity": "c_kaveri",
+   "fact": "renewal moved to",
+   "value": "Nov 28",
+   "source": "src/data/navislabs_v8_launch_state.json",
+   "application": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "developer": [
+    "S10",
+    "S12",
+    "S13",
+    "S14",
+    "S15"
+   ],
+   "hero": [
+    "S17"
+   ],
+   "in_both_products": true
+  },
+  {
+   "entity": "p_meera",
+   "fact": "customer contact",
+   "value": "Meera Iyer",
+   "source": "src/data/navislabs_v8_launch_state.json",
+   "application": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "developer": [
+    "S10",
+    "S12",
+    "S14",
+    "S15"
+   ],
+   "hero": [
+    "S17"
+   ],
+   "in_both_products": true
+  },
+  {
+   "entity": "e_move_renewal",
+   "fact": "the email",
+   "value": "Moving our renewal to Nov 28",
+   "source": "src/data/navislabs_v8_launch_state.json",
+   "application": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "developer": [
+    "S10",
+    "S12",
+    "S13",
+    "S14",
+    "S15"
+   ],
+   "hero": [
+    "S17"
+   ],
+   "in_both_products": true
+  },
+  {
+   "entity": "d_annual_terms",
+   "fact": "the decision",
+   "value": "Annual plans keep their current terms",
+   "source": "src/data/navislabs_v8_launch_state.json",
+   "application": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "developer": [
+    "S10",
+    "S12",
+    "S14",
+    "S15"
+   ],
+   "hero": [
+    "S17"
+   ],
+   "in_both_products": true
+  },
+  {
+   "entity": "m_revised_terms",
+   "fact": "the commitment",
+   "value": "Revised terms promised by Oct 7",
+   "source": "src/data/navislabs_v8_launch_state.json",
+   "application": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "developer": [
+    "S10",
+    "S12",
+    "S14",
+    "S15"
+   ],
+   "hero": [
+    "S17"
+   ],
+   "in_both_products": true
+  },
+  {
+   "entity": "p_abhishek",
+   "fact": "the person / key owner",
+   "value": "Abhishek Meena",
+   "source": "src/data/navislabs_v8_launch_state.json",
+   "application": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "developer": [
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16"
+   ],
+   "hero": [
+    "S17"
+   ],
+   "in_both_products": true
+  },
+  {
+   "entity": "org_navislabs",
+   "fact": "the organization",
+   "value": "NavisLabs",
+   "source": "src/data/navislabs_v8_launch_state.json",
+   "application": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ],
+   "developer": [
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16"
+   ],
+   "hero": [
+    "S17"
+   ],
+   "in_both_products": true
+  }
+ ],
+ "developer_only": [
+  {
+   "entity": "run_7c2e91a0",
+   "fact": "the agent run",
+   "value": "7c2e91a0 · Update the Kaveri renewal workflow. · Completed · 4m 12s",
+   "scenes": [
+    "S11",
+    "S13",
+    "S15",
+    "S16",
+    "S17"
+   ]
+  },
+  {
+   "entity": "pr_renewal_workflow",
+   "fact": "the file the agent edits",
+   "value": "src/workflows/kaveri-renewal.ts",
+   "scenes": [
+    "S01",
+    "S10",
+    "S12",
+    "S15",
+    "S17"
+   ]
+  },
+  {
+   "entity": "w_riya",
+   "fact": "the solo developer's personal workspace",
+   "value": "Riya's workspace",
+   "scenes": [
+    "S16"
+   ]
+  },
+  {
+   "entity": "team_workstate",
+   "fact": "the team's checkpoint (next session)",
+   "value": "Renewal moves to Nov 28; annual plans keep current terms. Next: Confirm the close date in Salesforce.",
+   "scenes": [
+    "S16"
+   ]
+  }
+ ],
+ "launch_state_bridge": [
+  {
+   "entity": "crm_kaveri_opportunity",
+   "system": "salesforce",
+   "value": "Opportunity closes Nov 14 (the email moves it to Nov 28)",
+   "scenes": [
+    "S01",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S12",
+    "S14",
+    "S15",
+    "S17",
+    "S18"
+   ]
+  },
+  {
+   "entity": "kn_renewal_playbook",
+   "system": "notion",
+   "value": "Annual plans renew on current terms; usage-based pricing is for new accounts.",
+   "scenes": [
+    "S01"
+   ]
+  },
+  {
+   "entity": "eng_kvr_142",
+   "system": "jira",
+   "value": "KVR-142 · SSO export blocked on review",
+   "scenes": [
+    "S01",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S17"
+   ]
+  },
+  {
+   "entity": "code_kaveri_renewal",
+   "system": "github",
+   "value": "src/workflows/kaveri-renewal.ts: renewsOn: \"2026-11-14\" → renewsOn: \"2026-11-28\"",
+   "scenes": [
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+   ]
+  }
+ ],
+ "checks": {
+  "customer_in_both_products": true,
+  "decision_in_both_products": true,
+  "commitment_in_both_products": true,
+  "run_steps_cite_only_systems_with_demo_records": true,
+  "crm_close_date_is_the_old_renewal_date": true,
+  "run_window": "09:44:03 → 09:48:15 (4m 12s)",
+  "updates_tile_is_zero": true
+ }
+}

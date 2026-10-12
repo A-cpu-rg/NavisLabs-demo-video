@@ -1,0 +1,127 @@
+{
+  "about": "Sound design plan for the V7 film (founder voice = master clock). The score and SFX in the review cut are synthesized in-project (scripts/make-score-v7.py, scripts/make-sfx-v7.py); ElevenLabs-generated replacements drop into the final/ slots.",
+  "layers": {
+    "vo": {
+      "gain_db": 0
+    },
+    "music": {
+      "gain_db": -6
+    },
+    "ui_sfx": {
+      "gain_db": 0
+    },
+    "transitions": {
+      "gain_db": 0
+    },
+    "ambience": {
+      "gain_db": -96
+    }
+  },
+  "categories": [
+    "KEYBOARD",
+    "TERMINAL",
+    "MOUSE",
+    "UI CLICK",
+    "DATA ARRIVAL",
+    "SOURCE APPEAR",
+    "MCP CONNECT",
+    "API RESPONSE",
+    "CONTEXT RETRIEVAL",
+    "PERMISSION DENIED",
+    "APPROVE",
+    "SEND",
+    "GMAIL CONFIRM",
+    "RUN START",
+    "RUN COMPLETE",
+    "PRODUCT REVEAL",
+    "TRANSITION",
+    "END REVEAL",
+    "WORKSPACE CREATED",
+    "SHARED UNDERSTANDING"
+  ],
+  "rules": [
+    "The founder's voice always wins: about 12–13 LU above the music under normal speech, about 15–16 LU under the key lines.",
+    "Music ducks −6 dB under every spoken line and −11 dB under the key lines (attack 0.15 s, release 0.6 s); it rises naturally in the pauses; it never disappears under speech.",
+    "SFX are felt, never louder than the voice; important interactions may peak briefly above the music; no whoosh on ordinary moves; no booms.",
+    "Controlled breaths, not dead silence: before 'Navis', 'A person decides.', Approve, the refusal; near-silence after 'NavisLabs.'; silence at the end.",
+    "Master: −14 LUFS integrated, ≤ −1 dBTP, no clipping."
+  ],
+  "scenes": [
+    {
+      "scenes": "S01–S02",
+      "vo": "P1",
+      "music": "M1 problem: low atmosphere, scattered fragments, heavier on 'by hand'",
+      "sfx": [
+        "SOURCE APPEAR: the person's view, the agent's view; quieter ticks as the truth lands in each system",
+        "UI CLICK ×3 as fragments are copied by hand"
+      ],
+      "silence": "the pause after 'different truths' keeps only the atmosphere; a breath before 'Navis'",
+      "reason": "Something fundamental is broken."
+    },
+    {
+      "scenes": "S03–S04",
+      "vo": "P2",
+      "music": "M2 reveal: the music opens on 'Navis'",
+      "sfx": [
+        "PRODUCT REVEAL: a low bloom as 'Navis' lands on the mark",
+        "TRANSITION: soft air on the wipe into the light world",
+        "DATA ARRIVAL per signal",
+        "CONTEXT RETRIEVAL as memory becomes context"
+      ],
+      "silence": "the breath before 'Navis' (reverse swell)",
+      "reason": "All the scattered pieces become one."
+    },
+    {
+      "scenes": "S05–S09",
+      "vo": "P3",
+      "music": "M3 human: warm, half-time",
+      "sfx": [
+        "UI CLICK on Why / Review & reply / Review draft / the sentence",
+        "SOURCE APPEAR per evidence row",
+        "KEYBOARD under the person's own sentence",
+        "APPROVE · SEND · GMAIL CONFIRM"
+      ],
+      "silence": "'A person decides.' — the music drops back to a breath; a held breath on Approve; returns on 'Then the company acts.'",
+      "reason": "Navis prepares. A person decides. The company acts."
+    },
+    {
+      "scenes": "S10–S15",
+      "vo": "P4",
+      "music": "M4 technical: precise rhythm",
+      "sfx": [
+        "KEYBOARD + TERMINAL",
+        "UI CLICK Add member",
+        "MCP CONNECT on ✓ Connected; tiny accents as MCP · API · SDK · CLI light",
+        "CONTEXT RETRIEVAL on the tool call; DATA ARRIVAL as each fact lands",
+        "API RESPONSE",
+        "PERMISSION DENIED: a low, serious tone",
+        "RUN START · RUN COMPLETE"
+      ],
+      "silence": "the rhythm thins under 'Navis isn't the model.' and stops for the permission check",
+      "reason": "Technically deep, always readable."
+    },
+    {
+      "scenes": "S16–S17",
+      "vo": "P5–P6",
+      "music": "M5 scale: one voice → the ensemble",
+      "sfx": [
+        "UI CLICK 'For myself'",
+        "TERMINAL Enter + checkpoint recorded",
+        "CONTEXT RETRIEVAL as the next session restores",
+        "TRANSITION as the event reaches both products"
+      ],
+      "silence": "no SFX under 'Same facts. Same sources. Same freshness.' — the voice carries it",
+      "reason": "Solo, team, company: the same understanding."
+    },
+    {
+      "scenes": "S18",
+      "vo": "P7–P8",
+      "music": "M6 thesis → M7 end",
+      "sfx": [
+        "END REVEAL on the end lockup"
+      ],
+      "silence": "near-silence after 'NavisLabs.'; a soft harmonic tail under the tagline; silent end",
+      "reason": "This company has a thesis."
+    }
+  ]
+}

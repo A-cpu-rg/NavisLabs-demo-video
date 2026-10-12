@@ -1,0 +1,367 @@
+{
+  "about": "Single source of truth for every entity the film shows. Scenes and UI read these values through src/ui/demoContent.ts; no TSX file names an entity. Every record carries provenance: REAL_AUTHORIZED (the founder's own identity, used at his request), REAL_PUBLIC_PRODUCT (a real product or vendor named nominatively, e.g. an integration), or SYNTHETIC (invented demo data). See navislabs_entity_audit.json.",
+  "company": {
+    "id": "org_navislabs",
+    "name": "NavisLabs",
+    "slug": "navislabs",
+    "kind": "company",
+    "website": "navislabs.in",
+    "provenance": "REAL_AUTHORIZED",
+    "note": "The company itself, shown as an organization that uses its own products (dogfooding)."
+  },
+  "people": [
+    {
+      "id": "p_abhishek",
+      "name": "Abhishek Meena",
+      "first": "Abhishek",
+      "email": "abhishek@navislabs.in",
+      "title": "Founder",
+      "team": "t_leadership",
+      "application_role": "Founder",
+      "developer_role": "owner",
+      "mac_user": "abhishekmeena",
+      "mac_host": "Abhisheks-MacBook-Pro-8",
+      "provenance": "REAL_AUTHORIZED",
+      "note": "Founder; demo user in both products at his request. Email and Mac user/host shown on screen at his request — confirm before public release."
+    },
+    {
+      "id": "p_sam",
+      "name": "Sam Rivera",
+      "first": "Sam",
+      "email": "sam@example.com",
+      "title": "Engineer",
+      "team": "t_engineering",
+      "application_role": "Member",
+      "developer_role": "developer",
+      "provenance": "SYNTHETIC",
+      "note": "Synthetic engineer. Not a NavisLabs employee. Replace with an authorized teammate (e.g. Mulayam Kumar, CTO) only with written approval."
+    },
+    {
+      "id": "p_jordan",
+      "name": "Jordan Lee",
+      "first": "Jordan",
+      "email": "jordan.lee@acme.example",
+      "title": "Head of Operations",
+      "customer": "c_acme",
+      "provenance": "SYNTHETIC",
+      "note": "Synthetic customer contact; .example is a reserved domain."
+    },
+    {
+      "id": "p_solo",
+      "name": "Riya",
+      "first": "Riya",
+      "email": "riya@example.com",
+      "title": "Student developer",
+      "workspace": "w_riya",
+      "provenance": "SYNTHETIC",
+      "note": "Synthetic solo developer in a personal workspace."
+    }
+  ],
+  "teams": [
+    {
+      "id": "t_leadership",
+      "name": "Leadership",
+      "members": [
+        "p_abhishek"
+      ],
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "t_revenue",
+      "name": "Revenue",
+      "members": [
+        "p_abhishek"
+      ],
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "t_engineering",
+      "name": "Engineering",
+      "members": [
+        "p_abhishek",
+        "p_sam"
+      ],
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "customers": [
+    {
+      "id": "c_acme",
+      "name": "Acme Corp",
+      "short": "Acme",
+      "caps": "ACME CORP",
+      "slug": "acme-corp",
+      "contact": "p_jordan",
+      "owner": "p_abhishek",
+      "renewal_was": "Nov 14",
+      "renewal_now": "Nov 28",
+      "renewal_was_iso": "2026-11-14",
+      "renewal_now_iso": "2026-11-28",
+      "provenance": "SYNTHETIC",
+      "note": "Fictional customer; 'Acme' is the conventional placeholder company. No customer relationship is implied."
+    }
+  ],
+  "projects": [
+    {
+      "id": "pr_sso",
+      "name": "SSO export",
+      "ticket": "ACME-142",
+      "customer": "c_acme",
+      "owner": "p_sam",
+      "state": "blocked on review",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "pr_renewal_workflow",
+      "name": "Acme renewal workflow",
+      "file": "src/workflows/acme-renewal.ts",
+      "repository": "r_navislabs",
+      "customer": "c_acme",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "d_annual_terms",
+      "text": "Annual plans keep their current terms; usage-based pricing applies to new accounts only.",
+      "short": "Annual plans keep their current terms",
+      "made_in": "Pricing review",
+      "date": "Sep 30",
+      "date_iso": "2026-09-30",
+      "source": "meet",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "commitments": [
+    {
+      "id": "m_revised_terms",
+      "text": "Revised terms promised to Acme by Oct 7 — not yet sent.",
+      "short": "Revised terms promised by Oct 7",
+      "due": "Oct 7",
+      "owner": "p_abhishek",
+      "source": "slack",
+      "channel": "#acme",
+      "date": "Sep 30",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "m_board_metrics",
+      "text": "Updated metrics were promised to the board Thursday",
+      "short": "Board metrics due Thursday",
+      "owner": "p_abhishek",
+      "source": "meet",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "mt_renewal_call",
+      "title": "Acme renewal call",
+      "date": "Oct 9",
+      "moved_on": "Oct 5",
+      "source": "calendar",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "mt_pricing_review",
+      "title": "Pricing review",
+      "date": "Sep 30",
+      "source": "meet",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "emails": [
+    {
+      "id": "e_move_renewal",
+      "from": "p_jordan",
+      "subject": "Moving our renewal to Nov 28",
+      "ask": "Can we move our renewal to Nov 28?",
+      "date": "Oct 5",
+      "date_iso": "2026-10-05",
+      "source": "gmail",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_order_form",
+      "title": "Acme order form — annual plan, current terms",
+      "source": "drive",
+      "date": "Sep 12",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "doc_account_plan",
+      "title": "Acme account plan",
+      "fact": "Account owner: Abhishek Meena",
+      "source": "docs",
+      "date": "Sep 9",
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "doc_sso_spec",
+      "title": "SSO export spec",
+      "source": "docs",
+      "date": "Sep 22",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "repositories": [
+    {
+      "id": "r_navislabs",
+      "name": "NavisLabs",
+      "branch": "main",
+      "provenance": "SYNTHETIC",
+      "note": "Demo repository name shown in VS Code and the terminal."
+    },
+    {
+      "id": "r_riya",
+      "name": "thesis-tracker",
+      "branch": "main",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "agents": [
+    {
+      "id": "a_claude_code",
+      "name": "claude-code",
+      "client": "Claude Code",
+      "owner": "p_abhishek",
+      "permissions": [
+        "view_memory",
+        "view_state"
+      ],
+      "provenance": "REAL_PUBLIC_PRODUCT",
+      "note": "Claude Code is a real public product, named nominatively as the MCP client (Devtool docs/mcp/CLIENTS.md: LIVE VERIFIED)."
+    }
+  ],
+  "runs": [
+    {
+      "id": "7c2e91a0",
+      "task": "Update the Acme renewal workflow.",
+      "agent": "a_claude_code",
+      "status": "Completed",
+      "started": "Oct 6, 09:44",
+      "duration": "4m 12s",
+      "outcome": "Not judged",
+      "steps": [
+        {
+          "at": "09:44:03",
+          "type": "Context",
+          "what": "navis_get_relevant_context → 5 facts · gmail, docs, meet, slack, calendar · as_of 09:44"
+        },
+        {
+          "at": "09:44:06",
+          "type": "Tool",
+          "what": "Read src/workflows/acme-renewal.ts"
+        },
+        {
+          "at": "09:44:41",
+          "type": "Tool",
+          "what": "Edit src/workflows/acme-renewal.ts — code changed (+4 −2)"
+        },
+        {
+          "at": "09:46:02",
+          "type": "Tool",
+          "what": "npm test -- workflows — verification passed"
+        },
+        {
+          "at": "09:48:15",
+          "type": "Outcome",
+          "what": "Result produced"
+        }
+      ],
+      "provenance": "SYNTHETIC"
+    },
+    {
+      "id": "3f9a1d27",
+      "task": "Add usage-based pricing for new accounts.",
+      "agent": "a_claude_code",
+      "status": "Completed",
+      "started": "Oct 5, 17:31",
+      "duration": "14m 08s",
+      "provenance": "SYNTHETIC"
+    }
+  ],
+  "integrations": {
+    "live_current": [
+      "gmail",
+      "calendar",
+      "meet",
+      "drive",
+      "docs",
+      "slack"
+    ],
+    "expanding": [
+      "salesforce",
+      "hubspot",
+      "jira",
+      "github",
+      "notion",
+      "zoom",
+      "microsoft365"
+    ],
+    "semantics": {
+      "gmail": "customer response",
+      "calendar": "meeting & commitment",
+      "meet": "discussion & decision",
+      "drive": "project documents",
+      "docs": "account context",
+      "slack": "team signal",
+      "salesforce": "account context",
+      "hubspot": "customer activity",
+      "jira": "project state",
+      "github": "code activity",
+      "notion": "organizational knowledge",
+      "zoom": "meeting signal",
+      "microsoft365": "work context"
+    },
+    "provenance": "REAL_PUBLIC_PRODUCT",
+    "note": "Vendor marks from navis-labs-website/public/logo. live_current = website status 'supported'; expanding = website status 'soon' (roadmap). Expanding systems are never evidence in a demonstrated workflow."
+  },
+  "developer_workspace": {
+    "organization": "org_navislabs",
+    "kind": "company",
+    "members": [
+      {
+        "person": "p_abhishek",
+        "developer_role": "owner",
+        "application_role": "Founder",
+        "state": "Active"
+      },
+      {
+        "person": "p_sam",
+        "developer_role": "developer",
+        "application_role": "Member",
+        "state": "Invited"
+      }
+    ],
+    "solo": {
+      "id": "w_riya",
+      "person": "p_solo",
+      "kind": "personal",
+      "name": "Riya's workspace",
+      "repository": "r_riya",
+      "task": "Add CSV export to the results page.",
+      "decision": "Keep the export client-side; no new endpoint.",
+      "open": "Write the test for empty result sets.",
+      "provenance": "SYNTHETIC"
+    }
+  },
+  "application_workspace": {
+    "organization": "org_navislabs",
+    "user": "p_abhishek",
+    "date": "Tuesday, October 6",
+    "date_iso": "2026-10-06",
+    "synced": "2m ago",
+    "now": "09:44",
+    "glance": {
+      "decisions": 3,
+      "risks": 1,
+      "actions": 2,
+      "meetings": 4,
+      "waiting": 1,
+      "updates": 0
+    }
+  }
+}

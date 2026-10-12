@@ -1,0 +1,436 @@
+{
+  "about": "V3 audio slots. Each plays FINAL, else TEMP, else nothing. Voice text and timing mirror navislabs_v3_voiceover_screen_map.json (generated together).",
+  "fps": 30,
+  "resolve_order": [
+    "final",
+    "temp"
+  ],
+  "voiceover": [
+    {
+      "id": "V01",
+      "scene": "S01",
+      "start_s": 0.7,
+      "end_s": 3.0,
+      "ceiling_s": 3.4,
+      "text": "Your company already has the answer.",
+      "shows": "A line of light gathers five Acme signals: decision, customer, commitment, meeting, context — each with the system it came from.",
+      "final": "voiceover/final/v3/V01.wav",
+      "temp": "voiceover/temp/v3/V01.wav"
+    },
+    {
+      "id": "V02",
+      "scene": "S01",
+      "start_s": 3.5,
+      "end_s": 7.0,
+      "ceiling_s": 7.4,
+      "text": "It's just scattered across the systems where work happens.",
+      "shows": "The line breaks; each signal returns to its own system: Gmail, Google Calendar, Google Meet, Google Drive, Google Docs, Slack.",
+      "final": "voiceover/final/v3/V02.wav",
+      "temp": "voiceover/temp/v3/V02.wav"
+    },
+    {
+      "id": "V03",
+      "scene": "S02",
+      "start_s": 7.6,
+      "end_s": 11.4,
+      "ceiling_s": 11.9,
+      "text": "People rebuild it by hand. Agents start without it.",
+      "shows": "Split: PEOPLE copy pieces into a note by hand | AGENTS: a new session with company context: —.",
+      "final": "voiceover/final/v3/V03.wav",
+      "temp": "voiceover/temp/v3/V03.wav"
+    },
+    {
+      "id": "V04",
+      "scene": "S03",
+      "start_s": 12.3,
+      "end_s": 14.6,
+      "ceiling_s": 14.9,
+      "text": "NavisLabs brings those signals together.",
+      "shows": "NavisLabs lockup (website treatment) with its line.",
+      "final": "voiceover/final/v3/V04.wav",
+      "temp": "voiceover/temp/v3/V04.wav"
+    },
+    {
+      "id": "V05",
+      "scene": "S03",
+      "start_s": 15.0,
+      "end_s": 17.0,
+      "ceiling_s": 17.4,
+      "text": "One understanding. Two ways in.",
+      "shows": "The line branches: NAVIS APPLICATION · for people | NAVIS DEVELOPER · for developers + AI agents.",
+      "final": "voiceover/final/v3/V05.wav",
+      "temp": "voiceover/temp/v3/V05.wav"
+    },
+    {
+      "id": "V06",
+      "scene": "S04",
+      "start_s": 17.6,
+      "end_s": 21.6,
+      "ceiling_s": 22.0,
+      "text": "Every email, meeting, document and commitment — turned into what's true now.",
+      "shows": "The six live systems emit signals into NavisLabs; seven roadmap systems sit beside them marked 'Coming soon'; the signals become Customers, Projects, Decisions, Commitments, People, Meetings — ONE CURRENT UNDERSTANDING.",
+      "final": "voiceover/final/v3/V06.wav",
+      "temp": "voiceover/temp/v3/V06.wav"
+    },
+    {
+      "id": "V07",
+      "scene": "S05",
+      "start_s": 22.3,
+      "end_s": 25.9,
+      "ceiling_s": 26.4,
+      "text": "In Navis Application, people see what changed — and what needs a decision.",
+      "shows": "Today: 'Good morning, Abhishek.' and 'Today at a glance': Decisions, Risks, Actions today, Meetings, Waiting on you, Updates.",
+      "final": "voiceover/final/v3/V07.wav",
+      "temp": "voiceover/temp/v3/V07.wav"
+    },
+    {
+      "id": "V08",
+      "scene": "S06",
+      "start_s": 26.5,
+      "end_s": 28.2,
+      "ceiling_s": 29.0,
+      "text": "Acme's renewal moved.",
+      "shows": "What changed: 'Just learned — Acme Corp's renewal moved to Nov 28'; then the Acme priority card.",
+      "final": "voiceover/final/v3/V08.wav",
+      "temp": "voiceover/temp/v3/V08.wav"
+    },
+    {
+      "id": "V09",
+      "scene": "S07",
+      "start_s": 29.4,
+      "end_s": 33.0,
+      "ceiling_s": 33.5,
+      "text": "Navis shows why — every fact with its source and its time.",
+      "shows": "'Why this matters' opens 'Why Navis surfaced this'; evidence rows (email, meeting, document, commitment) with TRACE notes: source, timeline, freshness.",
+      "final": "voiceover/final/v3/V09.wav",
+      "temp": "voiceover/temp/v3/V09.wav"
+    },
+    {
+      "id": "V10",
+      "scene": "S08",
+      "start_s": 33.9,
+      "end_s": 36.6,
+      "ceiling_s": 37.0,
+      "text": "It's waiting on you, so Navis prepares the reply.",
+      "shows": "Waiting on you: '1 person is waiting on your reply' → Review & reply → Review draft → 'Preparing the draft…' → the draft.",
+      "final": "voiceover/final/v3/V10.wav",
+      "temp": "voiceover/temp/v3/V10.wav"
+    },
+    {
+      "id": "V11",
+      "scene": "S08",
+      "start_s": 37.2,
+      "end_s": 38.8,
+      "ceiling_s": 39.6,
+      "text": "A person decides.",
+      "shows": "Abhishek selects one sentence and writes his own; 'Saved' → 'Save changes'.",
+      "final": "voiceover/final/v3/V11.wav",
+      "temp": "voiceover/temp/v3/V11.wav"
+    },
+    {
+      "id": "V12",
+      "scene": "S09",
+      "start_s": 41.4,
+      "end_s": 43.0,
+      "ceiling_s": 44.6,
+      "text": "The company acts.",
+      "shows": "Approve & send → 'Approved — sending' → 'Sending…' → Gmail accepted → 'Reply sent · Gmail accepted the message.'",
+      "final": "voiceover/final/v3/V12.wav",
+      "temp": "voiceover/temp/v3/V12.wav"
+    },
+    {
+      "id": "V13",
+      "scene": "S10",
+      "start_s": 45.15,
+      "end_s": 48.6,
+      "ceiling_s": 48.95,
+      "text": "Agents get the same understanding, in the tools they use.",
+      "shows": "Hard cut: VS Code on the NavisLabs repository, Claude Code in a terminal (prompt abhishekmeena@Abhisheks-MacBook-Pro-8 NavisLabs %); task 'Update the Acme renewal workflow.'",
+      "final": "voiceover/final/v3/V13.wav",
+      "temp": "voiceover/temp/v3/V13.wav"
+    },
+    {
+      "id": "V14",
+      "scene": "S11",
+      "start_s": 49.0,
+      "end_s": 51.9,
+      "ceiling_s": 52.7,
+      "text": "Connect once — MCP, API, SDKs or CLI.",
+      "shows": "Navis Developer Console → Connect: MCP, Developer API, SDKs, CLI, each with its real command; private preview.",
+      "final": "voiceover/final/v3/V14.wav",
+      "temp": "voiceover/temp/v3/V14.wav"
+    },
+    {
+      "id": "V15",
+      "scene": "S12",
+      "start_s": 52.9,
+      "end_s": 56.2,
+      "ceiling_s": 56.5,
+      "text": "The agent asks — and gets cited facts, with their freshness.",
+      "shows": "navis - navis_get_relevant_context (MCP) → ACME CORP: renewal date (moved), owner, decision, commitment, last customer response — each with source and freshness.",
+      "final": "voiceover/final/v3/V15.wav",
+      "temp": "voiceover/temp/v3/V15.wav"
+    },
+    {
+      "id": "V16",
+      "scene": "S13",
+      "start_s": 56.6,
+      "end_s": 59.4,
+      "ceiling_s": 59.85,
+      "text": "Navis isn't the model. It supplies the company's truth.",
+      "shows": "The real TypeScript SDK call (new Navis(...); navis.context()) with today's install line, and POST /developer/context → a structured response; 'No model is called · Navis grounds · your agent reasons'.",
+      "final": "voiceover/final/v3/V16.wav",
+      "temp": "voiceover/temp/v3/V16.wav"
+    },
+    {
+      "id": "V17",
+      "scene": "S14",
+      "start_s": 60.0,
+      "end_s": 62.6,
+      "ceiling_s": 63.3,
+      "text": "Every request is checked against identity and permissions.",
+      "shows": "Agent → identity (its own key) → permissions on the credential → AUTHORIZED; a read-only key → DENIED with the exact refusal.",
+      "final": "voiceover/final/v3/V17.wav",
+      "temp": "voiceover/temp/v3/V17.wav"
+    },
+    {
+      "id": "V18",
+      "scene": "S15",
+      "start_s": 63.6,
+      "end_s": 67.2,
+      "ceiling_s": 67.8,
+      "text": "The agent does the work, and the run is on record.",
+      "shows": "The diff lands in acme-renewal.ts (renewsOn Nov 28, current annual terms); Console → Runs → Run: timeline Context · Tool · Tool · Outcome; cost/tokens not recorded (—); outcome 'Not judged'.",
+      "final": "voiceover/final/v3/V18.wav",
+      "temp": "voiceover/temp/v3/V18.wav"
+    },
+    {
+      "id": "V19",
+      "scene": "S16",
+      "start_s": 68.6,
+      "end_s": 71.8,
+      "ceiling_s": 72.3,
+      "text": "The person and the agent acted on the same event.",
+      "shows": "HERO: Navis Application (people) and Navis Developer (developers + AI agents) either side of NavisLabs; the Acme signal arrives in both.",
+      "final": "voiceover/final/v3/V19.wav",
+      "temp": "voiceover/temp/v3/V19.wav"
+    },
+    {
+      "id": "V20",
+      "scene": "S16",
+      "start_s": 72.6,
+      "end_s": 76.4,
+      "ceiling_s": 77.0,
+      "text": "Same facts. Same sources. Same freshness.",
+      "shows": "Three matched rows light up between the products: the renewal fact, its Gmail source, its freshness.",
+      "final": "voiceover/final/v3/V20.wav",
+      "temp": "voiceover/temp/v3/V20.wav"
+    },
+    {
+      "id": "V21",
+      "scene": "S16",
+      "start_s": 77.4,
+      "end_s": 81.0,
+      "ceiling_s": 81.8,
+      "text": "One company. One understanding. Two ways in.",
+      "shows": "ONE COMPANY · ONE UNDERSTANDING · TWO WAYS IN.",
+      "final": "voiceover/final/v3/V21.wav",
+      "temp": "voiceover/temp/v3/V21.wav"
+    },
+    {
+      "id": "V22",
+      "scene": "S17",
+      "start_s": 82.4,
+      "end_s": 86.0,
+      "ceiling_s": 86.5,
+      "text": "Models change. Agents change. Tools change.",
+      "shows": "Type: models / agents / tools change; the agent clients appear with their real verification status feeding Navis Developer: Claude Code (live verified), Cursor, Codex, VS Code (configuration verified), any MCP client.",
+      "final": "voiceover/final/v3/V22.wav",
+      "temp": "voiceover/temp/v3/V22.wav"
+    },
+    {
+      "id": "V23",
+      "scene": "S17",
+      "start_s": 86.8,
+      "end_s": 89.4,
+      "ceiling_s": 89.7,
+      "text": "Your company keeps its history.",
+      "shows": "DECISION → EXECUTION → OUTCOME (BUILDING) → LEARNING (NEXT).",
+      "final": "voiceover/final/v3/V23.wav",
+      "temp": "voiceover/temp/v3/V23.wav"
+    },
+    {
+      "id": "V24",
+      "scene": "S17",
+      "start_s": 89.9,
+      "end_s": 93.0,
+      "ceiling_s": 93.65,
+      "text": "Company-owned. Model-neutral. Shared by people and agents.",
+      "shows": "COMPANY-OWNED · MODEL-NEUTRAL · SHARED UNDERSTANDING.",
+      "final": "voiceover/final/v3/V24.wav",
+      "temp": "voiceover/temp/v3/V24.wav"
+    },
+    {
+      "id": "V25",
+      "scene": "S17",
+      "start_s": 93.8,
+      "end_s": 96.6,
+      "ceiling_s": 97.6,
+      "text": "NavisLabs. The shared understanding for your organization.",
+      "shows": "End card: NavisLabs lockup, the website headline, both products, Book Demo · navislabs.in.",
+      "final": "voiceover/final/v3/V25.wav",
+      "temp": "voiceover/temp/v3/V25.wav"
+    }
+  ],
+  "music": {
+    "final": "music/final/v3/score.wav",
+    "temp": "music/temp/v3/score.wav",
+    "style": "San Francisco late-night engineering: low drones, restrained electronic pulse under the developer section, warm pads under the application, one resolving piano chord. No trailer hits.",
+    "sections": [
+      {
+        "id": "M1",
+        "role": "ambient",
+        "from_s": 0,
+        "to_s": 7,
+        "brief": "almost silent tension"
+      },
+      {
+        "id": "M2",
+        "role": "pulse",
+        "from_s": 7,
+        "to_s": 11.6,
+        "brief": "a subtle pulse under the problem"
+      },
+      {
+        "id": "M3",
+        "role": "lift",
+        "from_s": 12.2,
+        "to_s": 22,
+        "brief": "NavisLabs: low swell; the systems connect"
+      },
+      {
+        "id": "M4",
+        "role": "human",
+        "from_s": 22,
+        "to_s": 45,
+        "brief": "warmer, human — Navis Application"
+      },
+      {
+        "id": "M5",
+        "role": "technical",
+        "from_s": 45,
+        "to_s": 68,
+        "brief": "faster, precise developer rhythm — Navis Developer"
+      },
+      {
+        "id": "M6",
+        "role": "build",
+        "from_s": 68,
+        "to_s": 93.4,
+        "brief": "slow build: same truth, then the moat"
+      },
+      {
+        "id": "M7",
+        "role": "resolve",
+        "from_s": 93.4,
+        "to_s": 100,
+        "brief": "resolve into silence"
+      }
+    ],
+    "gain_db": -7,
+    "duck_under_vo_db": -8,
+    "duck_attack_s": 0.15,
+    "duck_release_s": 0.45,
+    "dips": [
+      {
+        "from_s": 11.7,
+        "to_s": 12.25,
+        "db": -96,
+        "why": "breath before NavisLabs"
+      },
+      {
+        "from_s": 40.35,
+        "to_s": 40.65,
+        "db": -96,
+        "why": "held breath on Approve & send"
+      },
+      {
+        "from_s": 61.9,
+        "to_s": 63.3,
+        "db": -18,
+        "why": "the refusal"
+      },
+      {
+        "from_s": 98.4,
+        "to_s": 100,
+        "db": -96,
+        "why": "silent end"
+      }
+    ]
+  },
+  "sfx": {
+    "style": "Understated: keys, enter, clicks, selection, one notification, confirm, sent, deny, two soft air transitions.",
+    "library": {
+      "key": {
+        "final": "sfx/final/key.wav",
+        "temp": "sfx/temp/key.wav",
+        "gain_db": -25
+      },
+      "key2": {
+        "final": "sfx/final/key2.wav",
+        "temp": "sfx/temp/key2.wav",
+        "gain_db": -25
+      },
+      "key3": {
+        "final": "sfx/final/key3.wav",
+        "temp": "sfx/temp/key3.wav",
+        "gain_db": -25
+      },
+      "enter": {
+        "final": "sfx/final/enter.wav",
+        "temp": "sfx/temp/enter.wav",
+        "gain_db": -19
+      },
+      "click": {
+        "final": "sfx/final/click.wav",
+        "temp": "sfx/temp/click.wav",
+        "gain_db": -17
+      },
+      "select": {
+        "final": "sfx/final/select.wav",
+        "temp": "sfx/temp/select.wav",
+        "gain_db": -25
+      },
+      "run": {
+        "final": "sfx/final/run.wav",
+        "temp": "sfx/temp/run.wav",
+        "gain_db": -27
+      },
+      "confirm": {
+        "final": "sfx/final/confirm.wav",
+        "temp": "sfx/temp/confirm.wav",
+        "gain_db": -21
+      },
+      "sent": {
+        "final": "sfx/final/sent.wav",
+        "temp": "sfx/temp/sent.wav",
+        "gain_db": -19
+      },
+      "deny": {
+        "final": "sfx/final/deny.wav",
+        "temp": "sfx/temp/deny.wav",
+        "gain_db": -21
+      },
+      "air": {
+        "final": "sfx/final/air.wav",
+        "temp": "sfx/temp/air.wav",
+        "gain_db": -32
+      },
+      "notify": {
+        "final": "sfx/final/notify.wav",
+        "temp": "sfx/temp/notify.wav",
+        "gain_db": -26
+      }
+    }
+  }
+}

@@ -1,0 +1,216 @@
+{
+ "video": "out/navislabs-final-audio-review-1080p.mp4",
+ "frames": 3757,
+ "soft_frames": [
+  {
+   "from_s": 0.0,
+   "to_s": 0.87,
+   "frames": 27,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 6.97,
+   "to_s": 7.53,
+   "frames": 18,
+   "min_ratio": 0.01
+  },
+  {
+   "from_s": 9.43,
+   "to_s": 9.87,
+   "frames": 14,
+   "min_ratio": 0.32
+  },
+  {
+   "from_s": 13.43,
+   "to_s": 14.3,
+   "frames": 27,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 20.03,
+   "to_s": 20.2,
+   "frames": 6,
+   "min_ratio": 0.7
+  },
+  {
+   "from_s": 20.27,
+   "to_s": 20.77,
+   "frames": 16,
+   "min_ratio": 0.6
+  },
+  {
+   "from_s": 28.73,
+   "to_s": 29.0,
+   "frames": 9,
+   "min_ratio": 0.35
+  },
+  {
+   "from_s": 29.8,
+   "to_s": 30.37,
+   "frames": 18,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 34.6,
+   "to_s": 35.6,
+   "frames": 31,
+   "min_ratio": 0.21
+  },
+  {
+   "from_s": 35.87,
+   "to_s": 36.7,
+   "frames": 26,
+   "min_ratio": 0.41
+  },
+  {
+   "from_s": 37.83,
+   "to_s": 38.83,
+   "frames": 31,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 42.8,
+   "to_s": 42.8,
+   "frames": 1,
+   "min_ratio": 0.93
+  },
+  {
+   "from_s": 42.87,
+   "to_s": 43.4,
+   "frames": 17,
+   "min_ratio": 0.75
+  },
+  {
+   "from_s": 43.53,
+   "to_s": 43.6,
+   "frames": 3,
+   "min_ratio": 0.45
+  },
+  {
+   "from_s": 43.67,
+   "to_s": 44.1,
+   "frames": 14,
+   "min_ratio": 0.31
+  },
+  {
+   "from_s": 49.07,
+   "to_s": 49.47,
+   "frames": 13,
+   "min_ratio": 0.05
+  },
+  {
+   "from_s": 51.27,
+   "to_s": 51.4,
+   "frames": 5,
+   "min_ratio": 0.43
+  },
+  {
+   "from_s": 53.53,
+   "to_s": 53.87,
+   "frames": 11,
+   "min_ratio": 0.59
+  },
+  {
+   "from_s": 53.97,
+   "to_s": 54.2,
+   "frames": 8,
+   "min_ratio": 0.91
+  },
+  {
+   "from_s": 54.83,
+   "to_s": 54.93,
+   "frames": 4,
+   "min_ratio": 0.85
+  },
+  {
+   "from_s": 57.53,
+   "to_s": 57.8,
+   "frames": 9,
+   "min_ratio": 0.3
+  },
+  {
+   "from_s": 69.97,
+   "to_s": 71.0,
+   "frames": 32,
+   "min_ratio": 0.03
+  },
+  {
+   "from_s": 72.37,
+   "to_s": 72.43,
+   "frames": 3,
+   "min_ratio": 0.15
+  },
+  {
+   "from_s": 76.33,
+   "to_s": 77.0,
+   "frames": 21,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 77.73,
+   "to_s": 78.73,
+   "frames": 31,
+   "min_ratio": 0.13
+  },
+  {
+   "from_s": 81.37,
+   "to_s": 81.43,
+   "frames": 3,
+   "min_ratio": 0.67
+  },
+  {
+   "from_s": 81.57,
+   "to_s": 81.57,
+   "frames": 1,
+   "min_ratio": 0.89
+  },
+  {
+   "from_s": 87.77,
+   "to_s": 88.37,
+   "frames": 19,
+   "min_ratio": 0.09
+  },
+  {
+   "from_s": 89.33,
+   "to_s": 89.67,
+   "frames": 11,
+   "min_ratio": 0.16
+  },
+  {
+   "from_s": 92.57,
+   "to_s": 93.07,
+   "frames": 16,
+   "min_ratio": 0.04
+  },
+  {
+   "from_s": 104.97,
+   "to_s": 105.77,
+   "frames": 25,
+   "min_ratio": 0.07
+  },
+  {
+   "from_s": 110.03,
+   "to_s": 110.4,
+   "frames": 12,
+   "min_ratio": 0.1
+  },
+  {
+   "from_s": 118.17,
+   "to_s": 119.17,
+   "frames": 31,
+   "min_ratio": 0.0
+  },
+  {
+   "from_s": 120.57,
+   "to_s": 121.4,
+   "frames": 26,
+   "min_ratio": 0.83
+  },
+  {
+   "from_s": 124.8,
+   "to_s": 125.2,
+   "frames": 13,
+   "min_ratio": 0.0
+  }
+ ]
+}

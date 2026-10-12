@@ -1,0 +1,1766 @@
+{
+  "about": "Where the founder's voice lands in the film: each chunk's start, every line and every word (seconds, absolute). Built by scripts/build-film-data-v6.py from navislabs_v6_voice_analysis.json.",
+  "duration_s": 125.233,
+  "frames": 3757,
+  "lead_s": 0.6,
+  "gap_after_s": {
+    "P1": 1.05,
+    "P2": 0.85,
+    "P3": 2.2,
+    "P4": 0.9,
+    "P5": 0.65,
+    "P6": 1.15,
+    "P7": 0.85
+  },
+  "hold_s": 1.4,
+  "chunks": [
+    {
+      "id": "P1",
+      "file": "voiceover/final/v6/P1.wav",
+      "at_s": 0.41,
+      "duration_s": 12.669,
+      "speech_start_s": 0.6,
+      "speech_end_s": 12.98,
+      "pauses": [
+        {
+          "from_s": 3.6,
+          "to_s": 6.2,
+          "s": 2.6
+        }
+      ],
+      "lines": [
+        {
+          "text": "Your people and agents see different truths.",
+          "start_s": 0.6,
+          "end_s": 3.6,
+          "pause_after": true,
+          "key": false,
+          "words": [
+            {
+              "text": "Your",
+              "start_s": 0.6,
+              "end_s": 0.85
+            },
+            {
+              "text": "people",
+              "start_s": 0.85,
+              "end_s": 1.35
+            },
+            {
+              "text": "and",
+              "start_s": 1.35,
+              "end_s": 1.6
+            },
+            {
+              "text": "agents",
+              "start_s": 1.6,
+              "end_s": 2.1
+            },
+            {
+              "text": "see",
+              "start_s": 2.27,
+              "end_s": 2.536
+            },
+            {
+              "text": "different",
+              "start_s": 2.536,
+              "end_s": 3.334
+            },
+            {
+              "text": "truths.",
+              "start_s": 3.334,
+              "end_s": 3.6
+            }
+          ]
+        },
+        {
+          "text": "The truth is scattered across the systems where work happens.",
+          "start_s": 6.2,
+          "end_s": 9.42,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "The",
+              "start_s": 6.2,
+              "end_s": 6.43
+            },
+            {
+              "text": "truth",
+              "start_s": 6.43,
+              "end_s": 6.66
+            },
+            {
+              "text": "is",
+              "start_s": 6.66,
+              "end_s": 6.89
+            },
+            {
+              "text": "scattered",
+              "start_s": 6.89,
+              "end_s": 7.35
+            },
+            {
+              "text": "across",
+              "start_s": 7.35,
+              "end_s": 7.81
+            },
+            {
+              "text": "the",
+              "start_s": 7.81,
+              "end_s": 8.04
+            },
+            {
+              "text": "systems",
+              "start_s": 8.04,
+              "end_s": 8.5
+            },
+            {
+              "text": "where",
+              "start_s": 8.5,
+              "end_s": 8.73
+            },
+            {
+              "text": "work",
+              "start_s": 8.73,
+              "end_s": 8.96
+            },
+            {
+              "text": "happens.",
+              "start_s": 8.96,
+              "end_s": 9.42
+            }
+          ]
+        },
+        {
+          "text": "People rebuild it by hand.",
+          "start_s": 9.77,
+          "end_s": 11.31,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "People",
+              "start_s": 9.77,
+              "end_s": 10.21
+            },
+            {
+              "text": "rebuild",
+              "start_s": 10.21,
+              "end_s": 10.65
+            },
+            {
+              "text": "it",
+              "start_s": 10.65,
+              "end_s": 10.87
+            },
+            {
+              "text": "by",
+              "start_s": 10.87,
+              "end_s": 11.09
+            },
+            {
+              "text": "hand.",
+              "start_s": 11.09,
+              "end_s": 11.31
+            }
+          ]
+        },
+        {
+          "text": "Agents start without it.",
+          "start_s": 11.62,
+          "end_s": 12.98,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Agents",
+              "start_s": 11.62,
+              "end_s": 12.073
+            },
+            {
+              "text": "start",
+              "start_s": 12.073,
+              "end_s": 12.3
+            },
+            {
+              "text": "without",
+              "start_s": 12.3,
+              "end_s": 12.753
+            },
+            {
+              "text": "it.",
+              "start_s": 12.753,
+              "end_s": 12.98
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "file": "voiceover/final/v6/P2.wav",
+      "at_s": 13.98,
+      "duration_s": 14.211,
+      "speech_start_s": 14.03,
+      "speech_end_s": 28.1,
+      "pauses": [
+        {
+          "from_s": 17.02,
+          "to_s": 19.97,
+          "s": 2.95
+        },
+        {
+          "from_s": 23.64,
+          "to_s": 24.4,
+          "s": 0.76
+        }
+      ],
+      "lines": [
+        {
+          "text": "Navis turns those signals into one shared understanding.",
+          "start_s": 14.03,
+          "end_s": 17.02,
+          "pause_after": true,
+          "key": true,
+          "words": [
+            {
+              "text": "Navis",
+              "start_s": 14.03,
+              "end_s": 14.457
+            },
+            {
+              "text": "turns",
+              "start_s": 14.457,
+              "end_s": 14.671
+            },
+            {
+              "text": "those",
+              "start_s": 14.671,
+              "end_s": 14.884
+            },
+            {
+              "text": "signals",
+              "start_s": 14.884,
+              "end_s": 15.311
+            },
+            {
+              "text": "into",
+              "start_s": 15.311,
+              "end_s": 15.739
+            },
+            {
+              "text": "one",
+              "start_s": 15.739,
+              "end_s": 15.952
+            },
+            {
+              "text": "shared",
+              "start_s": 15.952,
+              "end_s": 16.166
+            },
+            {
+              "text": "understanding.",
+              "start_s": 16.166,
+              "end_s": 17.02
+            }
+          ]
+        },
+        {
+          "text": "Every email, meeting, document and message becomes a signal —",
+          "start_s": 19.97,
+          "end_s": 23.64,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Every",
+              "start_s": 19.97,
+              "end_s": 20.549
+            },
+            {
+              "text": "email,",
+              "start_s": 20.549,
+              "end_s": 20.936
+            },
+            {
+              "text": "meeting,",
+              "start_s": 20.936,
+              "end_s": 21.322
+            },
+            {
+              "text": "document",
+              "start_s": 21.322,
+              "end_s": 21.902
+            },
+            {
+              "text": "and",
+              "start_s": 21.902,
+              "end_s": 22.095
+            },
+            {
+              "text": "message",
+              "start_s": 22.095,
+              "end_s": 22.481
+            },
+            {
+              "text": "becomes",
+              "start_s": 22.481,
+              "end_s": 23.061
+            },
+            {
+              "text": "a",
+              "start_s": 23.061,
+              "end_s": 23.254
+            },
+            {
+              "text": "signal",
+              "start_s": 23.254,
+              "end_s": 23.64
+            }
+          ]
+        },
+        {
+          "text": "remembered, connected, and turned into what should happen next.",
+          "start_s": 24.4,
+          "end_s": 28.1,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "remembered,",
+              "start_s": 24.4,
+              "end_s": 24.92
+            },
+            {
+              "text": "connected,",
+              "start_s": 25.27,
+              "end_s": 25.82
+            },
+            {
+              "text": "and",
+              "start_s": 26.19,
+              "end_s": 26.402
+            },
+            {
+              "text": "turned",
+              "start_s": 26.402,
+              "end_s": 26.614
+            },
+            {
+              "text": "into",
+              "start_s": 26.614,
+              "end_s": 27.039
+            },
+            {
+              "text": "what",
+              "start_s": 27.039,
+              "end_s": 27.251
+            },
+            {
+              "text": "should",
+              "start_s": 27.251,
+              "end_s": 27.463
+            },
+            {
+              "text": "happen",
+              "start_s": 27.463,
+              "end_s": 27.888
+            },
+            {
+              "text": "next.",
+              "start_s": 27.888,
+              "end_s": 28.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "file": "voiceover/final/v6/P3.wav",
+      "at_s": 28.86,
+      "duration_s": 22.204,
+      "speech_start_s": 28.95,
+      "speech_end_s": 51.05,
+      "pauses": [
+        {
+          "from_s": 31.59,
+          "to_s": 32.39,
+          "s": 0.8
+        },
+        {
+          "from_s": 35.63,
+          "to_s": 36.38,
+          "s": 0.75
+        },
+        {
+          "from_s": 40.09,
+          "to_s": 40.88,
+          "s": 0.79
+        },
+        {
+          "from_s": 44.34,
+          "to_s": 46.07,
+          "s": 1.73
+        },
+        {
+          "from_s": 47.42,
+          "to_s": 49.15,
+          "s": 1.73
+        }
+      ],
+      "lines": [
+        {
+          "text": "Inside a company, the Navis App is for people.",
+          "start_s": 28.95,
+          "end_s": 31.59,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Inside",
+              "start_s": 28.95,
+              "end_s": 29.327
+            },
+            {
+              "text": "a",
+              "start_s": 29.327,
+              "end_s": 29.516
+            },
+            {
+              "text": "company,",
+              "start_s": 29.516,
+              "end_s": 30.081
+            },
+            {
+              "text": "the",
+              "start_s": 30.081,
+              "end_s": 30.27
+            },
+            {
+              "text": "Navis",
+              "start_s": 30.27,
+              "end_s": 30.647
+            },
+            {
+              "text": "App",
+              "start_s": 30.647,
+              "end_s": 30.836
+            },
+            {
+              "text": "is",
+              "start_s": 30.836,
+              "end_s": 31.024
+            },
+            {
+              "text": "for",
+              "start_s": 31.024,
+              "end_s": 31.213
+            },
+            {
+              "text": "people.",
+              "start_s": 31.213,
+              "end_s": 31.59
+            }
+          ]
+        },
+        {
+          "text": "It shows what changed —",
+          "start_s": 32.39,
+          "end_s": 33.85,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "It",
+              "start_s": 32.39,
+              "end_s": 32.755
+            },
+            {
+              "text": "shows",
+              "start_s": 32.755,
+              "end_s": 33.12
+            },
+            {
+              "text": "what",
+              "start_s": 33.12,
+              "end_s": 33.485
+            },
+            {
+              "text": "changed",
+              "start_s": 33.485,
+              "end_s": 33.85
+            }
+          ]
+        },
+        {
+          "text": "and why it matters.",
+          "start_s": 34.29,
+          "end_s": 35.63,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "and",
+              "start_s": 34.29,
+              "end_s": 34.558
+            },
+            {
+              "text": "why",
+              "start_s": 34.558,
+              "end_s": 34.826
+            },
+            {
+              "text": "it",
+              "start_s": 34.826,
+              "end_s": 35.094
+            },
+            {
+              "text": "matters.",
+              "start_s": 35.094,
+              "end_s": 35.63
+            }
+          ]
+        },
+        {
+          "text": "Every fact has its source, its time, and how fresh it is.",
+          "start_s": 36.38,
+          "end_s": 40.09,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Every",
+              "start_s": 36.38,
+              "end_s": 37.066
+            },
+            {
+              "text": "fact",
+              "start_s": 37.066,
+              "end_s": 37.294
+            },
+            {
+              "text": "has",
+              "start_s": 37.294,
+              "end_s": 37.523
+            },
+            {
+              "text": "its",
+              "start_s": 37.523,
+              "end_s": 37.751
+            },
+            {
+              "text": "source,",
+              "start_s": 37.751,
+              "end_s": 37.98
+            },
+            {
+              "text": "its",
+              "start_s": 38.25,
+              "end_s": 38.57
+            },
+            {
+              "text": "time,",
+              "start_s": 38.57,
+              "end_s": 38.89
+            },
+            {
+              "text": "and",
+              "start_s": 39.14,
+              "end_s": 39.33
+            },
+            {
+              "text": "how",
+              "start_s": 39.33,
+              "end_s": 39.52
+            },
+            {
+              "text": "fresh",
+              "start_s": 39.52,
+              "end_s": 39.71
+            },
+            {
+              "text": "it",
+              "start_s": 39.71,
+              "end_s": 39.9
+            },
+            {
+              "text": "is.",
+              "start_s": 39.9,
+              "end_s": 40.09
+            }
+          ]
+        },
+        {
+          "text": "When something needs a decision, Navis prepares the next step.",
+          "start_s": 40.88,
+          "end_s": 44.34,
+          "pause_after": true,
+          "key": false,
+          "words": [
+            {
+              "text": "When",
+              "start_s": 40.88,
+              "end_s": 41.041
+            },
+            {
+              "text": "something",
+              "start_s": 41.041,
+              "end_s": 41.524
+            },
+            {
+              "text": "needs",
+              "start_s": 41.524,
+              "end_s": 41.686
+            },
+            {
+              "text": "a",
+              "start_s": 41.686,
+              "end_s": 41.847
+            },
+            {
+              "text": "decision,",
+              "start_s": 41.847,
+              "end_s": 42.33
+            },
+            {
+              "text": "Navis",
+              "start_s": 42.66,
+              "end_s": 43.067
+            },
+            {
+              "text": "prepares",
+              "start_s": 43.067,
+              "end_s": 43.677
+            },
+            {
+              "text": "the",
+              "start_s": 43.677,
+              "end_s": 43.88
+            },
+            {
+              "text": "next",
+              "start_s": 44.05,
+              "end_s": 44.195
+            },
+            {
+              "text": "step.",
+              "start_s": 44.195,
+              "end_s": 44.34
+            }
+          ]
+        },
+        {
+          "text": "A person decides.",
+          "start_s": 46.07,
+          "end_s": 47.42,
+          "pause_after": true,
+          "key": true,
+          "words": [
+            {
+              "text": "A",
+              "start_s": 46.07,
+              "end_s": 46.295
+            },
+            {
+              "text": "person",
+              "start_s": 46.295,
+              "end_s": 46.745
+            },
+            {
+              "text": "decides.",
+              "start_s": 46.745,
+              "end_s": 47.42
+            }
+          ]
+        },
+        {
+          "text": "Then the company acts.",
+          "start_s": 49.15,
+          "end_s": 51.05,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Then",
+              "start_s": 49.15,
+              "end_s": 49.35
+            },
+            {
+              "text": "the",
+              "start_s": 49.35,
+              "end_s": 49.55
+            },
+            {
+              "text": "company",
+              "start_s": 49.76,
+              "end_s": 50.72
+            },
+            {
+              "text": "acts.",
+              "start_s": 50.9,
+              "end_s": 51.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "file": "voiceover/final/v6/P4.wav",
+      "at_s": 53.13,
+      "duration_s": 29.806,
+      "speech_start_s": 53.25,
+      "speech_end_s": 82.75,
+      "pauses": [
+        {
+          "from_s": 57.27,
+          "to_s": 58.14,
+          "s": 0.87
+        },
+        {
+          "from_s": 58.93,
+          "to_s": 59.49,
+          "s": 0.56
+        },
+        {
+          "from_s": 63.34,
+          "to_s": 64.2,
+          "s": 0.86
+        },
+        {
+          "from_s": 69.56,
+          "to_s": 70.31,
+          "s": 0.75
+        },
+        {
+          "from_s": 72.08,
+          "to_s": 73.66,
+          "s": 1.58
+        },
+        {
+          "from_s": 75.81,
+          "to_s": 76.77,
+          "s": 0.96
+        },
+        {
+          "from_s": 79.38,
+          "to_s": 79.97,
+          "s": 0.59
+        }
+      ],
+      "lines": [
+        {
+          "text": "The same company's agents use Navis Developer.",
+          "start_s": 53.25,
+          "end_s": 56.04,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "The",
+              "start_s": 53.25,
+              "end_s": 53.449
+            },
+            {
+              "text": "same",
+              "start_s": 53.449,
+              "end_s": 53.649
+            },
+            {
+              "text": "company's",
+              "start_s": 53.649,
+              "end_s": 54.246
+            },
+            {
+              "text": "agents",
+              "start_s": 54.246,
+              "end_s": 54.645
+            },
+            {
+              "text": "use",
+              "start_s": 54.645,
+              "end_s": 54.844
+            },
+            {
+              "text": "Navis",
+              "start_s": 54.844,
+              "end_s": 55.243
+            },
+            {
+              "text": "Developer.",
+              "start_s": 55.243,
+              "end_s": 56.04
+            }
+          ]
+        },
+        {
+          "text": "Invite the team.",
+          "start_s": 56.52,
+          "end_s": 57.27,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Invite",
+              "start_s": 56.52,
+              "end_s": 56.895
+            },
+            {
+              "text": "the",
+              "start_s": 56.895,
+              "end_s": 57.083
+            },
+            {
+              "text": "team.",
+              "start_s": 57.083,
+              "end_s": 57.27
+            }
+          ]
+        },
+        {
+          "text": "Connect once — through MCP, API, SDK or CLI.",
+          "start_s": 58.14,
+          "end_s": 63.34,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Connect",
+              "start_s": 58.14,
+              "end_s": 58.667
+            },
+            {
+              "text": "once",
+              "start_s": 58.667,
+              "end_s": 58.93
+            },
+            {
+              "text": "through",
+              "start_s": 59.49,
+              "end_s": 59.668
+            },
+            {
+              "text": "MCP,",
+              "start_s": 59.668,
+              "end_s": 60.2
+            },
+            {
+              "text": "API,",
+              "start_s": 60.54,
+              "end_s": 61.1
+            },
+            {
+              "text": "SDK",
+              "start_s": 61.46,
+              "end_s": 62.09
+            },
+            {
+              "text": "or",
+              "start_s": 62.33,
+              "end_s": 62.63
+            },
+            {
+              "text": "CLI.",
+              "start_s": 62.85,
+              "end_s": 63.34
+            }
+          ]
+        },
+        {
+          "text": "The agent asks —",
+          "start_s": 64.2,
+          "end_s": 65.13,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "The",
+              "start_s": 64.2,
+              "end_s": 64.433
+            },
+            {
+              "text": "agent",
+              "start_s": 64.433,
+              "end_s": 64.898
+            },
+            {
+              "text": "asks",
+              "start_s": 64.898,
+              "end_s": 65.13
+            }
+          ]
+        },
+        {
+          "text": "and gets the company's context, with sources and freshness.",
+          "start_s": 65.55,
+          "end_s": 69.56,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "and",
+              "start_s": 65.55,
+              "end_s": 65.745
+            },
+            {
+              "text": "gets",
+              "start_s": 65.745,
+              "end_s": 65.94
+            },
+            {
+              "text": "the",
+              "start_s": 66.26,
+              "end_s": 66.503
+            },
+            {
+              "text": "company's",
+              "start_s": 66.503,
+              "end_s": 67.233
+            },
+            {
+              "text": "context,",
+              "start_s": 67.233,
+              "end_s": 67.72
+            },
+            {
+              "text": "with",
+              "start_s": 67.95,
+              "end_s": 68.218
+            },
+            {
+              "text": "sources",
+              "start_s": 68.218,
+              "end_s": 68.755
+            },
+            {
+              "text": "and",
+              "start_s": 68.755,
+              "end_s": 69.023
+            },
+            {
+              "text": "freshness.",
+              "start_s": 69.023,
+              "end_s": 69.56
+            }
+          ]
+        },
+        {
+          "text": "Navis isn't the model.",
+          "start_s": 70.31,
+          "end_s": 72.08,
+          "pause_after": true,
+          "key": true,
+          "words": [
+            {
+              "text": "Navis",
+              "start_s": 70.31,
+              "end_s": 70.85
+            },
+            {
+              "text": "isn't",
+              "start_s": 71.03,
+              "end_s": 71.23
+            },
+            {
+              "text": "the",
+              "start_s": 71.23,
+              "end_s": 71.43
+            },
+            {
+              "text": "model.",
+              "start_s": 71.59,
+              "end_s": 72.08
+            }
+          ]
+        },
+        {
+          "text": "It supplies the company's truth.",
+          "start_s": 73.66,
+          "end_s": 75.81,
+          "pause_after": false,
+          "key": true,
+          "words": [
+            {
+              "text": "It",
+              "start_s": 73.66,
+              "end_s": 73.853
+            },
+            {
+              "text": "supplies",
+              "start_s": 73.853,
+              "end_s": 74.238
+            },
+            {
+              "text": "the",
+              "start_s": 74.238,
+              "end_s": 74.43
+            },
+            {
+              "text": "company's",
+              "start_s": 74.68,
+              "end_s": 75.41
+            },
+            {
+              "text": "truth.",
+              "start_s": 75.61,
+              "end_s": 75.81
+            }
+          ]
+        },
+        {
+          "text": "Every request is checked against its permissions.",
+          "start_s": 76.77,
+          "end_s": 79.38,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Every",
+              "start_s": 76.77,
+              "end_s": 77.214
+            },
+            {
+              "text": "request",
+              "start_s": 77.214,
+              "end_s": 77.51
+            },
+            {
+              "text": "is",
+              "start_s": 77.66,
+              "end_s": 77.875
+            },
+            {
+              "text": "checked",
+              "start_s": 77.875,
+              "end_s": 78.09
+            },
+            {
+              "text": "against",
+              "start_s": 78.09,
+              "end_s": 78.52
+            },
+            {
+              "text": "its",
+              "start_s": 78.52,
+              "end_s": 78.735
+            },
+            {
+              "text": "permissions.",
+              "start_s": 78.735,
+              "end_s": 79.38
+            }
+          ]
+        },
+        {
+          "text": "The agent does the work,",
+          "start_s": 79.97,
+          "end_s": 81.02,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "The",
+              "start_s": 79.97,
+              "end_s": 80.145
+            },
+            {
+              "text": "agent",
+              "start_s": 80.145,
+              "end_s": 80.495
+            },
+            {
+              "text": "does",
+              "start_s": 80.495,
+              "end_s": 80.67
+            },
+            {
+              "text": "the",
+              "start_s": 80.67,
+              "end_s": 80.845
+            },
+            {
+              "text": "work,",
+              "start_s": 80.845,
+              "end_s": 81.02
+            }
+          ]
+        },
+        {
+          "text": "and the run is on record.",
+          "start_s": 81.34,
+          "end_s": 82.75,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "and",
+              "start_s": 81.34,
+              "end_s": 81.541
+            },
+            {
+              "text": "the",
+              "start_s": 81.541,
+              "end_s": 81.743
+            },
+            {
+              "text": "run",
+              "start_s": 81.743,
+              "end_s": 81.944
+            },
+            {
+              "text": "is",
+              "start_s": 81.944,
+              "end_s": 82.146
+            },
+            {
+              "text": "on",
+              "start_s": 82.146,
+              "end_s": 82.347
+            },
+            {
+              "text": "record.",
+              "start_s": 82.347,
+              "end_s": 82.75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "file": "voiceover/final/v6/P5.wav",
+      "at_s": 83.52,
+      "duration_s": 13.558,
+      "speech_start_s": 83.65,
+      "speech_end_s": 96.92,
+      "pauses": [
+        {
+          "from_s": 87.2,
+          "to_s": 87.86,
+          "s": 0.66
+        },
+        {
+          "from_s": 89.86,
+          "to_s": 92.99,
+          "s": 3.13
+        },
+        {
+          "from_s": 93.65,
+          "to_s": 94.21,
+          "s": 0.56
+        }
+      ],
+      "lines": [
+        {
+          "text": "A solo builder gets a private workspace.",
+          "start_s": 83.65,
+          "end_s": 85.74,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "A",
+              "start_s": 83.65,
+              "end_s": 83.84
+            },
+            {
+              "text": "solo",
+              "start_s": 83.84,
+              "end_s": 84.22
+            },
+            {
+              "text": "builder",
+              "start_s": 84.22,
+              "end_s": 84.6
+            },
+            {
+              "text": "gets",
+              "start_s": 84.6,
+              "end_s": 84.79
+            },
+            {
+              "text": "a",
+              "start_s": 84.79,
+              "end_s": 84.98
+            },
+            {
+              "text": "private",
+              "start_s": 84.98,
+              "end_s": 85.36
+            },
+            {
+              "text": "workspace.",
+              "start_s": 85.36,
+              "end_s": 85.74
+            }
+          ]
+        },
+        {
+          "text": "A team can work together.",
+          "start_s": 85.96,
+          "end_s": 87.2,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "A",
+              "start_s": 85.96,
+              "end_s": 86.137
+            },
+            {
+              "text": "team",
+              "start_s": 86.137,
+              "end_s": 86.314
+            },
+            {
+              "text": "can",
+              "start_s": 86.314,
+              "end_s": 86.491
+            },
+            {
+              "text": "work",
+              "start_s": 86.491,
+              "end_s": 86.669
+            },
+            {
+              "text": "together.",
+              "start_s": 86.669,
+              "end_s": 87.2
+            }
+          ]
+        },
+        {
+          "text": "And the work state carries into the next session.",
+          "start_s": 87.86,
+          "end_s": 89.86,
+          "pause_after": true,
+          "key": false,
+          "words": [
+            {
+              "text": "And",
+              "start_s": 87.86,
+              "end_s": 88.03
+            },
+            {
+              "text": "the",
+              "start_s": 88.03,
+              "end_s": 88.2
+            },
+            {
+              "text": "work",
+              "start_s": 88.2,
+              "end_s": 88.37
+            },
+            {
+              "text": "state",
+              "start_s": 88.37,
+              "end_s": 88.54
+            },
+            {
+              "text": "carries",
+              "start_s": 88.7,
+              "end_s": 88.99
+            },
+            {
+              "text": "into",
+              "start_s": 88.99,
+              "end_s": 89.28
+            },
+            {
+              "text": "the",
+              "start_s": 89.28,
+              "end_s": 89.425
+            },
+            {
+              "text": "next",
+              "start_s": 89.425,
+              "end_s": 89.57
+            },
+            {
+              "text": "session.",
+              "start_s": 89.57,
+              "end_s": 89.86
+            }
+          ]
+        },
+        {
+          "text": "One company.",
+          "start_s": 92.99,
+          "end_s": 93.65,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "One",
+              "start_s": 92.99,
+              "end_s": 93.155
+            },
+            {
+              "text": "company.",
+              "start_s": 93.155,
+              "end_s": 93.65
+            }
+          ]
+        },
+        {
+          "text": "The person and the agent acted on the same event.",
+          "start_s": 94.21,
+          "end_s": 96.92,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "The",
+              "start_s": 94.21,
+              "end_s": 94.404
+            },
+            {
+              "text": "person",
+              "start_s": 94.404,
+              "end_s": 94.791
+            },
+            {
+              "text": "and",
+              "start_s": 94.791,
+              "end_s": 94.984
+            },
+            {
+              "text": "the",
+              "start_s": 94.984,
+              "end_s": 95.178
+            },
+            {
+              "text": "agent",
+              "start_s": 95.178,
+              "end_s": 95.565
+            },
+            {
+              "text": "acted",
+              "start_s": 95.565,
+              "end_s": 95.952
+            },
+            {
+              "text": "on",
+              "start_s": 95.952,
+              "end_s": 96.146
+            },
+            {
+              "text": "the",
+              "start_s": 96.146,
+              "end_s": 96.339
+            },
+            {
+              "text": "same",
+              "start_s": 96.339,
+              "end_s": 96.533
+            },
+            {
+              "text": "event.",
+              "start_s": 96.533,
+              "end_s": 96.92
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "file": "voiceover/final/v6/P6.wav",
+      "at_s": 97.47,
+      "duration_s": 6.609,
+      "speech_start_s": 97.57,
+      "speech_end_s": 104.06,
+      "pauses": [
+        {
+          "from_s": 98.3,
+          "to_s": 98.95,
+          "s": 0.65
+        },
+        {
+          "from_s": 99.73,
+          "to_s": 100.34,
+          "s": 0.61
+        },
+        {
+          "from_s": 101.2,
+          "to_s": 101.8,
+          "s": 0.6
+        },
+        {
+          "from_s": 102.85,
+          "to_s": 103.47,
+          "s": 0.62
+        }
+      ],
+      "lines": [
+        {
+          "text": "Same facts.",
+          "start_s": 97.57,
+          "end_s": 98.3,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Same",
+              "start_s": 97.57,
+              "end_s": 97.935
+            },
+            {
+              "text": "facts.",
+              "start_s": 97.935,
+              "end_s": 98.3
+            }
+          ]
+        },
+        {
+          "text": "Same sources.",
+          "start_s": 98.95,
+          "end_s": 99.73,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Same",
+              "start_s": 98.95,
+              "end_s": 99.21
+            },
+            {
+              "text": "sources.",
+              "start_s": 99.21,
+              "end_s": 99.73
+            }
+          ]
+        },
+        {
+          "text": "Same freshness.",
+          "start_s": 100.34,
+          "end_s": 101.2,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Same",
+              "start_s": 100.34,
+              "end_s": 100.627
+            },
+            {
+              "text": "freshness.",
+              "start_s": 100.627,
+              "end_s": 101.2
+            }
+          ]
+        },
+        {
+          "text": "One understanding.",
+          "start_s": 101.8,
+          "end_s": 102.85,
+          "pause_after": false,
+          "key": true,
+          "words": [
+            {
+              "text": "One",
+              "start_s": 101.8,
+              "end_s": 102.01
+            },
+            {
+              "text": "understanding.",
+              "start_s": 102.01,
+              "end_s": 102.85
+            }
+          ]
+        },
+        {
+          "text": "Two ways in.",
+          "start_s": 103.47,
+          "end_s": 104.06,
+          "pause_after": false,
+          "key": true,
+          "words": [
+            {
+              "text": "Two",
+              "start_s": 103.47,
+              "end_s": 103.667
+            },
+            {
+              "text": "ways",
+              "start_s": 103.667,
+              "end_s": 103.863
+            },
+            {
+              "text": "in.",
+              "start_s": 103.863,
+              "end_s": 104.06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P7",
+      "file": "voiceover/final/v6/P7.wav",
+      "at_s": 105.13,
+      "duration_s": 12.826,
+      "speech_start_s": 105.21,
+      "speech_end_s": 117.95,
+      "pauses": [
+        {
+          "from_s": 107.88,
+          "to_s": 110.44,
+          "s": 2.56
+        },
+        {
+          "from_s": 113.03,
+          "to_s": 113.9,
+          "s": 0.87
+        }
+      ],
+      "lines": [
+        {
+          "text": "Models change.",
+          "start_s": 105.21,
+          "end_s": 106.03,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Models",
+              "start_s": 105.21,
+              "end_s": 105.757
+            },
+            {
+              "text": "change.",
+              "start_s": 105.757,
+              "end_s": 106.03
+            }
+          ]
+        },
+        {
+          "text": "Agents change.",
+          "start_s": 106.08,
+          "end_s": 106.98,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Agents",
+              "start_s": 106.08,
+              "end_s": 106.68
+            },
+            {
+              "text": "change.",
+              "start_s": 106.68,
+              "end_s": 106.98
+            }
+          ]
+        },
+        {
+          "text": "Tools change.",
+          "start_s": 107.1,
+          "end_s": 107.88,
+          "pause_after": true,
+          "key": false,
+          "words": [
+            {
+              "text": "Tools",
+              "start_s": 107.1,
+              "end_s": 107.49
+            },
+            {
+              "text": "change.",
+              "start_s": 107.49,
+              "end_s": 107.88
+            }
+          ]
+        },
+        {
+          "text": "What your company knows shouldn't have to start over.",
+          "start_s": 110.44,
+          "end_s": 113.03,
+          "pause_after": false,
+          "key": true,
+          "words": [
+            {
+              "text": "What",
+              "start_s": 110.44,
+              "end_s": 110.64
+            },
+            {
+              "text": "your",
+              "start_s": 110.64,
+              "end_s": 110.84
+            },
+            {
+              "text": "company",
+              "start_s": 110.84,
+              "end_s": 111.44
+            },
+            {
+              "text": "knows",
+              "start_s": 111.44,
+              "end_s": 111.64
+            },
+            {
+              "text": "shouldn't",
+              "start_s": 111.85,
+              "end_s": 112.047
+            },
+            {
+              "text": "have",
+              "start_s": 112.047,
+              "end_s": 112.243
+            },
+            {
+              "text": "to",
+              "start_s": 112.243,
+              "end_s": 112.44
+            },
+            {
+              "text": "start",
+              "start_s": 112.44,
+              "end_s": 112.637
+            },
+            {
+              "text": "over.",
+              "start_s": 112.637,
+              "end_s": 113.03
+            }
+          ]
+        },
+        {
+          "text": "Company-owned.",
+          "start_s": 113.9,
+          "end_s": 114.65,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Company-owned.",
+              "start_s": 113.9,
+              "end_s": 114.65
+            }
+          ]
+        },
+        {
+          "text": "Model-neutral.",
+          "start_s": 114.9,
+          "end_s": 115.8,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Model-neutral.",
+              "start_s": 114.9,
+              "end_s": 115.8
+            }
+          ]
+        },
+        {
+          "text": "Shared by people and agents.",
+          "start_s": 116.05,
+          "end_s": 117.95,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "Shared",
+              "start_s": 116.05,
+              "end_s": 116.321
+            },
+            {
+              "text": "by",
+              "start_s": 116.321,
+              "end_s": 116.593
+            },
+            {
+              "text": "people",
+              "start_s": 116.593,
+              "end_s": 117.136
+            },
+            {
+              "text": "and",
+              "start_s": 117.136,
+              "end_s": 117.407
+            },
+            {
+              "text": "agents.",
+              "start_s": 117.407,
+              "end_s": 117.95
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P8",
+      "file": "voiceover/final/v6/P8.wav",
+      "at_s": 118.77,
+      "duration_s": 5.068,
+      "speech_start_s": 118.8,
+      "speech_end_s": 123.81,
+      "pauses": [
+        {
+          "from_s": 119.47,
+          "to_s": 121.43,
+          "s": 1.96
+        }
+      ],
+      "lines": [
+        {
+          "text": "NavisLabs.",
+          "start_s": 118.8,
+          "end_s": 119.47,
+          "pause_after": true,
+          "key": true,
+          "words": [
+            {
+              "text": "NavisLabs.",
+              "start_s": 118.8,
+              "end_s": 119.47
+            }
+          ]
+        },
+        {
+          "text": "The shared understanding for your organization.",
+          "start_s": 121.43,
+          "end_s": 123.81,
+          "pause_after": false,
+          "key": false,
+          "words": [
+            {
+              "text": "The",
+              "start_s": 121.43,
+              "end_s": 121.613
+            },
+            {
+              "text": "shared",
+              "start_s": 121.613,
+              "end_s": 121.796
+            },
+            {
+              "text": "understanding",
+              "start_s": 121.796,
+              "end_s": 122.528
+            },
+            {
+              "text": "for",
+              "start_s": 122.528,
+              "end_s": 122.712
+            },
+            {
+              "text": "your",
+              "start_s": 122.712,
+              "end_s": 122.895
+            },
+            {
+              "text": "organization.",
+              "start_s": 122.895,
+              "end_s": 123.81
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

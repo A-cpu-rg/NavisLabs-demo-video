@@ -1,0 +1,618 @@
+{
+  "audit_meta": {
+    "title": "Navis read-only forensic code audit",
+    "date": "2026-10-04",
+    "requested_by": "abhishek@navislabs.in",
+    "scope": ["/Users/abhishekmeena/Desktop/Navis-AI", "/Users/abhishekmeena/Desktop/Devtool"],
+    "method": "Static reading of implemented code and tracing execution paths from entry points. Documentation and planned architecture were not treated as evidence. The Core backend (~/Desktop/Backend) is NOT in scope; it was grepped read-only only to confirm whether a route the audited code calls actually exists. Deployment status comes from anonymous HTTP/DNS probes run on 2026-10-04.",
+    "constraints_honoured": [
+      "No existing file in either repository was modified. This JSON is the only file created, as a new untracked file at the Devtool root.",
+      "No test suite, build or dev server was executed, because `npm test` builds dist/ and test runners write caches, which would modify the repos. Test counts below are static counts of test cases, not pass/fail results.",
+      "No authenticated call was made to any environment. Staging was probed anonymously only (expecting 401 for auth-gated routes)."
+    ],
+    "status_vocabulary": {
+      "production": "Served from a public production host. NOTHING in either audited repo qualifies as of 2026-10-04.",
+      "staging": "Deployed on https://staging-api.navislabs.in and confirmed by an anonymous probe or the public staging OpenAPI document.",
+      "working": "Implemented end to end against the real Core, covered by unit tests, runs locally. Not deployed publicly.",
+      "mock": "Returns fixtures, synthetic values, or a deliberate stub instead of real data."
+    }
+  },
+
+  "repository_confirmation": {
+    "confirmed_navis_repositories": true,
+    "Devtool": {
+      "path": "/Users/abhishekmeena/Desktop/Devtool",
+      "remote": "https://github.com/navis-labs/NavisLab-devtool.git",
+      "branch": "Development",
+      "head": "829cfe4 Add tests for session resumption and state management in the CLI",
+      "working_tree": "clean before audit"
+    },
+    "Navis-AI": {
+      "path": "/Users/abhishekmeena/Desktop/Navis-AI",
+      "remote": "https://github.com/navis-labs/Navis-AI.git",
+      "branch": "feature/updated-web",
+      "head": "2c45de3 feat: implement decision lifecycle management with new types and API endpoints",
+      "working_tree": "pre-existing uncommitted changes, untouched by this audit: next-env.d.ts, next.config.ts (Turbopack root pin and dev FS cache disabled), package.json (dev:lowmem script), tsconfig.json (cache excludes) modified; docs/ and scripts/ untracked"
+    },
+    "Core_backend_cross_reference_only": {
+      "path": "/Users/abhishekmeena/Desktop/Backend",
+      "branch": "feature/mulayam-sync",
+      "head": "076e981 Enhance Azure and Retrieval Functionality",
+      "note": "FastAPI + PostgreSQL (Neon) + Redis + Celery. Both audited repos are clients of it. Not audited."
+    }
+  },
+
+  "repository_structure": {
+    "Navis-AI": {
+      "what_it_is": "The founder-facing 'company brain' web app: Today brief, decisions, actions, Ask Navis chat, knowledge/memory, governance, timeline, organization, onboarding.",
+      "stack": "Next.js 16.2.6, React 19.2.4, SWR 2, framer-motion, Tailwind 4, Vitest 4",
+      "size": "275 tracked source files under src/, ~66,360 lines including tests",
+      "layout": {
+        "src/app/": "38 files. Routes: /, /login, /onboarding, /dashboard/{account, actions, actions/audit, ask, decisions, governance, memory, memory/[kind]/[id], memory/panels, organization, people, profile, signals, timeline}",
+        "src/components/": "121 files. auth/, layout/, navis/ (actions, ask, dashboard, governance, knowledge, meetings, organization, people, timeline, _shared)",
+        "src/hooks/": "40 SWR hooks, one per data domain",
+        "src/lib/": "70 files: pure domain logic (composers, adapters, lifecycle rules, error semantics, auth bridge, env)",
+        "src/services/api.ts": "6,148-line single bridge to the Core. All HTTP goes through fetchJson (auth, 401 refresh-and-retry, 424 reconnect, X-Request-ID errors, perf timing)."
+      },
+      "data_mode": "NEXT_PUBLIC_USE_MOCK defaults to false (src/lib/env.ts). In the default mode every panel calls the real Core under /api/v1. 22 functions in services/api.ts branch to fixtures only when mock mode is on.",
+      "ci": "None. The repo has no .github/ directory."
+    },
+    "Devtool": {
+      "what_it_is": "The Navis Developer Platform. It gives existing coding agents (Claude Code, Cursor, Codex, custom) the organization's context, state, memory and an execution ledger, through an MCP server, two SDKs, a CLI and a Developer Console.",
+      "stack": "npm workspaces, TypeScript 5.9, Node >=20, Next.js 16.3.4 / React 19.2.8 (console), @modelcontextprotocol/server 2.x, Python >=3.10 + httpx (Python SDK), Vitest 4, pytest",
+      "dependency_direction": "types <- {identity, api-client} <- {sdk, mcp-server, dashboard}; cli uses api-client",
+      "layout": {
+        "contracts/openapi/developer.json": "Developer API contract: 35 operations under /api/v1/developer/*",
+        "packages/types": "Framework-free domain contracts (26 files)",
+        "packages/identity": "Credential wire-format reader shared by MCP and console. Resolves nothing.",
+        "packages/api-client": "Typed HTTP client and wire mappers (developer, execution, agents, entities)",
+        "packages/sdk": "@navis/sdk 0.1.0, the official TypeScript SDK",
+        "packages/cli": "@navis/cli 0.1.0, the `navis` binary and the Claude Code lifecycle hooks (work-state continuity)",
+        "services/mcp-server": "Remote MCP server (Streamable HTTP on :3333 /mcp, plus stdio), 20 read-only tools",
+        "apps/dashboard": "Developer Console: 23 dashboard pages, 4 docs pages, login/signup, session API routes, and agent-readable /llms.txt, /llms-full.txt, /SKILL.md, /openapi/developer.json",
+        "sdks/python": "navis-sdk 0.1.0 (import name `navis`), MIT, one runtime dependency (httpx)",
+        "sdks/integration": "Opt-in live tests of both SDKs and MCP against a real Developer API",
+        "examples/": "Runnable TS and Python examples: basic, context, memory, execution (ledger writes), smoke",
+        "scripts/": "dev.mjs (preflight: anonymous /developer/me must answer 401), smoke.mjs (per-boundary port table), docs/API reference generators"
+      },
+      "ci": ".github/workflows/ci.yml on main and Development: typecheck, lint, test, build, contract:check, generated-docs drift check (git diff --exit-code), SDK pack and external-consumer install, CLI smoke and pack, Python unit tests and wheel/sdist inspection. CI history was not read because the gh CLI is not installed on this machine."
+    }
+  },
+
+  "deployment_status_probed_2026_10_04": {
+    "summary": "Nothing from either audited repo is deployed publicly. The Core backend is live on staging and its Developer API matches the repo contract exactly. The MCP server, Developer Console, CLI, SDKs and the Navis-AI web app run only locally, and nothing was running locally during the audit.",
+    "probes": [
+      {"target": "https://navislabs.in", "result": "200, Vercel-hosted Next.js marketing site titled 'NavisLabs — Enterprise Intelligence Infrastructure'. Not built from either audited repo (title string absent from both). /login, /dashboard, /onboarding, /developers, /docs, /llms.txt all 404."},
+      {"target": "staging-api.navislabs.in", "result": "DNS -> AWS ALB navis-staging-alb (ap-southeast-1). GET /health -> 200 {status: alive, service: Navis AI Backend, version: 2.0.0}"},
+      {"target": "staging anonymous auth checks", "result": "GET /api/v1/developer/me, /developer/economics, /developer/context, /brief/today, /context -> 401 (route exists, auth-gated). GET /chat -> 405 (POST-only route exists)."},
+      {"target": "staging /openapi.json and /docs", "result": "200, public. 125 operations. All 35 /developer operations are identical to contracts/openapi/developer.json (0 missing, 0 extra). Navis-AI routes present: /actions (+approve, +draft), /adaptive/policy, /adaptive/kill-switch, /learning/summary, /brief/decisions/history, /brief/propose-actions, /organization/onboarding, /knowledge/entity/{type}/{id}, /integrations/google/connect, /workspace/calendar/available-slots, /signals/gmail/recent, /auth/google. Absent: /events/stream, /workspace/meetings/{event_id}/brief."},
+      {"target": "api., mcp., console., developers., docs.navislabs.in and app.navis.ai", "result": "no DNS record"},
+      {"target": "npm @navis/sdk, @navis/cli, @navis/mcp-server", "result": "E404, not published"},
+      {"target": "PyPI navis-sdk", "result": "404, not published"},
+      {"target": "local :8000 /health, :3333 /healthz, :3000 /llms.txt", "result": "not running (connection refused)"}
+    ]
+  },
+
+  "implemented": {
+    "Devtool": [
+      "Developer API contract of 35 operations: identity (/me, /permissions), org reads (context GET + task-aware POST, state, memory, entities, outcomes, learning, reasoning, insights, decisions), agent lifecycle (list/create/get/update/revoke, credentials list/create/revoke), execution ledger (tasks, runs, steps, outcomes, latest-outcome checkpoint, telemetry) and economics rollup. All 35 are live on staging.",
+      "MCP server: Streamable HTTP (both 2026 and legacy-stateless protocol eras) and stdio transports, per-request server and client bound to the caller's credential, credential verified against Core /developer/me, refuse-only local authorization (403 before 402), server-generated request ids, 1 MB body cap, 20 read-only tools (packages/types-sourced permission and capability vocabulary).",
+      "TypeScript SDK (@navis/sdk): Navis client with reads, the agents/tasks/runs/entities namespaces and ledger writes, retry policy, request telemetry callback with templated paths (no ids leaked), one named error class per refusal, and a bidirectional OpenAPI coverage test.",
+      "Python SDK (navis-sdk): sync client over httpx, dataclass models (1,926 lines), contract test, security tests, timeout tests, package-boundary verification.",
+      "CLI (`navis`): status, config show, workstate checkpoint|show, and `hook` for SessionStart/UserPromptSubmit/PreCompact/SessionEnd, implementing cross-session work-state continuity for Claude Code on the Core execution ledger.",
+      "Developer Console: Google/session sign-in and signup, workspace switch, Overview (attention, activity, infrastructure, quickstart), Agents (create, credentials with expiry presets, revoke), API keys, Runs list and Run detail story, Economics, Context, State, Memory, Entities, Outcomes, Learning, Policies (enforced-permission view per agent), Members and owner management, MCP/API/SDK/CLI connect pages, and docs rendered from the contract.",
+      "Machine-readable docs for agents: /llms.txt, /llms-full.txt, /SKILL.md, /openapi/developer.json routes served by the console.",
+      "Repo tooling: dev preflight that refuses to start unless a real Developer API answers 401 anonymously; smoke test that probes each boundary separately; generators that keep docs in lockstep with the contract (CI-enforced)."
+    ],
+    "Navis-AI": [
+      "Google sign-in via Core /auth/google with token refresh and a 401 retry-then-sign-out bridge (lib/auth.ts, lib/authBridge.ts, components/auth/*).",
+      "Onboarding: organization profile (PUT /organization/profile), Google Workspace connect (/integrations/google/connect), sync trigger, stage progress polled every 2 s from /organization/onboarding.",
+      "Today dashboard from /brief/today (ranked decisions, obligations) and /context (ScopedView entities -> attention items, memory counts), plus Gmail/Calendar/Drive recent cards from /signals/*.",
+      "Decisions page: decision history, outcomes and learning summary rendered as a five-stage lifecycle (decision, your call, execution, outcome, learning) that keeps fact, pending and not-applicable distinct.",
+      "Action Center: ExecutionRequest rows mapped onto a Kanban; draft review, edit, regenerate; approve, reject, cancel, retry; send-state derived only from the provider receipt. Real Gmail, Calendar and Slack senders exist in the Core worker.",
+      "Ask Navis: POST /chat with multi-turn state echo (pending scheduling, calendar event, email compose), citations, and action proposals that map to real ExecutionRequests.",
+      "Knowledge and memory: /knowledge/home and /knowledge/entity with an SVG radial entity graph; people from /memory/people; identity resolution (persons search, lookup, detail).",
+      "Adaptive governance: active policy, proposals approve/reject, revert-to-defaults kill switch (/adaptive/*).",
+      "Organization, timeline, signals, account and integration-health surfaces composed client-side from real endpoints (organizationComposer, timelineComposer, knowledgeComposer).",
+      "A single failure-semantics module (lib/apiState.ts) mapping 401/402/403/404/409/422/424/429/5xx to distinct copy, so 'nothing there' and 'not allowed to look' never render the same."
+    ]
+  },
+
+  "mocked_or_stubbed": [
+    {"repo": "Navis-AI", "item": "Offline mock mode", "files": ["src/services/api.ts (lines ~71-1215 fixtures; 22 `if (USE_MOCK)` branches)", "src/lib/env.ts"], "detail": "Fixture decisions (Arjun/CFO, Sequoia brief), a 5-person invented TEAM_ROSTER, mock signals, action logs, skills, behavior model, connections, and a regex-driven Ask Navis. Active ONLY when NEXT_PUBLIC_USE_MOCK=true (default false). Mock scheduling needs a second flag (NEXT_PUBLIC_ALLOW_MOCK_SCHEDULE).", "status": "mock (opt-in)"},
+    {"repo": "Navis-AI", "item": "Behavior model", "files": ["src/services/api.ts:1700 getBehaviorModel"], "detail": "Core serves no /behavior. Returns EMPTY_BEHAVIOR_MODEL without a request.", "status": "stub (honest empty)"},
+    {"repo": "Navis-AI", "item": "Team activity rail", "files": ["src/services/api.ts:1758 getTeamActivity"], "detail": "Core serves no /team/activity. Returns [].", "status": "stub (honest empty)"},
+    {"repo": "Navis-AI", "item": "Decision simulation", "files": ["src/services/api.ts:4985 getSimulation", "src/components/navis/SimulationDrawer.tsx"], "detail": "Always throws 501. The drawer composes paths locally from the decision's own alternatives. This is not a backend simulation.", "status": "mock (client-derived)"},
+    {"repo": "Navis-AI", "item": "Decision audit trace", "files": ["src/services/api.ts:4999 getDecisionTraceFromBackend", "src/lib/trace.ts"], "detail": "Always throws 501. trace.ts renders a 'decision record' from fields the decision carries, labelled source 'decision_record'. Fabricated timestamps were removed (documented in the file header). Not an audit trail.", "status": "stub (labelled)"},
+    {"repo": "Navis-AI", "item": "Live event stream (SSE)", "files": ["src/hooks/useLiveEvents.ts", "src/components/navis/LiveEventsBoot.tsx"], "detail": "Full EventSource client with SWR invalidation map, but gated off by NEXT_PUBLIC_ENABLE_LIVE_EVENTS=false. /events/stream exists neither in Core source nor on staging. Surfaces poll instead.", "status": "planned (client built, no server)"},
+    {"repo": "Navis-AI", "item": "Onboarding event feed / LiveAnalysisTicker", "files": ["src/services/api.ts ~5148 getOnboardingEvents", "src/components/navis/LiveAnalysisTicker.tsx"], "detail": "Returns { events: [] } without a request until /organization/onboarding/events ships.", "status": "stub (honest empty)"},
+    {"repo": "Navis-AI", "item": "Thread feeds and execution helpers", "files": ["src/services/api.ts:5458 memoryThreads", "5528 promoteThread", "5546 getPrioritize", "5580 getSlackBlockers", "5588 runOutcomeCycle", "5634 triggerSkillEvolve"], "detail": "No Core routes. Threads and prioritise return empty without a request; Slack blockers return {available:false}; promote, outcome cycle and skill evolve throw specific 501s (the learning loop runs on Celery beat).", "status": "stub (honest empty / 501)"},
+    {"repo": "Navis-AI", "item": "Client-side composites standing in for missing routes", "files": ["src/services/api.ts:5232 memorySearch", "memoryEntity", "5619 getOpsMetrics", "5670 getWorkspaceDocs"], "detail": "Memory search is composed from /memory/people and decision memory; entity dossiers from the people feed; ops metrics projected from /organization/metrics; workspace docs from /signals/drive/recent with a client-side filename filter.", "status": "working (derived from real data, not a dedicated backend feature)"},
+    {"repo": "Navis-AI", "item": "Pre-meeting brief", "files": ["src/services/api.ts:5656 getMeetingBrief", "src/components/navis/MeetingBriefDrawer.tsx"], "detail": "Still issues GET /workspace/meetings/{id}/brief, which Core deleted (Backend navis/api/router.py header) and staging lacks. It returns 404 and the drawer shows its error state.", "status": "broken call (renders error state)"},
+    {"repo": "Navis-AI", "item": "Landing page decision card", "files": ["src/app/page.tsx ~225-270"], "detail": "Static illustrative card ('Reply to Sarah before the CFO window closes', 'Acme thread'). Marketing illustration, not data.", "status": "mock (static illustration)"},
+    {"repo": "Navis-AI", "item": "Dead fixture lookup", "files": ["src/hooks/useLookups.ts useMemberById"], "detail": "Builds a map from the invented TEAM_ROSTER but has no callers; the audit page uses its own resolver that returns undefined. Cannot reach the screen today.", "status": "dead code"},
+    {"repo": "Devtool", "item": "Test fakes", "files": ["packages/cli/src/workstate/fakes.ts"], "detail": "In-memory WorkStateClient for unit tests only. No mock data in any runtime path: the SDK, MCP and console all return what Core returned or an error.", "status": "test-only"}
+  ],
+
+  "planned_not_implemented": [
+    {"repo": "Devtool", "item": "Policy checks / central policy decisions", "evidence": "apps/dashboard/src/features/policies/PoliciesPanel.tsx (EmptyState kind='not-built', 'Not enabled yet'); docs/api/README.md 'Planned'. Only credential permissions plus org capability are enforced, server-side in Core."},
+    {"repo": "Devtool", "item": "Navis environments and project boundaries", "evidence": "apps/dashboard/src/features/settings/EnvironmentsPanel.tsx (not-built). An agent's environment is a label that no authorization path reads."},
+    {"repo": "Devtool", "item": "Outbound webhooks", "evidence": "apps/dashboard/src/features/connect/WebhooksPanel.tsx (not-built). Core receives provider webhooks; nothing is sent outward, and there is no registration endpoint or event catalogue."},
+    {"repo": "Devtool", "item": "Agents writing organizational outcomes", "evidence": "docs/api/README.md 'Planned'. Today an agent can only record the outcome of its own run on the ledger."},
+    {"repo": "Devtool", "item": "Public release", "evidence": "No package published (npm E404, PyPI 404). @navis/sdk and @navis/cli are license UNLICENSED. No public API, MCP or console hostname resolves. Per the 2026-09-27 notes (not re-verified today), the @navis npm scope belongs to an unrelated user."},
+    {"repo": "Navis-AI", "item": "Live SSE event stream", "evidence": "src/hooks/useLiveEvents.ts gated off; no /events/stream in Core or on staging."},
+    {"repo": "Navis-AI", "item": "Backend decision simulation and audit trace", "evidence": "getSimulation / getDecisionTraceFromBackend throw 501 unconditionally."},
+    {"repo": "Navis-AI", "item": "Behavior model, team activity, thread feeds, thread promotion, prioritisation, Slack blockers, onboarding event feed, workspace docs, meeting brief", "evidence": "services/api.ts comments name each missing route and the line to restore when it ships."},
+    {"repo": "Navis-AI", "item": "Deployment", "evidence": "No CI, no deployment config, no live host serving it (app.navis.ai has no DNS; navislabs.in is a different site)."}
+  ],
+
+  "top_10_technically_interesting_features": [
+    {
+      "rank": 1,
+      "name": "Cross-session work-state continuity for Claude Code",
+      "repo": "Devtool",
+      "files": [
+        "packages/cli/src/index.ts",
+        "packages/cli/src/program.ts",
+        "packages/cli/src/commands/hook.ts",
+        "packages/cli/src/workstate/hooks.ts",
+        "packages/cli/src/workstate/identity.ts",
+        "packages/cli/src/workstate/service.ts",
+        "packages/cli/src/workstate/checkpoint.ts",
+        "packages/cli/src/workstate/restore.ts",
+        "packages/cli/src/workstate/session-store.ts",
+        "packages/cli/src/commands/workstate.ts"
+      ],
+      "entry_point": "`navis hook <SessionStart|UserPromptSubmit|PreCompact|SessionEnd>`, invoked by Claude Code hooks (wired locally in Devtool/.claude/settings.local.json) -> program.ts command 'hook' -> runHook (hook.ts:214) -> handle (hook.ts:356)",
+      "implementation_flow": [
+        "Claude Code pipes a JSON payload on stdin; readHookInput/parseHookPayload (workstate/hooks.ts) extract the session id, prompt and cwd, and strip previously injected context.",
+        "deriveWorkIdentity (identity.ts:124) computes a stable work key from the canonicalised git remote and branch (or path) and derives per-session idempotency keys for tasks and runs.",
+        "SessionStart (hook.ts:384): Promise.all of loadCurrentWorkState (find the open task by work key, list runs, probe the latest outcome) and me(). It joins this session's run concurrently, and only if NAVIS_WORKSTATE_CONTEXT=1 does it also call POST /developer/context with tokenBudget 800.",
+        "renderRestoration (restore.ts:99) builds a block of at most 3,000 characters in priority order (work state, then organizational facts), wrapped in per-render random-nonce delimiters (restore.ts:212). Delimiter-shaped text from storage is defanged (restore.ts:239), and every absence is stated. Stdout is injected into the model's context.",
+        "UserPromptSubmit (hook.ts:585) opens the work stream once per session using ids cached in the local session file (~/.local/state/navis/workstate) and prints nothing.",
+        "PreCompact (hook.ts:681) merges the patch into the base checkpoint (checkpoint.ts:540), scrubs secrets (checkpoint.ts:846), and recordCheckpoint (service.ts:866) PUTs it as the run outcome with ifNewer:true. A 409 counts as stale and is skipped, not retried (service.ts:950), and the write is read back and verified (service.ts:989).",
+        "SessionEnd (hook.ts:850) writes a best-effort final checkpoint under a hard wall-clock budget.",
+        "Every failure path exits 0 with a stderr diagnostic, so a dead Core never blocks the developer's prompt."
+      ],
+      "evidence": [
+        "hook.ts header: 'every failure ... resolves to exit 0 with a diagnostic on stderr and nothing on stdout'.",
+        "restore.ts:57 RESTORE_MAX_CHARS = 3000, sized from measured real checkpoints (comment cites 8/8 partial restores at 1500 on 2026-09-25).",
+        "service.ts:905 `ifNewer: true`; service.ts:950 isStaleWriteRefusal -> status 409; service.ts:933 verifyPersisted.",
+        "Live in this audit: this session's SessionStart hook printed 'NAVIS WORK CONTINUITY — NOT RESTORED: Navis could not be reached ... Do not treat this as no previous work', the designed degraded path, because Core :8000 was down.",
+        "~512 test cases in 19 files (service.test.ts 1,094 lines, restore.test.ts 908, checkpoint.test.ts 895, hook.test.ts 872, architecture.test.ts).",
+        "The Core ledger routes it uses are live on staging (35/35 Developer operations match)."
+      ],
+      "status": "working",
+      "status_detail": "Client runs locally (CLI unpublished, npm E404). Backend routes are on staging. Not production.",
+      "visual_demonstration": "Split-screen terminal. Session A: an agent works and makes two architectural decisions; trigger /compact or end the session. Session B, fresh: the first thing on screen is the injected 'work state' block listing the objective, decisions, open items and what was not shown, and the agent continues without re-exploring. Cut to Console > Runs, where the CLI session run is classified 'cli-session' with its checkpoint as the outcome. Optional beat: stop Core and start a session to show the 'NOT RESTORED' notice and that the editor still works."
+    },
+    {
+      "rank": 2,
+      "name": "Credential-less, per-request multi-tenant MCP server",
+      "repo": "Devtool",
+      "files": [
+        "services/mcp-server/src/index.ts",
+        "services/mcp-server/src/http/app.ts",
+        "services/mcp-server/src/server.ts",
+        "services/mcp-server/src/auth/request-context.ts",
+        "services/mcp-server/src/auth/identity.ts",
+        "services/mcp-server/src/auth/principal.ts",
+        "services/mcp-server/src/authorization/authorize.ts",
+        "services/mcp-server/src/tools/catalog.ts",
+        "services/mcp-server/src/tools/register.ts",
+        "services/mcp-server/src/tools/bounds.ts",
+        "services/mcp-server/src/errors/translate.ts",
+        "services/mcp-server/src/transport/stdio.ts",
+        "services/mcp-server/src/transport/verified.ts",
+        "packages/identity/src/headers.ts"
+      ],
+      "entry_point": "HTTP: `node dist/index.js` -> createHttpServer (http/app.ts), POST /mcp and GET /healthz on :3333. Stdio: `navis-mcp-stdio` (dist/stdio.js).",
+      "implementation_flow": [
+        "The credential is read from IncomingMessage.rawHeaders by the shared @navis/identity reader, which refuses ambiguous or repeated credentials. With no credential the caller gets a plain HTTP 401 and no MCP server is constructed.",
+        "The credential is verified against Core GET /api/v1/developer/me, yielding an McpPrincipal (org, kind, permissions, capabilities). The server holds no Navis key of its own.",
+        "createMcpHandler's factory builds a fresh McpServer and NavisApiClient bound to that caller for every request (server.ts), so no state outlives a request.",
+        "The request id is generated server-side, never read from the caller, and returned as x-navis-request-id.",
+        "On a tool call, authorize() runs as refuse-only: permission 403 first, then capability 402. If it doesn't refuse, the call goes to the Developer API with the caller's credential, then through response bounds, error translation into a tool error that names the missing permission, and a telemetry record.",
+        "All 20 tools are annotated readOnlyHint. Server instructions steer models to navis_get_relevant_context first and to navis_me when refused."
+      ],
+      "evidence": [
+        "request-context.ts header: 'THIS SERVER HOLDS NO NAVIS CREDENTIAL'.",
+        "server.ts header: 'One server per request, per caller'.",
+        "authorize.ts: 'authorize returns a refusal or nothing. There is no code path in which it grants access'.",
+        "tools/catalog.ts: 20 entries, each with an upstream route, permission and capability.",
+        "http/app.ts: MAX_BODY_BYTES = 1_000_000; both protocol eras via legacy:'stateless'.",
+        "~180 test cases in 12 files (http/app.test.ts 987 lines, identity-cost.test.ts, catalog.test.ts); sdks/integration/test_mcp_live.py (opt-in live).",
+        "Prior result, not re-run today: the 2026-09-28 audit measured 0/12 cross-org isolation breaches with two real orgs."
+      ],
+      "status": "working",
+      "status_detail": "Runs locally on :3333 and over stdio. mcp.navislabs.in has no DNS. Upstream Developer API is on staging.",
+      "visual_demonstration": "Two terminals, two orgs' keys, the same question to the same MCP server, two different and isolated answers. Then a narrowly scoped key calls a tool, gets a refusal naming the exact permission, and the agent calls navis_me, which explains why. Overlay the per-request 'new server, new client' as an animated lifecycle diagram."
+    },
+    {
+      "rank": 3,
+      "name": "Task-aware organizational context (one primitive, one implementation)",
+      "repo": "Devtool (client) / Core (server, cross-reference)",
+      "files": [
+        "services/mcp-server/src/tools/catalog.ts (navis_get_relevant_context)",
+        "services/mcp-server/src/tools/register.ts",
+        "services/mcp-server/src/server.ts (INSTRUCTIONS)",
+        "packages/api-client/src/resources/developer.ts:544 (taskContext)",
+        "packages/api-client/src/mappers/developer.ts (toContextBundle)",
+        "packages/sdk/src/client.ts",
+        "sdks/python/src/navis/client.py",
+        "apps/dashboard/src/features/developer/ContextPanel.tsx",
+        "apps/dashboard/src/features/developer/context-view.ts",
+        "Backend navis/developer/router.py (cross-reference only)"
+      ],
+      "entry_point": "MCP tool navis_get_relevant_context({task}) / SDK taskContext / CLI SessionStart with NAVIS_WORKSTATE_CONTEXT=1, all ending in POST /api/v1/developer/context",
+      "implementation_flow": [
+        "The agent states its task in its own words; the api-client POSTs {task, since, until, token_budget}.",
+        "Core chain: credential -> principal (org from the api_keys/membership row) -> require_permission(view_memory) 403 -> require_capability(memory) 402 -> per-org rate limit 429.",
+        "The Developer route delegates to the SAME handler coroutine the web app uses, so the agent and the founder dashboard cannot disagree about the organization's context.",
+        "State, reasoning, intelligence and learning layers are filtered per credential and reported as withheld rather than refused, so a narrow key gets a smaller bundle instead of an opaque 403.",
+        "The response is mapped to a ContextBundle with freshness and sources, and the model is instructed to cite it rather than assert."
+      ],
+      "evidence": [
+        "catalog.ts comment: 'view_memory + memory is the FLOOR ... filtered per credential inside the response and reported as withheld'.",
+        "Backend router.py docstring: 'exactly ONE implementation of each read, so the Developer API and the web app cannot disagree'.",
+        "Staging: GET /api/v1/developer/context -> 401 anonymous; POST operation present in the staging OpenAPI."
+      ],
+      "status": "working",
+      "status_detail": "Backend on staging; clients local. Latency is the main risk: hook.ts records 20.8 s for this call on a cold local Core (2026-09-17). Prior notes (2026-09-25) recorded ~3.4 s after Core fixes that were then uncommitted.",
+      "visual_demonstration": "In Claude Code or Cursor, ask a task that depends on company facts ('prepare the renewal email for our largest customer'). Show the tool call, then the returned context with sources and freshness, then the agent's answer citing those sources. Pre-warm or cut around the latency. Use a curated demo org: the 2026-09-28 audit saw a ~61 KB response with raw third-party emails for a real org."
+    },
+    {
+      "rank": 4,
+      "name": "Agent execution ledger with official TypeScript and Python SDKs",
+      "repo": "Devtool",
+      "files": [
+        "contracts/openapi/developer.json",
+        "packages/sdk/src/client.ts",
+        "packages/sdk/src/transport.ts",
+        "packages/sdk/src/errors.ts",
+        "packages/sdk/src/telemetry.ts",
+        "packages/api-client/src/resources/developer.ts",
+        "packages/api-client/src/mappers/execution.ts",
+        "sdks/python/src/navis/client.py",
+        "sdks/python/src/navis/models.py",
+        "sdks/python/src/navis/_transport.py",
+        "examples/typescript/execution.ts",
+        "examples/python/execution.py"
+      ],
+      "entry_point": "`new Navis({ apiKey })` (TS) or the Python `navis` client, then tasks.create -> runs.start -> runs.recordStep -> runs.recordOutcome -> runs.finish",
+      "implementation_flow": [
+        "me() returns principal.agentId and permissions; the example refuses unless the key is an agent key holding record_agent_runs, a write permission deliberately separate from view_observation.",
+        "POST /developer/agents/{id}/tasks with an idempotencyKey, then POST /developer/tasks/{id}/runs with a correlationId.",
+        "POST /runs/{id}/steps for typed steps: context_fetch, tool_call (tool name and kind, request and response metadata), model_generation (provider, model, input/output/cached tokens, costMicros, costBasis estimated vs reported, latency).",
+        "PUT /runs/{id}/outcome, then PATCH /runs/{id} to finish. GET /runs/{id}/telemetry returns the server-side rollup.",
+        "Transport adds retries, timeouts, request telemetry with templated paths (no ids leak into metrics), and one named error per refusal (NavisPermissionError, NavisPlanError, NavisConflictError...)."
+      ],
+      "evidence": [
+        "packages/sdk/src/index.ts: 'Nothing here is a mock, a fixture or a fallback'.",
+        "examples/typescript/execution.ts records context_fetch, tool_call and model_generation steps with token and cost fields.",
+        "Python SDK has one runtime dependency (httpx) and is MIT; the TS SDK is UNLICENSED.",
+        "Tests: sdk ~61, api-client ~70, python ~97, live integration ~27 (opt-in).",
+        "Prior result, not re-run today: on 2026-09-27 both SDKs were verified as packed external consumers against a real Core."
+      ],
+      "status": "working",
+      "status_detail": "Unpublished (npm E404, PyPI 404). Backend ledger on staging.",
+      "visual_demonstration": "A 30-line script in an editor runs; each step lands live as a row in Console > Runs > Run detail, building a timeline: context fetch, tool call (17 matches), model generation (tokens, cost). The same script in Python produces an identical run."
+    },
+    {
+      "rank": 5,
+      "name": "Outcome economics and the run story",
+      "repo": "Devtool (console) / Core (rollup, cross-reference)",
+      "files": [
+        "apps/dashboard/src/app/(dashboard)/economics/page.tsx",
+        "apps/dashboard/src/features/developer/EconomicsPanel.tsx",
+        "apps/dashboard/src/app/(dashboard)/runs/[runId]/page.tsx",
+        "apps/dashboard/src/features/runs/RunDetailPanel.tsx",
+        "apps/dashboard/src/features/runs/run-story.ts",
+        "apps/dashboard/src/features/runs/RunsPanel.tsx",
+        "apps/dashboard/src/lib/developer.ts",
+        "apps/dashboard/src/lib/runs.ts",
+        "Backend navis/developer/run_service.py: get_run_telemetry (986), list_run_economics (1048) (cross-reference only)"
+      ],
+      "entry_point": "Console /economics and /runs/[runId] (server components, force-dynamic) -> loadDeveloper (lib/developer.ts)",
+      "implementation_flow": [
+        "loadDeveloper builds a fresh API client per request from the session cookie with cache no-store; pages are force-dynamic so no tenant's data is ever served from a shared cache.",
+        "GET /developer/economics: Core recomputes from run, step and outcome rows (no economics table). context_fetched is the presence of a context_fetch step, and groups are task x used-context.",
+        "Cost per successful outcome = spend over all attempts / successes, so retries are not hidden.",
+        "The panel renders absence as '—' using a Number.isFinite guard (null, NaN and Infinity never reach a cost column).",
+        "The run page fetches telemetry, steps (limit 200), agents and tasks in parallel. classifyRun labels it activity, cli-session or no-activity, and run-story.ts writes each sentence strictly from a field ('not reported', never 'not used' or zero)."
+      ],
+      "evidence": [
+        "EconomicsPanel.tsx header: 'DERIVED, NOT STORED' and 'NULL IS RENDERED AS ABSENCE, NEVER AS ZERO'.",
+        "run-story.ts: 'EVERY STATEMENT HERE IS A READING OF A FIELD'.",
+        "Tests: EconomicsPanel.test.tsx, RunStory.test.tsx, RunTable.test.tsx, RunDetailPanel.test.ts.",
+        "Backend run_service.py:228-231 context_fetched derived from context_fetch steps."
+      ],
+      "status": "working",
+      "status_detail": "Console local only; economics route on staging. Needs real successful runs in both with-context and without-context groups to be meaningful. Prior notes: there is no synthetic-run marker, so harness runs cannot be filtered out.",
+      "visual_demonstration": "The money shot only if the data is real: a two-column comparison of cost per successful outcome with vs without Navis context for the same task. Then drill into one run and let the narrative sentences type out. Do not seed numbers for the camera."
+    },
+    {
+      "rank": 6,
+      "name": "Contract-locked platform: OpenAPI as the single source for SDKs, docs and agents",
+      "repo": "Devtool",
+      "files": [
+        "contracts/openapi/developer.json",
+        "packages/sdk/src/contract.ts",
+        "packages/sdk/src/contract.test.ts",
+        "packages/sdk/scripts/snapshot-openapi.mjs",
+        "sdks/python/src/navis/contract.py",
+        "sdks/python/tests/test_contract.py",
+        "packages/api-client/src/routes.ts",
+        "scripts/generate-api-reference.mjs",
+        "scripts/generate-docs-reference.mjs",
+        "apps/dashboard/src/features/docs/data/manifest.ts",
+        "apps/dashboard/src/features/docs/data/machine-readable.ts",
+        "apps/dashboard/src/app/llms.txt/route.ts",
+        "apps/dashboard/src/app/SKILL.md/route.ts",
+        "apps/dashboard/src/app/openapi/developer.json/route.ts",
+        ".github/workflows/ci.yml"
+      ],
+      "entry_point": "`npm run contract:check` and `npm run docs:generate` in CI; GET /llms.txt and /SKILL.md on the console",
+      "implementation_flow": [
+        "A normalised OpenAPI snapshot of the Core is committed as contracts/openapi/developer.json.",
+        "contract.ts lists every SDK route. The test asserts each exists in the spec and that every /developer operation is either covered or listed in EXCLUDED with a reason, so a new route without an SDK method fails the build.",
+        "Telemetry matches interpolated URLs back to templates so ids never leak into metrics.",
+        "The generators render the API reference and docs data; CI runs them and fails on any git diff.",
+        "The console serves agent-facing /llms.txt and /SKILL.md, which state when no MCP endpoint is configured rather than printing a dead URL."
+      ],
+      "evidence": [
+        "ci.yml steps 'Contract is normalized' and 'Generated docs match the contract'.",
+        "Staging OpenAPI diff on 2026-10-04: 35/35 Developer operations identical to the repo contract."
+      ],
+      "status": "working",
+      "status_detail": "CI-enforced in the repo; deployed backend matches. Console docs are not publicly hosted.",
+      "visual_demonstration": "Hard to film directly. A fast montage works: one OpenAPI file fanning out into the TS SDK, Python SDK, MCP tools, console docs and /llms.txt, then a red CI check when a route drifts. Or show an agent fetching /SKILL.md and configuring itself."
+    },
+    {
+      "rank": 7,
+      "name": "Human-approved real-world execution with a truthful send-state",
+      "repo": "Navis-AI (client) / Core (worker, cross-reference)",
+      "files": [
+        "Navis-AI/src/app/dashboard/actions/page.tsx",
+        "Navis-AI/src/components/navis/actions/KanbanBoard.tsx",
+        "Navis-AI/src/components/navis/actions/ActionCandidateCard.tsx",
+        "Navis-AI/src/components/navis/actions/DraftReviewPanel.tsx",
+        "Navis-AI/src/components/navis/actions/ScheduleMeetingProposalCard.tsx",
+        "Navis-AI/src/hooks/useActionCandidates.ts",
+        "Navis-AI/src/hooks/useExecution.ts",
+        "Navis-AI/src/lib/executionAdapter.ts",
+        "Navis-AI/src/lib/executionStatus.ts",
+        "Navis-AI/src/lib/actionPolicies.ts",
+        "Navis-AI/src/services/api.ts (proposeActions 4375, requestAction 4400, approveExecution 4429, retryExecution 4445, get/save/regenerateActionDraft 4464-4492, rejectExecution 4502, cancelExecution 4510)",
+        "Backend navis/execution/providers/__init__.py production_providers, _senders.py (cross-reference only)"
+      ],
+      "entry_point": "/dashboard/actions (Action Center) and the action proposals in Today and Ask Navis",
+      "implementation_flow": [
+        "A decision or brief proposes an action (POST /brief/propose-actions or /actions), creating an ExecutionRequest in status 'requested'.",
+        "executionAdapter.ts maps wire statuses to Kanban lanes (requested->proposed, approved, executing, executed, failed, rejected/cancelled->ignored), surfacing wire fields as evidence rather than inventing values.",
+        "DraftReviewPanel reads, saves and regenerates the draft through /actions/{id}/draft.",
+        "A human POSTs /actions/{id}/approve. There is no auto path: actionPolicies.ts documents that the Core only drains APPROVED rows.",
+        "The Celery worker runs production_providers with real senders: Gmail send and reply, Calendar create/reschedule/cancel, Slack chat.postMessage via the org's own grants. _production_safe withholds any provider that would dry-run.",
+        "describeSend (executionStatus.ts) says 'sent' only when provider_reference carries a real external id. A dryrun- id or dry_run flag means 'dry_run'; approved/executing means 'sending', never 'sent'. Retry is offered only when Core would accept it (max 5 attempts), and OAuth failures map to 'reconnect'."
+      ],
+      "evidence": [
+        "actionPolicies.ts create_meeting comment: 'There is no auto-execution path on the backend'.",
+        "executionStatus.ts readProviderReference: 'not null is NOT proof of a send. Only a non-empty external_id is'.",
+        "Backend production_providers wires gmail_sender, calendar_sender, calendar_reschedule_sender, calendar_cancel_sender, slack_sender.",
+        "Tests: executionAdapter.test.ts (429 lines), executionStatus.test.ts (365), decisionAction tests.",
+        "Staging serves /actions, /actions/{id}/approve and /actions/{id}/draft."
+      ],
+      "status": "working",
+      "status_detail": "Navis-AI is not deployed; backend routes on staging. Real sends need the Celery worker and a connected Google Workspace or Slack.",
+      "visual_demonstration": "Kanban card 'Reply to <real thread>' -> open the draft, tweak one line -> Approve. The card moves to 'sending', then flips to 'sent' only when the Gmail message id comes back. Cut to the recipient's real inbox receiving it. Repeat with a calendar invite appearing in Google Calendar."
+    },
+    {
+      "rank": 8,
+      "name": "Ask Navis: multi-turn command chat over the organization",
+      "repo": "Navis-AI",
+      "files": [
+        "src/app/dashboard/ask/page.tsx",
+        "src/components/navis/ask/AskConsole.tsx",
+        "src/components/navis/ask/AnswerBlock.tsx",
+        "src/components/navis/ask/ContextRail.tsx",
+        "src/components/navis/ask/ChatHistoryRail.tsx",
+        "src/components/navis/AskNavis.tsx",
+        "src/components/navis/dashboard/AskNavisMini.tsx",
+        "src/lib/askOrchestrator.ts",
+        "src/lib/askAnswer.ts",
+        "src/lib/askSessions.ts",
+        "src/services/api.ts:2806-3234 (askNavis)"
+      ],
+      "entry_point": "/dashboard/ask and the AskNavisMini widget on Today",
+      "implementation_flow": [
+        "askOrchestrator issues ONE request through askNavis; it no longer simulates a reasoning pipeline (the removed 11-stage fake telemetry is documented in its header).",
+        "POST /chat body: question (trimmed to 2,000 chars), active_signal_id, thread_id, time_zone, and the last 6 recent_turns.",
+        "Multi-turn continuations echo state from the previous assistant turn: pending_scheduling (sent even when all-null, because Core routes on its presence), pending_calendar_event_id and pending_email, so 'tomorrow at 3' completes the pending flow.",
+        "The response carries intent, citations and actionProposals. A proposal with an execution_id is a real ExecutionRequest (isExecutableProposal) and is approved via feature 7.",
+        "Local classifyIntent and extractEntities are used only as UI fallbacks and are never presented as backend work."
+      ],
+      "evidence": [
+        "askOrchestrator.ts header: 'Ten of the eleven stages never left the browser ... What remains is honest'.",
+        "api.ts:3208-3228 comment on pending_scheduling: an earlier bug sent bare follow-ups to RAG.",
+        "Tests: askOrchestrator.test.ts, answerBlock.test.ts.",
+        "Staging: /api/v1/chat answers 405 to GET (POST route exists)."
+      ],
+      "status": "working",
+      "status_detail": "Real mode is the default. Mock mode (fixture Arjun/Sequoia answers) only with NEXT_PUBLIC_USE_MOCK=true; never film mock mode.",
+      "visual_demonstration": "Type 'set up 30 minutes with <colleague> next week'. Navis asks which day; answer 'Tuesday afternoon'. It proposes real free slots, you approve one, and the invite appears in Google Calendar. Show the citations rail beside the answer."
+    },
+    {
+      "rank": 9,
+      "name": "Daily brief and the five-stage decision lifecycle",
+      "repo": "Navis-AI",
+      "files": [
+        "src/app/dashboard/page.tsx",
+        "src/components/navis/dashboard/DailyBriefHero.tsx",
+        "src/components/navis/dashboard/NarrativeCard.tsx",
+        "src/components/navis/dashboard/TodayInspector.tsx",
+        "src/components/navis/dashboard/ObligationsPanel.tsx",
+        "src/hooks/useBrief.ts",
+        "src/lib/briefingComposer.ts",
+        "src/lib/obligations.ts",
+        "src/lib/replyObligation.ts",
+        "src/lib/decisionExplanation.ts",
+        "src/app/dashboard/decisions/page.tsx",
+        "src/lib/decisionLifecycle.ts",
+        "src/services/api.ts (getContextBundle 2019, getBriefToday 4303, generateBrief 4308, getDecisionHistory, getLearningSummary, getOutcomes)"
+      ],
+      "entry_point": "/dashboard (Today) and /dashboard/decisions",
+      "implementation_flow": [
+        "Today reads GET /brief/today (ranked decisions and obligations) and GET /context, adapting the ScopedView's entities into attention items and counts into memory state (adaptScopedViewToBundle). /decide is not a Core route; the top decision is brief.decisions[0].",
+        "/context deliberately uses fetchJson, not fetchJsonOr, so a failed read renders an error state instead of a reassuring 'nothing needs you'.",
+        "briefingComposer, obligations and decisionExplanation turn wire fields into cards with evidence and explanations.",
+        "The Decisions page reads /brief/decisions/history, /learning/summary and /outcomes and renders each decision through STAGE_ORDER (decision, your call, execution, outcome, learning), keeping fact, pending and not-applicable visually distinct."
+      ],
+      "evidence": [
+        "api.ts:2056-2071 explains why /context must throw.",
+        "decisionLifecycle.ts header: 'A missing measurement is never a zero, and a stage that cannot happen is never a failure'.",
+        "Tests: todayComposer.test.ts (973 lines), decisionLifecycle.test.ts (371), decisionExplanation.test.ts (502), obligations.test.ts, replyObligation.test.ts.",
+        "Staging serves /brief/today, /context, /brief/decisions/history and /learning/summary."
+      ],
+      "status": "working",
+      "status_detail": "Backend on staging; frontend local only. Content quality depends on the connected workspace's real data.",
+      "visual_demonstration": "Morning: open Today on a connected workspace, and the hero brief names the one decision that matters with its evidence chips (Gmail thread, meeting). Then scrub along one decision's lifecycle: surfaced, your call, executed, outcome observed, learning recorded."
+    },
+    {
+      "rank": 10,
+      "name": "Adaptive governance: policy proposals with a human gate and a kill switch",
+      "repo": "Navis-AI (client) / Core (adaptive router, cross-reference)",
+      "files": [
+        "src/app/dashboard/governance/page.tsx",
+        "src/components/navis/governance/ActivePolicyPanel.tsx",
+        "src/components/navis/governance/ProposalCard.tsx",
+        "src/components/navis/governance/RevertToDefaultsPanel.tsx",
+        "src/hooks/useAdaptiveGovernance.ts",
+        "src/services/api.ts:5838-5930 (getAdaptivePolicy, listPolicyProposals, approvePolicyProposal, rejectPolicyProposal, revertPolicyToDefaults)",
+        "src/services/adaptiveApi.test.ts",
+        "Backend navis/adaptive/router.py (cross-reference only)"
+      ],
+      "entry_point": "/dashboard/governance",
+      "implementation_flow": [
+        "GET /adaptive/policy shows the active policy; GET /adaptive/proposals lists changes the learning loop proposes.",
+        "The founder approves or rejects through POST /adaptive/proposals/{id}/approve|reject; nothing changes policy without that step.",
+        "Revert to defaults goes through the kill-switch route and returns the new policy_id; Core also exposes rollback/{policy_id}.",
+        "Insights from /intelligence/insights sit beside the proposals for context."
+      ],
+      "evidence": [
+        "services/adaptiveApi.test.ts.",
+        "Staging serves /adaptive/policy, /adaptive/proposals and /adaptive/kill-switch."
+      ],
+      "status": "working",
+      "status_detail": "Backend on staging; frontend local only. Proposals appear only after the Celery learning loop has produced them for that org.",
+      "visual_demonstration": "A proposal card: 'Navis noticed X, proposes changing Y'. Approve, and the active policy panel updates. Then press revert to defaults to show the human always holds the switch."
+    }
+  ],
+
+  "cross_cutting_engineering_properties": [
+    {"property": "Core is the only authority", "evidence": "packages/identity/src/index.ts documents removal of a second credential store; authorize.ts is refuse-only; Navis-AI holds no RBAC. Every surface asks Core /developer/me or /auth/me."},
+    {"property": "Tenant-safe rendering", "evidence": "apps/dashboard/src/lib/developer.ts: one client per request, cache no-store; every Developer page sets dynamic = 'force-dynamic' with a comment explaining the cross-tenant risk."},
+    {"property": "Absence is never rendered as zero or success", "evidence": "Navis-AI lib/apiState.ts (failure kinds 401/402/403/404/409/422/424/429/5xx); EconomicsPanel absent(); run-story.ts; decisionLifecycle.ts; getSlackBlockers returns available:false; Core deleted its anonymous stub router (Backend navis/api/router.py header)."},
+    {"property": "Fabricated telemetry removed and documented", "evidence": "askOrchestrator.ts (11-stage fake pipeline removed), trace.ts (derived timestamps removed), WebhooksPanel.tsx (invented event names removed), api.ts TEAM_ROSTER warning."}
+  ],
+
+  "cinematic_launch_video_top_3": [
+    {
+      "rank": 1,
+      "feature_ref": "top_10 #1 Cross-session work-state continuity",
+      "working_title": "Your agent remembers",
+      "why_strongest": "The most distinctive thing in the codebase: it changes the experience of an existing tool (Claude Code) without replacing it, it is real and heavily tested, and it reads instantly on screen as a before/after.",
+      "shot_list": [
+        "Cold open: a developer closes the laptop mid-task; terminal history fades.",
+        "Next morning, new session: the injected work-state block types in (objective, decisions made, open items).",
+        "The agent picks up exactly where it left off with no re-exploration; overlay a token counter staying flat.",
+        "Reveal: Console > Runs shows yesterday's session as a cli-session run with its checkpoint."
+      ],
+      "prerequisites": [
+        "A reachable Core: staging, or local with Core at :8000.",
+        "An agent key holding record_agent_runs and view_observation for that environment. Staging uses a different database, so local keys are invalid there.",
+        "CLI built (packages/cli dist) and the four hooks configured as in Devtool/.claude/settings.local.json.",
+        "A pre-recorded take: local SessionStart reads took ~16 s before the Core latency fixes."
+      ],
+      "honesty_guardrails": [
+        "Say 'works with Claude Code today'; the hooks are Claude Code-specific.",
+        "Do not imply public availability: the CLI is unpublished."
+      ],
+      "status": "working (local client) + staging (backend)"
+    },
+    {
+      "rank": 2,
+      "feature_ref": "top_10 #3 Task-aware context, delivered by #2 the multi-tenant MCP server",
+      "working_title": "Ask your company, from inside your agent",
+      "why_strongest": "It is the core value proposition in one gesture: any MCP agent asks a task-shaped question and gets cited, permission-scoped organizational context. The isolation and refusal beats show it is enterprise-grade, not a demo.",
+      "shot_list": [
+        "In Cursor or Claude Code: 'Draft the renewal note for our biggest customer.'",
+        "Tool call navis_get_relevant_context fires; the context panel shows sources and freshness.",
+        "The answer cites the sources instead of guessing.",
+        "Split screen: a second org's key asks the same question and gets that org's answer, not the first one's.",
+        "A read-only key tries a gated tool, gets a refusal naming the permission, and navis_me explains it."
+      ],
+      "prerequisites": [
+        "A curated demo organization with clean, non-sensitive data. A real org's response was ~61 KB with raw third-party emails on 2026-09-28.",
+        "The MCP server running (:3333 or stdio) against staging or local Core.",
+        "Latency handled: pre-warm or edit around a multi-second context call."
+      ],
+      "honesty_guardrails": [
+        "The tools are read-only; the agent cannot change org data through MCP.",
+        "Do not show a hosted MCP URL; mcp.navislabs.in does not exist."
+      ],
+      "status": "working (local MCP) + staging (backend)"
+    },
+    {
+      "rank": 3,
+      "feature_ref": "top_10 #7 Human-approved real-world execution",
+      "working_title": "Approve, and it actually happens",
+      "why_strongest": "The most visual payoff: a decision becomes a real email in a real inbox and a real calendar invite, with the human visibly in control and the UI refusing to claim 'sent' until Gmail confirms.",
+      "shot_list": [
+        "Today brief surfaces 'Reply before the CFO window closes' with evidence chips from the real thread.",
+        "Open the draft, edit one sentence, press Approve.",
+        "The card slides to 'Sending'; a beat; it flips to 'Sent' as the provider id lands.",
+        "Cut to the recipient's phone: the email arrives. Then Ask Navis books a follow-up and the invite appears in Google Calendar."
+      ],
+      "prerequisites": [
+        "Navis-AI running in real mode (NEXT_PUBLIC_USE_MOCK unset/false) against a Core with the Celery worker running.",
+        "A connected Google Workspace (and Slack if shown) with consenting recipients.",
+        "Staging or local Core with real integration grants."
+      ],
+      "honesty_guardrails": [
+        "Never film mock mode: its 'Arjun / Sequoia' answers are fixtures.",
+        "Do not show the meeting-brief drawer (its route 404s) or the simulation and trace drawers (client-derived, not backend)."
+      ],
+      "status": "working (local client) + staging (backend); real sends depend on worker and grants"
+    }
+  ],
+  "alternate_cinematic_candidate": {
+    "feature_ref": "top_10 #5 Outcome economics",
+    "pitch": "'Agents with Navis context cost X per successful outcome; without it, Y.' The strongest possible claim shot, if and only if real runs exist in both groups.",
+    "blocker": "Requires genuine production-like ledger data. There is no synthetic-run marker to exclude harness runs (prior notes), and seeding numbers for the camera would make the claim false."
+  },
+
+  "launch_risks_found": [
+    {"severity": "P0", "area": "Core (out of scope, verified read-only on 2026-10-04)", "finding": "A machine principal holding manage_service_accounts can list, create, ROTATE and revoke service accounts. The rotate route (Backend navis/identity/admin_router.py ~486) depends only on require_permission(MANAGE_SERVICE_ACCOUNTS); require_permission (navis/identity/authz.py:623) never checks principal kind; HUMAN_ONLY_PERMISSIONS (navis/identity/permissions.py:625) contains only MANAGE_DEVELOPER_ACCESS. First recorded 2026-09-28; still present.", "launch_impact": "Blocks any 'production-ready' claim. Do not demonstrate agent credential management by an agent."},
+    {"severity": "high", "area": "Release", "finding": "Nothing is publicly deployed or published; the TS SDK and CLI are UNLICENSED; docs elsewhere cite https://api.navislabs.in, which has no DNS.", "launch_impact": "A launch video cannot end on an install command or a URL that works today."},
+    {"severity": "medium", "area": "Navis-AI", "finding": "MeetingBriefDrawer calls a route Core deleted (404 to error state). The Navis-AI repo has no CI.", "launch_impact": "Avoid that surface on camera; add CI before launch."},
+    {"severity": "medium", "area": "Data hygiene", "finding": "Prior audit: context responses for a real org were ~61 KB with raw third-party emails.", "launch_impact": "Use a curated demo org for any context shot."},
+    {"severity": "low", "area": "Navis-AI local config", "finding": ".env.local holds GOOGLE_CLIENT_SECRET, which no frontend code reads (gitignored, never committed).", "launch_impact": "Hygiene only: the secret belongs to the Core's environment."},
+    {"severity": "info", "area": "Audit side effect", "finding": "Devtool's own Claude Code hooks (settings.local.json) run on this session's start, prompt and end. They may write ~/.local/state/navis/workstate and attempt a ledger write to Core (unreachable during the audit). That is the user's configuration, not an action of this audit."}
+  ],
+
+  "test_inventory_static_count": {
+    "note": "Counted from source (it/test calls and def test_). NOT executed, to honour the no-modification constraint.",
+    "Devtool": {
+      "packages/cli": "19 files, ~512 cases",
+      "apps/dashboard": "50 files, ~748 cases",
+      "services/mcp-server": "12 files, ~180 cases",
+      "packages/api-client": "4 files, ~70 cases",
+      "packages/sdk": "4 files, ~61 cases",
+      "packages/identity": "1 file, ~12 cases",
+      "packages/types": "1 file, ~7 cases",
+      "sdks/python": "6 files, ~97 cases",
+      "sdks/integration (live, opt-in)": "~27 cases"
+    },
+    "Navis-AI": "30 files, ~466 cases"
+  }
+}

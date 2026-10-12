@@ -1,0 +1,599 @@
+{
+ "about": "Film-only launch-state data for the NavisLabs launch film V8. Every entity the film shows comes from this file. NavisLabs and Abhishek Meena are real and authorized; every customer, contact, colleague, record and number here is SYNTHETIC demo data. No real company is shown as a customer: a web search (2026-10-06) found no publicly named NavisLabs customer or design partner (navislabs.in says only that it is 'deployed with a small group of design partners').",
+ "version": "v8",
+ "names_policy": "Real and authorized: NavisLabs (the organization, Bengaluru) and its founder Abhishek Meena. Everyone and everything else is SYNTHETIC. The customer is a fictional Indian company, Kaveri Freightworks (Bengaluru logistics) — a web search on 2026-10-06 found no company with that exact name; it is labelled fictional in the end-card disclosure. No real company (Tata, Reliance, Infosys, Zerodha, Razorpay, PhonePe, Flipkart, Swiggy, Zomato, Digantara, …) is shown as a customer. Mulayam Kumar and Digantara are not used: the dataset has no written authorization for either.",
+ "company": {
+  "id": "org_navislabs",
+  "name": "NavisLabs",
+  "slug": "navislabs",
+  "kind": "company",
+  "website": "navislabs.in",
+  "provenance": "REAL_AUTHORIZED",
+  "note": "The company itself, shown as an organization that uses its own products (dogfooding)."
+ },
+ "people": [
+  {
+   "id": "p_abhishek",
+   "name": "Abhishek Meena",
+   "first": "Abhishek",
+   "email": "abhishek@navislabs.in",
+   "title": "Founder",
+   "team": "t_leadership",
+   "application_role": "Founder",
+   "developer_role": "owner",
+   "mac_user": "abhishekmeena",
+   "mac_host": "Abhisheks-MacBook-Pro-8",
+   "provenance": "REAL_AUTHORIZED",
+   "note": "Founder; demo user in both products at the founder's request. Email and Mac user/host shown on screen at the founder's request — confirm before public release."
+  },
+  {
+   "id": "p_arjun",
+   "name": "Arjun Rao",
+   "first": "Arjun",
+   "email": "arjun@example.com",
+   "title": "Engineer",
+   "team": "t_engineering",
+   "application_role": "Member",
+   "developer_role": "developer",
+   "provenance": "SYNTHETIC",
+   "note": "Synthetic engineer (fictional). Not a NavisLabs employee. Replace with an authorized teammate only with written approval."
+  },
+  {
+   "id": "p_meera",
+   "name": "Meera Iyer",
+   "first": "Meera",
+   "email": "meera.iyer@kaveri.example",
+   "title": "Head of Operations",
+   "customer": "c_kaveri",
+   "provenance": "SYNTHETIC",
+   "note": "Synthetic customer contact (fictional); .example is a reserved domain (RFC 2606)."
+  },
+  {
+   "id": "p_solo",
+   "name": "Riya",
+   "first": "Riya",
+   "email": "riya@example.com",
+   "title": "Student developer",
+   "workspace": "w_riya",
+   "provenance": "SYNTHETIC",
+   "note": "Synthetic solo developer in a personal workspace."
+  }
+ ],
+ "teams": [
+  {
+   "id": "t_leadership",
+   "name": "Leadership",
+   "members": [
+    "p_abhishek"
+   ],
+   "provenance": "SYNTHETIC"
+  },
+  {
+   "id": "t_revenue",
+   "name": "Revenue",
+   "members": [
+    "p_abhishek"
+   ],
+   "provenance": "SYNTHETIC"
+  },
+  {
+   "id": "t_engineering",
+   "name": "Engineering",
+   "members": [
+    "p_abhishek",
+    "p_arjun"
+   ],
+   "provenance": "SYNTHETIC"
+  }
+ ],
+ "customers": [
+  {
+   "id": "c_kaveri",
+   "name": "Kaveri Freightworks",
+   "short": "Kaveri",
+   "caps": "KAVERI FREIGHTWORKS",
+   "slug": "kaveri-freightworks",
+   "contact": "p_meera",
+   "owner": "p_abhishek",
+   "renewal_was": "Nov 14",
+   "renewal_now": "Nov 28",
+   "renewal_was_iso": "2026-11-14",
+   "renewal_now_iso": "2026-11-28",
+   "provenance": "SYNTHETIC",
+   "note": "FICTIONAL Indian-context customer for the film. Not a real company and not a NavisLabs customer; no relationship is implied. Web search 2026-10-06: no company with this exact name found.",
+   "city": "Bengaluru",
+   "industry": "Logistics",
+   "label": "Fictional demo organization",
+   "renewal_note": "Both renewal dates are in the future (the film is set on Oct 6, 2026): Nov 14 was the contracted date; the customer asked on Oct 5 to move it to Nov 28."
+  }
+ ],
+ "projects": [
+  {
+   "id": "pr_sso",
+   "name": "SSO export",
+   "ticket": "KVR-142",
+   "customer": "c_kaveri",
+   "owner": "p_arjun",
+   "state": "blocked on review",
+   "provenance": "SYNTHETIC"
+  },
+  {
+   "id": "pr_renewal_workflow",
+   "name": "Kaveri renewal workflow",
+   "file": "src/workflows/kaveri-renewal.ts",
+   "repository": "r_navislabs",
+   "customer": "c_kaveri",
+   "provenance": "SYNTHETIC"
+  }
+ ],
+ "decisions": [
+  {
+   "id": "d_annual_terms",
+   "text": "Annual plans keep their current terms; usage-based pricing applies to new accounts only.",
+   "short": "Annual plans keep their current terms",
+   "made_in": "Pricing review",
+   "date": "Sep 30",
+   "date_iso": "2026-09-30",
+   "source": "meet",
+   "provenance": "SYNTHETIC"
+  }
+ ],
+ "commitments": [
+  {
+   "id": "m_revised_terms",
+   "text": "Revised terms promised to Kaveri by Oct 7 — not yet sent.",
+   "short": "Revised terms promised by Oct 7",
+   "due": "Oct 7",
+   "owner": "p_abhishek",
+   "source": "slack",
+   "channel": "#kaveri",
+   "date": "Sep 30",
+   "provenance": "SYNTHETIC"
+  },
+  {
+   "id": "m_board_metrics",
+   "text": "Updated metrics were promised to the board Thursday",
+   "short": "Board metrics due Thursday",
+   "owner": "p_abhishek",
+   "source": "meet",
+   "provenance": "SYNTHETIC",
+   "made_in": "Q3 review",
+   "date": "Sep 30",
+   "days_ago": 6,
+   "due": "Thursday (Oct 8)"
+  }
+ ],
+ "meetings": [
+  {
+   "id": "mt_renewal_call",
+   "title": "Kaveri renewal call",
+   "date": "Oct 8",
+   "moved_on": "Oct 5",
+   "source": "calendar",
+   "provenance": "SYNTHETIC",
+   "weekday": "Thu",
+   "note": "Upcoming meeting (moved on Oct 5 to Thursday, Oct 8)."
+  },
+  {
+   "id": "mt_pricing_review",
+   "title": "Pricing review",
+   "date": "Sep 30",
+   "source": "meet",
+   "provenance": "SYNTHETIC"
+  }
+ ],
+ "emails": [
+  {
+   "id": "e_move_renewal",
+   "from": "p_meera",
+   "subject": "Moving our renewal to Nov 28",
+   "ask": "Can we move our renewal to Nov 28?",
+   "date": "Oct 5",
+   "date_iso": "2026-10-05",
+   "source": "gmail",
+   "provenance": "SYNTHETIC"
+  }
+ ],
+ "documents": [
+  {
+   "id": "doc_order_form",
+   "title": "Kaveri order form — annual plan, current terms",
+   "source": "drive",
+   "date": "Oct 2",
+   "provenance": "SYNTHETIC"
+  },
+  {
+   "id": "doc_account_plan",
+   "title": "Kaveri account plan",
+   "fact": "Account owner: Abhishek Meena",
+   "source": "docs",
+   "date": "Oct 1",
+   "provenance": "SYNTHETIC"
+  },
+  {
+   "id": "doc_sso_spec",
+   "title": "SSO export spec",
+   "source": "docs",
+   "date": "Oct 2",
+   "provenance": "SYNTHETIC"
+  }
+ ],
+ "repositories": [
+  {
+   "id": "r_navislabs",
+   "name": "NavisLabs",
+   "branch": "main",
+   "provenance": "SYNTHETIC",
+   "note": "Demo repository name shown in VS Code and the terminal."
+  },
+  {
+   "id": "r_riya",
+   "name": "thesis-tracker",
+   "branch": "main",
+   "provenance": "SYNTHETIC"
+  }
+ ],
+ "agents": [
+  {
+   "id": "a_claude_code",
+   "name": "claude-code",
+   "client": "Claude Code",
+   "owner": "p_abhishek",
+   "permissions": [
+    "view_memory",
+    "view_state"
+   ],
+   "provenance": "REAL_PUBLIC_PRODUCT",
+   "note": "Claude Code is a real public product, named nominatively as the MCP client (Devtool docs/mcp/CLIENTS.md: LIVE VERIFIED)."
+  }
+ ],
+ "runs": [
+  {
+   "id": "7c2e91a0",
+   "task": "Update the Kaveri renewal workflow.",
+   "agent": "a_claude_code",
+   "status": "Completed",
+   "started": "Oct 6, 09:44",
+   "duration": "4m 12s",
+   "outcome": "Not judged",
+   "steps": [
+    {
+     "at": "09:44:03",
+     "type": "Context",
+     "what": "navis_get_relevant_context → 6 facts · gmail, docs, meet, slack, salesforce (upcoming) · as_of 09:44"
+    },
+    {
+     "at": "09:44:06",
+     "type": "Tool",
+     "what": "Read src/workflows/kaveri-renewal.ts"
+    },
+    {
+     "at": "09:44:41",
+     "type": "Tool",
+     "what": "Edit src/workflows/kaveri-renewal.ts — code changed (+4 −2)"
+    },
+    {
+     "at": "09:46:02",
+     "type": "Tool",
+     "what": "npm test -- workflows — verification passed"
+    },
+    {
+     "at": "09:48:15",
+     "type": "Outcome",
+     "what": "Result produced"
+    }
+   ],
+   "provenance": "SYNTHETIC"
+  },
+  {
+   "id": "3f9a1d27",
+   "task": "Add usage-based pricing for new accounts.",
+   "agent": "a_claude_code",
+   "status": "Completed",
+   "started": "Oct 5, 17:31",
+   "duration": "14m 08s",
+   "provenance": "SYNTHETIC"
+  }
+ ],
+ "developer_workspace": {
+  "organization": "org_navislabs",
+  "kind": "company",
+  "members": [
+   {
+    "person": "p_abhishek",
+    "developer_role": "owner",
+    "application_role": "Founder",
+    "state": "Active"
+   },
+   {
+    "person": "p_arjun",
+    "developer_role": "developer",
+    "application_role": "Member",
+    "state": "Invited"
+   }
+  ],
+  "solo": {
+   "id": "w_riya",
+   "person": "p_solo",
+   "kind": "personal",
+   "name": "Riya's workspace",
+   "repository": "r_riya",
+   "task": "Add CSV export to the results page.",
+   "decision": "Keep the export client-side; no new endpoint.",
+   "open": "Write the test for empty result sets.",
+   "provenance": "SYNTHETIC"
+  }
+ },
+ "application_workspace": {
+  "organization": "org_navislabs",
+  "user": "p_abhishek",
+  "date": "Tuesday, October 6",
+  "date_iso": "2026-10-06",
+  "synced": "2m ago",
+  "now": "09:44",
+  "glance": {
+   "decisions": 3,
+   "risks": 1,
+   "actions": 2,
+   "meetings": 4,
+   "waiting": 1,
+   "updates": 0
+  }
+ },
+ "integrations": {
+  "FILM_LAUNCH_INTEGRATIONS": [
+   {
+    "id": "gmail",
+    "label": "Gmail",
+    "role": "customer response",
+    "film_status": "LIVE — verified in code (local Navis backend checkout)",
+    "public_website_status": "Supported",
+    "local_source_status": "LIVE in the local checkout — Backend navis/signals/gmail; Navis-AI ConnectionId 'gmail'",
+    "in_film": "evidence",
+    "status": "live"
+   },
+   {
+    "id": "calendar",
+    "label": "Google Calendar",
+    "role": "meeting & commitment",
+    "film_status": "LIVE — verified in code (local Navis backend checkout)",
+    "public_website_status": "Supported",
+    "local_source_status": "LIVE — Backend navis/signals/calendar; ConnectionId 'calendar' (covers Meet)",
+    "in_film": "evidence",
+    "status": "live"
+   },
+   {
+    "id": "meet",
+    "label": "Google Meet",
+    "role": "discussion & decision",
+    "film_status": "LIVE — verified in code (local Navis backend checkout)",
+    "public_website_status": "Supported",
+    "local_source_status": "LIVE — Backend navis/signals/meet; reached through the Calendar grant",
+    "in_film": "evidence",
+    "status": "live"
+   },
+   {
+    "id": "drive",
+    "label": "Google Drive",
+    "role": "project documents",
+    "film_status": "LIVE — verified in code (local Navis backend checkout)",
+    "public_website_status": "Supported",
+    "local_source_status": "LIVE — Backend navis/signals/drive; ConnectionId 'drive' (covers Docs)",
+    "in_film": "evidence",
+    "status": "live"
+   },
+   {
+    "id": "docs",
+    "label": "Google Docs",
+    "role": "account context",
+    "film_status": "LIVE — verified in code (local Navis backend checkout)",
+    "public_website_status": "Supported",
+    "local_source_status": "LIVE — Backend navis/signals/drive/docs.py; Docs arrive as Drive files",
+    "in_film": "evidence",
+    "status": "live"
+   },
+   {
+    "id": "slack",
+    "label": "Slack",
+    "role": "team signal",
+    "film_status": "LIVE — verified in code (local Navis backend checkout)",
+    "public_website_status": "Supported",
+    "local_source_status": "LIVE — Backend navis/signals/slack; ConnectionId 'slack'; credential resolver shipped (5.4.1)",
+    "in_film": "evidence",
+    "status": "live"
+   },
+   {
+    "id": "salesforce",
+    "label": "Salesforce",
+    "role": "account & opportunity",
+    "film_status": "UPCOMING — demo configuration (not live in the local Navis backend)",
+    "public_website_status": "Coming soon",
+    "local_source_status": "NOT IN THE LOCAL CHECKOUT — no backend or frontend reference",
+    "in_film": "evidence (primary CRM)",
+    "status": "upcoming"
+   },
+   {
+    "id": "notion",
+    "label": "Notion",
+    "role": "company knowledge",
+    "film_status": "UPCOMING — demo configuration (not live in the local Navis backend)",
+    "public_website_status": "Coming soon",
+    "local_source_status": "NOT IN THE LOCAL CHECKOUT AS A CONNECTOR — enum members only (IntegrationProvider, SignalSource); no credential resolver (tests/execution/test_integration_boundary.py); Navis-AI: 'coming soon, no backend handler'",
+    "in_film": "evidence (company knowledge)",
+    "status": "upcoming"
+   },
+   {
+    "id": "microsoft365",
+    "label": "Microsoft 365",
+    "role": "documents & workplace",
+    "film_status": "UPCOMING — demo configuration (not live in the local Navis backend)",
+    "public_website_status": "Coming soon",
+    "local_source_status": "NOT IN THE LOCAL CHECKOUT — no connector",
+    "in_film": "connected infrastructure — no record shown",
+    "status": "upcoming"
+   },
+   {
+    "id": "hubspot",
+    "label": "HubSpot",
+    "role": "customer activity",
+    "film_status": "UPCOMING — demo configuration (not live in the local Navis backend)",
+    "public_website_status": "Coming soon",
+    "local_source_status": "NOT IN THE LOCAL CHECKOUT AS A CONNECTOR — identity-resolution alias only (AliasProvider.HUBSPOT)",
+    "in_film": "connected infrastructure — no record shown (Salesforce is the primary CRM example)",
+    "status": "upcoming"
+   },
+   {
+    "id": "jira",
+    "label": "Jira",
+    "role": "engineering issues",
+    "film_status": "UPCOMING — demo configuration (not live in the local Navis backend)",
+    "public_website_status": "Coming soon",
+    "local_source_status": "NOT IN THE LOCAL CHECKOUT — mentioned in comments only",
+    "in_film": "evidence (engineering)",
+    "status": "upcoming"
+   },
+   {
+    "id": "github",
+    "label": "GitHub",
+    "role": "code",
+    "film_status": "UPCOMING — demo configuration (not live in the local Navis backend)",
+    "public_website_status": "Coming soon",
+    "local_source_status": "NOT IN THE LOCAL CHECKOUT AS A CONNECTOR — identity-resolution alias only (AliasProvider.GITHUB)",
+    "in_film": "evidence (code)",
+    "status": "upcoming"
+   },
+   {
+    "id": "zoom",
+    "label": "Zoom",
+    "role": "meetings",
+    "film_status": "UPCOMING — demo configuration (not live in the local Navis backend)",
+    "public_website_status": "Coming soon",
+    "local_source_status": "NOT IN THE LOCAL CHECKOUT — mentioned in a comment only",
+    "in_film": "connected infrastructure — no record shown (Meet carries the meeting example)",
+    "status": "upcoming"
+   }
+  ],
+  "connected": [
+   "gmail",
+   "calendar",
+   "meet",
+   "drive",
+   "docs",
+   "slack",
+   "salesforce",
+   "notion",
+   "microsoft365",
+   "hubspot",
+   "jira",
+   "github",
+   "zoom"
+  ],
+  "semantics": {
+   "gmail": "customer response",
+   "calendar": "meeting & commitment",
+   "meet": "discussion & decision",
+   "drive": "project documents",
+   "docs": "account context",
+   "slack": "team signal",
+   "salesforce": "account & opportunity",
+   "hubspot": "customer activity",
+   "jira": "engineering issues",
+   "github": "code",
+   "notion": "company knowledge",
+   "zoom": "meetings",
+   "microsoft365": "documents & workplace"
+  },
+  "provenance": "REAL_PUBLIC_PRODUCT (vendor names and marks, nominative use)",
+  "note": "Six systems are live in the local Navis backend (Gmail, Google Calendar, Google Meet, Google Drive, Google Docs, Slack). Seven (Salesforce, Notion, Microsoft 365, HubSpot, Jira, GitHub, Zoom) are UPCOMING: shown only as a labelled demo configuration ('upcoming' on screen and in the end-card disclosure); no action is ever shown as executed through them.",
+  "live": [
+   "gmail",
+   "calendar",
+   "meet",
+   "drive",
+   "docs",
+   "slack"
+  ],
+  "upcoming": [
+   "salesforce",
+   "notion",
+   "microsoft365",
+   "hubspot",
+   "jira",
+   "github",
+   "zoom"
+  ]
+ },
+ "crm_records": [
+  {
+   "id": "crm_kaveri_opportunity",
+   "system": "salesforce",
+   "object": "Opportunity",
+   "name": "Kaveri Freightworks — annual renewal",
+   "account": "c_kaveri",
+   "stage": "Renewal",
+   "close_date": "Nov 14",
+   "owner": "p_abhishek",
+   "last_activity": "Email from Meera Iyer · Oct 5",
+   "provenance": "SYNTHETIC",
+   "note": "FILM DEMO RECORD (launch configuration). No amounts, no pipeline numbers. The close date is still the old renewal date — the CRM has not caught up with the email; a person updates it.",
+   "next_step": "Confirm Nov 28 and the annual terms"
+  }
+ ],
+ "knowledge": [
+  {
+   "id": "kn_renewal_playbook",
+   "system": "notion",
+   "title": "Renewal playbook",
+   "fact": "Annual plans renew on current terms; usage-based pricing is for new accounts.",
+   "date": "Sep 30",
+   "provenance": "SYNTHETIC",
+   "note": "FILM DEMO RECORD: the policy written up after the pricing review (the Meet decision)."
+  }
+ ],
+ "engineering_context": {
+  "issues": [
+   {
+    "id": "eng_kvr_142",
+    "system": "jira",
+    "key": "KVR-142",
+    "title": "SSO export blocked on review",
+    "status": "Blocked",
+    "owner": "p_arjun",
+    "customer": "c_kaveri",
+    "provenance": "SYNTHETIC",
+    "date": "Oct 3"
+   }
+  ],
+  "code": [
+   {
+    "id": "code_kaveri_renewal",
+    "system": "github",
+    "repository": "r_navislabs",
+    "path": "src/workflows/kaveri-renewal.ts",
+    "fact": "renewsOn: \"2026-11-14\"",
+    "after": "renewsOn: \"2026-11-28\"",
+    "provenance": "SYNTHETIC",
+    "note": "The workflow file the agent updates in Navis Developer (S15). No PR numbers, no deployment."
+   }
+  ]
+ },
+ "team_workstate": {
+  "person": "p_abhishek",
+  "repository": "r_navislabs",
+  "branch": "main",
+  "task": "Update the Kaveri renewal workflow.",
+  "decision": "Renewal moves to Nov 28; annual plans keep current terms.",
+  "open": "Confirm the close date in Salesforce.",
+  "provenance": "SYNTHETIC"
+ },
+ "developer_roles": {
+  "values": [
+   "owner",
+   "admin",
+   "developer",
+   "viewer"
+  ],
+  "source": "Devtool packages/types/src/auth.ts DEVELOPER_ROLES"
+ },
+ "dates_policy": "The film is set on Tuesday, October 6, 2026 (09:44). Past and current demo events fall between Sep 30 and Oct 5, 2026. Future dates (the renewal call on Thu, Oct 8; the commitment due Oct 7; the renewal on Nov 14 → Nov 28) are always shown as upcoming, never as past."
+}

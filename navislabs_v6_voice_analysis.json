@@ -1,0 +1,1264 @@
+{
+ "about": "Measured founder voiceover P1\u2013P8 (scripts/analyze-voice.py). Times are seconds inside each chunk.",
+ "total_s": 116.951,
+ "chunks": [
+  {
+   "id": "P1",
+   "file": "voiceover/final/v6/P1.wav",
+   "duration_s": 12.669,
+   "integrated_lufs": -19.03,
+   "true_peak_dbtp": -2.13,
+   "speech_start_s": 0.19,
+   "speech_end_s": 12.57,
+   "segments": [
+    [
+     0.19,
+     0.41
+    ],
+    [
+     0.5,
+     1.2
+    ],
+    [
+     1.23,
+     1.69
+    ],
+    [
+     1.86,
+     2.44
+    ],
+    [
+     2.48,
+     2.67
+    ],
+    [
+     2.75,
+     2.91
+    ],
+    [
+     3.02,
+     3.19
+    ],
+    [
+     5.79,
+     5.96
+    ],
+    [
+     6.02,
+     6.22
+    ],
+    [
+     6.29,
+     6.49
+    ],
+    [
+     6.59,
+     7.61
+    ],
+    [
+     7.67,
+     8.7
+    ],
+    [
+     8.78,
+     9.01
+    ],
+    [
+     9.36,
+     9.52
+    ],
+    [
+     9.56,
+     10.9
+    ],
+    [
+     11.21,
+     11.67
+    ],
+    [
+     11.76,
+     11.82
+    ],
+    [
+     11.86,
+     12.1
+    ],
+    [
+     12.13,
+     12.57
+    ]
+   ],
+   "pauses": [
+    {
+     "from": 1.69,
+     "to": 1.86,
+     "s": 0.17
+    },
+    {
+     "from": 3.19,
+     "to": 5.79,
+     "s": 2.6
+    },
+    {
+     "from": 9.01,
+     "to": 9.36,
+     "s": 0.35
+    },
+    {
+     "from": 10.9,
+     "to": 11.21,
+     "s": 0.31
+    }
+   ],
+   "lines": [
+    {
+     "text": "Your people and agents see different truths.",
+     "start_s": 0.19,
+     "end_s": 3.19,
+     "pause_after": true
+    },
+    {
+     "text": "The truth is scattered across the systems where work happens.",
+     "start_s": 5.79,
+     "end_s": 9.01,
+     "pause_after": false
+    },
+    {
+     "text": "People rebuild it by hand.",
+     "start_s": 9.36,
+     "end_s": 10.9,
+     "pause_after": false
+    },
+    {
+     "text": "Agents start without it.",
+     "start_s": 11.21,
+     "end_s": 12.57,
+     "pause_after": false
+    }
+   ]
+  },
+  {
+   "id": "P2",
+   "file": "voiceover/final/v6/P2.wav",
+   "duration_s": 14.211,
+   "integrated_lufs": -19.0,
+   "true_peak_dbtp": -2.08,
+   "speech_start_s": 0.05,
+   "speech_end_s": 14.12,
+   "segments": [
+    [
+     0.05,
+     0.39
+    ],
+    [
+     0.45,
+     1.55
+    ],
+    [
+     1.58,
+     2.02
+    ],
+    [
+     2.07,
+     2.71
+    ],
+    [
+     2.74,
+     3.04
+    ],
+    [
+     5.99,
+     6.86
+    ],
+    [
+     6.96,
+     7.18
+    ],
+    [
+     7.21,
+     7.45
+    ],
+    [
+     7.55,
+     8.7
+    ],
+    [
+     8.76,
+     9.66
+    ],
+    [
+     10.42,
+     10.94
+    ],
+    [
+     11.29,
+     11.54
+    ],
+    [
+     11.63,
+     11.84
+    ],
+    [
+     12.21,
+     13.25
+    ],
+    [
+     13.31,
+     13.67
+    ],
+    [
+     13.7,
+     13.94
+    ],
+    [
+     14.03,
+     14.12
+    ]
+   ],
+   "pauses": [
+    {
+     "from": 3.04,
+     "to": 5.99,
+     "s": 2.95
+    },
+    {
+     "from": 9.66,
+     "to": 10.42,
+     "s": 0.76
+    },
+    {
+     "from": 10.94,
+     "to": 11.29,
+     "s": 0.35
+    },
+    {
+     "from": 11.84,
+     "to": 12.21,
+     "s": 0.37
+    }
+   ],
+   "lines": [
+    {
+     "text": "Navis turns those signals into one shared understanding.",
+     "start_s": 0.05,
+     "end_s": 3.04,
+     "pause_after": true
+    },
+    {
+     "text": "Every email, meeting, document and message becomes a signal \u2014",
+     "start_s": 5.99,
+     "end_s": 9.66,
+     "pause_after": false
+    },
+    {
+     "text": "remembered, connected, and turned into what should happen next.",
+     "start_s": 10.42,
+     "end_s": 14.12,
+     "pause_after": false
+    }
+   ]
+  },
+  {
+   "id": "P3",
+   "file": "voiceover/final/v6/P3.wav",
+   "duration_s": 22.204,
+   "integrated_lufs": -19.08,
+   "true_peak_dbtp": -1.47,
+   "speech_start_s": 0.09,
+   "speech_end_s": 22.19,
+   "segments": [
+    [
+     0.09,
+     0.79
+    ],
+    [
+     0.85,
+     1.1
+    ],
+    [
+     1.25,
+     2.01
+    ],
+    [
+     2.07,
+     2.21
+    ],
+    [
+     2.26,
+     2.38
+    ],
+    [
+     2.43,
+     2.73
+    ],
+    [
+     3.53,
+     4.12
+    ],
+    [
+     4.15,
+     4.48
+    ],
+    [
+     4.54,
+     4.99
+    ],
+    [
+     5.43,
+     6.66
+    ],
+    [
+     6.71,
+     6.77
+    ],
+    [
+     7.52,
+     8.18
+    ],
+    [
+     8.23,
+     8.57
+    ],
+    [
+     8.62,
+     9.12
+    ],
+    [
+     9.39,
+     9.6
+    ],
+    [
+     9.65,
+     10.03
+    ],
+    [
+     10.28,
+     11.23
+    ],
+    [
+     12.02,
+     13.47
+    ],
+    [
+     13.8,
+     14.21
+    ],
+    [
+     14.29,
+     15.02
+    ],
+    [
+     15.19,
+     15.27
+    ],
+    [
+     15.32,
+     15.48
+    ],
+    [
+     17.21,
+     17.33
+    ],
+    [
+     17.38,
+     17.89
+    ],
+    [
+     17.98,
+     18.41
+    ],
+    [
+     18.46,
+     18.56
+    ],
+    [
+     20.29,
+     20.69
+    ],
+    [
+     20.9,
+     21.59
+    ],
+    [
+     21.65,
+     21.86
+    ],
+    [
+     22.04,
+     22.19
+    ]
+   ],
+   "pauses": [
+    {
+     "from": 2.73,
+     "to": 3.53,
+     "s": 0.8
+    },
+    {
+     "from": 4.99,
+     "to": 5.43,
+     "s": 0.44
+    },
+    {
+     "from": 6.77,
+     "to": 7.52,
+     "s": 0.75
+    },
+    {
+     "from": 9.12,
+     "to": 9.39,
+     "s": 0.27
+    },
+    {
+     "from": 10.03,
+     "to": 10.28,
+     "s": 0.25
+    },
+    {
+     "from": 11.23,
+     "to": 12.02,
+     "s": 0.79
+    },
+    {
+     "from": 13.47,
+     "to": 13.8,
+     "s": 0.33
+    },
+    {
+     "from": 15.02,
+     "to": 15.19,
+     "s": 0.17
+    },
+    {
+     "from": 15.48,
+     "to": 17.21,
+     "s": 1.73
+    },
+    {
+     "from": 18.56,
+     "to": 20.29,
+     "s": 1.73
+    },
+    {
+     "from": 20.69,
+     "to": 20.9,
+     "s": 0.21
+    },
+    {
+     "from": 21.86,
+     "to": 22.04,
+     "s": 0.18
+    }
+   ],
+   "lines": [
+    {
+     "text": "Inside a company, the Navis App is for people.",
+     "start_s": 0.09,
+     "end_s": 2.73,
+     "pause_after": false
+    },
+    {
+     "text": "It shows what changed \u2014",
+     "start_s": 3.53,
+     "end_s": 4.99,
+     "pause_after": false
+    },
+    {
+     "text": "and why it matters.",
+     "start_s": 5.43,
+     "end_s": 6.77,
+     "pause_after": false
+    },
+    {
+     "text": "Every fact has its source, its time, and how fresh it is.",
+     "start_s": 7.52,
+     "end_s": 11.23,
+     "pause_after": false
+    },
+    {
+     "text": "When something needs a decision, Navis prepares the next step.",
+     "start_s": 12.02,
+     "end_s": 15.48,
+     "pause_after": true
+    },
+    {
+     "text": "A person decides.",
+     "start_s": 17.21,
+     "end_s": 18.56,
+     "pause_after": true
+    },
+    {
+     "text": "Then the company acts.",
+     "start_s": 20.29,
+     "end_s": 22.19,
+     "pause_after": false
+    }
+   ]
+  },
+  {
+   "id": "P4",
+   "file": "voiceover/final/v6/P4.wav",
+   "duration_s": 29.806,
+   "integrated_lufs": -19.0,
+   "true_peak_dbtp": -1.63,
+   "speech_start_s": 0.12,
+   "speech_end_s": 29.62,
+   "segments": [
+    [
+     0.12,
+     0.83
+    ],
+    [
+     0.9,
+     1.98
+    ],
+    [
+     2.1,
+     2.5
+    ],
+    [
+     2.53,
+     2.75
+    ],
+    [
+     2.84,
+     2.91
+    ],
+    [
+     3.39,
+     4.14
+    ],
+    [
+     5.01,
+     5.26
+    ],
+    [
+     5.31,
+     5.68
+    ],
+    [
+     5.72,
+     5.8
+    ],
+    [
+     6.36,
+     6.84
+    ],
+    [
+     6.89,
+     7.07
+    ],
+    [
+     7.41,
+     7.97
+    ],
+    [
+     8.33,
+     8.96
+    ],
+    [
+     9.2,
+     9.5
+    ],
+    [
+     9.72,
+     10.21
+    ],
+    [
+     11.07,
+     11.84
+    ],
+    [
+     11.9,
+     12.0
+    ],
+    [
+     12.42,
+     12.81
+    ],
+    [
+     13.13,
+     13.78
+    ],
+    [
+     13.82,
+     14.04
+    ],
+    [
+     14.11,
+     14.49
+    ],
+    [
+     14.53,
+     14.59
+    ],
+    [
+     14.82,
+     15.59
+    ],
+    [
+     15.7,
+     16.15
+    ],
+    [
+     16.19,
+     16.43
+    ],
+    [
+     17.18,
+     17.72
+    ],
+    [
+     17.9,
+     18.3
+    ],
+    [
+     18.46,
+     18.95
+    ],
+    [
+     20.53,
+     20.83
+    ],
+    [
+     20.89,
+     21.3
+    ],
+    [
+     21.55,
+     21.68
+    ],
+    [
+     21.71,
+     22.28
+    ],
+    [
+     22.48,
+     22.68
+    ],
+    [
+     23.64,
+     24.38
+    ],
+    [
+     24.53,
+     24.67
+    ],
+    [
+     24.74,
+     24.94
+    ],
+    [
+     24.99,
+     25.47
+    ],
+    [
+     25.51,
+     25.65
+    ],
+    [
+     25.72,
+     26.15
+    ],
+    [
+     26.19,
+     26.25
+    ],
+    [
+     26.84,
+     27.89
+    ],
+    [
+     28.21,
+     28.83
+    ],
+    [
+     28.94,
+     29.62
+    ]
+   ],
+   "pauses": [
+    {
+     "from": 2.91,
+     "to": 3.39,
+     "s": 0.48
+    },
+    {
+     "from": 4.14,
+     "to": 5.01,
+     "s": 0.87
+    },
+    {
+     "from": 5.8,
+     "to": 6.36,
+     "s": 0.56
+    },
+    {
+     "from": 7.07,
+     "to": 7.41,
+     "s": 0.34
+    },
+    {
+     "from": 7.97,
+     "to": 8.33,
+     "s": 0.36
+    },
+    {
+     "from": 8.96,
+     "to": 9.2,
+     "s": 0.24
+    },
+    {
+     "from": 9.5,
+     "to": 9.72,
+     "s": 0.22
+    },
+    {
+     "from": 10.21,
+     "to": 11.07,
+     "s": 0.86
+    },
+    {
+     "from": 12.0,
+     "to": 12.42,
+     "s": 0.42
+    },
+    {
+     "from": 12.81,
+     "to": 13.13,
+     "s": 0.32
+    },
+    {
+     "from": 14.59,
+     "to": 14.82,
+     "s": 0.23
+    },
+    {
+     "from": 16.43,
+     "to": 17.18,
+     "s": 0.75
+    },
+    {
+     "from": 17.72,
+     "to": 17.9,
+     "s": 0.18
+    },
+    {
+     "from": 18.3,
+     "to": 18.46,
+     "s": 0.16
+    },
+    {
+     "from": 18.95,
+     "to": 20.53,
+     "s": 1.58
+    },
+    {
+     "from": 21.3,
+     "to": 21.55,
+     "s": 0.25
+    },
+    {
+     "from": 22.28,
+     "to": 22.48,
+     "s": 0.2
+    },
+    {
+     "from": 22.68,
+     "to": 23.64,
+     "s": 0.96
+    },
+    {
+     "from": 24.38,
+     "to": 24.53,
+     "s": 0.15
+    },
+    {
+     "from": 26.25,
+     "to": 26.84,
+     "s": 0.59
+    },
+    {
+     "from": 27.89,
+     "to": 28.21,
+     "s": 0.32
+    }
+   ],
+   "lines": [
+    {
+     "text": "The same company's agents use Navis Developer.",
+     "start_s": 0.12,
+     "end_s": 2.91,
+     "pause_after": false
+    },
+    {
+     "text": "Invite the team.",
+     "start_s": 3.39,
+     "end_s": 4.14,
+     "pause_after": false
+    },
+    {
+     "text": "Connect once \u2014 through MCP, API, SDK or CLI.",
+     "start_s": 5.01,
+     "end_s": 10.21,
+     "pause_after": false
+    },
+    {
+     "text": "The agent asks \u2014",
+     "start_s": 11.07,
+     "end_s": 12.0,
+     "pause_after": false
+    },
+    {
+     "text": "and gets the company's context, with sources and freshness.",
+     "start_s": 12.42,
+     "end_s": 16.43,
+     "pause_after": false
+    },
+    {
+     "text": "Navis isn't the model.",
+     "start_s": 17.18,
+     "end_s": 18.95,
+     "pause_after": true
+    },
+    {
+     "text": "It supplies the company's truth.",
+     "start_s": 20.53,
+     "end_s": 22.68,
+     "pause_after": false
+    },
+    {
+     "text": "Every request is checked against its permissions.",
+     "start_s": 23.64,
+     "end_s": 26.25,
+     "pause_after": false
+    },
+    {
+     "text": "The agent does the work,",
+     "start_s": 26.84,
+     "end_s": 27.89,
+     "pause_after": false
+    },
+    {
+     "text": "and the run is on record.",
+     "start_s": 28.21,
+     "end_s": 29.62,
+     "pause_after": false
+    }
+   ]
+  },
+  {
+   "id": "P5",
+   "file": "voiceover/final/v6/P5.wav",
+   "duration_s": 13.558,
+   "integrated_lufs": -18.95,
+   "true_peak_dbtp": -3.11,
+   "speech_start_s": 0.13,
+   "speech_end_s": 13.4,
+   "segments": [
+    [
+     0.13,
+     0.98
+    ],
+    [
+     1.07,
+     1.92
+    ],
+    [
+     1.95,
+     2.22
+    ],
+    [
+     2.44,
+     2.9
+    ],
+    [
+     2.96,
+     3.68
+    ],
+    [
+     4.34,
+     4.82
+    ],
+    [
+     4.85,
+     5.02
+    ],
+    [
+     5.18,
+     6.34
+    ],
+    [
+     9.47,
+     10.13
+    ],
+    [
+     10.69,
+     11.28
+    ],
+    [
+     11.36,
+     12.02
+    ],
+    [
+     12.11,
+     12.25
+    ],
+    [
+     12.29,
+     12.98
+    ],
+    [
+     13.08,
+     13.4
+    ]
+   ],
+   "pauses": [
+    {
+     "from": 2.22,
+     "to": 2.44,
+     "s": 0.22
+    },
+    {
+     "from": 3.68,
+     "to": 4.34,
+     "s": 0.66
+    },
+    {
+     "from": 5.02,
+     "to": 5.18,
+     "s": 0.16
+    },
+    {
+     "from": 6.34,
+     "to": 9.47,
+     "s": 3.13
+    },
+    {
+     "from": 10.13,
+     "to": 10.69,
+     "s": 0.56
+    }
+   ],
+   "lines": [
+    {
+     "text": "A solo builder gets a private workspace.",
+     "start_s": 0.13,
+     "end_s": 2.22,
+     "pause_after": false
+    },
+    {
+     "text": "A team can work together.",
+     "start_s": 2.44,
+     "end_s": 3.68,
+     "pause_after": false
+    },
+    {
+     "text": "And the work state carries into the next session.",
+     "start_s": 4.34,
+     "end_s": 6.34,
+     "pause_after": true
+    },
+    {
+     "text": "One company.",
+     "start_s": 9.47,
+     "end_s": 10.13,
+     "pause_after": false
+    },
+    {
+     "text": "The person and the agent acted on the same event.",
+     "start_s": 10.69,
+     "end_s": 13.4,
+     "pause_after": false
+    }
+   ]
+  },
+  {
+   "id": "P6",
+   "file": "voiceover/final/v6/P6.wav",
+   "duration_s": 6.609,
+   "integrated_lufs": -18.98,
+   "true_peak_dbtp": -3.37,
+   "speech_start_s": 0.1,
+   "speech_end_s": 6.59,
+   "segments": [
+    [
+     0.1,
+     0.62
+    ],
+    [
+     0.73,
+     0.83
+    ],
+    [
+     1.48,
+     2.26
+    ],
+    [
+     2.87,
+     3.42
+    ],
+    [
+     3.48,
+     3.73
+    ],
+    [
+     4.33,
+     4.92
+    ],
+    [
+     4.96,
+     5.38
+    ],
+    [
+     6.0,
+     6.59
+    ]
+   ],
+   "pauses": [
+    {
+     "from": 0.83,
+     "to": 1.48,
+     "s": 0.65
+    },
+    {
+     "from": 2.26,
+     "to": 2.87,
+     "s": 0.61
+    },
+    {
+     "from": 3.73,
+     "to": 4.33,
+     "s": 0.6
+    },
+    {
+     "from": 5.38,
+     "to": 6.0,
+     "s": 0.62
+    }
+   ],
+   "lines": [
+    {
+     "text": "Same facts.",
+     "start_s": 0.1,
+     "end_s": 0.83,
+     "pause_after": false
+    },
+    {
+     "text": "Same sources.",
+     "start_s": 1.48,
+     "end_s": 2.26,
+     "pause_after": false
+    },
+    {
+     "text": "Same freshness.",
+     "start_s": 2.87,
+     "end_s": 3.73,
+     "pause_after": false
+    },
+    {
+     "text": "One understanding.",
+     "start_s": 4.33,
+     "end_s": 5.38,
+     "pause_after": false
+    },
+    {
+     "text": "Two ways in.",
+     "start_s": 6.0,
+     "end_s": 6.59,
+     "pause_after": false
+    }
+   ]
+  },
+  {
+   "id": "P7",
+   "file": "voiceover/final/v6/P7.wav",
+   "duration_s": 12.826,
+   "integrated_lufs": -18.99,
+   "true_peak_dbtp": -2.26,
+   "speech_start_s": 0.08,
+   "speech_end_s": 12.82,
+   "segments": [
+    [
+     0.08,
+     0.51
+    ],
+    [
+     0.54,
+     0.9
+    ],
+    [
+     0.95,
+     1.4
+    ],
+    [
+     1.44,
+     1.85
+    ],
+    [
+     1.97,
+     2.75
+    ],
+    [
+     5.31,
+     5.92
+    ],
+    [
+     5.96,
+     6.51
+    ],
+    [
+     6.72,
+     7.29
+    ],
+    [
+     7.33,
+     7.9
+    ],
+    [
+     8.77,
+     9.52
+    ],
+    [
+     9.77,
+     10.67
+    ],
+    [
+     10.92,
+     11.94
+    ],
+    [
+     12.02,
+     12.65
+    ],
+    [
+     12.71,
+     12.82
+    ]
+   ],
+   "pauses": [
+    {
+     "from": 2.75,
+     "to": 5.31,
+     "s": 2.56
+    },
+    {
+     "from": 6.51,
+     "to": 6.72,
+     "s": 0.21
+    },
+    {
+     "from": 7.9,
+     "to": 8.77,
+     "s": 0.87
+    },
+    {
+     "from": 9.52,
+     "to": 9.77,
+     "s": 0.25
+    },
+    {
+     "from": 10.67,
+     "to": 10.92,
+     "s": 0.25
+    }
+   ],
+   "lines": [
+    {
+     "text": "Models change.",
+     "start_s": 0.08,
+     "end_s": 0.9,
+     "pause_after": false
+    },
+    {
+     "text": "Agents change.",
+     "start_s": 0.95,
+     "end_s": 1.85,
+     "pause_after": false
+    },
+    {
+     "text": "Tools change.",
+     "start_s": 1.97,
+     "end_s": 2.75,
+     "pause_after": true
+    },
+    {
+     "text": "What your company knows shouldn't have to start over.",
+     "start_s": 5.31,
+     "end_s": 7.9,
+     "pause_after": false
+    },
+    {
+     "text": "Company-owned.",
+     "start_s": 8.77,
+     "end_s": 9.52,
+     "pause_after": false
+    },
+    {
+     "text": "Model-neutral.",
+     "start_s": 9.77,
+     "end_s": 10.67,
+     "pause_after": false
+    },
+    {
+     "text": "Shared by people and agents.",
+     "start_s": 10.92,
+     "end_s": 12.82,
+     "pause_after": false
+    }
+   ]
+  },
+  {
+   "id": "P8",
+   "file": "voiceover/final/v6/P8.wav",
+   "duration_s": 5.068,
+   "integrated_lufs": -19.0,
+   "true_peak_dbtp": -3.7,
+   "speech_start_s": 0.03,
+   "speech_end_s": 5.04,
+   "segments": [
+    [
+     0.03,
+     0.52
+    ],
+    [
+     0.63,
+     0.7
+    ],
+    [
+     2.66,
+     3.29
+    ],
+    [
+     3.32,
+     3.81
+    ],
+    [
+     3.96,
+     5.04
+    ]
+   ],
+   "pauses": [
+    {
+     "from": 0.7,
+     "to": 2.66,
+     "s": 1.96
+    }
+   ],
+   "lines": [
+    {
+     "text": "NavisLabs.",
+     "start_s": 0.03,
+     "end_s": 0.7,
+     "pause_after": true
+    },
+    {
+     "text": "The shared understanding for your organization.",
+     "start_s": 2.66,
+     "end_s": 5.04,
+     "pause_after": false
+    }
+   ]
+  }
+ ]
+}

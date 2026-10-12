@@ -1,0 +1,222 @@
+{
+ "about": "Final-score brief for the V7 film, locked to the founder's measured voice (the master clock). The review cut plays a six-stem score synthesized in-project (scripts/make-score-v7.py) that follows this brief.",
+ "deliverable": {
+  "preferred": "six stems, WAV 48 kHz 24-bit stereo, sample-accurate at 0.000 s, each the film's full length: public/music/final/v7/bed.wav (atmospheric bed: low drone, air, distant shimmer), public/music/final/v7/pulse.wav (low cinematic pulse: soft kick, sub, analog bass), public/music/final/v7/harmony.wav (warm harmonic texture: detuned analog pads, strings-like), public/music/final/v7/rhythm.wav (technical rhythmic layer: plucked 16ths, soft ticks), public/music/final/v7/texture.wav (transition textures: reverse swells, digital micro-texture, the permission tone), public/music/final/v7/resolve.wav (emotional resolution: soft mallet / bell motifs)",
+  "alternative": "one mixed score at public/music/final/v7/score.wav (e.g. Eleven Music; the stems are then muted)",
+  "length_s": 125.233,
+  "end": "the music almost stops for 'NavisLabs.', a very soft harmonic tail under the tagline, silence from 124.31 s",
+  "loudness": "score alone about −18 to −20 LUFS integrated, true peak ≤ −1 dBTP; the film applies the keyframed curves (−6 dB under every line, −11 dB under the key lines, controlled dips)"
+ },
+ "style": "Premium cinematic AI-infrastructure score: organic analog synth texture, warm low end, a subtle pulse, restrained percussion, an evolving harmonic bed, technical micro-textures and an emotional final resolution. No EDM, cyberpunk, trailer braams, cheesy piano, corporate stock or generic motivational music. The founder's voice always wins.",
+ "layers": [
+  {
+   "id": "bed",
+   "role": "atmospheric bed: low drone, air, distant shimmer",
+   "mix_gain_db": -3.0,
+   "share_of_duck": 0.8
+  },
+  {
+   "id": "pulse",
+   "role": "low cinematic pulse: soft kick, sub, analog bass",
+   "mix_gain_db": -3.0,
+   "share_of_duck": 1.0
+  },
+  {
+   "id": "harmony",
+   "role": "warm harmonic texture: detuned analog pads, strings-like",
+   "mix_gain_db": -1.5,
+   "share_of_duck": 1.0
+  },
+  {
+   "id": "rhythm",
+   "role": "technical rhythmic layer: plucked 16ths, soft ticks",
+   "mix_gain_db": -4.0,
+   "share_of_duck": 1.0
+  },
+  {
+   "id": "texture",
+   "role": "transition textures: reverse swells, digital micro-texture, the permission tone",
+   "mix_gain_db": -3.0,
+   "share_of_duck": 0.5
+  },
+  {
+   "id": "resolve",
+   "role": "emotional resolution: soft mallet / bell motifs",
+   "mix_gain_db": -3.0,
+   "share_of_duck": 0.7
+  }
+ ],
+ "arc": [
+  {
+   "range_s": [
+    0.0,
+    13.98
+   ],
+   "role": "problem",
+   "brief": "almost no music, never dead: a low atmosphere under the contradiction; scattered high fragments as the systems appear; heavier on 'by hand'; held on 'without it'; a breath, then a reverse swell into 'Navis'"
+  },
+  {
+   "range_s": [
+    13.98,
+    28.5
+   ],
+   "role": "reveal",
+   "brief": "the first wow: on 'Navis' the music opens — warm harmonic bloom, deep pulse, small digital texture; the pipeline builds layer by layer and pulls back on 'next'"
+  },
+  {
+   "range_s": [
+    28.5,
+    52.933
+   ],
+   "role": "human",
+   "brief": "the Navis App: warm, intelligent, half-time; drops back to a controlled breath on 'A person decides.', returns on 'Then the company acts.'"
+  },
+  {
+   "range_s": [
+    52.933,
+    83.3
+   ],
+   "role": "technical",
+   "brief": "Navis Developer: precise 16th-note rhythm, soft kick, analog bass; thins under the key lines; slows for the permission check with a low tonal shift on DENIED; resolves slightly as the run completes"
+  },
+  {
+   "range_s": [
+    83.3,
+    104.7
+   ],
+   "role": "scale",
+   "brief": "solo → team → company: from one voice to the full ensemble; the voice alone carries 'Same facts. Same sources. Same freshness.'; lift on 'One understanding.', resolution on 'Two ways in.'"
+  },
+  {
+   "range_s": [
+    104.7,
+    118.2
+   ],
+   "role": "thesis",
+   "brief": "slow, deep, warm, wide; no rhythm; rises in the pause after 'Tools change.'; no crescendo"
+  },
+  {
+   "range_s": [
+    118.2,
+    125.233
+   ],
+   "role": "end",
+   "brief": "everything almost stops for 'NavisLabs.'; logo in near-silence; a very soft harmonic tail under the tagline; then silence"
+  }
+ ],
+ "sync_points": {
+  "music opens": "'Navis' (P2)",
+  "drops back": "'A person decides.'",
+  "returns": "'Then the company acts.'",
+  "slows + low tonal shift": "DENIED",
+  "resolves slightly": "the run reads Completed",
+  "lift": "'One understanding.'",
+  "resolution": "'Two ways in.'",
+  "almost stops": "'NavisLabs.'",
+  "tail": "the tagline"
+ },
+ "key_lines_duck_deeper": [
+  {
+   "text": "Navis turns those signals into one shared understanding.",
+   "at_s": 14.03
+  },
+  {
+   "text": "A person decides.",
+   "at_s": 46.07
+  },
+  {
+   "text": "Navis isn't the model.",
+   "at_s": 70.31
+  },
+  {
+   "text": "It supplies the company's truth.",
+   "at_s": 73.66
+  },
+  {
+   "text": "One understanding.",
+   "at_s": 101.8
+  },
+  {
+   "text": "Two ways in.",
+   "at_s": 103.47
+  },
+  {
+   "text": "What your company knows shouldn't have to start over.",
+   "at_s": 110.44
+  },
+  {
+   "text": "NavisLabs.",
+   "at_s": 118.8
+  }
+ ],
+ "dips": [
+  {
+   "from_s": 13.18,
+   "to_s": 13.86,
+   "db": -14,
+   "ramp_s": 0.5,
+   "why": "the breath before Navis (the reverse swell rides through it)"
+  },
+  {
+   "from_s": 45.87,
+   "to_s": 48.8,
+   "db": -4,
+   "ramp_s": 0.6,
+   "why": "'A person decides.' — the music drops back to a controlled breath, not silence"
+  },
+  {
+   "from_s": 48.85,
+   "to_s": 49.1,
+   "db": -8,
+   "ramp_s": 0.12,
+   "why": "held breath on Approve & send"
+  },
+  {
+   "from_s": 78.04,
+   "to_s": 79.68,
+   "db": -5,
+   "ramp_s": 0.4,
+   "why": "the refusal: quieter, darker, serious"
+  },
+  {
+   "from_s": 119.62,
+   "to_s": 121.28,
+   "db": -20,
+   "ramp_s": 0.5,
+   "why": "near-silence after 'NavisLabs.'"
+  },
+  {
+   "from_s": 124.31,
+   "to_s": 125.233,
+   "db": -96,
+   "ramp_s": 0.8,
+   "why": "silent end"
+  }
+ ],
+ "voice_first": [
+  "Leave 2–4 kHz open under speech (the stems carry a −3 dB presence dip at 2.8 kHz); no lead melody under a line.",
+  "Let the score rise in the founder's pauses — the curves release 0.6 s after each line."
+ ],
+ "mix_targets": {
+  "voice_to_music_under_speech_lu": "12–13",
+  "voice_to_music_under_key_lines_lu": "14–16",
+  "music_rise_in_pauses_lu": "4–7",
+  "small_speaker_check": "music audible with a 180 Hz high-pass (laptop / phone)"
+ },
+ "forbidden": [
+  "generic corporate",
+  "EDM",
+  "trailer booms / hits / braams",
+  "cyberpunk",
+  "cheesy inspirational piano",
+  "overly dramatic Hollywood score",
+  "constant risers or whooshes",
+  "generic motivational music"
+ ],
+ "eleven_music": {
+  "endpoint": "POST https://api.elevenlabs.io/v1/music (composition_plan with sections, force_instrumental)",
+  "script": "scripts/elevenlabs-generate.py --music",
+  "status": "not generated — ELEVENLABS_API_KEY was not available here",
+  "terms": "Eleven Music v1 terms: commercial use requires a paid plan; the Starter plan excludes films, advertising and broadcast — use Creator or above for a launch film; check the account's plan before final."
+ }
+}
